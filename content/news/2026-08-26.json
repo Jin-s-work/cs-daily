@@ -1,0 +1,136 @@
+[
+  {
+    "id": "9dbbd34903b4fea8eb96d323b5de422397f99d47",
+    "title": "Apple, 성능과 AI 연산을 크게 높인 M6·M5 Ultra 공개",
+    "url": "https://news.hada.io/topic?id=32879",
+    "source": "geeknews",
+    "publishedAt": "2026-08-25T15:32:50.000Z",
+    "summary": [
+      "Apple이 새 Mac mini용 M6와 새 Mac Studio용 M5 Ultra를 공개해 데스크톱 연산 범위를 넓혔다.",
+      "Apple 최초의 2nm 칩인 M6는 12코어 CPU·12코어 GPU·Dual 16코어 Neural Engine 구성이다.",
+      "두 칩은 온디바이스 AI부터 전문 3D·영상·과학 작업까지 지원 범위를 넓힌다."
+    ],
+    "whyItMatters": "개발자는 M6의 CPU·GPU·Neural Engine과 메모리 대역폭이 온디바이스 AI 및 전문 작업에 제공하는 성능을 검토할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "662f725d3706549c984d51f4fb7ad1cedb84f187",
+    "title": "New Mac mini, featuring M6 and M5 Pro",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/",
+    "source": "hackernews",
+    "publishedAt": "2026-08-25T13:13:00.000Z",
+    "summary": [
+      "Apple이 M6·M5 Pro를 탑재한 새 Mac mini를 공개했다고 밝혔다.",
+      "M6 모델은 AI 성능 최대 4배, 그래픽·스토리지 최대 2배, CPU 성능 40% 향상을 제공한다.",
+      "두 모델 모두 Wi-Fi 7과 Bluetooth 6, 2.5Gb Ethernet을 지원하며 10Gb 옵션도 제공한다."
+    ],
+    "whyItMatters": "온디바이스 AI 모델 실행과 상시 agentic computing을 지원해 개발자의 로컬 AI 장비 선택에 의미가 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "02a7a8504d7cd1b890007794cd6ed905b84a56b9",
+    "title": "AIREP: A Protocol for Per-Decision Evidence in AI Runtime Governance",
+    "url": "https://arxiv.org/abs/2608.21363",
+    "source": "arxiv",
+    "publishedAt": "2026-08-25T04:00:00.000Z",
+    "summary": [
+      "AIREP은 AI 런타임의 출력별 거버넌스 결정을 서명된 객체로 기록한다.",
+      "결정은 정책 근거와 닫힌 동사 집합을 포함하며, 입력·출력·증거는 해시로 참조한다.",
+      "레코드는 SHA-256 해시 체인으로 변조와 누락을 재계산해 탐지하며, 참조 구현과 2개 언어 적합성 키트도 제시된다."
+    ],
+    "whyItMatters": "개발자는 런타임별 거버넌스 판단을 오프라인에서 검증 가능한 형태로 기록하고 감사할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "d61399e933bf680d24541111edf851c8435dbd78",
+    "title": "Show GN: homebutler - 홈서버 관리에 필요한 걸 한 바이너리에 담고 AI까지 붙였습니다",
+    "url": "https://news.hada.io/topic?id=32878",
+    "source": "geeknews",
+    "publishedAt": "2026-08-25T14:30:57.000Z",
+    "summary": [
+      "homebutler는 CLI·TUI·웹 UI·MCP 서버를 한 Go 단일 바이너리에 담은 홈서버 관리 도구다.",
+      "런타임 의존성 없이 컨테이너 상태 확인, 재시작 감지와 백업 복원 검증을 제공한다.",
+      "포트 스캔과 WoL도 지원하며, MCP를 붙이면 AI가 같은 기능을 도구로 사용할 수 있다."
+    ],
+    "whyItMatters": "여러 운영 기능과 AI 연동을 한 바이너리로 배포할 수 있어 홈서버 관리와 자동화 구성을 단순화한다.",
+    "tags": [
+      "인프라",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "74460d02f1e9afc82a7c5c58f1891fc1e54c7c80",
+    "title": "New Mac Studio with M5 Max and M5 Ultra",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source": "hackernews",
+    "publishedAt": "2026-08-25T13:03:17.000Z",
+    "summary": [
+      "Apple이 M5 Max와 M5 Ultra를 탑재한 신형 Mac Studio 데스크톱을 발표했다.",
+      "M5 Ultra 모델은 최대 36코어 CPU, 80코어 GPU, 512GB 통합 메모리로 온디바이스 LLM 실행을 지원한다.",
+      "최대 AI 성능 4.3배와 그래픽 1.8배 향상, Wi‑Fi 7·Bluetooth 6·Thunderbolt 5를 제공한다."
+    ],
+    "whyItMatters": "개발자는 최대 512GB 통합 메모리를 활용해 대규모 LLM을 클라우드 없이 실행할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "373a5f3d56eb08b06435660dcdc2ab3a6ffadb73",
+    "title": "Reviewing Model Collapse and Countermeasures",
+    "url": "https://arxiv.org/abs/2608.21366",
+    "source": "arxiv",
+    "publishedAt": "2026-08-25T04:00:00.000Z",
+    "summary": [
+      "생성형 AI 발전으로 실무자들은 차세대 모델 학습에 AI 합성 데이터를 활용하고 있다.",
+      "하지만 모델과 데이터가 서로를 소비하는 순환에서 모델은 궁극적으로 붕괴하며, GenAI 신뢰성 우려도 커진다.",
+      "이 논문은 Model Collapse 연구를 응용 시나리오별로 정리하고, 완화책과 남은 과제 및 향후 연구 기회를 검토한다."
+    ],
+    "whyItMatters": "합성 데이터로 모델을 학습할 때 발생할 수 있는 붕괴 위험과 대응책을 파악해 데이터 전략을 점검하는 데 중요하다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "a9f8443736562c06b942dcd9d02562f57bd47c9a",
+    "title": "Show GN: Galaxy Constellate - 사람과 관심사를 별자리로 연결하는 커뮤니티",
+    "url": "https://news.hada.io/topic?id=32877",
+    "source": "geeknews",
+    "publishedAt": "2026-08-25T10:53:15.000Z",
+    "summary": [
+      "Galaxy Constellate는 사람과 관심사를 별자리로 연결하는 커뮤니티다.",
+      "작성자는 이를 은하계 커뮤니티(Galaxy Constellate)라고 소개하며 직접 만들었다.",
+      "커뮤니티 제작의 계기는 어느 날 옥상에서 밤하늘을 보며 생각한 일이었다."
+    ],
+    "whyItMatters": "개발자에게는 사람과 관심사를 별자리처럼 연결하는 새로운 커뮤니티 구조를 참고할 사례가 된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "ff67b890cc804ae26c441bb46ba5b6ec03884b13",
+    "title": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+    "source": "hackernews",
+    "publishedAt": "2026-08-25T13:01:22.000Z",
+    "summary": [
+      "Apple이 Mac mini용 M6와 Mac Studio용 M5 Ultra를 공개하며 성능과 AI 연산 향상을 내세웠다.",
+      "M6는 Apple 최초 2nm 칩으로 12코어 CPU·GPU와 Dual 16코어 Neural Engine을 탑재했다.",
+      "M5 Ultra는 M 시리즈 최초 quad-die 구조와 최대 1.2TB/s 통합 메모리 대역폭을 제공한다."
+    ],
+    "whyItMatters": "새 Apple Silicon의 CPU·GPU·Neural Engine 및 메모리 대역폭 변화는 로컬 AI와 고성능 개발 작업의 실행 환경에 영향을 줄 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]

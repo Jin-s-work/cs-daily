@@ -5,9 +5,16 @@
     "url": "https://news.hada.io/topic?id=32849",
     "source": "geeknews",
     "publishedAt": "2026-08-24T16:33:13.000Z",
-    "summary": [],
-    "whyItMatters": "",
-    "tags": []
+    "summary": [
+      "SELF는 실행 파일 자체를 SQLite 데이터베이스로 구성한 실행 포맷 프로토타입이다",
+      "chmod +x 권한을 부여하면 일반 바이너리처럼 직접 실행하도록 설계됐다",
+      "ELF의 문자열 테이블·심볼 인덱스·섹션 헤더·버전 정보를 별도 구조 대신 SQLite 기반으로 다룬다"
+    ],
+    "whyItMatters": "개발자는 실행 파일 포맷과 메타데이터를 SQLite로 통합하는 설계를 검토할 수 있다.",
+    "tags": [
+      "언어/런타임",
+      "인프라"
+    ]
   },
   {
     "id": "929de753ff49a22f1acca2a47da38d9d45940da7",
@@ -15,9 +22,15 @@
     "url": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/",
     "source": "hackernews",
     "publishedAt": "2026-08-23T10:02:51.000Z",
-    "summary": [],
-    "whyItMatters": "",
-    "tags": []
+    "summary": [
+      "작성자는 frontier model이 필요하다고 본 reverse-engineering을 Qwen 3.8 27B에 맡겼다.",
+      "Qwen 3.8 27B는 작성자가 오랫동안 기대한 open-weights 출시 중 하나로 소개됐다.",
+      "그가 맡긴 reverse-engineering 작업은 30분 만에 완료됐다."
+    ],
+    "whyItMatters": "개발자는 frontier model이 아니어도 특정 reverse-engineering 작업에 Qwen 3.8 27B를 활용할 가능성을 확인할 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
   },
   {
     "id": "d58515c75f0113cf6dbb25953b4e3dbbf884b273",
@@ -25,9 +38,16 @@
     "url": "https://arxiv.org/abs/2608.20341",
     "source": "arxiv",
     "publishedAt": "2026-08-24T04:00:00.000Z",
-    "summary": [],
-    "whyItMatters": "",
-    "tags": []
+    "summary": [
+      "SDAD는 AI-native SDLC에서 요구사항을 기계 판독형 명세로 formalise하는 개발 모델이다.",
+      "대규모 context와 다단계 reasoning을 활용해 FRD와 저장소 맥락을 한 workflow에 입력한다.",
+      "agent가 구현을 합성하고 독립적인 multi-agent 검증을 거쳐 human sign-off를 받는 구조다."
+    ],
+    "whyItMatters": "개발자는 구현 속도보다 명세 품질과 독립 검증, 인간의 릴리스 승인 절차를 함께 설계해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
   },
   {
     "id": "73eb9cd6fe4b8042e89450d28bf3548f2e44b462",
