@@ -53,7 +53,7 @@ export function UndoToast({
     <div
       role="status"
       aria-live="polite"
-      className="fixed inset-x-4 bottom-20 z-20 mx-auto flex max-w-md items-center gap-3 rounded-xl border border-border bg-surface px-4 py-3 shadow-lg md:bottom-6"
+      className="fixed inset-x-4 bottom-20 z-20 mx-auto flex max-w-md items-center gap-3 card px-4 py-3 shadow-lg md:bottom-6"
     >
       <span className="min-w-0 flex-1 text-sm">{toast.message}</span>
       <span className="text-xs text-muted tabular-nums">{Math.ceil(remaining / 1000)}초</span>
@@ -65,7 +65,7 @@ export function UndoToast({
           void toast.onUndo();
           onDismiss();
         }}
-        className="shrink-0 rounded-lg bg-accent px-3 py-1.5 text-xs font-medium text-accent-fg"
+        className="shrink-0 btn btn-primary !py-1.5 !text-xs"
       >
         되돌리기
       </button>

@@ -246,3 +246,31 @@ describe('buildTodayQueue — 밀린 카드가 먼저', () => {
     }
   });
 });
+
+describe('buildTodayQueue — 배우기와 복습의 분리', () => {
+  it('복습과 신규를 따로 돌려준다', () => {
+    const states = [state('os-test-000', '2026-08-20')];
+    const r = buildTodayQueue(osDeck, states, TODAY, { rng: noShuffle });
+    expect(r.review.map((c) => c.id)).toEqual(['os-test-000']);
+    expect(r.fresh.length).toBe(10);
+    // 두 배열에 같은 카드가 겹쳐 들어가면 안 된다.
+    const overlap = r.review.filter((c) => r.fresh.some((f) => f.id === c.id));
+    expect(overlap).toEqual([]);
+  });
+
+  it('cards 는 복습 뒤에 신규를 이어 붙인 것과 같다', () => {
+    const states = [state('os-test-000', '2026-08-20')];
+    const r = buildTodayQueue(osDeck, states, TODAY, { rng: noShuffle });
+    expect(r.cards.map((c) => c.id)).toEqual(
+      [...r.review, ...r.fresh].map((c) => c.id),
+    );
+  });
+
+  it('한 번이라도 배운 카드는 신규에 다시 오지 않는다', () => {
+    // 배우기를 마치면 상태가 생긴다. 그 뒤로는 복습 대상일 뿐이다.
+    const states = osDeck.slice(0, 10).map((c) => state(c.id, '2026-08-26'));
+    const r = buildTodayQueue(osDeck, states, TODAY, { rng: noShuffle });
+    const learnedIds = new Set(states.map((s) => s.qid));
+    expect(r.fresh.some((c) => learnedIds.has(c.id))).toBe(false);
+  });
+});

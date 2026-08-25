@@ -48,16 +48,16 @@ export function ExamRunner({
             </span>
           )}
         </div>
-        <div className="h-1.5 overflow-hidden rounded-full bg-surface-muted">
+        <div className="h-1.5 overflow-hidden rounded-full bg-surface-2">
           <div className="h-full rounded-full bg-accent transition-[width]" style={{ width: `${percent}%` }} />
         </div>
       </div>
 
-      <div className="rounded-xl border border-border bg-surface p-5">
+      <div className="card p-5">
         <div className="mb-3 flex flex-wrap gap-1.5 text-[11px] text-muted">
-          <span className="rounded-full bg-surface-muted px-2 py-0.5">{TOPICS[question.topic]}</span>
-          <span className="rounded-full bg-surface-muted px-2 py-0.5">{DIFFICULTY_LABELS[question.difficulty]}</span>
-          <span className="rounded-full bg-surface-muted px-2 py-0.5">{TYPE_LABELS[question.type] ?? question.type}</span>
+          <span className="rounded-full bg-surface-2 px-2 py-0.5">{TOPICS[question.topic]}</span>
+          <span className="rounded-full bg-surface-2 px-2 py-0.5">{DIFFICULTY_LABELS[question.difficulty]}</span>
+          <span className="rounded-full bg-surface-2 px-2 py-0.5">{TYPE_LABELS[question.type] ?? question.type}</span>
         </div>
         <p className="text-lg leading-relaxed font-medium">{question.question}</p>
 
@@ -67,7 +67,7 @@ export function ExamRunner({
               const picked = choice === i;
               const answer = i === question.correct;
               const tone = !grading
-                ? picked ? 'border-accent bg-accent/10' : 'border-border hover:bg-surface-muted'
+                ? picked ? 'border-accent bg-accent/10' : 'border-border hover:bg-surface-2'
                 : answer ? 'border-emerald-500 bg-emerald-500/10'
                 : picked ? 'border-red-500 bg-red-500/10' : 'border-border opacity-60';
               return (
@@ -88,13 +88,13 @@ export function ExamRunner({
             disabled={grading}
             rows={6}
             placeholder="아는 만큼 적어 보세요"
-            className="mt-4 w-full resize-y rounded-lg border border-border bg-surface-muted px-3 py-2 text-sm outline-none placeholder:text-muted focus:border-accent disabled:opacity-70"
+            className="mt-4 w-full resize-y card-flat bg-surface-2 px-3 py-2 text-sm outline-none placeholder:text-muted focus:border-accent disabled:opacity-70"
           />
         )}
       </div>
 
       {grading && (
-        <div className="mt-4 rounded-xl border border-border bg-surface p-5">
+        <div className="mt-4 card p-5">
           {auto ? (
             <p className={`text-sm font-medium ${isCorrect ? 'text-emerald-500' : 'text-red-500'}`}>
               {isCorrect ? '맞았다' : '틀렸다'}
@@ -132,12 +132,12 @@ export function ExamRunner({
       <div className="mt-4">
         {!grading ? (
           <button type="button" onClick={onSubmit}
-            className="w-full rounded-lg bg-accent px-4 py-3 text-sm font-medium text-accent-fg">
+            className="w-full btn btn-primary w-full">
             제출
           </button>
         ) : auto ? (
           <button type="button" onClick={onNext}
-            className="w-full rounded-lg bg-accent px-4 py-3 text-sm font-medium text-accent-fg">
+            className="w-full btn btn-primary w-full">
             {index + 1 === total ? '결과 보기' : '다음 문항'}
           </button>
         ) : (

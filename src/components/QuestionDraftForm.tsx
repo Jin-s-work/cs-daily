@@ -69,7 +69,7 @@ export function QuestionDraftForm({ existingIds, initial }: Props) {
     }
   }
 
-  const field = 'w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm outline-none focus:border-accent';
+  const field = 'w-full card-flat bg-surface px-3 py-2 text-sm outline-none focus:border-accent';
 
   return (
     <div className="space-y-4">
@@ -139,7 +139,7 @@ export function QuestionDraftForm({ existingIds, initial }: Props) {
         <input value={keywords} onChange={(e) => setKeywords(e.target.value)} className={field} />
       </label>
 
-      <div className="rounded-xl border border-border bg-surface p-4">
+      <div className="card p-4">
         <div className="mb-2 flex items-center justify-between">
           <span className="text-xs font-medium">
             {check.success ? '✓ 스키마 통과' : '✗ 아직 통과 못 함'}
@@ -148,7 +148,7 @@ export function QuestionDraftForm({ existingIds, initial }: Props) {
             type="button"
             onClick={copy}
             disabled={!check.success}
-            className="rounded-lg bg-accent px-3 py-1.5 text-xs font-medium text-accent-fg disabled:opacity-40"
+            className="btn btn-primary !py-1.5 !text-xs disabled:opacity-40"
           >
             {copied ? '복사됨' : 'JSON 복사'}
           </button>
@@ -164,7 +164,7 @@ export function QuestionDraftForm({ existingIds, initial }: Props) {
           </ul>
         )}
 
-        <pre className="overflow-x-auto rounded-lg bg-surface-muted p-3 text-[11px] leading-relaxed">
+        <pre className="overflow-x-auto rounded-lg bg-surface-2 p-3 text-[11px] leading-relaxed">
           {json}
         </pre>
         <p className="mt-2 text-xs text-muted">

@@ -17,7 +17,7 @@ export function DrillHeader({ index, total }: { index: number; total: number }) 
           <span className="tabular-nums">{Math.round(percent)}%</span>
         </div>
         <div
-          className="h-1.5 overflow-hidden rounded-full bg-surface-muted"
+          className="h-1.5 overflow-hidden rounded-full bg-surface-2"
           role="progressbar"
           aria-valuenow={done}
           aria-valuemin={0}
@@ -33,7 +33,7 @@ export function DrillHeader({ index, total }: { index: number; total: number }) 
       <Link
         href="/"
         aria-label="드릴 닫기"
-        className="shrink-0 rounded-lg px-2.5 py-1.5 text-lg leading-none text-muted hover:bg-surface-muted hover:text-foreground"
+        className="shrink-0 rounded-lg px-2.5 py-1.5 text-lg leading-none text-muted hover:bg-surface-2 hover:text-foreground"
       >
         ✕
       </Link>

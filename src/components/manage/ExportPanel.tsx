@@ -28,7 +28,7 @@ export function ExportPanel({ overrides }: { overrides: Question[] }) {
   }
 
   return (
-    <div className="mt-3 rounded-xl border border-border bg-surface p-4">
+    <div className="mt-3 card p-4">
       <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open}
         className="flex w-full items-center justify-between text-left text-sm font-medium">
         <span>
@@ -51,11 +51,11 @@ export function ExportPanel({ overrides }: { overrides: Question[] }) {
                 <div className="mb-1.5 flex items-center justify-between">
                   <code className="text-xs">content/questions/{topic}.json — {items.length}건</code>
                   <button type="button" onClick={() => void copy(topic, json)}
-                    className="rounded-lg bg-accent px-2.5 py-1 text-xs font-medium text-accent-fg">
+                    className="btn btn-primary !py-1 !px-2.5 !text-xs">
                     {copied === topic ? '복사됨' : '복사'}
                   </button>
                 </div>
-                <pre className="max-h-64 overflow-auto rounded-lg bg-surface-muted p-3 text-[11px] leading-relaxed">
+                <pre className="max-h-64 overflow-auto rounded-lg bg-surface-2 p-3 text-[11px] leading-relaxed">
                   {json}
                 </pre>
               </div>

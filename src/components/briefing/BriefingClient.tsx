@@ -171,7 +171,7 @@ export function BriefingClient() {
               className={`rounded-full px-3 py-1.5 text-xs transition-colors ${
                 active
                   ? 'bg-accent text-accent-fg font-medium'
-                  : 'bg-surface-muted text-muted hover:text-foreground'
+                  : 'bg-surface-2 text-muted hover:text-foreground'
               }`}
             >
               {t === 'all' ? '전체' : t}

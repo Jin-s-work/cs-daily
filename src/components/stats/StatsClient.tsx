@@ -21,7 +21,7 @@ interface Loaded {
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="rounded-xl border border-border bg-surface p-5">
+    <section className="card p-5">
       <h2 className="mb-3 text-sm font-medium">{title}</h2>
       {children}
     </section>
@@ -109,7 +109,7 @@ export function StatsClient({ questions: base, today }: { questions: Question[];
           <p className="text-sm text-muted">문항이 없다.</p>
         ) : (
           <>
-            <div className="flex h-2.5 overflow-hidden rounded-full bg-surface-muted">
+            <div className="flex h-2.5 overflow-hidden rounded-full bg-surface-2">
               <div className="bg-accent/30" style={{ width: `${(m.fresh / m.total) * 100}%` }} />
               <div className="bg-accent/60" style={{ width: `${(m.learning / m.total) * 100}%` }} />
               <div className="bg-accent" style={{ width: `${(m.mature / m.total) * 100}%` }} />
@@ -135,7 +135,7 @@ export function StatsClient({ questions: base, today }: { questions: Question[];
                   <span>{TOPICS[t.topic]}</span>
                   <span className="text-muted tabular-nums">{t.correct}/{t.total} · {t.percent}%</span>
                 </div>
-                <div className="h-1.5 overflow-hidden rounded-full bg-surface-muted">
+                <div className="h-1.5 overflow-hidden rounded-full bg-surface-2">
                   <div
                     className={`h-full rounded-full ${t.percent < 60 ? 'bg-amber-500' : 'bg-accent'}`}
                     style={{ width: `${t.percent}%` }}
@@ -156,7 +156,7 @@ export function StatsClient({ questions: base, today }: { questions: Question[];
               <li key={row.question.id}>
                 <Link
                   href={`/manage?q=${encodeURIComponent(row.question.id)}`}
-                  className="flex items-start gap-3 rounded-lg px-2 py-2 hover:bg-surface-muted"
+                  className="flex items-start gap-3 rounded-lg px-2 py-2 hover:bg-surface-2"
                 >
                   <span className="min-w-0 flex-1 text-sm leading-snug">{row.question.question}</span>
                   <span className="shrink-0 text-xs text-muted tabular-nums">

@@ -45,7 +45,7 @@ export function ExamSetup({
 
   const chip = (active: boolean) =>
     `rounded-full px-3 py-1.5 text-xs transition-colors ${
-      active ? 'bg-accent text-accent-fg font-medium' : 'bg-surface-muted text-muted hover:text-foreground'
+      active ? 'bg-accent text-accent-fg font-medium' : 'bg-surface-2 text-muted hover:text-foreground'
     }`;
 
   return (
@@ -98,7 +98,7 @@ export function ExamSetup({
       </section>
 
       <section>
-        <label className="flex items-center justify-between rounded-xl border border-border bg-surface px-4 py-3">
+        <label className="flex items-center justify-between card px-4 py-3">
           <span>
             <span className="block text-sm font-medium">타이머</span>
             <span className="block text-xs text-muted">
@@ -127,7 +127,7 @@ export function ExamSetup({
           type="button"
           onClick={() => onStart(config)}
           disabled={actual === 0}
-          className="w-full rounded-lg bg-accent px-4 py-3 text-sm font-medium text-accent-fg disabled:opacity-40"
+          className="w-full btn btn-primary w-full disabled:opacity-40"
         >
           시험 시작
         </button>

@@ -11,8 +11,8 @@ export function Placeholder({
   return (
     <div className="mx-auto max-w-2xl">
       <h1 className="text-xl font-semibold md:text-2xl">{title}</h1>
-      <div className="mt-6 rounded-xl border border-border bg-surface p-5">
-        <div className="inline-flex rounded-full bg-surface-muted px-2.5 py-1 text-xs text-muted">
+      <div className="mt-6 card p-5">
+        <div className="inline-flex rounded-full bg-surface-2 px-2.5 py-1 text-xs text-muted">
           {phase}
         </div>
         <p className="mt-3 text-sm leading-relaxed text-muted">{what}</p>

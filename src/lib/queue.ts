@@ -10,7 +10,19 @@ import type { ReviewState } from './srs';
 import type { Question } from './schema';
 
 export interface TodayQueue {
-  /** 실제로 넘길 순서. 복습(셔플됨)이 먼저, 신규가 뒤. */
+  /**
+   * 오늘 복습할 카드. 이미 배운 것만 들어온다.
+   * 밀린 것(due < 오늘)이 앞, 오늘 것이 뒤이며 각 그룹 안에서만 섞인다.
+   */
+  review: Question[];
+  /**
+   * 오늘 처음 배울 카드. 드릴이 아니라 배우기 화면으로 간다.
+   *
+   * 처음 보는 개념을 다짜고짜 '맞혀 보라' 고 하면 배우는 게 아니라 틀리는 경험만 남는다.
+   * 그래서 신규는 답을 먼저 읽고 이해하는 단계를 거친 뒤 다음 날부터 복습 큐에 들어온다.
+   */
+  fresh: Question[];
+  /** 복습과 신규를 이어 붙인 것. 예전 흐름과의 호환을 위해 남겨 둔다. */
   cards: Question[];
   /** cards 중 복습 카드 수. */
   reviewCount: number;
@@ -138,6 +150,8 @@ export function buildTodayQueue(
   const fresh = roundRobinByTopic(unseen, Math.min(newLimit, roomLeft));
 
   return {
+    review,
+    fresh,
     cards: [...review, ...fresh],
     reviewCount: review.length,
     newCount: fresh.length,

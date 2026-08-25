@@ -15,7 +15,7 @@ export function Collapsible({
   const [open, setOpen] = useState(defaultOpen);
 
   return (
-    <div className="rounded-lg border border-border">
+    <div className="card-flat">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}

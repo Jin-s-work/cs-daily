@@ -74,7 +74,7 @@ function DrillRunner({ questions, today }: { questions: Question[]; today: strin
     return (
       <div className="mx-auto max-w-md py-20 text-center">
         <p className="text-sm text-muted">
-          {s.error ? `학습 기록을 못 읽었다: ${s.error}` : '오늘 풀 카드가 없다.'}
+          {s.error ? `학습 기록을 못 읽었다: ${s.error}` : '오늘 복습할 카드가 없다. 배우기에서 새 개념을 열어 보자.'}
         </p>
       </div>
     );
@@ -100,22 +100,22 @@ function DrillRunner({ questions, today }: { questions: Question[]; today: strin
 
       {/* lg 미만: 한 단. lg 이상: 왼쪽 질문+메모 / 오른쪽 모범답안. */}
       <div className="lg:grid lg:grid-cols-2 lg:gap-6">
-        <section className="rounded-xl border border-border bg-surface p-5">
-          <CardPrompt question={s.card} isNew={s.isNew} />
+        <section className="card p-5">
+          <CardPrompt question={s.card} />
 
           <textarea
             value={s.note}
             onChange={(e) => s.setNote(e.target.value)}
             placeholder="답을 먼저 적어 보세요 (저장하지 않습니다)"
             rows={5}
-            className="mt-4 hidden w-full resize-y rounded-lg border border-border bg-surface-muted px-3 py-2 text-sm outline-none placeholder:text-muted focus:border-accent lg:block"
+            className="mt-4 hidden w-full resize-y card-flat bg-surface-2 px-3 py-2 text-sm outline-none placeholder:text-muted focus:border-accent lg:block"
           />
 
           {!s.flipped && (
             <button
               type="button"
               onClick={s.flip}
-              className="mt-4 w-full rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-accent-fg"
+              className="mt-4 w-full btn btn-primary"
             >
               답 보기 <span className="opacity-70">(Space)</span>
             </button>
@@ -124,7 +124,7 @@ function DrillRunner({ questions, today }: { questions: Question[]; today: strin
 
         <section className="mt-4 lg:mt-0">
           {s.flipped ? (
-            <div className="rounded-xl border border-border bg-surface p-5">
+            <div className="card p-5">
               <CardBack question={s.card} />
             </div>
           ) : (
@@ -147,7 +147,7 @@ function DrillRunner({ questions, today }: { questions: Question[]; today: strin
           type="button"
           onClick={s.undo}
           disabled={!s.canUndo}
-          className="rounded px-2 py-1 enabled:hover:bg-surface-muted enabled:hover:text-foreground disabled:opacity-40"
+          className="rounded px-2 py-1 enabled:hover:bg-surface-2 enabled:hover:text-foreground disabled:opacity-40"
         >
           되돌리기
         </button>

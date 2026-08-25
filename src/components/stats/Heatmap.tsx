@@ -8,7 +8,7 @@ import type { Heatmap as HeatmapData } from '@/lib/stats';
  * 열이 주, 행이 요일이다. `grid-flow-col` 로 세로로 채우면 주 단위 열이 자연스럽게 만들어진다.
  */
 const LEVEL_CLASS: Record<0 | 1 | 2 | 3 | 4, string> = {
-  0: 'bg-surface-muted',
+  0: 'bg-surface-2',
   1: 'bg-accent/25',
   2: 'bg-accent/50',
   3: 'bg-accent/75',

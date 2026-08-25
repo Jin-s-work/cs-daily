@@ -33,8 +33,6 @@ export interface DrillSession {
   flipped: boolean;
   index: number;
   total: number;
-  /** 현재 카드가 신규인지. 배지에 쓴다. */
-  isNew: boolean;
   intervals: Record<Grade, number> | null;
   canUndo: boolean;
   reviewedCount: number;
@@ -65,11 +63,6 @@ export function useDrillSession(questions: Question[], today: string): DrillSess
 
   const startedAt = useRef<number>(0);
   const cardShownAt = useRef<number>(0);
-  /**
-   * 큐를 만든 시점의 신규 카드 id. 평가해서 상태가 생긴 뒤에도 '신규' 배지를 유지해야 하므로
-   * states 로부터 매번 계산하지 않고 따로 들고 있는다. 렌더에서 읽으니 ref 가 아니라 state 다.
-   */
-  const [newIds, setNewIds] = useState<Set<string>>(new Set());
 
   // 최초 1회: IndexedDB 에서 상태를 읽어 오늘 큐를 만든다.
   useEffect(() => {
@@ -82,11 +75,9 @@ export function useDrillSession(questions: Question[], today: string): DrillSess
           newDoneToday: done.newDone,
           reviewDoneToday: done.reviewDone,
         });
-        setNewIds(
-          new Set(queue.cards.filter((c) => !stored.some((s) => s.qid === c.id)).map((c) => c.id)),
-        );
+        // 드릴은 이미 배운 카드만 다룬다. 처음 보는 개념은 배우기 화면의 몫이다.
         setStates(new Map(stored.map((s) => [s.qid, s])));
-        setCards(queue.cards);
+        setCards(queue.review);
         startedAt.current = Date.now();
         cardShownAt.current = Date.now();
         setPhase(queue.cards.length === 0 ? 'empty' : 'running');
@@ -208,7 +199,6 @@ export function useDrillSession(questions: Question[], today: string): DrillSess
     flipped,
     index,
     total: cards.length,
-    isNew: card ? newIds.has(card.id) : false,
     intervals,
     canUndo: history.length > 0,
     reviewedCount,

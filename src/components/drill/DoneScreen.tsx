@@ -32,7 +32,7 @@ export function DoneScreen({
           { label: '소요 시간', value: formatDuration(elapsedMs) },
           { label: '정답률', value: `${rate}%` },
         ].map((item) => (
-          <div key={item.label} className="rounded-xl border border-border bg-surface p-3">
+          <div key={item.label} className="card p-3">
             <dt className="text-[11px] text-muted">{item.label}</dt>
             <dd className="mt-1 text-base font-semibold tabular-nums">{item.value}</dd>
           </div>
@@ -45,7 +45,7 @@ export function DoneScreen({
 
       <Link
         href="/"
-        className="mt-8 inline-flex rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-accent-fg"
+        className="mt-8 inline-flex btn btn-primary"
       >
         홈으로
       </Link>

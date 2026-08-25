@@ -42,7 +42,7 @@ export function ExamResultView({
       )}
 
       {summary.wrongIds.length > 0 && (
-        <p className="mt-4 rounded-lg border border-border bg-surface px-3.5 py-2.5 text-xs text-muted">
+        <p className="mt-4 card px-3.5 py-2.5 text-xs text-muted">
           틀린 {summary.wrongIds.length}문항은 복습 일정을 오늘로 당겼다. 다음 드릴에서 앞쪽에 나온다.
         </p>
       )}
@@ -51,12 +51,12 @@ export function ExamResultView({
         <h2 className="mb-2 text-sm font-medium">주제별</h2>
         <ul className="space-y-2">
           {summary.byTopic.map((t) => (
-            <li key={t.topic} className="rounded-lg border border-border bg-surface px-3.5 py-2.5">
+            <li key={t.topic} className="card px-3.5 py-2.5">
               <div className="mb-1.5 flex items-baseline justify-between text-xs">
                 <span>{TOPICS[t.topic]}</span>
                 <span className="text-muted tabular-nums">{t.score}/{t.total} · {t.percent}%</span>
               </div>
-              <div className="h-1.5 overflow-hidden rounded-full bg-surface-muted">
+              <div className="h-1.5 overflow-hidden rounded-full bg-surface-2">
                 <div className="h-full rounded-full bg-accent" style={{ width: `${t.percent}%` }} />
               </div>
             </li>
@@ -72,12 +72,12 @@ export function ExamResultView({
               const answer = answers.get(q.id);
               const score = scoreOf(q, answer);
               return (
-                <li key={q.id} className="rounded-lg border border-border bg-surface p-3.5">
+                <li key={q.id} className="card p-3.5">
                   <div className="mb-1 flex items-center gap-2 text-[11px] text-muted">
                     <span className={score === 0.5 ? 'text-amber-500' : 'text-red-500'}>
                       {score === 0.5 ? '애매' : '틀림'}
                     </span>
-                    <code className="rounded bg-surface-muted px-1.5 py-0.5">{q.id}</code>
+                    <code className="rounded bg-surface-2 px-1.5 py-0.5">{q.id}</code>
                   </div>
                   <p className="text-sm leading-relaxed">{q.question}</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-muted">{q.answerShort}</p>
@@ -95,7 +95,7 @@ export function ExamResultView({
 
       <div className="mt-8 flex gap-2">
         <button type="button" onClick={onRestart}
-          className="flex-1 rounded-lg border border-border px-4 py-2.5 text-sm">
+          className="flex-1 card-flat px-4 py-2.5 text-sm">
           다시 보기
         </button>
         <Link href="/drill"

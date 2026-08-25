@@ -36,10 +36,10 @@ export function NewsCard({
   now: number;
 }) {
   return (
-    <article className="rounded-xl border border-border bg-surface p-5">
+    <article className="card p-5">
       <div className="mb-2 flex flex-wrap items-center gap-1.5 text-[11px] text-muted">
         {item.tags.map((tag, i) => (
-          <span key={`${i}-${tag}`} className="rounded-full bg-surface-muted px-2 py-0.5">
+          <span key={`${i}-${tag}`} className="rounded-full bg-surface-2 px-2 py-0.5">
             {tag}
           </span>
         ))}
@@ -85,13 +85,13 @@ export function NewsCard({
           href={item.url}
           target="_blank"
           rel="noreferrer"
-          className="rounded-lg border border-border px-2.5 py-1.5 hover:bg-surface-muted"
+          className="card-flat px-2.5 py-1.5 hover:bg-surface-2"
         >
           원문 ↗
         </a>
         <Link
           href={draftHref(item)}
-          className="rounded-lg border border-border px-2.5 py-1.5 hover:bg-surface-muted"
+          className="card-flat px-2.5 py-1.5 hover:bg-surface-2"
         >
           문제로 만들기
         </Link>
@@ -102,7 +102,7 @@ export function NewsCard({
           className={`ml-auto rounded-lg border px-2.5 py-1.5 ${
             bookmarked
               ? 'border-accent bg-accent text-accent-fg'
-              : 'border-border hover:bg-surface-muted'
+              : 'border-border hover:bg-surface-2'
           }`}
         >
           {bookmarked ? '★ 저장됨' : '☆ 저장'}

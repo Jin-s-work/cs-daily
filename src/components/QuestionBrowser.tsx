@@ -160,10 +160,10 @@ export function QuestionBrowser({
           onChange={(e) => setQuery(e.target.value)}
           placeholder="질문·답·키워드·id 검색"
           aria-label="문제 검색"
-          className="min-w-0 flex-1 rounded-lg border border-border bg-surface px-3.5 py-2.5 text-sm outline-none placeholder:text-muted focus:border-accent"
+          className="min-w-0 flex-1 card px-3.5 py-2.5 text-sm outline-none placeholder:text-muted focus:border-accent"
         />
         <button type="button" onClick={() => setEditing(emptyQuestion())}
-          className="shrink-0 rounded-lg bg-accent px-3.5 py-2.5 text-sm font-medium text-accent-fg">
+          className="shrink-0 btn btn-primary">
           새 문항
         </button>
       </div>
@@ -175,7 +175,7 @@ export function QuestionBrowser({
             className={`rounded-full px-3 py-1.5 text-xs transition-colors ${
               topic === chip.key
                 ? 'bg-accent text-accent-fg font-medium'
-                : 'bg-surface-muted text-muted hover:text-foreground'
+                : 'bg-surface-2 text-muted hover:text-foreground'
             }`}>
             {chip.label} {chip.count}
           </button>

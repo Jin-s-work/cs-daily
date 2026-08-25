@@ -32,7 +32,7 @@ export function QuestionCard({
   const [open, setOpen] = useState(defaultOpen);
 
   return (
-    <li className="rounded-xl border border-border bg-surface">
+    <li className="card">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
@@ -42,12 +42,12 @@ export function QuestionCard({
         <span className="min-w-0 flex-1">
           <span className="block text-sm leading-relaxed font-medium">{question.question}</span>
           <span className="mt-2 flex flex-wrap items-center gap-1.5 text-[11px] text-muted">
-            <code className="rounded bg-surface-muted px-1.5 py-0.5">{question.id}</code>
-            <span className="rounded bg-surface-muted px-1.5 py-0.5">{question.subtopic}</span>
-            <span className="rounded bg-surface-muted px-1.5 py-0.5">
+            <code className="rounded bg-surface-2 px-1.5 py-0.5">{question.id}</code>
+            <span className="rounded bg-surface-2 px-1.5 py-0.5">{question.subtopic}</span>
+            <span className="rounded bg-surface-2 px-1.5 py-0.5">
               {DIFFICULTY_LABELS[question.difficulty]}
             </span>
-            <span className="rounded bg-surface-muted px-1.5 py-0.5">
+            <span className="rounded bg-surface-2 px-1.5 py-0.5">
               {TYPE_LABELS[question.type] ?? question.type}
             </span>
             {overridden && (
@@ -116,7 +116,7 @@ export function QuestionCard({
           {question.keywords.length > 0 && (
             <div className="mt-3 flex flex-wrap gap-1.5">
               {question.keywords.map((k, i) => (
-                <span key={`${i}-${k}`} className="rounded-full bg-surface-muted px-2 py-0.5 text-[11px] text-muted">
+                <span key={`${i}-${k}`} className="rounded-full bg-surface-2 px-2 py-0.5 text-[11px] text-muted">
                   {k}
                 </span>
               ))}
@@ -126,17 +126,17 @@ export function QuestionCard({
           {actions && (
             <div className="mt-4 flex flex-wrap gap-2 border-t border-border pt-3 text-xs">
               <button type="button" onClick={actions.onEdit}
-                className="rounded-lg border border-border px-2.5 py-1.5 hover:bg-surface-muted">
+                className="card-flat px-2.5 py-1.5 hover:bg-surface-2">
                 편집
               </button>
               <button type="button" onClick={actions.onReset} disabled={!hasHistory}
                 title={hasHistory ? undefined : '복습 이력이 없다'}
-                className="rounded-lg border border-border px-2.5 py-1.5 enabled:hover:bg-surface-muted disabled:opacity-40">
+                className="card-flat px-2.5 py-1.5 enabled:hover:bg-surface-2 disabled:opacity-40">
                 복습 리셋
               </button>
               <button type="button" onClick={actions.onToggleSuspend}
                 className={`rounded-lg border px-2.5 py-1.5 ${
-                  suspended ? 'border-amber-500 text-amber-500' : 'border-border hover:bg-surface-muted'
+                  suspended ? 'border-amber-500 text-amber-500' : 'border-border hover:bg-surface-2'
                 }`}>
                 {suspended ? '정지 해제' : '정지'}
               </button>

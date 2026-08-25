@@ -19,7 +19,7 @@ export function ProgressRing({
       <svg viewBox="0 0 120 120" className="size-full -rotate-90">
         <circle
           cx="60" cy="60" r={radius} fill="none"
-          stroke="var(--surface-muted)" strokeWidth="10"
+          stroke="var(--surface-2)" strokeWidth="10"
         />
         <circle
           cx="60" cy="60" r={radius} fill="none"

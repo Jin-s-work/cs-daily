@@ -23,7 +23,7 @@ export function emptyQuestion(): Question {
 }
 
 const field =
-  'w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm outline-none focus:border-accent';
+  'w-full card-flat bg-surface px-3 py-2 text-sm outline-none focus:border-accent';
 
 export function QuestionEditor({
   initial,
@@ -181,12 +181,12 @@ export function QuestionEditor({
       {saveError && <p className="text-xs text-red-500">저장 실패: {saveError}</p>}
 
       <div className="flex gap-2 pt-1">
-        <button type="button" onClick={onCancel} className="flex-1 rounded-lg border border-border px-4 py-2.5 text-sm">
+        <button type="button" onClick={onCancel} className="flex-1 card-flat px-4 py-2.5 text-sm">
           취소
         </button>
         <button type="button" onClick={() => void save()}
           disabled={!parsed.success || duplicateId || saving}
-          className="flex-1 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-accent-fg disabled:opacity-40">
+          className="flex-1 btn btn-primary disabled:opacity-40">
           {saving ? '저장 중…' : '저장'}
         </button>
       </div>
