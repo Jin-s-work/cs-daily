@@ -5,15 +5,9 @@
     "url": "https://news.hada.io/topic?id=32849",
     "source": "geeknews",
     "publishedAt": "2026-08-24T16:33:13.000Z",
-    "summary": [
-      "SELF는 실행 파일 자체를 SQLite 데이터베이스로 만드는 프로토타입이다.",
-      "chmod +x 권한을 부여하면 일반 바이너리처럼 직접 실행할 수 있다.",
-      "ELF의 문자열 테이블과 심볼 인덱스, 섹션 헤더, 버전 정보는 SQLite 테이블과 열로 표현된다."
-    ],
-    "whyItMatters": "실행 파일의 구조화된 정보를 SQLite 생태계로 다룰 수 있는 새로운 바이너리 설계 방향을 보여준다.",
-    "tags": [
-      "인프라"
-    ]
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
   },
   {
     "id": "929de753ff49a22f1acca2a47da38d9d45940da7",
@@ -21,16 +15,9 @@
     "url": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/",
     "source": "hackernews",
     "publishedAt": "2026-08-23T10:02:51.000Z",
-    "summary": [
-      "작성자는 frontier 모델이 필요하다고 본 reverse-engineering 작업을 Qwen 3.8 27B에 맡겼다.",
-      "Qwen 3.8 27B는 이 reverse-engineering 작업을 30분 만에 완료했다고 작성자는 전했다.",
-      "작성자는 공개 직후 모델을 테스트했으며, 단일 Lenovo ThinkStation PGX에서 실행 중이라고 밝혔다."
-    ],
-    "whyItMatters": "개발자 관점에서 frontier 모델이 필요하다고 보던 작업을 open-weights 모델과 단일 워크스테이션으로 수행한 사례라는 점이 중요하다.",
-    "tags": [
-      "AI/LLM",
-      "인프라"
-    ]
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
   },
   {
     "id": "d58515c75f0113cf6dbb25953b4e3dbbf884b273",
@@ -38,16 +25,9 @@
     "url": "https://arxiv.org/abs/2608.20341",
     "source": "arxiv",
     "publishedAt": "2026-08-24T04:00:00.000Z",
-    "summary": [
-      "SDAD는 요구 의도 캡처부터 기계가 읽는 명세, 에이전트 구현까지를 잇는 개발 모델이다.",
-      "대규모 문맥을 다루는 코딩 에이전트가 FRD와 저장소 정보를 한 흐름에서 활용한다고 설명한다.",
-      "독립적인 다중 에이전트 검증과 인간 승인으로 합성·릴리스 권한을 분리하고, 규율을 명세 단계로 옮긴다."
-    ],
-    "whyItMatters": "개발자는 에이전트의 속도보다 정밀한 명세, 명시적 승인 단계, 감사 가능한 provenance를 설계해야 한다.",
-    "tags": [
-      "AI/LLM",
-      "업계"
-    ]
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
   },
   {
     "id": "73eb9cd6fe4b8042e89450d28bf3548f2e44b462",
