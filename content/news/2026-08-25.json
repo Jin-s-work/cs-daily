@@ -80,5 +80,35 @@
     "tags": [
       "업계"
     ]
+  },
+  {
+    "id": "6d3e379b89031bdfb208fcfe66eab6af2706ce91",
+    "title": "Firefox 157에 도입되는 JPEG XL",
+    "url": "https://news.hada.io/topic?id=32871",
+    "source": "geeknews",
+    "publishedAt": "2026-08-25T05:01:21.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "19799d74ce3d3d1937dd98926b70ec0342d328e6",
+    "title": "iCloud+ Hide My Email addresses will remain on icloud.com",
+    "url": "https://developer.apple.com/news/?id=1ptvdtcm",
+    "source": "hackernews",
+    "publishedAt": "2026-08-24T22:13:40.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "a43539facd3f02115aee2318405f3fbcee8b50ea",
+    "title": "KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference",
+    "url": "https://arxiv.org/abs/2608.21362",
+    "source": "arxiv",
+    "publishedAt": "2026-08-25T04:00:00.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
   }
 ]
