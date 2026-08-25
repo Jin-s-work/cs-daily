@@ -80,56 +80,5 @@
     "tags": [
       "업계"
     ]
-  },
-  {
-    "id": "efe2a1bb25d6b167a7978c1713f693f5224b96f7",
-    "title": "내가 17살이라면 LLM을 처음부터 만드는 법을 배우겠다",
-    "url": "https://news.hada.io/topic?id=32846",
-    "source": "geeknews",
-    "publishedAt": "2026-08-24T13:31:46.000Z",
-    "summary": [
-      "Paul Graham은 지금 17살이라면 LLM을 처음부터 만드는 법을 배우겠다고 말했다.",
-      "접근 가능한 하드웨어로 가능한 한 강력한 모델을 직접 학습해볼 계획이라고 밝혔다.",
-      "당장 스타트업을 시작하기보다, 훗날 창업을 뒷받침할 기술 기반을 먼저 쌓겠다고 했다."
-    ],
-    "whyItMatters": "개발자에게 LLM 활용을 넘어 모델 학습과 기술 기반 구축을 먼저 익히는 접근을 보여준다.",
-    "tags": [
-      "AI/LLM",
-      "업계"
-    ]
-  },
-  {
-    "id": "99609a67b1b67c63c7130904bf8999147a0838bb",
-    "title": "MartyPC is a cross-platform emulator of early PCs written in Rust",
-    "url": "https://martypc.net/",
-    "source": "hackernews",
-    "publishedAt": "2026-08-23T03:13:16.000Z",
-    "summary": [
-      "MartyPC는 Rust로 작성된 초기 PC용 크로스플랫폼 에뮬레이터다.",
-      "Web Edition에서는 MDA부터 VGA까지 여러 초기 PC 비디오 카드를 선택할 수 있다.",
-      "Web Edition 실행이 실패하면 개발자 콘솔에서 오류를 확인하라는 안내가 표시된다."
-    ],
-    "whyItMatters": "Rust 기반 에뮬레이터로 레거시 PC 환경 재현과 크로스플랫폼 구현 사례를 살펴볼 수 있다.",
-    "tags": [
-      "언어/런타임",
-      "웹"
-    ]
-  },
-  {
-    "id": "776f96e2a47122281c734bff0a5237a388b12139",
-    "title": "PrimeAgentOrchestrator: Memory-Primed Agent Spawning for Personal AI Infrastructure",
-    "url": "https://arxiv.org/abs/2608.20342",
-    "source": "arxiv",
-    "publishedAt": "2026-08-24T04:00:00.000Z",
-    "summary": [
-      "PrimeAgentOrchestrator(PAO)는 개인 데이터베이스의 기억을 불러와 Claude Code를 시작한다.",
-      "PostgreSQL 엔터티 관찰 DB와 Cloudflare Worker 의미 검색 색인을 병렬 조회해 브리핑을 만든다.",
-      "2025년 12월부터 2026년 3월까지 배포하며 컨텍스트 전달 방식 세 세대와 재설계 원인을 기록했다."
-    ],
-    "whyItMatters": "개발자는 과거 작업 지식을 주입한 코딩 에이전트를 구성하면서 이기종 메모리 시스템 연동의 trade-off를 참고할 수 있다.",
-    "tags": [
-      "AI/LLM",
-      "인프라"
-    ]
   }
 ]
