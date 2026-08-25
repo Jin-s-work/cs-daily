@@ -1,9 +1,22 @@
 'use client';
 
 import Link from 'next/link';
-import { SOURCE_LABELS, type NewsItem } from '@/lib/news';
+import { SOURCE_LABELS, type NewsItem, type NewsSource } from '@/lib/news';
 
-/** 'n분 전' 같은 상대 시각. 하루가 넘으면 날짜를 그대로 보여준다. */
+/**
+ * 기사 카드.
+ *
+ * 위계를 세 층으로 잡았다 — 메타(작게) · 제목(크게) · 요약(읽기 편하게).
+ * 예전에는 태그·출처·시각이 제목과 비슷한 무게라 눈이 어디를 봐야 할지 몰랐다.
+ */
+
+/** 출처마다 색 점을 둔다. 색만으로 구분하지 않도록 이름도 함께 적는다. */
+const SOURCE_DOT: Record<NewsSource, string> = {
+  geeknews: 'bg-emerald-500',
+  hackernews: 'bg-orange-500',
+  arxiv: 'bg-violet-500',
+};
+
 function relativeTime(iso: string, now: number): string {
   const then = new Date(iso).getTime();
   if (Number.isNaN(then)) return '';
@@ -36,77 +49,86 @@ export function NewsCard({
   now: number;
 }) {
   return (
-    <article className="card p-5">
-      <div className="mb-2 flex flex-wrap items-center gap-1.5 text-[11px] text-muted">
-        {item.tags.map((tag, i) => (
-          <span key={`${i}-${tag}`} className="rounded-full bg-surface-2 px-2 py-0.5">
-            {tag}
+    <article className="card group p-5 transition-shadow hover:shadow-md">
+      <div className="mb-2.5 flex items-start gap-3">
+        <div className="t-caption flex min-w-0 flex-1 flex-wrap items-center gap-x-2 gap-y-1">
+          <span className="flex items-center gap-1.5">
+            <span className={`size-1.5 shrink-0 rounded-full ${SOURCE_DOT[item.source]}`} aria-hidden />
+            {SOURCE_LABELS[item.source]}
           </span>
-        ))}
-        <span>{SOURCE_LABELS[item.source]}</span>
-        <span aria-hidden>·</span>
-        <time dateTime={item.publishedAt}>{relativeTime(item.publishedAt, now)}</time>
+          <span aria-hidden className="text-faint">·</span>
+          <time dateTime={item.publishedAt}>{relativeTime(item.publishedAt, now)}</time>
+        </div>
+
+        {/* 저장은 자주 쓰지 않는다. 액션 줄을 차지하는 대신 모서리에 둔다. */}
+        <button
+          type="button"
+          onClick={onToggleBookmark}
+          aria-pressed={bookmarked}
+          aria-label={bookmarked ? '저장 취소' : '저장'}
+          title={bookmarked ? '저장 취소' : '저장'}
+          className={`-mt-1 -mr-1 shrink-0 rounded-lg px-2 py-1 text-base leading-none transition-transform duration-100 active:scale-90 ${
+            bookmarked ? 'text-accent' : 'text-faint hover:text-muted'
+          }`}
+        >
+          {bookmarked ? '★' : '☆'}
+        </button>
       </div>
 
-      <h3 className="text-base leading-relaxed font-medium">
+      <h3 className="t-title">
         <a
           href={item.url}
           target="_blank"
           rel="noreferrer"
-          className="hover:text-accent hover:underline underline-offset-2"
+          className="transition-colors hover:text-accent"
         >
           {item.title}
         </a>
       </h3>
 
       {item.summary.length > 0 ? (
-        <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-muted">
+        <ul className="mt-3 space-y-1.5">
           {item.summary.map((line, i) => (
-            <li key={`${i}-${line}`} className="flex gap-2">
-              <span aria-hidden className="text-border">—</span>
-              <span>{line}</span>
+            <li key={`${i}-${line}`} className="t-body flex gap-2.5 text-muted">
+              <span aria-hidden className="mt-[0.62em] size-1 shrink-0 rounded-full bg-border-strong" />
+              <span className="min-w-0">{line}</span>
             </li>
           ))}
         </ul>
       ) : (
-        <p className="mt-3 text-xs text-muted">
-          요약이 없다. 수집할 때 요약 모델을 못 불렀다는 뜻이다 — 원문을 직접 열어야 한다.
+        <p className="t-caption mt-3">
+          요약이 없다. 수집할 때 본문을 못 구했다는 뜻이니 원문을 열어야 한다.
         </p>
       )}
 
       {item.whyItMatters && (
-        <p className="mt-3 border-l-2 border-accent/40 pl-3 text-sm leading-relaxed">
-          {item.whyItMatters}
-        </p>
+        // 옅은 배경만으로는 카드 안에서 묻힌다. 왼쪽 바가 있어야 '다른 종류의 문장'으로 읽힌다.
+        <div className="mt-4 flex gap-3 rounded-r-xl border-l-[3px] border-accent bg-accent-soft py-2.5 pr-3.5 pl-3">
+          <p className="t-body text-[0.875rem] leading-relaxed">{item.whyItMatters}</p>
+        </div>
       )}
 
-      <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
-        <a
-          href={item.url}
-          target="_blank"
-          rel="noreferrer"
-          className="card-flat px-2.5 py-1.5 hover:bg-surface-2"
-        >
-          원문 ↗
-        </a>
-        <Link
-          href={draftHref(item)}
-          className="card-flat px-2.5 py-1.5 hover:bg-surface-2"
-        >
-          문제로 만들기
-        </Link>
-        <button
-          type="button"
-          onClick={onToggleBookmark}
-          aria-pressed={bookmarked}
-          className={`ml-auto rounded-lg border px-2.5 py-1.5 ${
-            bookmarked
-              ? 'border-accent bg-accent text-accent-fg'
-              : 'border-border hover:bg-surface-2'
-          }`}
-        >
-          {bookmarked ? '★ 저장됨' : '☆ 저장'}
-        </button>
+      <div className="mt-4 flex flex-wrap items-center gap-2">
+        <div className="t-caption flex min-w-0 flex-1 flex-wrap gap-1.5">
+          {item.tags.map((tag, i) => (
+            <span key={`${i}-${tag}`} className="rounded-full bg-surface-2 px-2 py-0.5">
+              {tag}
+            </span>
+          ))}
+        </div>
+        <div className="flex shrink-0 gap-1.5">
+          <Link href={draftHref(item)} className="btn btn-ghost !px-2.5 !py-1.5 !text-xs">
+            문제로
+          </Link>
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-secondary !px-2.5 !py-1.5 !text-xs"
+          >
+            원문 ↗
+          </a>
+        </div>
       </div>
     </article>
   );

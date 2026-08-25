@@ -57,7 +57,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
       <nav
         aria-label="주요 메뉴"
-        className="material fixed inset-x-0 bottom-0 z-20 border-t border-border pb-[env(safe-area-inset-bottom)] md:hidden"
+        className="material edge-fade fixed inset-x-0 bottom-0 z-20 border-t border-border pb-[env(safe-area-inset-bottom)] backdrop-blur-2xl backdrop-saturate-150 md:hidden"
       >
         <ul className="grid grid-cols-5">
           {PRIMARY_NAV.map((item) => {

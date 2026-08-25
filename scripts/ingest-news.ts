@@ -225,18 +225,52 @@ const summarySchema = z.object({
 const MIN_LINE = 40;
 const MAX_LINE = 70;
 
-const SUMMARY_SYSTEM = `너는 개발자용 기술 뉴스 briefing 편집자다. 주어진 기사 하나를 한국어로 요약한다.
+const SUMMARY_SYSTEM = `너는 개발자 한 명을 위해 아침 브리핑을 쓴다. 보도자료도 뉴스 기사도 아니다.
+옆자리 동료에게 "이거 이렇게 됐어" 하고 알려주는 말투로 쓴다.
 
-규칙
-- summary 는 정확히 3줄.
-- **각 줄은 공백 포함 ${MIN_LINE}자 이상 ${MAX_LINE}자 이하다. ${MIN_LINE - 1}자 이하나 ${MAX_LINE + 1}자 이상은 규칙 위반이다.**
-  짧으면 맥락을 한 마디 더 붙여 늘리고, 길면 군더더기를 덜어낸다. 쓰기 전에 글자 수를 센다.
-- 원문에 있는 사실만 쓴다. 원문에 없는 수치나 주장을 만들지 않는다.
-- 원문이 불확실하게 말하면 "~로 보인다" 로 표시한다.
-- 영어 원문이어도 출력은 한국어. 고유명사와 기술 용어는 원문 표기를 유지한다.
-- whyItMatters 는 개발자 관점에서 왜 중요한지 한 문장.
-- tags 는 다음 6개 중 1~2개만: ${NEWS_TAGS.join(' · ')}
-- 발췌가 비어 있거나 제목뿐이면, 제목에서 확실히 알 수 있는 것만 쓰고 나머지는 추측하지 않는다.`;
+## 어투
+
+- 평서형 '~다'로 끝내고 **마침표를 찍는다**. 존댓말과 물음표를 쓰지 않는다.
+- **보도자료 표현을 그대로 옮기지 않는다.** 아래 표현이 나오면 다시 쓴다:
+  제공한다 / 지원한다 / 선보였다 / 공개했다고 밝혔다 / 범위를 넓혔다 / 강화했다 / 향상을 제공한다
+  → 무엇이 실제로 되는지로 바꾼다. "Wi-Fi 7을 지원한다"가 아니라 "Wi-Fi 7이 들어갔다".
+  → "성능 향상을 제공한다"가 아니라 "AI 연산이 4배 빨라졌다".
+- 홍보 형용사를 쓰지 않는다: 혁신적 / 강력한 / 획기적 / 대폭 / 매우
+- 명사를 길게 잇지 않는다. "A의 B와 C가 D에 주는 E" 같은 문장은 끊어 쓴다.
+- 수치가 원문에 있으면 반드시 남긴다. 없으면 지어내지 않는다.
+- 영어 원문이어도 출력은 한국어. 고유명사와 기술 용어는 원문 표기를 지킨다.
+
+## summary — 정확히 3줄
+
+**각 줄은 공백 포함 ${MIN_LINE}자 이상 ${MAX_LINE}자 이하다.** ${MIN_LINE - 1}자 이하나 ${MAX_LINE + 1}자 이상은 규칙 위반이다.
+짧으면 사실을 하나 더 넣어 늘리고, 길면 군더더기를 덜어낸다. 쓰기 전에 글자 수를 센다.
+
+- 1줄: 무슨 일이 있었나
+- 2줄: 구체적으로 무엇이 어떻게 (수치·구성·방식)
+- 3줄: 조건·한계·아직 모르는 것. 없으면 남은 사실 하나
+
+세 줄이 같은 말을 되풀이하면 안 된다. 각 줄이 새 정보를 하나씩 더한다.
+
+## whyItMatters — 한 문장
+
+"이걸 알면 내가 뭘 다르게 하게 되나"에 답한다.
+
+금지: ~를 검토할 수 있다 / ~에 의미가 있다 / ~를 파악할 수 있다 / ~에 참고가 된다
+→ 이런 문장은 아무 말도 하지 않는다.
+
+좋은 예:
+- "로컬에서 27B 모델을 돌릴 생각이었다면 이제 워크스테이션 한 대로 가능하다."
+- "같은 방식을 쓰고 있다면 다음 버전에서 마이그레이션이 필요해진다."
+- "당장 쓸 일은 없지만, 빌드 산출물을 검증하는 방식이 하나 늘었다."
+
+## tags
+
+다음 6개 중 1~2개만: ${NEWS_TAGS.join(' · ')}
+
+## 발췌가 부실할 때
+
+제목에서 확실히 알 수 있는 것만 쓰고 추측하지 않는다. 모르는 부분은 3줄 중 한 줄에서
+"본문이 없어 구체적인 방식은 확인되지 않는다"처럼 솔직히 적는다.`;
 
 interface SummarizeInput {
   title: string;
@@ -273,10 +307,18 @@ async function askOnce(
   const parsed = response.output_parsed;
   if (!parsed) throw new Error('구조화 출력 파싱 실패');
 
+  // 길이를 맞추다 보면 마침표를 빠뜨린다. 화면에서 문장이 잘린 것처럼 보이므로 여기서 채운다.
+  // 길이 검사보다 먼저 해야 마침표 하나 때문에 재시도가 도는 일이 없다.
+  const endPunctuation = /[.!?…”"')\]]$/;
+  const finish = (line: string): string => {
+    const t = line.trim();
+    return t === '' || endPunctuation.test(t) ? t : `${t}.`;
+  };
+
   // 개수와 중복은 여기서 맞춘다. 스키마에 개수 제약을 못 넣었기 때문이다.
   return {
-    summary: [...new Set(parsed.summary.map((line) => line.trim()).filter(Boolean))].slice(0, 3),
-    whyItMatters: parsed.whyItMatters.trim(),
+    summary: [...new Set(parsed.summary.map(finish).filter(Boolean))].slice(0, 3),
+    whyItMatters: finish(parsed.whyItMatters),
     tags: [...new Set(parsed.tags)].slice(0, 2),
   };
 }
@@ -333,6 +375,7 @@ async function refillSummaries(
     if (blanks.length === 0) continue;
 
     let changed = false;
+    let filledHere = 0;
     for (const item of blanks) {
       // 발췌 없이 제목만으로 요약하면 세 줄이 같은 말을 되풀이한다.
       // 그런 요약은 없는 것만 못하므로, 발췌를 못 구하면 건너뛰고 빈 채로 둔다.
@@ -344,6 +387,7 @@ async function refillSummaries(
       try {
         Object.assign(item, await summarize(client, { ...item, excerpt }));
         filled++;
+        filledHere++;
         changed = true;
       } catch (e) {
         warn(`요약 채우기 실패 "${item.title.slice(0, 30)}"`, e);
@@ -361,7 +405,7 @@ async function refillSummaries(
       `${JSON.stringify(validated.data, null, 2)}\n`,
       'utf-8',
     );
-    console.log(`  ${day}.json — 빈 요약 ${blanks.length}건 중 ${filled}건 채움`);
+    console.log(`  ${day}.json — 빈 요약 ${blanks.length}건 중 ${filledHere}건 채움`);
   }
 
   if (skipped > 0) {

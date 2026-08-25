@@ -6,14 +6,14 @@
     "source": "geeknews",
     "publishedAt": "2026-08-25T15:32:50.000Z",
     "summary": [
-      "Apple이 새 Mac mini용 M6와 새 Mac Studio용 M5 Ultra를 공개해 데스크톱 연산 범위를 넓혔다.",
-      "Apple 최초의 2nm 칩인 M6는 12코어 CPU·12코어 GPU·Dual 16코어 Neural Engine 구성이다.",
-      "두 칩은 온디바이스 AI부터 전문 3D·영상·과학 작업까지 지원 범위를 넓힌다."
+      "Apple이 새 Mac mini용 M6와 새 Mac Studio용 M5 Ultra를 공개했다.",
+      "M6는 2nm 칩이고 CPU·GPU가 각각 12코어, Neural Engine은 Dual 16코어다.",
+      "M6 통합 메모리 대역폭은 최대 170GB/s이고, M5 Ultra 세부 사양은 발췌에 없다."
     ],
-    "whyItMatters": "개발자는 M6의 CPU·GPU·Neural Engine과 메모리 대역폭이 온디바이스 AI 및 전문 작업에 제공하는 성능을 검토할 수 있다.",
+    "whyItMatters": "Mac mini에서 온디바이스 AI를 돌릴 계획이면 M6의 Neural Engine과 메모리 대역폭을 먼저 보게 된다.",
     "tags": [
       "AI/LLM",
-      "인프라"
+      "업계"
     ]
   },
   {
@@ -23,11 +23,11 @@
     "source": "hackernews",
     "publishedAt": "2026-08-25T13:13:00.000Z",
     "summary": [
-      "Apple이 M6·M5 Pro를 탑재한 새 Mac mini를 공개했다고 밝혔다.",
-      "M6 모델은 AI 성능 최대 4배, 그래픽·스토리지 최대 2배, CPU 성능 40% 향상을 제공한다.",
-      "두 모델 모두 Wi-Fi 7과 Bluetooth 6, 2.5Gb Ethernet을 지원하며 10Gb 옵션도 제공한다."
+      "Apple이 M6와 M5 Pro를 넣은 새 Mac mini를 발표했고, 9월 22일부터 판매한다.",
+      "M6 모델은 AI 성능이 최대 4배, CPU 40%, 그래픽·스토리지가 최대 2배 빨라졌다.",
+      "두 모델 모두 Wi‑Fi 7과 Bluetooth 6, 2.5Gb Ethernet을 넣었고 10Gb 옵션이 있다."
     ],
-    "whyItMatters": "온디바이스 AI 모델 실행과 상시 agentic computing을 지원해 개발자의 로컬 AI 장비 선택에 의미가 있다.",
+    "whyItMatters": "로컬 AI 모델이나 상시 실행 에이전트를 데스크톱에서 돌릴 계획이면 M6와 M5 Pro의 성능 차이를 비교해야 한다.",
     "tags": [
       "AI/LLM",
       "인프라"
@@ -40,11 +40,11 @@
     "source": "arxiv",
     "publishedAt": "2026-08-25T04:00:00.000Z",
     "summary": [
-      "AIREP은 AI 런타임의 출력별 거버넌스 결정을 서명된 객체로 기록한다.",
-      "결정은 정책 근거와 닫힌 동사 집합을 포함하며, 입력·출력·증거는 해시로 참조한다.",
-      "레코드는 SHA-256 해시 체인으로 변조와 누락을 재계산해 탐지하며, 참조 구현과 2개 언어 적합성 키트도 제시된다."
+      "AIREP가 AI 런타임의 출력별 거버넌스 결정을 서명된 기록으로 남기는 프로토콜로 제안됐다.",
+      "출력 공개·차단·보류·삭제·상향 처리를 정해진 정책과 해시로 묶고, SHA-256 체인으로 순서와 변조를 확인한다.",
+      "입출력과 증거 원문은 담지 않고 해시만 기록하며, 구현 간 정규화와 최신성 증명은 과제로 남았다."
     ],
-    "whyItMatters": "개발자는 런타임별 거버넌스 판단을 오프라인에서 검증 가능한 형태로 기록하고 감사할 수 있다.",
+    "whyItMatters": "AI 런타임의 판단을 감사 로그로 남겨야 한다면, AIREP의 해시·서명 구조를 구현 요구사항에 넣게 된다.",
     "tags": [
       "AI/LLM",
       "보안"
@@ -57,11 +57,11 @@
     "source": "geeknews",
     "publishedAt": "2026-08-25T14:30:57.000Z",
     "summary": [
-      "homebutler는 CLI·TUI·웹 UI·MCP 서버를 한 Go 단일 바이너리에 담은 홈서버 관리 도구다.",
-      "런타임 의존성 없이 컨테이너 상태 확인, 재시작 감지와 백업 복원 검증을 제공한다.",
-      "포트 스캔과 WoL도 지원하며, MCP를 붙이면 AI가 같은 기능을 도구로 사용할 수 있다."
+      "homebutler가 홈서버 관리 기능과 AI 연동을 한 바이너리에 묶은 프로젝트로 소개됐다.",
+      "컨테이너 상태 확인·재시작 감지·백업 복원 검증·포트 스캔·WoL 기능이 들어갔다.",
+      "MCP를 붙이면 AI가 같은 기능을 도구로 쓰며, 실제 설정과 사용 조건은 본문에서 확인되지 않는다."
     ],
-    "whyItMatters": "여러 운영 기능과 AI 연동을 한 바이너리로 배포할 수 있어 홈서버 관리와 자동화 구성을 단순화한다.",
+    "whyItMatters": "홈서버를 여러 대 운영한다면 별도 런타임 없이 한 바이너리로 관리 도구와 AI 연결을 함께 구성할 수 있다.",
     "tags": [
       "인프라",
       "AI/LLM"
@@ -74,11 +74,11 @@
     "source": "hackernews",
     "publishedAt": "2026-08-25T13:03:17.000Z",
     "summary": [
-      "Apple이 M5 Max와 M5 Ultra를 탑재한 신형 Mac Studio 데스크톱을 발표했다.",
-      "M5 Ultra 모델은 최대 36코어 CPU, 80코어 GPU, 512GB 통합 메모리로 온디바이스 LLM 실행을 지원한다.",
-      "최대 AI 성능 4.3배와 그래픽 1.8배 향상, Wi‑Fi 7·Bluetooth 6·Thunderbolt 5를 제공한다."
+      "Apple이 M5 Max와 M5 Ultra를 탑재한 새 Mac Studio를 발표했다.",
+      "M5 Ultra는 최대 36코어 CPU·80코어 GPU와 512GB 통합 메모리로 대형 LLM을 기기 안에서 돌린다.",
+      "Wi‑Fi 7·Bluetooth 6·Thunderbolt 5가 들어갔지만 출시일과 가격은 발췌문에 없다."
     ],
-    "whyItMatters": "개발자는 최대 512GB 통합 메모리를 활용해 대규모 LLM을 클라우드 없이 실행할 수 있다.",
+    "whyItMatters": "로컬에서 큰 LLM을 돌릴 계획이라면 외장 GPU 대신 Mac Studio 한 대에서 실행하는 선택지가 생긴다.",
     "tags": [
       "AI/LLM",
       "인프라"
@@ -91,11 +91,11 @@
     "source": "arxiv",
     "publishedAt": "2026-08-25T04:00:00.000Z",
     "summary": [
-      "생성형 AI 발전으로 실무자들은 차세대 모델 학습에 AI 합성 데이터를 활용하고 있다.",
-      "하지만 모델과 데이터가 서로를 소비하는 순환에서 모델은 궁극적으로 붕괴하며, GenAI 신뢰성 우려도 커진다.",
-      "이 논문은 Model Collapse 연구를 응용 시나리오별로 정리하고, 완화책과 남은 과제 및 향후 연구 기회를 검토한다."
+      "arXiv에 모델 붕괴(Model Collapse) 연구와 대응책을 정리한 리뷰 논문이 올라왔다.",
+      "합성 데이터를 다음 모델 학습에 반복 투입하면 모델과 데이터의 자기소비 순환이 붕괴를 부를 수 있다.",
+      "여러 적용 시나리오의 완화책과 남은 과제를 훑지만, 새로운 실험 결과를 제시한 논문은 아니다."
     ],
-    "whyItMatters": "합성 데이터로 모델을 학습할 때 발생할 수 있는 붕괴 위험과 대응책을 파악해 데이터 전략을 점검하는 데 중요하다.",
+    "whyItMatters": "합성 데이터를 다음 학습에 계속 넣고 있다면 원본 데이터 비율과 모델 붕괴 징후를 따로 점검해야 한다.",
     "tags": [
       "AI/LLM"
     ]
@@ -107,11 +107,11 @@
     "source": "geeknews",
     "publishedAt": "2026-08-25T10:53:15.000Z",
     "summary": [
-      "Galaxy Constellate는 사람과 관심사를 별자리로 연결하는 커뮤니티다.",
-      "작성자는 이를 은하계 커뮤니티(Galaxy Constellate)라고 소개하며 직접 만들었다.",
-      "커뮤니티 제작의 계기는 어느 날 옥상에서 밤하늘을 보며 생각한 일이었다."
+      "개발자가 사람과 관심사를 별자리처럼 연결하는 커뮤니티 Galaxy Constellate를 만들었다.",
+      "관심사와 사람의 관계를 밤하늘의 별자리로 표현하는 형태지만, 구체적인 기능은 본문에서 더 확인해야 한다.",
+      "발췌문에는 서비스의 가입 방식, 기술 스택, 운영 조건이 없어 실제 사용 방법은 알 수 없다."
     ],
-    "whyItMatters": "개발자에게는 사람과 관심사를 별자리처럼 연결하는 새로운 커뮤니티 구조를 참고할 사례가 된다.",
+    "whyItMatters": "커뮤니티를 직접 만들고 있다면 사람과 주제를 연결하는 UI 아이디어로 가져갈 수 있다.",
     "tags": [
       "웹"
     ]
@@ -123,11 +123,11 @@
     "source": "hackernews",
     "publishedAt": "2026-08-25T13:01:22.000Z",
     "summary": [
-      "Apple이 Mac mini용 M6와 Mac Studio용 M5 Ultra를 공개하며 성능과 AI 연산 향상을 내세웠다.",
-      "M6는 Apple 최초 2nm 칩으로 12코어 CPU·GPU와 Dual 16코어 Neural Engine을 탑재했다.",
-      "M5 Ultra는 M 시리즈 최초 quad-die 구조와 최대 1.2TB/s 통합 메모리 대역폭을 제공한다."
+      "Apple이 새 Mac mini에 M6를, 새 Mac Studio에 M5 Ultra를 탑재했다.",
+      "M6는 2nm 공정의 12코어 CPU·GPU와 듀얼 16코어 Neural Engine을 쓴다.",
+      "M5 Ultra의 실제 출시 일정과 가격, 성능 비교 기준은 발췌문에 없다."
     ],
-    "whyItMatters": "새 Apple Silicon의 CPU·GPU·Neural Engine 및 메모리 대역폭 변화는 로컬 AI와 고성능 개발 작업의 실행 환경에 영향을 줄 수 있다.",
+    "whyItMatters": "Mac mini나 Mac Studio에서 로컬 AI를 돌릴 계획이라면 Neural Engine과 통합 메모리 대역폭을 먼저 비교하게 된다.",
     "tags": [
       "AI/LLM",
       "업계"

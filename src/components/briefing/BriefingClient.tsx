@@ -144,54 +144,55 @@ export function BriefingClient() {
   const [now] = useState(() => Date.now());
 
   if (!ready) {
-    return <p className="py-16 text-center text-sm text-muted">불러오는 중…</p>;
+    return <p className="t-caption py-16 text-center">불러오는 중…</p>;
   }
 
   if (days.length === 0) {
     return (
-      <p className="py-16 text-center text-sm text-muted">
-        {error
-          ? `뉴스를 못 읽었다: ${error}`
-          : '아직 수집된 뉴스가 없다. npm run ingest 를 돌리면 채워진다.'}
-      </p>
+      <div className="py-20 text-center">
+        <p className="t-title">{error ? '뉴스를 못 읽었다' : '아직 모아 둔 소식이 없다'}</p>
+        <p className="t-caption mt-2">
+          {error ?? '매일 아침 6시 반에 자동으로 채워진다. 지금 채우려면 npm run ingest.'}
+        </p>
+      </div>
     );
   }
 
   return (
     <div>
-      <div className="flex flex-wrap gap-1.5">
-        {(['all', ...NEWS_TAGS] as const).map((t) => {
-          const active = tag === t;
-          return (
-            <button
-              key={t}
-              type="button"
-              onClick={() => setTag(t)}
-              aria-pressed={active}
-              className={`rounded-full px-3 py-1.5 text-xs transition-colors ${
-                active
-                  ? 'bg-accent text-accent-fg font-medium'
-                  : 'bg-surface-2 text-muted hover:text-foreground'
-              }`}
-            >
+      {/* 가로로 넘치면 스크롤한다. 줄바꿈으로 두 줄이 되면 위쪽 공간을 계속 먹는다. */}
+      <div className="-mx-4 overflow-x-auto px-4 pb-1">
+        <div className="flex w-max gap-1.5">
+          {(['all', ...NEWS_TAGS] as const).map((t) => (
+            <button key={t} type="button" onClick={() => setTag(t)} aria-pressed={tag === t} className="chip">
               {t === 'all' ? '전체' : t}
             </button>
-          );
-        })}
+          ))}
+        </div>
       </div>
 
       {error && (
-        <p className="mt-4 rounded-lg border border-red-500/40 bg-red-500/10 px-3 py-2 text-xs">
+        <p className="t-caption mt-4 rounded-xl border border-danger/40 bg-danger/10 px-3.5 py-2.5 text-danger">
           {error}
         </p>
       )}
 
       {visible.length === 0 ? (
-        <p className="py-16 text-center text-sm text-muted">이 태그의 기사가 없다.</p>
+        <p className="t-caption py-16 text-center">이 태그의 기사가 없다.</p>
       ) : (
         visible.map((d) => (
-          <section key={d.day} className="mt-8">
-            <h2 className="mb-3 text-xs font-medium text-muted tabular-nums">{d.day}</h2>
+          <section key={d.day} className="mt-7">
+            {/*
+              날짜를 떠 있는 라벨로 둔다. 무한 스크롤에서 지금 어느 날짜를 읽고 있는지
+              계속 보여야 하는데, 전체 폭 헤더를 고정하면 좁은 화면에서 답답하다.
+            */}
+            <div className="sticky top-2 z-10 mb-3">
+              <span className="material t-caption t-num inline-flex items-center gap-2 rounded-full border border-border px-3 py-1 shadow-sm backdrop-blur-lg backdrop-saturate-150">
+                {d.day}
+                <span className="text-faint">·</span>
+                {d.items.length}건
+              </span>
+            </div>
             <div className="space-y-3">
               {d.items.map((item) => (
                 <NewsCard
@@ -207,7 +208,7 @@ export function BriefingClient() {
         ))
       )}
 
-      <div ref={sentinel} className="py-8 text-center text-xs text-muted">
+      <div ref={sentinel} className="t-caption py-10 text-center">
         {loading ? '더 불러오는 중…' : hasMore ? '' : '여기까지가 전부다.'}
       </div>
     </div>

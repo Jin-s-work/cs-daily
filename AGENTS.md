@@ -157,3 +157,28 @@ src/components/
   다만 바탕이 너무 비치면 라벨이 안 읽히므로 불투명도 0.86~0.88 + blur 28px 이 하한이다.
 - **접근성 설정 세 가지를 존중한다.** `prefers-reduced-motion` 은 이동을 없애고,
   `prefers-reduced-transparency` 는 재료를 불투명하게, `prefers-contrast` 는 테두리를 진하게 한다.
+
+### Phase 5 에서 정한 것 (어투·브리핑 UI)
+
+- **요약 어투는 보도자료가 아니라 동료의 말투다.** 프롬프트가 금지 표현을 직접 나열한다:
+  제공한다 / 지원한다 / 선보였다 / 밝혔다 / 범위를 넓혔다 / 강화했다.
+  → 무엇이 실제로 되는지로 바꾼다. "Wi-Fi 7을 지원한다" 가 아니라 "Wi-Fi 7이 들어갔다".
+- **`whyItMatters` 는 '알면 뭘 다르게 하나' 에 답한다.** "~를 검토할 수 있다", "~에 의미가 있다" 는
+  아무 말도 하지 않으므로 프롬프트에서 금지하고 좋은 예시를 함께 준다.
+- **요약 3줄에 역할을 준다.** 1줄 사실 · 2줄 구체(수치·구성) · 3줄 한계나 모르는 것.
+  역할을 안 주면 세 줄이 같은 말을 되풀이한다.
+- **마침표는 후처리로 채운다.** 길이 40~70자를 맞추다 보면 모델이 마침표를 빠뜨린다.
+  길이 검사보다 **먼저** 붙여야 마침표 하나 때문에 재시도가 돌지 않는다.
+
+#### ⚠ backdrop-filter 는 반드시 Tailwind 유틸로 건다
+
+`@layer components` 안에서 `backdrop-filter` 를 직접 쓰면 **빌드가 표준 속성을 지우고
+`-webkit-` 접두사만 남긴다.** Chromium 은 `-webkit-backdrop-filter` 를 지원하지 않으므로
+블러가 통째로 사라지는데, 배경 불투명도 때문에 '대충 되는 것처럼' 보여서 알아채기 어렵다.
+
+```
+.material  → 바탕색(background)만 정의한다
+사용처     → backdrop-blur-2xl backdrop-saturate-150 처럼 유틸로 블러를 건다
+```
+
+확인하려면 `getComputedStyle(el).getPropertyValue('backdrop-filter')` 가 `none` 이 아닌지 본다.
