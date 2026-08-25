@@ -87,9 +87,16 @@
     "url": "https://news.hada.io/topic?id=32871",
     "source": "geeknews",
     "publishedAt": "2026-08-25T05:01:21.000Z",
-    "summary": [],
-    "whyItMatters": "",
-    "tags": []
+    "summary": [
+      "Mozilla가 Firefox 157에 Rust 디코더 기반 JPEG XL 지원을 추가할 예정이다",
+      "Chrome의 출시 계획과 Safari의 기존 구현까지 합치면, 2026년 말 전 주요 브라우저 지원이 가능해진다",
+      "기존 디코더는 10만 줄 규모의 멀티스레드 C++로 공격 표면 우려를 낳았다"
+    ],
+    "whyItMatters": "JPEG XL의 브라우저 호환성 확대와 디코더 구현 방식 변화는 이미지 처리 기능과 보안을 다루는 개발자에게 중요하다.",
+    "tags": [
+      "웹",
+      "보안"
+    ]
   },
   {
     "id": "19799d74ce3d3d1937dd98926b70ec0342d328e6",
@@ -97,9 +104,16 @@
     "url": "https://developer.apple.com/news/?id=1ptvdtcm",
     "source": "hackernews",
     "publishedAt": "2026-08-24T22:13:40.000Z",
-    "summary": [],
-    "whyItMatters": "",
-    "tags": []
+    "summary": [
+      "Apple은 2026년 후반부터 Sign in with Apple 신규 주소를 private.icloud.com으로 발급한다.",
+      "기존 privaterelay.appleid.com 주소는 계속 작동하며 사용자에게 중단 없이 메일을 전달한다.",
+      "커뮤니티 피드백 검토 후 iCloud+ Hide My Email 주소는 계속 icloud.com에 남는다."
+    ],
+    "whyItMatters": "Sign in with Apple 연동을 운영하는 개발자는 신규 주소 도메인과 기존 릴레이 주소의 호환성을 함께 고려해야 한다.",
+    "tags": [
+      "웹",
+      "보안"
+    ]
   },
   {
     "id": "a43539facd3f02115aee2318405f3fbcee8b50ea",
@@ -107,8 +121,15 @@
     "url": "https://arxiv.org/abs/2608.21362",
     "source": "arxiv",
     "publishedAt": "2026-08-25T04:00:00.000Z",
-    "summary": [],
-    "whyItMatters": "",
-    "tags": []
+    "summary": [
+      "KVBoost는 위치와 무관하게 LLM의 청크 단위 KV 캐시 재사용을 지원한다.",
+      "dual-hash 키는 위치 정체성과 콘텐츠 정체성을 분리해 정확·근사 매칭을 가능하게 한다.",
+      "Qwen/Qwen2.5-3B 평가에서 TTFT를 4.49배 줄였고, 정확도 손실은 없었다."
+    ],
+    "whyItMatters": "개발자는 기존 RoPE 기반 모델의 구조를 바꾸지 않고 메모리 제한 환경에서 추론 지연을 줄일 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
   }
 ]
