@@ -1,0 +1,138 @@
+[
+  { "id": "algo-sort-001", "topic": "algo", "subtopic": "sorting", "difficulty": 2, "type": "concept",
+    "question": "퀵 정렬이 평균 O(n log n)인데 실무에서 가장 빠른 축에 드는 이유는?",
+    "answerShort": "제자리 정렬이라 추가 메모리가 거의 없고, 분할이 순차 접근이라 캐시 효율이 좋기 때문이다. 같은 O(n log n)인 병합 정렬보다 상수 인자가 작다. 대신 최악이 O(n²)이라 피벗 선택(랜덤·중앙값)으로 방어한다.",
+    "keywords": ["퀵 정렬", "제자리 정렬", "피벗", "캐시"], "source": "seed" },
+
+  { "id": "algo-sort-002", "topic": "algo", "subtopic": "sorting", "difficulty": 2, "type": "concept",
+    "question": "안정 정렬(stable sort)이 필요한 상황은?",
+    "answerShort": "이미 정렬된 순서를 유지한 채 다른 기준으로 다시 정렬할 때다. 예를 들어 이름순으로 정렬한 뒤 부서순으로 다시 정렬하면, 안정 정렬이어야 같은 부서 안에서 이름순이 살아남는다. 병합 정렬은 안정적이고 퀵 정렬은 아니다.",
+    "keywords": ["안정 정렬", "병합 정렬", "다중 키"], "source": "seed" },
+
+  { "id": "algo-sort-003", "topic": "algo", "subtopic": "sorting", "difficulty": 3, "type": "concept",
+    "question": "비교 기반 정렬의 하한이 O(n log n)인 이유는?",
+    "answerShort": "n개의 순열이 n!가지이고, 비교 한 번이 경우의 수를 최대 절반으로 줄이므로 최소 log₂(n!)번의 비교가 필요하다. 스털링 근사로 이 값이 n log n에 비례한다. 계수 정렬처럼 비교를 안 쓰는 방법은 이 하한을 벗어난다.",
+    "keywords": ["정렬 하한", "결정 트리", "계수 정렬"], "source": "seed" },
+
+  { "id": "algo-sort-004", "topic": "algo", "subtopic": "sorting", "difficulty": 2, "type": "mcq",
+    "question": "값의 범위가 0~100인 정수 백만 개를 정렬할 때 가장 빠른 방법은?",
+    "answerShort": "계수 정렬이다. 값의 범위가 좁으면 각 값의 개수만 세고 순서대로 펼치면 되므로 O(n+k)에 끝난다. 비교를 하지 않으므로 O(n log n) 하한에 묶이지 않는다.",
+    "choices": ["퀵 정렬", "병합 정렬", "계수 정렬", "힙 정렬"], "correct": 2,
+    "keywords": ["계수 정렬", "비교 없는 정렬"], "source": "seed" },
+
+  { "id": "algo-binsearch-001", "topic": "algo", "subtopic": "search", "difficulty": 2, "type": "concept",
+    "question": "이진 탐색을 '값 찾기' 말고 어디에 응용하는가?",
+    "answerShort": "'답에 대한 이진 탐색'이다. 답이 단조적인 조건을 만족하면(어떤 값 이상에서만 참) 답의 범위를 이분해 탐색한다. '최소 용량', '최대 최소값' 같은 최적화 문제를 판정 문제로 바꿔 푸는 전형적인 기법이다.",
+    "keywords": ["이진 탐색", "파라메트릭 서치", "단조성"], "source": "seed" },
+
+  { "id": "algo-binsearch-002", "topic": "algo", "subtopic": "search", "difficulty": 2, "type": "concept",
+    "question": "이진 탐색에서 흔한 버그 두 가지는?",
+    "answerShort": "중간값 계산의 오버플로와 무한 루프다. (lo+hi)/2는 큰 수에서 넘칠 수 있어 lo+(hi-lo)/2를 쓴다. 경계 갱신을 잘못하면 구간이 줄지 않아 무한 루프에 빠지므로, 종료 조건과 갱신 규칙을 짝지어 정해야 한다.",
+    "keywords": ["오버플로", "무한 루프", "경계 조건"], "source": "seed" },
+
+  { "id": "algo-dp-001", "topic": "algo", "subtopic": "dp", "difficulty": 2, "type": "concept",
+    "question": "동적 계획법을 쓸 수 있는 조건은?",
+    "answerShort": "최적 부분 구조와 중복 부분 문제가 있어야 한다. 큰 문제의 답이 작은 문제의 답으로 만들어지고, 그 작은 문제가 여러 번 반복돼야 저장한 값을 재사용하는 이득이 생긴다. 둘 중 하나만 있으면 분할 정복이나 그리디가 맞다.",
+    "keywords": ["DP", "최적 부분 구조", "중복 부분 문제"], "source": "seed" },
+
+  { "id": "algo-dp-002", "topic": "algo", "subtopic": "dp", "difficulty": 2, "type": "concept",
+    "question": "탑다운(메모이제이션)과 바텀업(테이블)의 차이는?",
+    "answerShort": "탑다운은 재귀로 필요한 것만 계산해 희소한 상태 공간에 유리하지만 호출 스택 비용이 있다. 바텀업은 반복문으로 전부 채워 스택 오버플로가 없고 상수가 작으며, 이전 몇 줄만 남기는 공간 최적화가 쉽다.",
+    "keywords": ["메모이제이션", "타뷸레이션", "공간 최적화"], "source": "seed" },
+
+  { "id": "algo-dp-003", "topic": "algo", "subtopic": "dp", "difficulty": 3, "type": "concept",
+    "question": "DP 문제에서 '상태를 정의한다'는 것은 무슨 뜻인가?",
+    "answerShort": "부분 문제를 구분하는 데 필요한 최소한의 정보를 정하는 것이다. 상태가 부족하면 같은 상태가 다른 답을 갖게 되고, 과하면 공간과 시간이 폭발한다. 대개 '몇 번째까지 봤는가'와 '지금까지의 제약'을 축으로 잡는다.",
+    "keywords": ["상태 정의", "점화식", "차원"], "source": "seed" },
+
+  { "id": "algo-greedy-001", "topic": "algo", "subtopic": "greedy", "difficulty": 2, "type": "concept",
+    "question": "그리디가 최적해를 보장하려면 무엇이 필요한가?",
+    "answerShort": "탐욕적 선택 속성과 최적 부분 구조다. 매 순간 최선을 골라도 전체 최적이 유지된다는 증명이 있어야 한다. 증명 없이 '그럴듯해서' 쓰면 반례에서 무너진다 — 동전 교환 문제가 화폐 단위에 따라 갈리는 게 대표적이다.",
+    "keywords": ["그리디", "탐욕적 선택", "반례"], "source": "seed" },
+
+  { "id": "algo-graph-001", "topic": "algo", "subtopic": "graph", "difficulty": 2, "type": "concept",
+    "question": "다익스트라와 벨만-포드는 무엇이 다른가?",
+    "answerShort": "다익스트라는 음수 간선이 없을 때 쓰고 우선순위 큐로 O((V+E) log V)에 푼다. 벨만-포드는 음수 간선을 허용하고 O(VE)로 느리지만, V-1번 완화 후에도 갱신되면 음수 사이클을 탐지할 수 있다.",
+    "keywords": ["다익스트라", "벨만-포드", "음수 간선", "완화"], "source": "seed" },
+
+  { "id": "algo-graph-002", "topic": "algo", "subtopic": "graph", "difficulty": 3, "type": "concept",
+    "question": "다익스트라가 음수 간선에서 틀리는 이유는?",
+    "answerShort": "한 번 확정한 최단 거리를 다시 고치지 않기 때문이다. 음수 간선이 있으면 나중에 더 짧은 경로가 나타날 수 있는데, 이미 방문 처리된 정점은 갱신되지 않는다. 그리디 선택의 전제('더 나빠질 수 없다')가 깨지는 것이다.",
+    "keywords": ["다익스트라", "그리디", "음수 간선"], "source": "seed" },
+
+  { "id": "algo-graph-003", "topic": "algo", "subtopic": "graph", "difficulty": 3, "type": "concept",
+    "question": "A*가 다익스트라보다 빠를 수 있는 이유는?",
+    "answerShort": "목표까지 남은 거리의 추정치(휴리스틱)를 더해 목표 방향을 먼저 탐색하기 때문이다. 휴리스틱이 실제 거리를 넘지 않으면(admissible) 최적해를 보장한다. 휴리스틱이 0이면 다익스트라와 같아진다.",
+    "keywords": ["A*", "휴리스틱", "admissible"], "source": "seed" },
+
+  { "id": "algo-twopointer-001", "topic": "algo", "subtopic": "technique", "difficulty": 2, "type": "concept",
+    "question": "투 포인터가 O(n²)을 O(n)으로 줄이는 원리는?",
+    "answerShort": "한쪽 포인터를 움직였을 때 다른 쪽이 되돌아갈 필요가 없다는 단조성을 이용한다. 정렬된 배열에서 합이 목표보다 크면 오른쪽을 줄이고 작으면 왼쪽을 늘리는 식으로, 두 포인터가 각각 한 방향으로만 이동해 총 이동이 O(n)이 된다.",
+    "keywords": ["투 포인터", "단조성", "슬라이딩 윈도우"], "source": "seed" },
+
+  { "id": "algo-window-001", "topic": "algo", "subtopic": "technique", "difficulty": 2, "type": "concept",
+    "question": "슬라이딩 윈도우를 쓸 수 있는 문제의 특징은?",
+    "answerShort": "구간을 늘리면 조건이 단조적으로 나빠지고 줄이면 좋아져야 한다. 그래야 오른쪽을 늘리다 조건을 어기면 왼쪽을 줄이는 방식이 성립한다. 음수가 섞이면 이 단조성이 깨져 다른 기법이 필요하다.",
+    "keywords": ["슬라이딩 윈도우", "단조성", "구간"], "source": "seed" },
+
+  { "id": "algo-prefix-001", "topic": "algo", "subtopic": "technique", "difficulty": 2, "type": "concept",
+    "question": "누적 합(prefix sum)은 어떤 비용을 어떻게 옮기는가?",
+    "answerShort": "전처리 O(n)을 한 번 내고 이후 모든 구간 합 질의를 O(1)로 만든다. 질의가 많을수록 이득이다. 값이 바뀌면 누적 합을 다시 만들어야 하므로, 갱신이 잦으면 세그먼트 트리나 펜윅 트리로 간다.",
+    "keywords": ["누적 합", "전처리", "구간 합"], "source": "seed" },
+
+  { "id": "algo-backtrack-001", "topic": "algo", "subtopic": "technique", "difficulty": 3, "type": "concept",
+    "question": "백트래킹에서 가지치기(pruning)가 결정적인 이유는?",
+    "answerShort": "탐색 공간이 지수적으로 커지기 때문이다. 답이 될 수 없는 가지를 일찍 잘라내면 실제 탐색량이 수십~수천 배 줄어든다. 알고리즘의 뼈대보다 '어떤 조건에서 더 볼 필요가 없는가'를 찾는 게 성능을 좌우한다.",
+    "keywords": ["백트래킹", "가지치기", "탐색 공간"], "source": "seed" },
+
+  { "id": "algo-recursion-001", "topic": "algo", "subtopic": "recursion", "difficulty": 1, "type": "concept",
+    "question": "재귀를 쓸 때 반드시 확인해야 할 두 가지는?",
+    "answerShort": "종료 조건과 문제 크기의 감소다. 종료 조건이 없거나 도달할 수 없으면 스택 오버플로가 난다. 또 재귀 호출마다 문제가 실제로 작아져야 한다. 깊이가 깊어질 수 있으면 반복문으로 바꾸거나 명시적 스택을 쓴다.",
+    "keywords": ["재귀", "종료 조건", "스택 오버플로"], "source": "seed" },
+
+  { "id": "algo-divide-001", "topic": "algo", "subtopic": "technique", "difficulty": 2, "type": "concept",
+    "question": "분할 정복과 동적 계획법의 차이는?",
+    "answerShort": "분할 정복은 부분 문제가 겹치지 않아 각각 한 번만 푼다. DP는 부분 문제가 겹쳐서 저장해 재사용한다. 병합 정렬은 전자, 피보나치는 후자다. 겹침 여부가 메모이제이션의 필요를 가른다.",
+    "keywords": ["분할 정복", "DP", "부분 문제 중복"], "source": "seed" },
+
+  { "id": "algo-bit-001", "topic": "algo", "subtopic": "technique", "difficulty": 3, "type": "concept",
+    "question": "비트마스킹은 어떤 문제에서 유용한가?",
+    "answerShort": "원소 수가 20개 안팎인 집합의 부분집합을 다룰 때다. 정수 하나로 집합 상태를 표현해 DP 상태로 쓰거나 순회할 수 있다. 외판원 문제나 '모든 원소를 덮는 최소 조합' 같은 문제에서 2ⁿ 상태를 다루는 표준 도구다.",
+    "keywords": ["비트마스크", "부분집합", "비트 DP"], "source": "seed" },
+
+  { "id": "algo-string-001", "topic": "algo", "subtopic": "string", "difficulty": 3, "type": "concept",
+    "question": "KMP가 단순 문자열 탐색보다 빠른 이유는?",
+    "answerShort": "불일치가 나도 이미 맞춘 부분의 정보를 버리지 않기 때문이다. 패턴 내부의 접두사-접미사 일치를 미리 계산해 두고, 어디까지 되돌아갈지 정해 텍스트 포인터를 절대 뒤로 옮기지 않는다. 그래서 O(n+m)이다.",
+    "keywords": ["KMP", "실패 함수", "접두사 접미사"], "source": "seed" },
+
+  { "id": "algo-hash-001", "topic": "algo", "subtopic": "string", "difficulty": 3, "type": "concept",
+    "question": "라빈-카프의 롤링 해시는 어떻게 O(1)로 다음 창을 계산하는가?",
+    "answerShort": "앞 문자를 빼고 뒤 문자를 더하는 식으로 해시를 갱신하기 때문이다. 전체를 다시 계산하지 않는다. 해시가 같아도 실제 문자열은 다를 수 있으므로 충돌 시 직접 비교하는 검증이 필요하다.",
+    "keywords": ["라빈-카프", "롤링 해시", "충돌"], "source": "seed" },
+
+  { "id": "algo-stability-001", "topic": "algo", "subtopic": "practice", "difficulty": 2, "type": "concept",
+    "question": "코딩 테스트에서 시간 초과가 났을 때 무엇부터 점검하는가?",
+    "answerShort": "입력 크기와 알고리즘의 복잡도를 곱해 본다. n이 10만인데 O(n²)이면 100억이라 불가능하다. 그 다음 입출력 방식(줄 단위 읽기 버퍼링), 불필요한 복사, 자료구조 선택 순으로 본다. 대개는 복잡도 자체가 문제다.",
+    "keywords": ["시간 초과", "복잡도 추정", "입출력"], "source": "seed" },
+
+  { "id": "algo-edge-001", "topic": "algo", "subtopic": "practice", "difficulty": 1, "type": "concept",
+    "question": "알고리즘 문제에서 자주 놓치는 경계 조건은?",
+    "answerShort": "빈 입력, 원소 하나, 전부 같은 값, 최대·최소 범위, 음수와 0이다. 그리고 정렬이 필요한지, 중복이 허용되는지도 자주 빠뜨린다. 코드를 쓰기 전에 이 목록을 훑는 습관이 디버깅 시간을 크게 줄인다.",
+    "keywords": ["경계 조건", "엣지 케이스"], "source": "seed" },
+
+  { "id": "algo-random-001", "topic": "algo", "subtopic": "technique", "difficulty": 3, "type": "concept",
+    "question": "리저버 샘플링은 무엇을 푸는가?",
+    "answerShort": "전체 크기를 모르는 스트림에서 k개를 균등한 확률로 뽑는 문제다. i번째 원소를 k/i 확률로 뽑아 기존 것과 교체하면, 스트림이 끝났을 때 모든 원소의 선택 확률이 같아진다. 메모리는 k개분만 쓴다.",
+    "keywords": ["리저버 샘플링", "스트리밍", "균등 확률"], "source": "seed" },
+
+  { "id": "algo-topk-001", "topic": "algo", "subtopic": "technique", "difficulty": 3, "type": "concept",
+    "question": "퀵셀렉트는 무엇이고 왜 평균 O(n)인가?",
+    "answerShort": "퀵 정렬의 분할을 쓰되 한쪽만 재귀하는 방법이다. k번째 원소가 있는 쪽만 파고들므로 n + n/2 + n/4 ... 로 수렴해 평균 O(n)이다. 최악은 O(n²)이라 중앙값의 중앙값으로 피벗을 고르면 최악도 O(n)이 된다.",
+    "keywords": ["퀵셀렉트", "k번째 원소", "분할"], "source": "seed" },
+
+  { "id": "algo-memo-001", "topic": "algo", "subtopic": "dp", "difficulty": 2, "type": "ox",
+    "question": "메모이제이션은 순수 함수(같은 입력에 같은 출력)에만 안전하게 적용할 수 있다.",
+    "answerShort": "O. 외부 상태에 따라 결과가 달라지는 함수를 메모이제이션하면 낡은 값을 돌려준다. 부수 효과가 있는 함수도 두 번째 호출부터 그 효과가 일어나지 않아 동작이 달라진다. 캐싱의 전제는 참조 투명성이다.",
+    "choices": ["O", "X"], "correct": 0,
+    "keywords": ["메모이제이션", "순수 함수", "참조 투명성"], "source": "seed" }
+]

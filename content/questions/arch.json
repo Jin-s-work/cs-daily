@@ -1,0 +1,134 @@
+[
+  { "id": "arch-scale-001", "topic": "arch", "subtopic": "scaling", "difficulty": 1, "type": "concept",
+    "question": "수직 확장과 수평 확장은 각각 언제 한계에 부딪히는가?",
+    "answerShort": "수직 확장은 단일 머신의 물리적 상한과 비용의 비선형 증가에서 막히고, 단일 장애점이 남는다. 수평 확장은 상태 공유·일관성·조정 비용에서 막힌다. 수직이 단순해서 먼저 쓰고, 못 버틸 때 수평으로 간다.",
+    "keywords": ["수직 확장", "수평 확장", "단일 장애점"], "source": "seed" },
+
+  { "id": "arch-stateless-001", "topic": "arch", "subtopic": "scaling", "difficulty": 2, "type": "concept",
+    "question": "애플리케이션 서버를 무상태로 만들면 무엇이 쉬워지는가?",
+    "answerShort": "아무 인스턴스나 요청을 받을 수 있어 오토스케일링·롤링 배포·장애 대체가 단순해진다. 상태는 DB나 캐시 같은 전용 저장소로 밀어낸다. 세션을 메모리에 두면 스티키 세션이 필요해지고 그 순간 이 이점이 사라진다.",
+    "keywords": ["무상태", "오토스케일링", "스티키 세션"], "source": "seed" },
+
+  { "id": "arch-msa-001", "topic": "arch", "subtopic": "microservices", "difficulty": 2, "type": "concept",
+    "question": "마이크로서비스가 해결하는 문제와 새로 만드는 문제는?",
+    "answerShort": "팀별 독립 배포와 기술 선택의 자유, 부분 확장을 얻는다. 대신 네트워크 호출의 지연·실패, 분산 트랜잭션, 관측의 어려움, 운영 복잡도를 떠안는다. 조직이 나뉘어 있지 않다면 대개 이득보다 비용이 크다.",
+    "answerDeep": "콘웨이의 법칙대로 시스템 구조는 조직 구조를 닮는다. 한 팀이 모든 서비스를 만지면 분리의 이점은 없고 비용만 남는다. 모놀리스로 시작해 경계가 뚜렷해진 부분부터 떼어내는 편이 안전하다.",
+    "keywords": ["마이크로서비스", "모놀리스", "콘웨이의 법칙"], "source": "seed" },
+
+  { "id": "arch-msa-002", "topic": "arch", "subtopic": "microservices", "difficulty": 3, "type": "concept",
+    "question": "서비스 경계를 어떻게 긋는가?",
+    "answerShort": "함께 바뀌는 것을 함께 둔다. 도메인의 응집도와 배포 독립성이 기준이고, 기술 계층(컨트롤러·서비스·리포지토리)으로 나누면 안 된다. 한 기능을 고치는 데 여러 서비스를 동시에 배포해야 한다면 경계가 잘못 그어진 것이다.",
+    "keywords": ["서비스 경계", "바운디드 컨텍스트", "응집도"], "source": "seed" },
+
+  { "id": "arch-cache-001", "topic": "arch", "subtopic": "caching", "difficulty": 2, "type": "concept",
+    "question": "캐시를 어디에 둘지 정하는 기준은?",
+    "answerShort": "데이터가 얼마나 자주 바뀌고 얼마나 많은 사용자가 공유하는가로 정한다. 모두에게 같고 잘 안 바뀌면 CDN·엣지, 사용자별이면 애플리케이션 캐시, 계산이 비싸면 결과 캐시가 맞다. 사용자에게 가까울수록 빠르지만 무효화가 어렵다.",
+    "keywords": ["캐시 계층", "CDN", "무효화"], "source": "seed" },
+
+  { "id": "arch-cache-002", "topic": "arch", "subtopic": "caching", "difficulty": 3, "type": "concept",
+    "question": "캐시 어사이드(look-aside)와 라이트 스루의 차이는?",
+    "answerShort": "캐시 어사이드는 애플리케이션이 캐시를 먼저 보고 없으면 DB에서 읽어 채운다 — 단순하고 캐시 장애에 강하다. 라이트 스루는 쓰기가 캐시를 거쳐 DB로 가 일관성이 좋지만 쓰기 지연이 늘고 캐시가 경로에 끼어든다.",
+    "keywords": ["캐시 어사이드", "라이트 스루", "라이트 백"], "source": "seed" },
+
+  { "id": "arch-queue-001", "topic": "arch", "subtopic": "messaging", "difficulty": 2, "type": "concept",
+    "question": "메시지 큐를 도입하면 무엇이 좋아지는가?",
+    "answerShort": "생산자와 소비자를 시간적으로 분리한다. 트래픽이 몰려도 큐가 완충해 뒷단이 자기 속도로 처리하고, 소비자가 잠시 죽어도 메시지가 남는다. 대가는 결과적 일관성과 순서·중복 처리라는 새 고민이다.",
+    "keywords": ["메시지 큐", "비동기", "백프레셔", "디커플링"], "source": "seed" },
+
+  { "id": "arch-queue-002", "topic": "arch", "subtopic": "messaging", "difficulty": 3, "type": "concept",
+    "question": "at-least-once 전달에서 소비자가 반드시 갖춰야 할 성질은?",
+    "answerShort": "멱등성이다. 네트워크 재시도나 ACK 유실로 같은 메시지가 두 번 올 수 있으므로, 두 번 처리해도 결과가 같아야 한다. 메시지 id를 저장해 중복을 걸러내거나, 연산 자체를 멱등하게 설계한다.",
+    "answerDeep": "exactly-once는 종단간으로는 사실상 불가능에 가깝다. 브로커가 보장한다고 해도 소비자의 부수 효과(외부 API 호출, 메일 발송)까지는 못 감싼다. 그래서 현실적인 답은 'at-least-once + 멱등 소비자'다.",
+    "keywords": ["at-least-once", "멱등성", "중복 처리"], "source": "seed" },
+
+  { "id": "arch-queue-003", "topic": "arch", "subtopic": "messaging", "difficulty": 3, "type": "concept",
+    "question": "데드 레터 큐(DLQ)는 왜 필요한가?",
+    "answerShort": "계속 실패하는 메시지가 큐 앞을 막고 무한 재시도로 자원을 태우는 것을 막기 위해서다. 일정 횟수 실패하면 DLQ로 옮겨 본류를 흐르게 하고, 옮겨진 메시지는 사람이 원인을 보고 처리한다.",
+    "keywords": ["DLQ", "재시도", "포이즌 메시지"], "source": "seed" },
+
+  { "id": "arch-resilience-001", "topic": "arch", "subtopic": "resilience", "difficulty": 3, "type": "concept",
+    "question": "서킷 브레이커는 어떤 문제를 푸는가?",
+    "answerShort": "죽은 의존성에 계속 요청을 보내 스레드와 커넥션을 소진하는 것을 막는다. 실패율이 임계를 넘으면 회로를 열어 즉시 실패시키고, 일정 시간 뒤 소수의 요청으로 회복을 확인한다. 장애가 상류로 번지는 것을 끊는 장치다.",
+    "keywords": ["서킷 브레이커", "폴백", "연쇄 장애"], "source": "seed" },
+
+  { "id": "arch-resilience-002", "topic": "arch", "subtopic": "resilience", "difficulty": 3, "type": "concept",
+    "question": "재시도에 지수 백오프와 지터를 함께 쓰는 이유는?",
+    "answerShort": "지수 백오프는 간격을 늘려 회복 중인 서버에 부담을 덜 주고, 지터는 클라이언트들이 같은 시각에 몰려 재시도하는 동기화를 흩뜨린다. 백오프만 있으면 모두가 같은 리듬으로 몰려와 회복을 방해한다.",
+    "keywords": ["지수 백오프", "지터", "재시도 폭풍"], "source": "seed" },
+
+  { "id": "arch-resilience-003", "topic": "arch", "subtopic": "resilience", "difficulty": 2, "type": "concept",
+    "question": "타임아웃을 설정할 때 흔한 실수는?",
+    "answerShort": "상류 타임아웃이 하류보다 짧아 하류는 계속 일하는데 상류는 이미 포기하는 것이다. 자원이 낭비되고 중복 요청이 쌓인다. 호출 사슬을 따라 예산을 나누고, 아래로 갈수록 짧게 잡는 게 원칙이다.",
+    "keywords": ["타임아웃", "타임아웃 예산", "연쇄 호출"], "source": "seed" },
+
+  { "id": "arch-idem-001", "topic": "arch", "subtopic": "api", "difficulty": 3, "type": "concept",
+    "question": "결제 API를 안전하게 재시도 가능하게 만들려면?",
+    "answerShort": "클라이언트가 생성한 멱등 키를 함께 보내고, 서버가 그 키로 이미 처리한 요청인지 확인해 같은 결과를 돌려준다. 키와 결과를 저장해 두면 네트워크 오류로 재시도해도 이중 결제가 나지 않는다.",
+    "keywords": ["멱등 키", "재시도", "이중 결제"], "source": "seed" },
+
+  { "id": "arch-event-001", "topic": "arch", "subtopic": "patterns", "difficulty": 3, "type": "concept",
+    "question": "이벤트 소싱은 무엇이고 어떤 대가가 있는가?",
+    "answerShort": "현재 상태 대신 상태를 바꾼 이벤트들을 저장하고, 필요할 때 재생해 상태를 만든다. 완전한 감사 로그와 과거 시점 재현을 얻는다. 대가는 조회가 어려워 별도 읽기 모델이 필요하고, 이벤트 스키마 변경이 까다롭다는 점이다.",
+    "keywords": ["이벤트 소싱", "CQRS", "읽기 모델"], "source": "seed" },
+
+  { "id": "arch-cqrs-001", "topic": "arch", "subtopic": "patterns", "difficulty": 3, "type": "concept",
+    "question": "CQRS를 쓸 만한 상황은?",
+    "answerShort": "읽기와 쓰기의 부하 특성이나 모델이 크게 다를 때다. 쓰기는 정규화된 트랜잭션 모델로, 읽기는 조회에 최적화된 비정규 모델로 나눈다. 대부분의 서비스에는 과하고, 둘 사이의 동기화 지연을 받아들일 수 있어야 한다.",
+    "keywords": ["CQRS", "읽기 모델", "동기화 지연"], "source": "seed" },
+
+  { "id": "arch-api-001", "topic": "arch", "subtopic": "api", "difficulty": 2, "type": "concept",
+    "question": "API 게이트웨이는 어떤 역할을 모으는가?",
+    "answerShort": "인증, 레이트 리밋, 라우팅, TLS 종료, 로깅처럼 모든 서비스에 공통인 관심사를 앞단에 모은다. 각 서비스가 같은 코드를 반복하지 않아도 된다. 대신 단일 장애점이 되기 쉬워 이중화와 성능 관리가 중요해진다.",
+    "keywords": ["API 게이트웨이", "횡단 관심사", "단일 장애점"], "source": "seed" },
+
+  { "id": "arch-ratelimit-001", "topic": "arch", "subtopic": "api", "difficulty": 3, "type": "concept",
+    "question": "토큰 버킷과 고정 윈도우 레이트 리밋의 차이는?",
+    "answerShort": "고정 윈도우는 구현이 쉽지만 경계에서 두 배가 통과하는 문제가 있다. 토큰 버킷은 일정 속도로 토큰을 채워 평균 속도를 지키면서도 잠깐의 버스트를 허용한다. 대부분의 API는 버스트 허용이 필요해 토큰 버킷을 쓴다.",
+    "keywords": ["레이트 리밋", "토큰 버킷", "슬라이딩 윈도우"], "source": "seed" },
+
+  { "id": "arch-obs-001", "topic": "arch", "subtopic": "observability", "difficulty": 2, "type": "concept",
+    "question": "로그, 메트릭, 트레이스는 각각 어떤 질문에 답하는가?",
+    "answerShort": "메트릭은 '지금 정상인가'를 집계로 답하고, 로그는 '그때 무슨 일이 있었나'를 사건 단위로 답하며, 트레이스는 '한 요청이 어디서 시간을 썼나'를 서비스 간 경로로 답한다. 셋은 대체재가 아니라 서로 다른 질문의 도구다.",
+    "keywords": ["로그", "메트릭", "트레이스", "관측 가능성"], "source": "seed" },
+
+  { "id": "arch-obs-002", "topic": "arch", "subtopic": "observability", "difficulty": 3, "type": "concept",
+    "question": "평균 응답 시간 대신 백분위(p95, p99)를 보는 이유는?",
+    "answerShort": "평균은 소수의 느린 요청을 감추기 때문이다. 평균 100ms여도 p99가 3초면 100명 중 1명은 매우 나쁜 경험을 한다. 사용자 한 명이 여러 요청을 하는 페이지에서는 p99가 곧 체감 품질이 된다.",
+    "keywords": ["백분위", "p99", "롱테일 지연"], "source": "seed" },
+
+  { "id": "arch-slo-001", "topic": "arch", "subtopic": "reliability", "difficulty": 3, "type": "concept",
+    "question": "SLI, SLO, SLA는 어떻게 다른가?",
+    "answerShort": "SLI는 측정하는 지표(성공률, 지연), SLO는 그 지표의 내부 목표치, SLA는 고객과의 계약이자 위반 시 보상이다. SLO를 SLA보다 엄격하게 잡아 여유를 둔다. 에러 예산은 'SLO를 어겨도 되는 양'으로, 배포 속도를 조절하는 기준이 된다.",
+    "keywords": ["SLI", "SLO", "SLA", "에러 예산"], "source": "seed" },
+
+  { "id": "arch-deploy-001", "topic": "arch", "subtopic": "deployment", "difficulty": 2, "type": "concept",
+    "question": "블루-그린 배포와 카나리 배포의 차이는?",
+    "answerShort": "블루-그린은 동일한 환경을 하나 더 띄우고 트래픽을 통째로 전환해 롤백이 즉각적이다. 카나리는 소수 트래픽만 새 버전으로 보내 관측하며 비율을 늘린다. 전자는 자원이 두 배, 후자는 두 버전이 공존하는 기간을 감당해야 한다.",
+    "keywords": ["블루-그린", "카나리", "롤백"], "source": "seed" },
+
+  { "id": "arch-flag-001", "topic": "arch", "subtopic": "deployment", "difficulty": 2, "type": "concept",
+    "question": "피처 플래그가 배포와 릴리스를 분리한다는 말의 뜻은?",
+    "answerShort": "코드를 프로덕션에 올리는 것과 사용자에게 기능을 여는 것을 따로 할 수 있다는 뜻이다. 미완성 코드도 꺼진 채로 배포해 통합 부담을 줄이고, 문제가 생기면 재배포 없이 끌 수 있다. 대신 플래그가 쌓이면 분기가 늘어 정리가 필요하다.",
+    "keywords": ["피처 플래그", "트렁크 기반 개발", "롤백"], "source": "seed" },
+
+  { "id": "arch-data-001", "topic": "arch", "subtopic": "patterns", "difficulty": 3, "type": "concept",
+    "question": "서비스마다 DB를 따로 두라는 원칙의 이유와 현실적 어려움은?",
+    "answerShort": "DB를 공유하면 스키마가 암묵적 공용 API가 되어 독립 배포가 불가능해진다. 어려움은 조인과 트랜잭션이 서비스를 넘을 수 없다는 점이고, API 조합·데이터 복제·사가로 풀되 각각 복잡도와 지연을 늘린다.",
+    "keywords": ["DB per service", "결합", "데이터 복제"], "source": "seed" },
+
+  { "id": "arch-bff-001", "topic": "arch", "subtopic": "patterns", "difficulty": 3, "type": "concept",
+    "question": "BFF(Backend for Frontend) 패턴은 무엇을 해결하는가?",
+    "answerShort": "클라이언트마다 필요한 데이터 형태가 달라 생기는 과다·과소 페칭을 해결한다. 웹과 모바일 각각에 맞춘 얇은 백엔드를 두어 응답을 조립한다. 대신 계층이 하나 늘고, BFF마다 중복 로직이 생기지 않게 관리해야 한다.",
+    "keywords": ["BFF", "오버페칭", "클라이언트 맞춤"], "source": "seed" },
+
+  { "id": "arch-tradeoff-001", "topic": "arch", "subtopic": "principles", "difficulty": 2, "type": "concept",
+    "question": "설계에서 '지금 필요 없는 유연성'을 넣지 말라는 이유는?",
+    "answerShort": "추측한 요구는 대개 빗나가고, 그 사이 추상화 비용은 매일 지불되기 때문이다. 잘못 잡은 추상은 나중에 걷어내기가 더 어렵다. 두 번째 사례가 나타났을 때 공통점을 보고 추상화하는 편이 정확하다.",
+    "keywords": ["YAGNI", "조기 추상화", "설계 비용"], "source": "seed" },
+
+  { "id": "arch-monolith-001", "topic": "arch", "subtopic": "microservices", "difficulty": 2, "type": "ox",
+    "question": "잘 나눈 모듈형 모놀리스도 마이크로서비스의 이점 대부분을 얻을 수 있다.",
+    "answerShort": "O. 경계와 응집도라는 이점은 코드 구조에서 나오지 네트워크에서 나오지 않는다. 모듈형 모놀리스는 독립 배포와 부분 확장만 포기하고 나머지를 얻는다. 그래서 나눌 준비가 될 때까지 여기 머무는 게 합리적일 때가 많다.",
+    "choices": ["O", "X"], "correct": 0,
+    "keywords": ["모듈형 모놀리스", "경계", "독립 배포"], "source": "seed" }
+]

@@ -1,0 +1,134 @@
+[
+  { "id": "ai-llm-001", "topic": "ai", "subtopic": "llm", "difficulty": 1, "type": "concept",
+    "question": "LLM이 '다음 토큰을 예측한다'는 말의 실무적 함의는?",
+    "answerShort": "모델은 사실을 조회하는 게 아니라 그럴듯한 이어짐을 생성한다는 뜻이다. 그래서 문법적으로 완벽하고 자신감 있는 오답이 나온다. 정확성이 필요하면 근거를 함께 주거나(RAG) 출력을 검증하는 장치를 붙여야 한다.",
+    "keywords": ["토큰 예측", "환각", "근거"], "source": "seed" },
+
+  { "id": "ai-llm-002", "topic": "ai", "subtopic": "llm", "difficulty": 2, "type": "concept",
+    "question": "토큰과 컨텍스트 윈도우는 무엇이고 왜 중요한가?",
+    "answerShort": "토큰은 모델이 다루는 텍스트 조각이고, 컨텍스트 윈도우는 한 번에 볼 수 있는 토큰 수다. 비용과 지연이 토큰 수에 비례하고, 윈도우를 넘으면 잘리거나 요약해야 한다. 한국어는 영어보다 토큰이 더 많이 나오는 경향이 있다.",
+    "keywords": ["토큰", "컨텍스트 윈도우", "비용"], "source": "seed" },
+
+  { "id": "ai-llm-003", "topic": "ai", "subtopic": "llm", "difficulty": 2, "type": "concept",
+    "question": "temperature를 낮추면 무엇이 좋아지고 무엇을 잃는가?",
+    "answerShort": "출력이 결정적에 가까워져 재현성과 형식 준수가 좋아진다. 대신 다양성이 줄어 창의적 생성에는 불리하다. 분류·추출·코드 생성은 낮게, 브레인스토밍은 높게 잡는 게 일반적이다.",
+    "keywords": ["temperature", "샘플링", "재현성"], "source": "seed" },
+
+  { "id": "ai-llm-004", "topic": "ai", "subtopic": "llm", "difficulty": 2, "type": "concept",
+    "question": "LLM 응답을 프로그램에서 쓸 때 반드시 해야 할 일은?",
+    "answerShort": "스키마 검증이다. 형식을 지시해도 어긋날 수 있으므로 파싱 후 검증하고, 실패하면 재시도하거나 안전한 기본값으로 떨어진다. 검증 없이 JSON.parse 결과를 그대로 쓰면 예상 못 한 형태에서 조용히 깨진다.",
+    "keywords": ["구조화 출력", "스키마 검증", "재시도"], "source": "seed" },
+
+  { "id": "ai-rag-001", "topic": "ai", "subtopic": "rag", "difficulty": 2, "type": "concept",
+    "question": "RAG는 무엇이고 왜 파인튜닝보다 먼저 시도하는가?",
+    "answerShort": "질문에 관련된 문서를 찾아 프롬프트에 넣고 답하게 하는 방식이다. 지식을 바꾸려고 모델을 다시 학습시킬 필요가 없어 즉시 갱신되고, 출처를 제시할 수 있으며, 비용과 시간이 훨씬 적게 든다.",
+    "answerDeep": "파인튜닝은 '어떻게 말하는가'(형식·말투·구조)를 가르치는 데 적합하고, RAG는 '무엇을 아는가'를 공급한다. 사실이 자주 바뀌는 도메인에서 파인튜닝으로 지식을 넣으면 곧 낡는다.",
+    "keywords": ["RAG", "파인튜닝", "지식 갱신", "출처"], "source": "seed" },
+
+  { "id": "ai-rag-002", "topic": "ai", "subtopic": "rag", "difficulty": 3, "type": "concept",
+    "question": "RAG에서 청킹(chunking) 전략이 왜 결과를 좌우하는가?",
+    "answerShort": "검색 단위가 곧 근거 단위이기 때문이다. 너무 크면 관련 없는 내용이 섞여 정확도가 떨어지고, 너무 작으면 맥락이 끊겨 의미를 잃는다. 문단·섹션처럼 의미 경계로 자르고 약간 겹치게 두는 게 보통 낫다.",
+    "keywords": ["청킹", "오버랩", "검색 정확도"], "source": "seed" },
+
+  { "id": "ai-rag-003", "topic": "ai", "subtopic": "rag", "difficulty": 3, "type": "concept",
+    "question": "벡터 검색만으로 부족할 때 무엇을 더하는가?",
+    "answerShort": "키워드 검색(BM25)을 섞은 하이브리드 검색과 리랭킹을 더한다. 벡터는 의미가 비슷한 것을 잘 찾지만 고유명사·코드·숫자처럼 정확히 일치해야 하는 것에 약하다. 두 결과를 합친 뒤 크로스 인코더로 다시 정렬하면 상위 정확도가 오른다.",
+    "keywords": ["하이브리드 검색", "BM25", "리랭킹"], "source": "seed" },
+
+  { "id": "ai-rag-004", "topic": "ai", "subtopic": "rag", "difficulty": 3, "type": "concept",
+    "question": "RAG 시스템의 품질을 어떻게 나눠서 측정하는가?",
+    "answerShort": "검색과 생성을 갈라서 본다. 검색은 정답 문서가 상위 k에 들어오는지(recall@k)로, 생성은 답이 준 근거에 실제로 기반하는지(groundedness)와 질문에 답했는지로 잰다. 합쳐서 보면 어느 쪽이 원인인지 알 수 없다.",
+    "keywords": ["recall@k", "groundedness", "평가 분리"], "source": "seed" },
+
+  { "id": "ai-embed-001", "topic": "ai", "subtopic": "embedding", "difficulty": 2, "type": "concept",
+    "question": "임베딩은 무엇이고 유사도는 어떻게 재는가?",
+    "answerShort": "텍스트를 의미가 가까우면 벡터도 가깝도록 수치화한 것이다. 보통 코사인 유사도로 방향의 유사성을 재며 크기는 무시한다. 같은 모델로 만든 벡터끼리만 비교해야 하고, 모델을 바꾸면 전체를 다시 만들어야 한다.",
+    "keywords": ["임베딩", "코사인 유사도", "벡터 공간"], "source": "seed" },
+
+  { "id": "ai-embed-002", "topic": "ai", "subtopic": "embedding", "difficulty": 3, "type": "concept",
+    "question": "벡터 DB의 ANN 인덱스는 무엇을 맞바꾸는가?",
+    "answerShort": "정확도와 속도를 맞바꾼다. 정확한 최근접 탐색은 전수 비교라 느리므로, HNSW 같은 근사 알고리즘으로 대부분 맞는 답을 훨씬 빠르게 얻는다. 파라미터로 재현율과 지연을 조절하며, 리콜이 100%가 아님을 전제해야 한다.",
+    "keywords": ["ANN", "HNSW", "재현율", "지연"], "source": "seed" },
+
+  { "id": "ai-prompt-001", "topic": "ai", "subtopic": "prompting", "difficulty": 2, "type": "concept",
+    "question": "프롬프트에 예시(few-shot)를 넣으면 왜 결과가 좋아지는가?",
+    "answerShort": "원하는 형식과 판단 기준을 말로 설명하는 것보다 보여 주는 게 정확하기 때문이다. 특히 출력 형식, 어조, 경계 사례 처리에 효과가 크다. 대신 토큰을 먹고, 예시에 치우친 편향이 생길 수 있다.",
+    "keywords": ["few-shot", "예시", "형식 유도"], "source": "seed" },
+
+  { "id": "ai-prompt-002", "topic": "ai", "subtopic": "prompting", "difficulty": 3, "type": "concept",
+    "question": "프롬프트를 코드처럼 다뤄야 하는 이유는?",
+    "answerShort": "프롬프트 한 줄이 동작을 바꾸는데, 버전 관리와 회귀 테스트가 없으면 조용히 나빠지기 때문이다. 프롬프트를 파일로 관리하고, 대표 입력에 대한 기대 출력을 평가 세트로 두어 변경마다 돌려야 한다.",
+    "keywords": ["프롬프트 관리", "회귀 테스트", "eval"], "source": "seed" },
+
+  { "id": "ai-eval-001", "topic": "ai", "subtopic": "evaluation", "difficulty": 3, "type": "concept",
+    "question": "LLM 애플리케이션의 평가가 일반 소프트웨어 테스트와 다른 점은?",
+    "answerShort": "정답이 하나가 아니고 출력이 비결정적이라는 점이다. 정확한 문자열 비교가 안 되므로 기준을 정의해야 한다 — 필수 요소 포함 여부, 형식 준수, 근거 일치, 또는 다른 모델을 심판으로 쓰는 방식이다. 사람 검토 샘플도 병행한다.",
+    "keywords": ["eval", "LLM-as-judge", "비결정성"], "source": "seed" },
+
+  { "id": "ai-eval-002", "topic": "ai", "subtopic": "evaluation", "difficulty": 3, "type": "concept",
+    "question": "LLM을 심판으로 쓸 때 조심할 점은?",
+    "answerShort": "심판도 편향을 갖는다. 긴 답을 선호하거나, 먼저 제시된 것을 선호하거나, 자기 모델의 출력을 후하게 본다. 채점 기준을 구체적으로 주고, 순서를 뒤집어 두 번 물어보고, 사람 채점과의 일치율을 주기적으로 확인해야 한다.",
+    "keywords": ["LLM-as-judge", "위치 편향", "길이 편향"], "source": "seed" },
+
+  { "id": "ai-hallucination-001", "topic": "ai", "subtopic": "reliability", "difficulty": 2, "type": "concept",
+    "question": "환각을 줄이는 실무적 방법에는 무엇이 있는가?",
+    "answerShort": "근거를 함께 주고 '주어진 자료에만 근거하라'고 지시하며, 모르면 모른다고 답할 길을 열어 준다. 출력에 인용을 요구해 검증 가능하게 만들고, 중요한 값은 프로그램으로 대조한다. 온도를 낮추는 것도 도움이 된다.",
+    "keywords": ["환각", "근거 기반", "거절", "인용"], "source": "seed" },
+
+  { "id": "ai-agent-001", "topic": "ai", "subtopic": "agent", "difficulty": 3, "type": "concept",
+    "question": "에이전트에게 도구를 줄 때 설계에서 중요한 것은?",
+    "answerShort": "도구 설명이 곧 인터페이스라는 점이다. 이름과 설명이 모호하면 잘못된 도구를 고른다. 도구는 적고 뚜렷하게 나누고, 실패를 명확한 오류 메시지로 돌려주며, 위험한 동작에는 확인 단계를 둔다.",
+    "keywords": ["tool calling", "도구 설계", "실패 처리"], "source": "seed" },
+
+  { "id": "ai-agent-002", "topic": "ai", "subtopic": "agent", "difficulty": 3, "type": "concept",
+    "question": "에이전트 루프에 반드시 넣어야 할 안전장치는?",
+    "answerShort": "반복 횟수 상한과 비용·시간 예산이다. 모델이 같은 도구를 무한히 부르거나 진전 없이 맴돌 수 있다. 또 부수 효과가 있는 도구는 승인 게이트를 두어, 되돌릴 수 없는 동작이 자동으로 실행되지 않게 한다.",
+    "keywords": ["루프 제한", "예산", "승인 게이트"], "source": "seed" },
+
+  { "id": "ai-inject-001", "topic": "ai", "subtopic": "security", "difficulty": 3, "type": "concept",
+    "question": "프롬프트 인젝션은 무엇이고 왜 근본 해결이 어려운가?",
+    "answerShort": "모델이 읽는 데이터 안에 지시문을 심어 원래 지시를 덮어쓰는 공격이다. 어려운 이유는 모델에게 명령과 데이터가 같은 텍스트로 보이기 때문이다. 완전 차단보다 권한 최소화, 출력 검증, 위험 동작 승인으로 피해를 제한하는 접근이 현실적이다.",
+    "keywords": ["프롬프트 인젝션", "신뢰 경계", "권한 최소화"], "source": "seed" },
+
+  { "id": "ai-cost-001", "topic": "ai", "subtopic": "operations", "difficulty": 2, "type": "concept",
+    "question": "LLM 비용을 줄이는 방법에는 무엇이 있는가?",
+    "answerShort": "작은 모델로 되는 일은 작은 모델에 맡기고, 프롬프트에서 불필요한 문맥을 걷어내며, 반복되는 접두사는 캐싱하고, 같은 입력의 결과를 캐시한다. 배치로 처리할 수 있으면 배치 API가 대개 더 싸다.",
+    "keywords": ["모델 라우팅", "프롬프트 캐싱", "배치"], "source": "seed" },
+
+  { "id": "ai-latency-001", "topic": "ai", "subtopic": "operations", "difficulty": 2, "type": "concept",
+    "question": "LLM 응답의 체감 지연을 줄이는 방법은?",
+    "answerShort": "스트리밍으로 첫 토큰이 나오는 즉시 보여 준다. 전체 완료 시간은 같아도 체감이 크게 달라진다. 그밖에 출력 길이를 줄이고, 병렬로 가능한 호출을 동시에 보내며, 짧은 응답에는 더 빠른 모델을 쓴다.",
+    "keywords": ["스트리밍", "TTFT", "체감 지연"], "source": "seed" },
+
+  { "id": "ai-ml-001", "topic": "ai", "subtopic": "ml", "difficulty": 2, "type": "concept",
+    "question": "과적합은 무엇이고 어떻게 알아채는가?",
+    "answerShort": "학습 데이터의 잡음까지 외워 새 데이터에서 성능이 떨어지는 것이다. 학습 성능은 계속 오르는데 검증 성능이 정체하거나 나빠지면 의심한다. 정규화, 데이터 증강, 조기 종료, 더 많은 데이터로 완화한다.",
+    "keywords": ["과적합", "검증 세트", "정규화"], "source": "seed" },
+
+  { "id": "ai-ml-002", "topic": "ai", "subtopic": "ml", "difficulty": 2, "type": "concept",
+    "question": "정확도(accuracy)만 보면 안 되는 경우는?",
+    "answerShort": "클래스가 불균형할 때다. 1%만 양성인 데이터에서 전부 음성이라 답해도 정확도는 99%다. 이런 문제에서는 정밀도·재현율·F1이나 PR 곡선을 봐야 하고, 어느 쪽 오류가 더 비싼지에 따라 임계값을 정한다.",
+    "keywords": ["불균형 데이터", "정밀도", "재현율", "F1"], "source": "seed" },
+
+  { "id": "ai-ml-003", "topic": "ai", "subtopic": "ml", "difficulty": 3, "type": "concept",
+    "question": "데이터 누수(data leakage)는 무엇이고 왜 치명적인가?",
+    "answerShort": "학습 시점에 알 수 없는 정보가 특징에 섞여 들어가는 것이다. 검증 성능이 비현실적으로 높게 나오고 실제 배포하면 무너진다. 시계열에서 미래 정보를 쓰거나, 전체 데이터로 스케일링한 뒤 나누는 것이 흔한 원인이다.",
+    "keywords": ["데이터 누수", "룩어헤드", "검증 설계"], "source": "seed" },
+
+  { "id": "ai-ml-004", "topic": "ai", "subtopic": "ml", "difficulty": 2, "type": "mcq",
+    "question": "시계열 데이터를 학습·검증으로 나눌 때 올바른 방법은?",
+    "answerShort": "시간 순서대로 앞을 학습, 뒤를 검증으로 나눈다. 무작위로 섞으면 미래 데이터로 과거를 예측하는 셈이 되어 성능이 부풀려진다. 실제 배포는 항상 '과거로 미래를 예측'하는 상황이므로 검증도 그래야 한다.",
+    "choices": ["무작위 분할", "시간 순 분할", "층화 추출", "k-겹 교차검증"], "correct": 1,
+    "keywords": ["시계열 검증", "룩어헤드", "분할"], "source": "seed" },
+
+  { "id": "ai-prod-001", "topic": "ai", "subtopic": "operations", "difficulty": 3, "type": "concept",
+    "question": "모델을 배포한 뒤 성능이 서서히 나빠지는 이유는?",
+    "answerShort": "데이터 드리프트와 개념 드리프트다. 입력 분포가 바뀌거나, 입력과 정답의 관계 자체가 바뀐다. 그래서 배포는 끝이 아니라 시작이고, 입력 분포와 예측 분포를 계속 모니터링하며 재학습 주기를 정해야 한다.",
+    "keywords": ["데이터 드리프트", "개념 드리프트", "재학습"], "source": "seed" },
+
+  { "id": "ai-guard-001", "topic": "ai", "subtopic": "reliability", "difficulty": 2, "type": "ox",
+    "question": "LLM에게 '틀리면 안 된다'고 강하게 지시하면 환각이 사라진다.",
+    "answerShort": "X. 지시는 확률을 조금 낮출 뿐 보장하지 않는다. 모델은 자기가 틀렸는지 확실히 알지 못한다. 근거 제공, 출력 검증, 외부 대조 같은 시스템 차원의 장치가 있어야 하고, 프롬프트만으로 신뢰성을 확보할 수는 없다.",
+    "choices": ["O", "X"], "correct": 1,
+    "keywords": ["환각", "프롬프트 한계", "검증 장치"], "source": "seed" }
+]

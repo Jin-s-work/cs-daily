@@ -1,0 +1,134 @@
+[
+  { "id": "lang-gc-001", "topic": "lang", "subtopic": "memory", "difficulty": 2, "type": "concept",
+    "question": "가비지 컬렉션의 세대 가설(generational hypothesis)은 무엇인가?",
+    "answerShort": "대부분의 객체는 만들어진 직후 죽는다는 경험적 관찰이다. 그래서 힙을 young과 old로 나누고 young을 자주, 좁게 수집한다. 살아남은 것만 old로 승격시키면 전체를 훑는 비용을 크게 줄일 수 있다.",
+    "keywords": ["GC", "세대 가설", "young", "old"], "source": "seed" },
+
+  { "id": "lang-gc-002", "topic": "lang", "subtopic": "memory", "difficulty": 3, "type": "concept",
+    "question": "참조 카운팅과 추적형 GC의 차이는?",
+    "answerShort": "참조 카운팅은 참조 수가 0이 되는 즉시 해제해 지연이 예측 가능하지만 순환 참조를 회수하지 못한다. 추적형은 루트에서 도달 가능한 것만 남겨 순환도 처리하지만, 수집 시점에 멈춤(stop-the-world)이 생길 수 있다.",
+    "keywords": ["참조 카운팅", "순환 참조", "mark and sweep"], "source": "seed" },
+
+  { "id": "lang-gc-003", "topic": "lang", "subtopic": "memory", "difficulty": 3, "type": "concept",
+    "question": "GC가 있는 언어에서도 메모리 누수가 생기는 이유는?",
+    "answerShort": "GC는 '도달 불가능한' 객체만 지우기 때문이다. 전역 컬렉션에 계속 담기, 해제하지 않은 이벤트 리스너, 오래 사는 캐시가 참조를 붙잡고 있으면 논리적으로는 쓰레기여도 회수되지 않는다. 누수는 참조를 놓지 않은 코드의 문제다.",
+    "keywords": ["메모리 누수", "도달 가능성", "리스너"], "source": "seed" },
+
+  { "id": "lang-js-001", "topic": "lang", "subtopic": "javascript", "difficulty": 2, "type": "concept",
+    "question": "이벤트 루프에서 마이크로태스크와 매크로태스크의 차이는?",
+    "answerShort": "마이크로태스크(Promise 콜백)는 현재 실행이 끝나면 큐가 빌 때까지 전부 처리되고, 매크로태스크(setTimeout, I/O)는 그 뒤에 하나씩 처리된다. 그래서 Promise.then이 setTimeout(0)보다 항상 먼저 실행된다.",
+    "answerDeep": "마이크로태스크 안에서 또 마이크로태스크를 만들면 큐가 비지 않아 렌더링과 매크로태스크가 무한정 밀린다. 재귀적으로 Promise를 만드는 코드가 UI를 얼리는 원인이 이것이다.",
+    "keywords": ["이벤트 루프", "마이크로태스크", "Promise", "setTimeout"], "source": "seed" },
+
+  { "id": "lang-js-002", "topic": "lang", "subtopic": "javascript", "difficulty": 2, "type": "concept",
+    "question": "클로저는 무엇이고 어디에 쓰는가?",
+    "answerShort": "함수가 자신이 정의된 렉시컬 환경을 기억해, 그 환경이 끝난 뒤에도 변수에 접근하는 것이다. 은닉된 상태를 만들거나(모듈 패턴, 카운터), 콜백에 문맥을 실어 보낼 때 쓴다. 대가는 그 환경이 GC되지 않는다는 점이다.",
+    "keywords": ["클로저", "렉시컬 스코프", "은닉"], "source": "seed" },
+
+  { "id": "lang-js-003", "topic": "lang", "subtopic": "javascript", "difficulty": 2, "type": "concept",
+    "question": "== 와 === 의 차이, 그리고 == 를 피하는 이유는?",
+    "answerShort": "== 는 타입을 강제 변환한 뒤 비교하고 === 는 타입까지 같아야 한다. == 의 변환 규칙이 직관과 어긋나는 경우가 많아('' == 0이 true) 버그의 원인이 된다. null 체크에 == null 을 쓰는 관용구 정도만 예외로 둔다.",
+    "keywords": ["동등 비교", "형변환", "==="], "source": "seed" },
+
+  { "id": "lang-js-004", "topic": "lang", "subtopic": "javascript", "difficulty": 3, "type": "concept",
+    "question": "화살표 함수와 일반 함수의 this는 어떻게 다른가?",
+    "answerShort": "일반 함수의 this는 호출 방식으로 정해지고, 화살표 함수는 자기 this가 없어 정의된 위치의 this를 그대로 쓴다. 그래서 콜백 안에서 바깥 문맥을 유지하려면 화살표가 편하고, 반대로 메서드나 이벤트 핸들러로 동적 this가 필요하면 일반 함수를 쓴다.",
+    "keywords": ["this", "화살표 함수", "렉시컬 this"], "source": "seed" },
+
+  { "id": "lang-js-005", "topic": "lang", "subtopic": "javascript", "difficulty": 2, "type": "concept",
+    "question": "얕은 비교로 리렌더를 판단하는 구조에서 왜 불변성이 중요한가?",
+    "answerShort": "참조가 같으면 안 바뀐 것으로 보기 때문이다. 배열이나 객체를 직접 수정하면 내용이 달라져도 참조가 같아 변경이 감지되지 않는다. 새 객체를 만들어 교체해야 얕은 비교가 성립한다.",
+    "keywords": ["불변성", "얕은 비교", "참조 동일성"], "source": "seed" },
+
+  { "id": "lang-async-001", "topic": "lang", "subtopic": "async", "difficulty": 2, "type": "concept",
+    "question": "async/await가 콜백이나 then 체인보다 나은 점은?",
+    "answerShort": "제어 흐름이 동기 코드처럼 읽히고, try/catch로 예외를 잡을 수 있으며, 디버거의 스택 추적이 살아 있다. 다만 순차 await를 남발하면 병렬로 할 수 있는 일을 직렬로 만들므로 Promise.all과 함께 써야 한다.",
+    "keywords": ["async/await", "Promise.all", "직렬 vs 병렬"], "source": "seed" },
+
+  { "id": "lang-async-002", "topic": "lang", "subtopic": "async", "difficulty": 3, "type": "concept",
+    "question": "Promise.all과 Promise.allSettled는 언제 갈라 쓰는가?",
+    "answerShort": "all은 하나라도 실패하면 즉시 거부돼, 전부 성공해야 의미가 있을 때 쓴다. allSettled는 모든 결과를 성공·실패로 담아 돌려주므로, 일부 실패를 허용하고 개별 처리해야 할 때 쓴다. 대시보드 위젯 여러 개를 불러올 때가 후자다.",
+    "keywords": ["Promise.all", "allSettled", "부분 실패"], "source": "seed" },
+
+  { "id": "lang-async-003", "topic": "lang", "subtopic": "async", "difficulty": 3, "type": "concept",
+    "question": "비동기 작업에 타임아웃과 취소를 붙여야 하는 이유는?",
+    "answerShort": "응답 없는 요청이 자원을 붙잡고 쌓이면 전체가 마비되기 때문이다. AbortController로 취소 신호를 전달하면 네트워크 요청과 후속 처리를 함께 끊을 수 있다. 타임아웃 없는 외부 호출은 장애를 전파하는 통로가 된다.",
+    "keywords": ["타임아웃", "AbortController", "취소"], "source": "seed" },
+
+  { "id": "lang-ts-001", "topic": "lang", "subtopic": "typescript", "difficulty": 2, "type": "concept",
+    "question": "TypeScript의 타입은 런타임에 존재하는가?",
+    "answerShort": "아니다. 컴파일 시점에만 검사하고 출력물에서는 전부 지워진다. 그래서 외부에서 들어온 데이터(API 응답, JSON 파일)는 타입 선언만으로 안전해지지 않는다. 런타임 검증은 Zod 같은 스키마 라이브러리가 따로 해야 한다.",
+    "keywords": ["타입 소거", "런타임 검증", "Zod"], "source": "seed" },
+
+  { "id": "lang-ts-002", "topic": "lang", "subtopic": "typescript", "difficulty": 2, "type": "concept",
+    "question": "any와 unknown은 어떻게 다른가?",
+    "answerShort": "any는 타입 검사를 통째로 끄고 무엇이든 허용한다. unknown은 '아직 모른다'는 뜻으로, 좁히기(narrowing) 전에는 아무 연산도 못 하게 막는다. 외부 입력의 타입으로는 unknown이 옳고, any는 검사를 포기하는 것이다.",
+    "keywords": ["any", "unknown", "타입 좁히기"], "source": "seed" },
+
+  { "id": "lang-ts-003", "topic": "lang", "subtopic": "typescript", "difficulty": 3, "type": "concept",
+    "question": "구조적 타이핑(structural typing)이란?",
+    "answerShort": "이름이 아니라 모양이 같으면 호환된다는 규칙이다. 같은 필드를 가지면 서로 다른 인터페이스라도 대입된다. 유연하지만 의도치 않은 호환이 생기므로, 구분이 필요하면 브랜드 타입 같은 기법으로 명목성을 흉내 낸다.",
+    "keywords": ["구조적 타이핑", "명목적 타이핑", "브랜드 타입"], "source": "seed" },
+
+  { "id": "lang-ts-004", "topic": "lang", "subtopic": "typescript", "difficulty": 2, "type": "mcq",
+    "question": "외부 API 응답을 받을 때 가장 안전한 타입은?",
+    "answerShort": "unknown이다. any로 받으면 검사 없이 아무 속성이나 접근해 런타임 오류가 난다. unknown으로 받으면 검증을 통과하기 전까지 사용할 수 없어, 스키마 파싱을 강제하게 된다.",
+    "choices": ["any", "unknown", "object", "Record<string, string>"], "correct": 1,
+    "keywords": ["unknown", "외부 데이터", "검증"], "source": "seed" },
+
+  { "id": "lang-py-001", "topic": "lang", "subtopic": "python", "difficulty": 2, "type": "concept",
+    "question": "파이썬의 GIL은 무엇을 제한하는가?",
+    "answerShort": "한 프로세스 안에서 한 번에 하나의 스레드만 바이트코드를 실행하게 한다. 그래서 CPU 바운드 작업은 멀티스레드로 빨라지지 않는다. I/O 바운드는 대기 중 GIL을 놓으므로 이득이 있고, CPU 바운드는 멀티프로세싱으로 우회한다.",
+    "keywords": ["GIL", "CPU 바운드", "멀티프로세싱"], "source": "seed" },
+
+  { "id": "lang-py-002", "topic": "lang", "subtopic": "python", "difficulty": 2, "type": "concept",
+    "question": "가변 기본 인자(mutable default argument)가 왜 위험한가?",
+    "answerShort": "기본값이 함수 정의 시점에 한 번만 만들어져 호출 간에 공유되기 때문이다. def f(x, acc=[]) 처럼 쓰면 이전 호출의 결과가 남아 누적된다. None을 기본값으로 두고 안에서 새로 만드는 게 관용구다.",
+    "keywords": ["기본 인자", "가변 객체", "함정"], "source": "seed" },
+
+  { "id": "lang-py-003", "topic": "lang", "subtopic": "python", "difficulty": 3, "type": "concept",
+    "question": "제너레이터를 쓰면 무엇이 좋아지는가?",
+    "answerShort": "전체를 메모리에 올리지 않고 필요한 만큼만 만들어 낸다. 큰 파일이나 무한 수열을 상수 메모리로 다룰 수 있고, 파이프라인처럼 이어 붙이기 좋다. 대신 한 번만 순회할 수 있고 길이를 미리 알 수 없다.",
+    "keywords": ["제너레이터", "지연 평가", "메모리"], "source": "seed" },
+
+  { "id": "lang-oop-001", "topic": "lang", "subtopic": "paradigm", "difficulty": 2, "type": "concept",
+    "question": "상속보다 합성을 선호하라는 조언의 근거는?",
+    "answerShort": "상속은 부모의 구현에 강하게 묶여 부모가 바뀌면 자식이 깨지고, 계층이 깊어질수록 동작을 추적하기 어렵다. 합성은 필요한 기능을 가진 객체를 들고 위임하므로 결합이 느슨하고 런타임에 교체할 수 있다.",
+    "keywords": ["상속", "합성", "결합도"], "source": "seed" },
+
+  { "id": "lang-oop-002", "topic": "lang", "subtopic": "paradigm", "difficulty": 3, "type": "concept",
+    "question": "SOLID 중 의존성 역전 원칙을 실무 언어로 옮기면?",
+    "answerShort": "구체 클래스가 아니라 인터페이스에 의존하라는 것이다. 상위 정책이 하위 구현을 직접 부르면 DB나 외부 API를 바꿀 때 정책까지 고쳐야 한다. 인터페이스를 사이에 두면 테스트에서 가짜 구현으로 갈아 끼울 수도 있다.",
+    "keywords": ["SOLID", "의존성 역전", "인터페이스"], "source": "seed" },
+
+  { "id": "lang-fp-001", "topic": "lang", "subtopic": "paradigm", "difficulty": 2, "type": "concept",
+    "question": "순수 함수가 테스트하기 쉬운 이유는?",
+    "answerShort": "입력만으로 출력이 정해지고 부수 효과가 없기 때문이다. 준비할 상태도, 정리할 뒷정리도, 목(mock)도 필요 없다. 그래서 핵심 로직을 순수하게 두고 I/O를 바깥 껍데기로 밀어내면 테스트 가능한 영역이 넓어진다.",
+    "keywords": ["순수 함수", "부수 효과", "테스트 용이성"], "source": "seed" },
+
+  { "id": "lang-err-001", "topic": "lang", "subtopic": "error", "difficulty": 2, "type": "concept",
+    "question": "예외를 삼키는(catch 후 무시) 코드가 왜 위험한가?",
+    "answerShort": "실패가 조용히 지나가 잘못된 상태로 계속 진행하기 때문이다. 나중에 전혀 다른 곳에서 원인 모를 오류로 터진다. 잡았으면 복구하거나, 문맥을 더해 다시 던지거나, 최소한 기록해야 한다.",
+    "keywords": ["예외 처리", "실패 은폐", "로깅"], "source": "seed" },
+
+  { "id": "lang-err-002", "topic": "lang", "subtopic": "error", "difficulty": 3, "type": "concept",
+    "question": "예외와 결과 타입(Result/Either) 중 어느 쪽을 쓰는 게 좋은가?",
+    "answerShort": "예상 가능한 실패는 결과 타입이, 프로그래머 실수나 복구 불가능한 상황은 예외가 맞다. 결과 타입은 타입 시스템이 처리 여부를 강제해 빠뜨릴 수 없고, 예외는 호출 스택을 건너뛰어 전파되므로 흐름이 단순해진다.",
+    "keywords": ["예외", "Result 타입", "오류 처리 전략"], "source": "seed" },
+
+  { "id": "lang-concurrency-001", "topic": "lang", "subtopic": "concurrency", "difficulty": 3, "type": "concept",
+    "question": "동시성(concurrency)과 병렬성(parallelism)은 어떻게 다른가?",
+    "answerShort": "동시성은 여러 일을 번갈아 진행하는 구조의 문제이고, 병렬성은 실제로 동시에 실행하는 실행의 문제다. 코어가 하나여도 동시성은 가능하고, 병렬 실행은 코어가 여럿이어야 한다. 동시성은 설계, 병렬성은 자원 이야기다.",
+    "keywords": ["동시성", "병렬성", "코어"], "source": "seed" },
+
+  { "id": "lang-immut-001", "topic": "lang", "subtopic": "paradigm", "difficulty": 2, "type": "ox",
+    "question": "const로 선언한 객체는 내부 속성도 바꿀 수 없다.",
+    "answerShort": "X. const는 바인딩을 고정할 뿐 값의 내부는 막지 않는다. 재할당은 안 되지만 속성 수정은 가능하다. 내부까지 얼리려면 Object.freeze를 쓰거나 애초에 불변 자료구조를 써야 하고, freeze도 얕게만 동작한다.",
+    "choices": ["O", "X"], "correct": 1,
+    "keywords": ["const", "불변성", "Object.freeze"], "source": "seed" },
+
+  { "id": "lang-module-001", "topic": "lang", "subtopic": "runtime", "difficulty": 2, "type": "concept",
+    "question": "CommonJS와 ESM의 근본적인 차이는?",
+    "answerShort": "CommonJS는 런타임에 동기적으로 로드해 조건부 require가 가능하고, ESM은 정적으로 분석되는 선언이라 실행 전에 의존 그래프가 정해진다. 그 덕에 ESM은 트리 셰이킹과 최상위 await가 가능하다.",
+    "keywords": ["CommonJS", "ESM", "정적 분석", "트리 셰이킹"], "source": "seed" }
+]

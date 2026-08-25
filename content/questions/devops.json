@@ -1,0 +1,127 @@
+[
+  { "id": "devops-docker-001", "topic": "devops", "subtopic": "container", "difficulty": 2, "type": "concept",
+    "question": "컨테이너와 가상 머신은 무엇이 다른가?",
+    "answerShort": "VM은 게스트 OS 커널까지 통째로 가상화하고, 컨테이너는 호스트 커널을 공유하며 네임스페이스와 cgroup으로 격리한다. 그래서 컨테이너는 가볍고 빠르지만 격리 수준이 낮고 호스트 커널에 의존한다.",
+    "keywords": ["컨테이너", "VM", "네임스페이스", "cgroup"], "source": "seed" },
+
+  { "id": "devops-docker-002", "topic": "devops", "subtopic": "container", "difficulty": 2, "type": "concept",
+    "question": "Dockerfile에서 레이어 순서가 왜 중요한가?",
+    "answerShort": "레이어는 캐시되고, 한 레이어가 바뀌면 그 아래가 전부 무효화되기 때문이다. 자주 바뀌는 소스 복사를 뒤에 두고 의존성 설치를 앞에 두면, 코드만 고쳤을 때 설치 단계를 재사용해 빌드가 크게 빨라진다.",
+    "keywords": ["레이어 캐시", "Dockerfile", "빌드 속도"], "source": "seed" },
+
+  { "id": "devops-docker-003", "topic": "devops", "subtopic": "container", "difficulty": 3, "type": "concept",
+    "question": "멀티 스테이지 빌드는 무엇을 해결하는가?",
+    "answerShort": "빌드 도구와 실행 환경을 분리한다. 앞 단계에서 컴파일하고 결과물만 가벼운 런타임 이미지로 복사하면, 컴파일러·개발 의존성·소스가 최종 이미지에 남지 않는다. 이미지가 작아지고 공격 표면도 줄어든다.",
+    "keywords": ["멀티 스테이지", "이미지 크기", "공격 표면"], "source": "seed" },
+
+  { "id": "devops-docker-004", "topic": "devops", "subtopic": "container", "difficulty": 2, "type": "concept",
+    "question": "컨테이너에서 latest 태그를 쓰면 안 되는 이유는?",
+    "answerShort": "같은 태그가 다른 이미지를 가리킬 수 있어 재현성이 깨지기 때문이다. 어제 뜬 것과 오늘 뜬 것이 다를 수 있고, 롤백해도 같은 상태로 못 돌아간다. 버전이나 다이제스트로 고정해야 한다.",
+    "keywords": ["이미지 태그", "재현성", "다이제스트"], "source": "seed" },
+
+  { "id": "devops-k8s-001", "topic": "devops", "subtopic": "kubernetes", "difficulty": 2, "type": "concept",
+    "question": "쿠버네티스의 선언적 모델은 무엇을 뜻하는가?",
+    "answerShort": "'어떻게 하라'가 아니라 '어떤 상태여야 한다'를 적으면, 컨트롤러가 현재 상태를 원하는 상태로 계속 맞춘다는 뜻이다. 파드가 죽으면 알아서 다시 만든다. 명령형 스크립트와 달리 중간에 실패해도 반복 적용이 안전하다.",
+    "keywords": ["선언적", "리컨실리에이션", "원하는 상태"], "source": "seed" },
+
+  { "id": "devops-k8s-002", "topic": "devops", "subtopic": "kubernetes", "difficulty": 2, "type": "concept",
+    "question": "liveness와 readiness 프로브는 어떻게 다른가?",
+    "answerShort": "liveness는 '죽었으니 재시작하라'는 신호이고, readiness는 '아직 트래픽을 받을 준비가 안 됐다'는 신호다. 둘을 혼동해 기동이 느린 앱에 liveness를 짧게 잡으면 무한 재시작 루프에 빠진다.",
+    "keywords": ["liveness", "readiness", "헬스체크"], "source": "seed" },
+
+  { "id": "devops-k8s-003", "topic": "devops", "subtopic": "kubernetes", "difficulty": 3, "type": "concept",
+    "question": "requests와 limits를 설정하지 않으면 무슨 일이 생기는가?",
+    "answerShort": "스케줄러가 자원을 예측할 수 없어 노드가 과밀해지고, 한 파드가 메모리를 독점해 다른 파드가 OOM으로 죽을 수 있다. requests는 스케줄링 기준, limits는 상한이다. CPU limit을 너무 낮게 잡으면 스로틀링으로 지연이 튄다.",
+    "keywords": ["requests", "limits", "OOM", "스로틀링"], "source": "seed" },
+
+  { "id": "devops-cicd-001", "topic": "devops", "subtopic": "cicd", "difficulty": 2, "type": "concept",
+    "question": "지속적 통합(CI)이 실제로 해결하는 문제는?",
+    "answerShort": "통합을 미룰수록 커지는 충돌 비용이다. 자주 합치고 매번 자동으로 빌드·테스트하면 깨진 지점을 작은 변경 단위에서 찾을 수 있다. CI의 가치는 도구가 아니라 '자주 합친다'는 습관에서 나온다.",
+    "keywords": ["CI", "통합 비용", "자동 테스트"], "source": "seed" },
+
+  { "id": "devops-cicd-002", "topic": "devops", "subtopic": "cicd", "difficulty": 2, "type": "concept",
+    "question": "파이프라인이 느려질 때 무엇부터 손보는가?",
+    "answerShort": "단계별 소요 시간을 먼저 측정한다. 대개 의존성 설치와 테스트가 크다. 의존성 캐시, 변경된 부분만 테스트, 병렬 실행, 무거운 검사(E2E)는 나중 단계로 미루기 순으로 손댄다. 느린 파이프라인은 결국 사람이 우회하게 만든다.",
+    "keywords": ["파이프라인", "캐시", "병렬 실행"], "source": "seed" },
+
+  { "id": "devops-cicd-003", "topic": "devops", "subtopic": "cicd", "difficulty": 3, "type": "concept",
+    "question": "플레이키(flaky) 테스트를 방치하면 왜 위험한가?",
+    "answerShort": "실패를 무시하는 습관이 생기기 때문이다. '또 그거겠지' 하고 재실행하다 진짜 회귀를 놓친다. 원인은 대개 시간 의존, 순서 의존, 공유 상태다. 고칠 수 없으면 격리하거나 지우는 게 방치보다 낫다.",
+    "keywords": ["플레이키 테스트", "신뢰성", "격리"], "source": "seed" },
+
+  { "id": "devops-iac-001", "topic": "devops", "subtopic": "iac", "difficulty": 2, "type": "concept",
+    "question": "IaC(Infrastructure as Code)의 이점은?",
+    "answerShort": "인프라 변경이 코드 리뷰·버전 관리·재현의 대상이 된다. 누가 언제 왜 바꿨는지 남고, 같은 환경을 다시 만들 수 있다. 콘솔에서 손으로 만든 자원은 아무도 모르는 상태로 남아 장애 때 발목을 잡는다.",
+    "keywords": ["IaC", "Terraform", "재현성", "드리프트"], "source": "seed" },
+
+  { "id": "devops-iac-002", "topic": "devops", "subtopic": "iac", "difficulty": 3, "type": "concept",
+    "question": "인프라 드리프트는 무엇이고 왜 문제인가?",
+    "answerShort": "코드에 적힌 상태와 실제 인프라가 어긋나는 것이다. 급한 김에 콘솔에서 고치면 생긴다. 다음 apply가 그 변경을 되돌리거나 예상 못 한 파괴를 일으킬 수 있다. 정기 plan 확인과 '콘솔 수정 금지' 규율로 막는다.",
+    "keywords": ["드리프트", "terraform plan", "규율"], "source": "seed" },
+
+  { "id": "devops-secret-001", "topic": "devops", "subtopic": "security", "difficulty": 2, "type": "concept",
+    "question": "비밀정보를 코드에 두면 안 되는 이유와 대안은?",
+    "answerShort": "저장소에 한 번 들어가면 히스토리에 영원히 남고, 접근 권한이 있는 모두에게 노출된다. 환경변수, 시크릿 매니저, CI 시크릿으로 주입하고, 실수로 커밋되지 않게 스캐너를 붙인다. 유출됐다면 삭제가 아니라 회전이 답이다.",
+    "keywords": ["시크릿", "환경변수", "키 회전"], "source": "seed" },
+
+  { "id": "devops-secret-002", "topic": "devops", "subtopic": "security", "difficulty": 2, "type": "mcq",
+    "question": "API 키가 공개 저장소에 커밋된 것을 발견했다. 가장 먼저 할 일은?",
+    "answerShort": "키를 폐기하고 새로 발급한다(회전). 커밋을 지워도 이미 복제·크롤링됐을 수 있어 히스토리 정리만으로는 안전하지 않다. 회전이 끝난 뒤에 히스토리 정리와 재발 방지(스캐너, 훅)를 한다.",
+    "choices": ["커밋 히스토리에서 삭제", "키를 폐기하고 재발급", "저장소를 비공개로 전환", "gitignore에 추가"], "correct": 1,
+    "keywords": ["키 회전", "유출 대응", "시크릿 스캐닝"], "source": "seed" },
+
+  { "id": "devops-monitor-001", "topic": "devops", "subtopic": "monitoring", "difficulty": 2, "type": "concept",
+    "question": "알람을 설계할 때 지켜야 할 원칙은?",
+    "answerShort": "사람이 지금 조치할 수 있는 것만 알람으로 만든다. 조치할 게 없는 알람은 피로만 쌓고, 쌓인 피로는 진짜 알람을 무시하게 만든다. 증상(사용자가 겪는 것) 기반으로 걸고, 원인 지표는 대시보드에 둔다.",
+    "keywords": ["알람 피로", "증상 기반", "실행 가능성"], "source": "seed" },
+
+  { "id": "devops-monitor-002", "topic": "devops", "subtopic": "monitoring", "difficulty": 3, "type": "concept",
+    "question": "구조화 로그가 문자열 로그보다 나은 이유는?",
+    "answerShort": "기계가 파싱할 수 있어 필드로 검색·집계·상관관계 분석이 가능하기 때문이다. 요청 id를 넣으면 서비스를 넘나드는 흐름을 이어 볼 수 있다. 문자열 로그는 사람이 읽기는 편해도 grep 이상을 하기 어렵다.",
+    "keywords": ["구조화 로그", "상관 id", "집계"], "source": "seed" },
+
+  { "id": "devops-incident-001", "topic": "devops", "subtopic": "operations", "difficulty": 3, "type": "concept",
+    "question": "장애 대응에서 가장 먼저 할 일은?",
+    "answerShort": "원인 규명이 아니라 영향 완화다. 롤백, 트래픽 차단, 기능 끄기로 사용자 피해를 먼저 멈춘 뒤 원인을 본다. 원인을 찾으며 장애를 끌면 피해가 계속 쌓인다. 조사에 필요한 증거만 확보해 두고 되돌린다.",
+    "keywords": ["장애 대응", "완화 우선", "롤백"], "source": "seed" },
+
+  { "id": "devops-incident-002", "topic": "devops", "subtopic": "operations", "difficulty": 2, "type": "concept",
+    "question": "비난 없는 포스트모템(blameless postmortem)이 필요한 이유는?",
+    "answerShort": "사람을 탓하면 사실이 숨겨지기 때문이다. 정확한 타임라인과 판단 근거가 나와야 시스템의 결함을 고칠 수 있다. '누가 실수했나'가 아니라 '왜 그 실수가 가능했나'를 물어야 재발을 막는 대책이 나온다.",
+    "keywords": ["포스트모템", "심리적 안전", "재발 방지"], "source": "seed" },
+
+  { "id": "devops-backup-001", "topic": "devops", "subtopic": "operations", "difficulty": 2, "type": "concept",
+    "question": "백업에서 가장 자주 빠뜨리는 것은?",
+    "answerShort": "복원 테스트다. 백업이 돌고 있다는 것과 복원이 된다는 것은 다른 문제다. 정기적으로 실제 복원을 해 봐야 파일 손상, 암호 분실, 절차 누락을 미리 발견한다. RPO와 RTO 목표도 이 테스트로 검증된다.",
+    "keywords": ["백업", "복원 테스트", "RPO", "RTO"], "source": "seed" },
+
+  { "id": "devops-git-001", "topic": "devops", "subtopic": "git", "difficulty": 2, "type": "concept",
+    "question": "merge와 rebase는 각각 언제 쓰는가?",
+    "answerShort": "merge는 이력을 있는 그대로 남겨 협업 브랜치에 안전하다. rebase는 커밋을 옮겨 선형 이력을 만들지만 해시가 바뀌므로, 이미 공유된 브랜치에 쓰면 남의 이력을 깨뜨린다. '내 로컬 브랜치 정리'는 rebase, '공유 브랜치 통합'은 merge다.",
+    "keywords": ["merge", "rebase", "이력", "force-push"], "source": "seed" },
+
+  { "id": "devops-git-002", "topic": "devops", "subtopic": "git", "difficulty": 3, "type": "concept",
+    "question": "force-push가 위험한 이유는?",
+    "answerShort": "원격의 커밋을 남의 것까지 덮어써 사라지게 만들기 때문이다. 다른 사람이 그 위에 작업했다면 복구가 번거롭다. 꼭 필요하면 --force-with-lease로 '내가 본 상태에서만 덮어쓰기'를 걸어 남의 새 커밋을 지우지 않게 한다.",
+    "keywords": ["force-push", "force-with-lease", "이력 손실"], "source": "seed" },
+
+  { "id": "devops-git-003", "topic": "devops", "subtopic": "git", "difficulty": 2, "type": "concept",
+    "question": "좋은 커밋 메시지의 조건은?",
+    "answerShort": "무엇을 했는지보다 왜 했는지를 담는 것이다. 무엇은 diff가 이미 말해 준다. 6개월 뒤의 자신이 '이 변경이 왜 필요했나'를 물었을 때 답이 되어야 한다. 한 커밋은 한 가지 논리적 변경만 담는다.",
+    "keywords": ["커밋 메시지", "왜", "원자적 커밋"], "source": "seed" },
+
+  { "id": "devops-env-001", "topic": "devops", "subtopic": "operations", "difficulty": 2, "type": "concept",
+    "question": "12-factor의 '설정을 환경에 둔다'는 원칙의 이유는?",
+    "answerShort": "같은 빌드 산출물을 모든 환경에 쓰기 위해서다. 설정이 코드에 박히면 환경마다 다시 빌드해야 하고, 스테이징에서 검증한 것과 프로덕션에 올라간 것이 달라진다. 아티팩트는 하나, 설정만 주입이 원칙이다.",
+    "keywords": ["12-factor", "환경 설정", "빌드 아티팩트"], "source": "seed" },
+
+  { "id": "devops-zero-001", "topic": "devops", "subtopic": "deployment", "difficulty": 3, "type": "concept",
+    "question": "무중단 배포에서 그레이스풀 셧다운이 왜 필요한가?",
+    "answerShort": "종료 신호를 받은 인스턴스가 처리 중인 요청을 끝내고 나가야 하기 때문이다. 즉시 죽이면 진행 중인 요청이 끊긴다. SIGTERM을 받으면 새 요청은 거부(readiness 해제)하고, 남은 요청을 마친 뒤 종료한다.",
+    "keywords": ["그레이스풀 셧다운", "SIGTERM", "드레이닝"], "source": "seed" },
+
+  { "id": "devops-scale-001", "topic": "devops", "subtopic": "operations", "difficulty": 3, "type": "concept",
+    "question": "오토스케일링이 예상대로 동작하지 않는 흔한 이유는?",
+    "answerShort": "스케일 아웃보다 트래픽이 빨리 오르거나, 기동 시간이 길어 늦게 붙는 경우다. 또 CPU만 보면 I/O 바운드 서비스는 지표가 안 올라 확장되지 않는다. 예열된 최소 대수와 적절한 지표 선택이 함께 필요하다.",
+    "keywords": ["오토스케일링", "기동 시간", "지표 선택"], "source": "seed" }
+]

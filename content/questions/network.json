@@ -1,0 +1,163 @@
+[
+  { "id": "network-osi-001", "topic": "network", "subtopic": "osi", "difficulty": 1, "type": "concept",
+    "question": "OSI 7계층과 TCP/IP 4계층은 어떻게 대응되는가?",
+    "answerShort": "OSI의 응용·표현·세션이 TCP/IP의 응용 계층으로 합쳐지고, 전송은 전송, 네트워크는 인터넷, 데이터링크·물리는 네트워크 접근 계층에 대응된다. OSI는 설명을 위한 참조 모델이고 실제 구현은 TCP/IP다.",
+    "answerDeep": "OSI가 먼저 표준화됐지만 구현이 늦어 TCP/IP가 사실상 표준이 됐다. 면접에서 계층을 외우는 것보다 '어느 계층의 문제인가'를 가려내는 게 중요하다 — 예를 들어 연결은 되는데 응답이 느리면 전송 계층 이하, 응답이 오는데 내용이 틀리면 응용 계층이다.",
+    "keywords": ["OSI", "TCP/IP", "참조 모델", "계층화"], "source": "seed" },
+
+  { "id": "network-osi-002", "topic": "network", "subtopic": "osi", "difficulty": 2, "type": "concept",
+    "question": "계층화(layering)로 얻는 것과 잃는 것은?",
+    "answerShort": "얻는 것은 관심사 분리다. 각 계층이 아래 계층을 추상화해 독립적으로 교체·발전할 수 있다. 잃는 것은 성능이다. 계층마다 헤더가 붙고 복사가 일어나며, 상위 계층이 하위 정보를 몰라 최적화 기회를 놓친다.",
+    "keywords": ["계층화", "추상화", "오버헤드"], "source": "seed" },
+
+  { "id": "network-tcp-001", "topic": "network", "subtopic": "tcp", "difficulty": 1, "type": "concept",
+    "question": "TCP와 UDP의 차이는 무엇이고 언제 무엇을 쓰는가?",
+    "answerShort": "TCP는 연결형이고 순서 보장·재전송·흐름제어·혼잡제어를 한다. UDP는 비연결형이고 그런 보장이 없는 대신 헤더가 작고 지연이 낮다. 정확성이 중요하면 TCP, 늦게 온 데이터가 쓸모없는 실시간 스트리밍·게임·DNS는 UDP다.",
+    "keywords": ["TCP", "UDP", "신뢰성", "지연"], "source": "seed" },
+
+  { "id": "network-tcp-002", "topic": "network", "subtopic": "tcp", "difficulty": 2, "type": "concept",
+    "question": "TCP 3-way handshake는 왜 3번인가?",
+    "answerShort": "양쪽 모두 상대의 초기 시퀀스 번호를 확인해야 하기 때문이다. SYN으로 내 순서번호를 알리고, SYN+ACK로 상대가 그것을 확인하며 자기 번호를 알리고, ACK로 내가 상대 번호를 확인한다. 2번이면 한쪽 방향만 검증된다.",
+    "answerDeep": "핵심은 '양방향 초기화'다. 지연된 옛 SYN이 도착해 엉뚱한 연결이 열리는 것도 시퀀스 번호 교환으로 막는다. 4-way가 아닌 이유는 서버의 ACK와 SYN을 한 패킷에 합칠 수 있어서다.",
+    "keywords": ["3-way handshake", "SYN", "시퀀스 번호"],
+    "followUps": ["4-way handshake로 끊는 이유는?", "SYN flood 공격은 어떻게 막는가?"], "source": "seed" },
+
+  { "id": "network-tcp-003", "topic": "network", "subtopic": "tcp", "difficulty": 2, "type": "concept",
+    "question": "연결 종료는 왜 4-way인가? TIME_WAIT은 왜 필요한가?",
+    "answerShort": "각 방향을 따로 닫기 때문이다. 한쪽이 FIN을 보내도 반대 방향은 아직 보낼 데이터가 있을 수 있어 ACK와 FIN을 합칠 수 없다. TIME_WAIT은 마지막 ACK가 유실됐을 때 재전송된 FIN에 응답하고, 지연 패킷이 새 연결에 섞이는 것을 막는다.",
+    "keywords": ["4-way handshake", "FIN", "TIME_WAIT", "2MSL"], "source": "seed" },
+
+  { "id": "network-tcp-004", "topic": "network", "subtopic": "tcp", "difficulty": 3, "type": "concept",
+    "question": "흐름 제어와 혼잡 제어는 무엇이 다른가?",
+    "answerShort": "흐름 제어는 수신자를 보호한다 — 받는 쪽 버퍼가 넘치지 않게 수신 윈도우로 속도를 맞춘다. 혼잡 제어는 네트워크를 보호한다 — 중간 경로가 막히지 않게 손실·지연을 신호로 삼아 전송량을 조절한다. 보호 대상이 다르다.",
+    "answerDeep": "실제 전송량은 min(수신 윈도우, 혼잡 윈도우)로 정해진다. 혼잡 제어는 slow start로 지수 증가하다 임계점부터 선형 증가(congestion avoidance)하고, 손실이 나면 줄인다. BBR처럼 손실 대신 대역폭·RTT를 추정하는 방식도 있다.",
+    "keywords": ["흐름 제어", "혼잡 제어", "수신 윈도우", "혼잡 윈도우"], "source": "seed" },
+
+  { "id": "network-tcp-005", "topic": "network", "subtopic": "tcp", "difficulty": 3, "type": "concept",
+    "question": "Nagle 알고리즘과 delayed ACK가 함께 쓰이면 무슨 문제가 생기는가?",
+    "answerShort": "서로를 기다리며 지연이 겹친다. Nagle은 ACK를 받을 때까지 작은 패킷을 모으고, delayed ACK는 ACK를 최대 수백 ms 미룬다. 둘이 만나면 작은 요청-응답이 왕복마다 수십~수백 ms씩 늘어난다. 대화형 프로토콜에서는 TCP_NODELAY로 Nagle을 끈다.",
+    "keywords": ["Nagle", "delayed ACK", "TCP_NODELAY"], "source": "seed" },
+
+  { "id": "network-http-001", "topic": "network", "subtopic": "http", "difficulty": 1, "type": "concept",
+    "question": "HTTP가 무상태(stateless)라는 말의 의미와 그 대가는?",
+    "answerShort": "서버가 요청 사이의 맥락을 기억하지 않는다는 뜻이다. 덕분에 아무 서버나 요청을 받을 수 있어 수평 확장이 쉽다. 대가는 매 요청이 필요한 정보를 스스로 지녀야 한다는 것 — 그래서 쿠키·토큰·세션 저장소가 필요해진다.",
+    "keywords": ["무상태", "확장성", "세션"], "source": "seed" },
+
+  { "id": "network-http-002", "topic": "network", "subtopic": "http", "difficulty": 2, "type": "concept",
+    "question": "HTTP/1.1, HTTP/2, HTTP/3는 각각 무엇을 해결했는가?",
+    "answerShort": "1.1은 연결 재사용(keep-alive)으로 핸드셰이크 비용을 줄였지만 응답이 순서대로 나가는 HOL 블로킹이 남았다. 2는 하나의 연결에서 스트림을 다중화해 그것을 풀었지만 TCP 레벨 HOL은 남았다. 3은 UDP 기반 QUIC으로 옮겨 그것까지 없앴다.",
+    "answerDeep": "HTTP/2의 다중화는 애플리케이션 레벨이라, 패킷 하나가 유실되면 TCP가 순서를 지키려고 모든 스트림을 멈춘다. QUIC은 스트림별로 독립적인 재전송을 하므로 한 스트림의 손실이 다른 스트림을 막지 않는다. 덤으로 연결 수립과 TLS 핸드셰이크를 합쳐 1-RTT로 줄인다.",
+    "keywords": ["HTTP/2", "HTTP/3", "QUIC", "HOL 블로킹", "다중화"], "source": "seed" },
+
+  { "id": "network-http-003", "topic": "network", "subtopic": "http", "difficulty": 2, "type": "concept",
+    "question": "GET과 POST의 차이를 '멱등성' 관점에서 설명하면?",
+    "answerShort": "GET은 안전(safe)하고 멱등하다 — 서버 상태를 바꾸지 않고 몇 번 호출해도 결과가 같다. POST는 둘 다 아니다. 그래서 GET은 캐시·프리페치·재시도가 자유롭고, POST는 재시도하면 중복 생성이 일어날 수 있다.",
+    "answerDeep": "PUT과 DELETE는 안전하지 않지만 멱등하다 — 같은 요청을 여러 번 보내도 최종 상태가 같다. 네트워크가 불안정한 환경에서 재시도를 설계할 때 이 구분이 핵심이다. POST를 멱등하게 만들려면 Idempotency-Key 같은 클라이언트 생성 키를 쓴다.",
+    "keywords": ["멱등성", "safe", "GET", "POST", "재시도"], "source": "seed" },
+
+  { "id": "network-http-004", "topic": "network", "subtopic": "http", "difficulty": 2, "type": "mcq",
+    "question": "클라이언트가 보낸 요청 자체가 잘못됐을 때 쓰는 상태 코드 계열은?",
+    "answerShort": "4xx다. 4xx는 클라이언트 오류이고 5xx는 서버 오류다. 이 구분이 중요한 이유는 재시도 정책이 갈리기 때문이다 — 4xx는 같은 요청을 다시 보내도 또 실패하지만, 5xx나 429는 백오프 후 재시도할 가치가 있다.",
+    "choices": ["2xx", "3xx", "4xx", "5xx"], "correct": 2,
+    "keywords": ["상태 코드", "4xx", "5xx", "재시도"], "source": "seed" },
+
+  { "id": "network-http-005", "topic": "network", "subtopic": "http", "difficulty": 2, "type": "concept",
+    "question": "HTTP 캐시에서 강한 캐시와 약한 캐시(재검증)의 차이는?",
+    "answerShort": "강한 캐시는 Cache-Control의 max-age 동안 서버에 묻지 않고 로컬 사본을 쓴다. 약한 캐시는 ETag나 Last-Modified로 서버에 '바뀌었나' 물어보고, 안 바뀌었으면 304로 본문 없이 끝낸다. 전자는 요청 자체가 없고 후자는 요청은 있되 본문이 없다.",
+    "keywords": ["Cache-Control", "max-age", "ETag", "304"], "source": "seed" },
+
+  { "id": "network-http-006", "topic": "network", "subtopic": "http", "difficulty": 3, "type": "concept",
+    "question": "정적 자산에 해시 파일명을 쓰고 캐시를 1년으로 두는 전략이 안전한 이유는?",
+    "answerShort": "내용이 바뀌면 파일명이 바뀌기 때문이다. 같은 URL은 영원히 같은 내용을 뜻하므로 무한정 캐시해도 문제가 없고, 배포하면 HTML이 새 파일명을 가리켜 자동으로 새 자산을 받는다. 대신 HTML 자체는 캐시하지 않거나 짧게 둔다.",
+    "keywords": ["캐시 버스팅", "immutable", "콘텐츠 해시"], "source": "seed" },
+
+  { "id": "network-dns-001", "topic": "network", "subtopic": "dns", "difficulty": 1, "type": "concept",
+    "question": "브라우저에 주소를 입력하면 DNS는 어떻게 IP를 찾아내는가?",
+    "answerShort": "재귀 질의를 맡은 리졸버가 루트 → TLD → 권한 서버 순으로 물어 내려간다. 각 단계는 다음에 물어볼 서버를 알려줄 뿐이고, 최종 답은 권한 서버가 준다. 중간의 모든 캐시(브라우저·OS·리졸버)가 TTL 동안 답을 재사용한다.",
+    "keywords": ["DNS", "재귀 질의", "권한 서버", "TTL"],
+    "followUps": ["TTL을 짧게 두면 무엇이 좋고 무엇이 나쁜가?"], "source": "seed" },
+
+  { "id": "network-dns-002", "topic": "network", "subtopic": "dns", "difficulty": 2, "type": "concept",
+    "question": "A 레코드와 CNAME의 차이, 그리고 CNAME을 루트 도메인에 못 쓰는 이유는?",
+    "answerShort": "A는 도메인을 IP에 직접 매핑하고 CNAME은 다른 도메인 이름에 매핑한다. CNAME이 있는 이름에는 다른 레코드가 함께 있을 수 없는데, 루트 도메인은 SOA·NS를 반드시 가져야 하므로 충돌한다. 그래서 제공자들이 ALIAS/ANAME 같은 비표준 대안을 준다.",
+    "keywords": ["A 레코드", "CNAME", "ALIAS", "루트 도메인"], "source": "seed" },
+
+  { "id": "network-tls-001", "topic": "network", "subtopic": "tls", "difficulty": 2, "type": "concept",
+    "question": "HTTPS는 무엇을 보장하고, 대칭키와 비대칭키를 어떻게 함께 쓰는가?",
+    "answerShort": "기밀성·무결성·인증을 보장한다. 비대칭키는 느려서 신원 확인과 세션키 합의에만 쓰고, 실제 데이터는 그렇게 만든 대칭키로 암호화한다. 인증서는 CA의 서명으로 '이 공개키가 이 도메인의 것'임을 보증한다.",
+    "answerDeep": "TLS 1.3은 핸드셰이크를 1-RTT로 줄이고 취약한 알고리즘을 걷어냈다. 또 순방향 비밀성(forward secrecy)을 기본으로 해, 서버 개인키가 나중에 유출돼도 과거 트래픽을 복호화할 수 없다.",
+    "keywords": ["TLS", "대칭키", "비대칭키", "인증서", "forward secrecy"], "source": "seed" },
+
+  { "id": "network-tls-002", "topic": "network", "subtopic": "tls", "difficulty": 3, "type": "ox",
+    "question": "HTTPS를 쓰면 어떤 사이트에 접속하는지도 네트워크 관찰자에게 숨길 수 있다.",
+    "answerShort": "X. 본문은 암호화되지만 접속 대상은 상당 부분 노출된다. DNS 질의, IP 주소, 그리고 TLS 핸드셰이크의 SNI 필드가 평문이라 어떤 도메인에 붙는지 보인다. 이를 가리려면 Encrypted Client Hello나 DoH 같은 별도 기술이 필요하다.",
+    "choices": ["O", "X"], "correct": 1,
+    "keywords": ["SNI", "ECH", "DoH", "메타데이터"], "source": "seed" },
+
+  { "id": "network-lb-001", "topic": "network", "subtopic": "loadbalancing", "difficulty": 2, "type": "concept",
+    "question": "L4 로드밸런서와 L7 로드밸런서는 어떻게 다른가?",
+    "answerShort": "L4는 IP와 포트만 보고 분배해 빠르고 프로토콜에 무관하다. L7은 HTTP 헤더·경로·쿠키까지 열어 보고 라우팅해서, 경로별 분기나 카나리 배포가 가능한 대신 비용이 크고 TLS 종료가 필요하다.",
+    "keywords": ["L4", "L7", "로드밸런싱", "TLS 종료"], "source": "seed" },
+
+  { "id": "network-lb-002", "topic": "network", "subtopic": "loadbalancing", "difficulty": 3, "type": "concept",
+    "question": "일관된 해싱(consistent hashing)이 단순 모듈러 해싱보다 나은 이유는?",
+    "answerShort": "노드가 늘거나 줄 때 재배치되는 키가 훨씬 적기 때문이다. 모듈러 해싱은 N이 바뀌면 거의 모든 키가 옮겨가지만, 일관된 해싱은 평균 1/N 정도만 움직인다. 캐시 서버나 샤딩처럼 노드 수가 변하는 곳에서 결정적이다.",
+    "answerDeep": "링 위에 노드와 키를 함께 배치하고 시계 방향으로 가장 가까운 노드가 담당한다. 노드가 적으면 분포가 치우치므로 가상 노드(virtual node)를 여러 개 두어 균등하게 만든다.",
+    "keywords": ["일관된 해싱", "가상 노드", "리밸런싱"], "source": "seed" },
+
+  { "id": "network-cdn-001", "topic": "network", "subtopic": "cdn", "difficulty": 2, "type": "concept",
+    "question": "CDN은 무엇을 줄여 주는가?",
+    "answerShort": "물리적 거리에서 오는 지연과 원본 서버의 부하를 줄인다. 사용자와 가까운 엣지가 사본을 주므로 RTT가 짧아지고, 캐시 히트만큼 원본으로 가는 요청이 사라진다. 동적 응답도 엣지에서 TLS를 끝내고 원본까지는 유지된 연결을 쓰면 이득이 있다.",
+    "keywords": ["CDN", "엣지", "RTT", "오리진"], "source": "seed" },
+
+  { "id": "network-socket-001", "topic": "network", "subtopic": "realtime", "difficulty": 2, "type": "concept",
+    "question": "폴링, 롱 폴링, SSE, WebSocket은 각각 언제 쓰는가?",
+    "answerShort": "폴링은 주기적으로 묻는 방식이라 단순하지만 낭비가 크다. 롱 폴링은 응답을 붙잡아 두어 지연을 줄인다. SSE는 서버→클라이언트 단방향 스트림으로 알림·피드에 맞고, WebSocket은 양방향이라 채팅·협업 편집처럼 서로 보내야 할 때 쓴다.",
+    "keywords": ["폴링", "롱 폴링", "SSE", "WebSocket"], "source": "seed" },
+
+  { "id": "network-proxy-001", "topic": "network", "subtopic": "proxy", "difficulty": 2, "type": "concept",
+    "question": "포워드 프록시와 리버스 프록시의 차이는?",
+    "answerShort": "포워드 프록시는 클라이언트를 대신해 나가는 것이고, 리버스 프록시는 서버를 대신해 받는 것이다. 전자는 사내망 통제·우회에 쓰이고, 후자는 로드밸런싱·TLS 종료·캐싱처럼 서버 앞단 역할을 한다. 숨기는 대상이 정반대다.",
+    "keywords": ["포워드 프록시", "리버스 프록시", "nginx"], "source": "seed" },
+
+  { "id": "network-ip-001", "topic": "network", "subtopic": "ip", "difficulty": 2, "type": "concept",
+    "question": "NAT은 무엇을 해결했고 어떤 문제를 만들었는가?",
+    "answerShort": "IPv4 주소 고갈을 늦췄다. 사설 IP 여러 대가 공인 IP 하나를 포트로 구분해 공유한다. 대신 외부에서 내부로 먼저 연결할 수 없어 P2P가 어려워졌고, 그래서 STUN·TURN 같은 홀 펀칭 기법이 필요해졌다.",
+    "keywords": ["NAT", "사설 IP", "포트 포워딩", "STUN"], "source": "seed" },
+
+  { "id": "network-ip-002", "topic": "network", "subtopic": "ip", "difficulty": 1, "type": "concept",
+    "question": "서브넷 마스크는 무엇을 가르는가?",
+    "answerShort": "IP 주소에서 네트워크 부분과 호스트 부분의 경계를 정한다. /24라면 앞 24비트가 네트워크이고 나머지 8비트가 호스트다. 같은 네트워크면 직접 통신하고, 다르면 게이트웨이로 보낸다 — 이 판단에 쓰인다.",
+    "keywords": ["서브넷", "CIDR", "게이트웨이"], "source": "seed" },
+
+  { "id": "network-perf-001", "topic": "network", "subtopic": "performance", "difficulty": 3, "type": "concept",
+    "question": "대역폭이 충분한데도 전송이 느리다면 무엇을 의심하는가?",
+    "answerShort": "왕복 지연(RTT)과 윈도우 크기를 의심한다. 한 RTT에 보낼 수 있는 양은 윈도우 크기로 제한되므로, 대역폭×지연 곱만큼 윈도우가 크지 않으면 링크를 다 못 채운다. 그밖에 패킷 손실로 인한 혼잡 윈도우 축소, 소규모 요청의 핸드셰이크 비용도 흔한 원인이다.",
+    "answerDeep": "이것이 '롱 팻 네트워크' 문제다. 대역폭이 100Mbps이고 RTT가 100ms면 BDP는 약 1.25MB인데, 윈도우가 64KB면 링크의 5%밖에 못 쓴다. 윈도우 스케일링 옵션이 이 한계를 푼다.",
+    "keywords": ["RTT", "BDP", "윈도우 스케일링", "지연"], "source": "seed" },
+
+  { "id": "network-debug-001", "topic": "network", "subtopic": "troubleshooting", "difficulty": 2, "type": "concept",
+    "question": "'서버가 응답하지 않는다'는 신고를 받으면 어떤 순서로 좁혀 가는가?",
+    "answerShort": "아래에서 위로 올라간다. DNS가 풀리는지, TCP 연결이 맺히는지(telnet·nc), TLS 핸드셰이크가 끝나는지, HTTP 응답이 오는지, 그 응답이 몇 번대인지 순으로 본다. 각 단계가 실패하는 지점이 곧 원인이 있는 계층이다.",
+    "keywords": ["디버깅", "dig", "curl", "계층별 진단"], "source": "seed" },
+
+  { "id": "network-sec-001", "topic": "network", "subtopic": "security", "difficulty": 2, "type": "concept",
+    "question": "DDoS와 DoS는 무엇이 다르고, 왜 막기 어려운가?",
+    "answerShort": "DoS는 한 출처에서, DDoS는 분산된 다수에서 온다. DDoS가 어려운 이유는 출처 IP를 차단하는 것만으로 안 되고, 트래픽이 정상 요청과 구분되지 않을 수 있어서다. 그래서 용량 확보(CDN·스크러빙), 레이트 리밋, 챌린지 같은 여러 층을 겹친다.",
+    "keywords": ["DDoS", "레이트 리밋", "스크러빙"], "source": "seed" },
+
+  { "id": "network-rest-001", "topic": "network", "subtopic": "api", "difficulty": 2, "type": "concept",
+    "question": "REST와 GraphQL은 어떤 트레이드오프를 갖는가?",
+    "answerShort": "REST는 엔드포인트마다 응답이 고정돼 캐싱과 관측이 쉽지만, 과다·과소 페칭이 생긴다. GraphQL은 클라이언트가 필요한 필드만 골라 왕복을 줄이지만, HTTP 캐시를 그대로 못 쓰고 쿼리 복잡도 제한 같은 방어가 필요하다.",
+    "keywords": ["REST", "GraphQL", "오버페칭", "N+1"], "source": "seed" },
+
+  { "id": "network-rest-002", "topic": "network", "subtopic": "api", "difficulty": 2, "type": "concept",
+    "question": "API 버저닝은 왜 필요하고 어떤 방식들이 있는가?",
+    "answerShort": "클라이언트를 한꺼번에 업데이트할 수 없기 때문이다. URL 경로(/v1/), 헤더(Accept), 쿼리 파라미터 방식이 있고 각각 캐시·라우팅 편의가 다르다. 중요한 건 방식보다 '언제 깨는 변경을 하고 언제까지 옛 버전을 유지하는가'라는 정책이다.",
+    "keywords": ["API 버저닝", "하위 호환", "deprecation"], "source": "seed" },
+
+  { "id": "network-grpc-001", "topic": "network", "subtopic": "api", "difficulty": 3, "type": "concept",
+    "question": "gRPC가 내부 서비스 간 통신에 자주 쓰이는 이유는?",
+    "answerShort": "HTTP/2 위에서 Protobuf로 직렬화해 페이로드가 작고 빠르며, 스키마에서 클라이언트·서버 코드를 생성해 계약이 강제된다. 양방향 스트리밍도 기본 지원한다. 대신 브라우저에서 바로 쓰기 어렵고 사람이 읽기 힘들어 외부 공개 API로는 덜 쓴다.",
+    "keywords": ["gRPC", "Protobuf", "HTTP/2", "스키마"], "source": "seed" }
+]

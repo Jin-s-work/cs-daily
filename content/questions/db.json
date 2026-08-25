@@ -1,0 +1,159 @@
+[
+  { "id": "db-index-001", "topic": "db", "subtopic": "index", "difficulty": 1, "type": "concept",
+    "question": "인덱스는 왜 조회를 빠르게 하고, 무엇을 대가로 치르는가?",
+    "answerShort": "정렬된 자료구조를 따로 유지해 전체 스캔 대신 탐색을 하기 때문이다. 대가는 쓰기 비용과 저장 공간이다. INSERT·UPDATE·DELETE마다 인덱스도 갱신해야 하므로, 읽기보다 쓰기가 많은 테이블에 인덱스를 남발하면 오히려 느려진다.",
+    "keywords": ["인덱스", "B+ 트리", "쓰기 비용"], "source": "seed" },
+
+  { "id": "db-index-002", "topic": "db", "subtopic": "index", "difficulty": 2, "type": "concept",
+    "question": "대부분의 DB가 인덱스에 B+ 트리를 쓰는 이유는?",
+    "answerShort": "디스크 I/O를 줄이도록 설계됐기 때문이다. 노드 하나가 디스크 블록 크기라 한 번 읽어 많은 키를 비교할 수 있고, 트리가 얕아 몇 번의 I/O로 도달한다. 리프가 연결 리스트로 이어져 범위 검색과 정렬 결과 반환도 순차 읽기로 끝난다.",
+    "answerDeep": "해시 인덱스는 등호 비교는 O(1)이지만 범위·정렬을 못 한다. 이진 탐색 트리는 노드당 키가 하나라 트리가 깊어져 I/O가 많아진다. B+ 트리는 '한 번의 I/O로 최대한 많은 판단'이라는 디스크의 제약에 맞춘 구조다.",
+    "keywords": ["B+ 트리", "디스크 I/O", "범위 검색"], "source": "seed" },
+
+  { "id": "db-index-003", "topic": "db", "subtopic": "index", "difficulty": 2, "type": "concept",
+    "question": "복합 인덱스 (a, b, c)에서 컬럼 순서가 왜 중요한가?",
+    "answerShort": "왼쪽부터 연속으로 써야 인덱스를 탈 수 있기 때문이다. a, (a,b), (a,b,c) 조건은 쓰지만 b만이나 (b,c)만으로는 못 쓴다. 사전 순 정렬과 같아서, 앞 컬럼이 고정돼야 뒤 컬럼이 정렬된 상태가 된다.",
+    "keywords": ["복합 인덱스", "선행 컬럼", "leftmost prefix"],
+    "followUps": ["a는 등호, b는 범위 조건일 때 c는 인덱스를 타는가?"], "source": "seed" },
+
+  { "id": "db-index-004", "topic": "db", "subtopic": "index", "difficulty": 3, "type": "concept",
+    "question": "커버링 인덱스가 빠른 이유는?",
+    "answerShort": "쿼리에 필요한 컬럼이 인덱스 안에 다 있어서 테이블 본체를 읽지 않아도 되기 때문이다. 인덱스에서 PK를 찾아 다시 테이블을 조회하는 랜덤 I/O가 사라진다. 대신 인덱스가 커져 캐시 효율과 쓰기 비용이 나빠진다.",
+    "keywords": ["커버링 인덱스", "인덱스 온리 스캔", "랜덤 I/O"], "source": "seed" },
+
+  { "id": "db-index-005", "topic": "db", "subtopic": "index", "difficulty": 3, "type": "concept",
+    "question": "인덱스를 걸었는데도 옵티마이저가 안 쓰는 경우는?",
+    "answerShort": "선택도가 낮아 전체 스캔이 더 싸다고 판단했거나, 컬럼에 함수·연산을 씌워 인덱스 형태가 깨졌거나, 타입이 암묵적으로 변환되는 경우다. 통계가 오래됐을 때도 잘못 판단한다. EXPLAIN으로 실제 계획과 예상 행 수를 먼저 확인해야 한다.",
+    "keywords": ["옵티마이저", "선택도", "EXPLAIN", "형변환"], "source": "seed" },
+
+  { "id": "db-tx-001", "topic": "db", "subtopic": "transaction", "difficulty": 1, "type": "concept",
+    "question": "ACID는 각각 무엇을 보장하는가?",
+    "answerShort": "원자성은 전부 되거나 전부 안 되게 하고, 일관성은 제약 조건을 지키며, 격리성은 동시 트랜잭션이 서로를 방해하지 않게 하고, 지속성은 커밋된 것이 장애 후에도 남게 한다. 실무에서 가장 자주 조율하는 건 격리성이다.",
+    "keywords": ["ACID", "원자성", "격리성", "지속성"], "source": "seed" },
+
+  { "id": "db-tx-002", "topic": "db", "subtopic": "transaction", "difficulty": 2, "type": "concept",
+    "question": "격리 수준 네 가지와 각각에서 허용되는 이상 현상은?",
+    "answerShort": "READ UNCOMMITTED는 더티 리드까지 허용하고, READ COMMITTED는 그것을 막지만 논리피터블 리드가 남는다. REPEATABLE READ는 같은 행을 다시 읽어도 같게 하지만 팬텀이 생길 수 있고, SERIALIZABLE은 모두 막는 대신 동시성이 떨어진다.",
+    "answerDeep": "표준의 정의와 실제 구현은 다르다. MySQL InnoDB의 REPEATABLE READ는 갭 락으로 팬텀도 상당 부분 막고, PostgreSQL의 REPEATABLE READ는 스냅샷 격리라 팬텀이 없다. '어느 수준인가'보다 '이 엔진에서 그 수준이 무엇을 막는가'를 알아야 한다.",
+    "keywords": ["격리 수준", "더티 리드", "팬텀 리드", "MVCC"], "source": "seed" },
+
+  { "id": "db-tx-003", "topic": "db", "subtopic": "transaction", "difficulty": 2, "type": "concept",
+    "question": "MVCC는 어떻게 읽기와 쓰기가 서로를 막지 않게 하는가?",
+    "answerShort": "행을 덮어쓰지 않고 버전을 추가하기 때문이다. 읽는 쪽은 자기 트랜잭션 시작 시점의 스냅샷에 맞는 버전을 보고, 쓰는 쪽은 새 버전을 만든다. 그래서 읽기가 쓰기 락을 기다리지 않는다. 대가는 옛 버전을 청소하는 비용(PostgreSQL의 VACUUM)이다.",
+    "keywords": ["MVCC", "스냅샷", "VACUUM", "버전"], "source": "seed" },
+
+  { "id": "db-tx-004", "topic": "db", "subtopic": "transaction", "difficulty": 3, "type": "concept",
+    "question": "낙관적 락과 비관적 락은 언제 각각 유리한가?",
+    "answerShort": "충돌이 드물면 낙관적 락이 낫다 — 버전 컬럼으로 확인하고 어긋나면 재시도하므로 락 대기가 없다. 충돌이 잦으면 비관적 락이 낫다 — 재시도가 반복되는 비용보다 처음부터 잠그는 편이 싸다. 판단 기준은 '실제 충돌 빈도'다.",
+    "keywords": ["낙관적 락", "비관적 락", "SELECT FOR UPDATE", "버전"], "source": "seed" },
+
+  { "id": "db-tx-005", "topic": "db", "subtopic": "transaction", "difficulty": 3, "type": "concept",
+    "question": "DB 데드락은 왜 생기고 어떻게 줄이는가?",
+    "answerShort": "두 트랜잭션이 서로가 쥔 락을 반대 순서로 기다릴 때 생긴다. 가장 확실한 예방은 락 획득 순서를 전역으로 통일하는 것이다. 그밖에 트랜잭션을 짧게 유지하고, 인덱스를 잘 걸어 잠기는 범위를 좁히면 확률이 줄어든다.",
+    "answerDeep": "대부분의 엔진은 데드락을 탐지해 한쪽을 롤백시킨다. 그래서 애플리케이션은 데드락 오류를 '재시도 가능한 오류'로 다뤄야 한다. 인덱스가 없어 풀스캔하면 훨씬 넓은 범위가 잠겨 데드락 확률이 급증한다.",
+    "keywords": ["데드락", "락 순서", "재시도"], "source": "seed" },
+
+  { "id": "db-norm-001", "topic": "db", "subtopic": "modeling", "difficulty": 2, "type": "concept",
+    "question": "정규화는 무엇을 얻고, 언제 일부러 어기는가?",
+    "answerShort": "중복을 없애 갱신 이상을 막고 일관성을 지킨다. 대신 조인이 늘어난다. 읽기가 압도적으로 많고 조인 비용이 병목이면 일부러 비정규화해 중복을 감수한다. 이때 중복된 값을 동기화할 책임이 애플리케이션으로 넘어온다는 걸 알고 해야 한다.",
+    "keywords": ["정규화", "비정규화", "갱신 이상", "조인"], "source": "seed" },
+
+  { "id": "db-norm-002", "topic": "db", "subtopic": "modeling", "difficulty": 2, "type": "concept",
+    "question": "1NF, 2NF, 3NF를 한 문장씩으로 말하면?",
+    "answerShort": "1NF는 각 칸에 값이 하나여야 한다. 2NF는 기본키 전체에 종속돼야 한다 — 복합키의 일부에만 딸린 컬럼을 분리한다. 3NF는 키가 아닌 컬럼이 다른 비키 컬럼에 종속되면 안 된다(이행 종속 제거).",
+    "keywords": ["1NF", "2NF", "3NF", "함수 종속"], "source": "seed" },
+
+  { "id": "db-join-001", "topic": "db", "subtopic": "query", "difficulty": 2, "type": "concept",
+    "question": "Nested Loop, Hash, Merge 조인은 각각 언제 유리한가?",
+    "answerShort": "한쪽이 아주 작고 다른 쪽에 인덱스가 있으면 Nested Loop가 좋다. 양쪽이 크고 등호 조인이면 Hash가 좋다 — 작은 쪽으로 해시 테이블을 만든다. 양쪽이 이미 정렬돼 있거나 범위 조인이면 Merge가 유리하다.",
+    "keywords": ["조인 알고리즘", "Nested Loop", "Hash Join", "Merge Join"], "source": "seed" },
+
+  { "id": "db-nplus1-001", "topic": "db", "subtopic": "query", "difficulty": 2, "type": "concept",
+    "question": "N+1 쿼리 문제는 무엇이고 어떻게 없애는가?",
+    "answerShort": "목록 1번 조회 뒤 각 행마다 연관 데이터를 1번씩 더 조회해 N+1번이 나가는 현상이다. 조인으로 한 번에 가져오거나(fetch join), 연관 id를 모아 IN으로 한 번에 조회하는 배치 로딩으로 없앤다. ORM의 지연 로딩이 주범이다.",
+    "keywords": ["N+1", "지연 로딩", "fetch join", "배치 로딩"], "source": "seed" },
+
+  { "id": "db-page-001", "topic": "db", "subtopic": "query", "difficulty": 3, "type": "concept",
+    "question": "OFFSET 페이징이 뒤로 갈수록 느려지는 이유와 대안은?",
+    "answerShort": "OFFSET만큼의 행을 읽고 버리기 때문이다. 100만 번째 페이지는 앞의 100만 행을 훑는다. 대안은 커서(키셋) 페이징이다 — 마지막으로 본 값을 기준으로 WHERE id > ? ORDER BY id LIMIT n을 쓰면 인덱스로 바로 진입한다.",
+    "answerDeep": "커서 페이징의 제약은 임의 페이지로 점프할 수 없다는 것이다. '3페이지로 이동'이 필요한 UI면 못 쓰고, 무한 스크롤처럼 순차 이동이면 완벽히 맞는다. 정렬 키가 유일하지 않으면 (정렬키, PK) 복합 커서를 써야 중복·누락이 없다.",
+    "keywords": ["OFFSET", "커서 페이징", "키셋 페이징"], "source": "seed" },
+
+  { "id": "db-sql-001", "topic": "db", "subtopic": "query", "difficulty": 1, "type": "mcq",
+    "question": "그룹으로 묶은 뒤의 결과를 걸러낼 때 쓰는 절은?",
+    "answerShort": "HAVING이다. WHERE는 그룹으로 묶기 전 개별 행을 거르고, HAVING은 GROUP BY로 집계한 뒤 그 결과를 거른다. 그래서 HAVING에는 집계 함수를 쓸 수 있고 WHERE에는 쓸 수 없다.",
+    "choices": ["WHERE", "HAVING", "ORDER BY", "LIMIT"], "correct": 1,
+    "keywords": ["GROUP BY", "HAVING", "WHERE", "집계"], "source": "seed" },
+
+  { "id": "db-sql-002", "topic": "db", "subtopic": "query", "difficulty": 2, "type": "concept",
+    "question": "SQL 논리적 실행 순서는 어떻게 되는가?",
+    "answerShort": "FROM·JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT 순이다. SELECT가 늦게 오기 때문에 WHERE에서는 SELECT의 별칭을 못 쓰지만 ORDER BY에서는 쓸 수 있다. 이 순서를 알면 왜 그런지 외우지 않아도 된다.",
+    "keywords": ["실행 순서", "별칭", "SELECT"], "source": "seed" },
+
+  { "id": "db-lock-001", "topic": "db", "subtopic": "lock", "difficulty": 3, "type": "concept",
+    "question": "공유 락과 배타 락, 그리고 갭 락은 무엇인가?",
+    "answerShort": "공유 락은 읽기끼리 공존하고, 배타 락은 쓰기용이라 아무와도 공존하지 않는다. 갭 락은 행 사이의 빈 구간을 잠가 그 범위에 새 행이 끼어드는 것을 막는다 — 팬텀 리드를 막는 장치이고, 동시에 예상 못 한 대기의 원인이 되기도 한다.",
+    "keywords": ["공유 락", "배타 락", "갭 락", "넥스트 키 락"], "source": "seed" },
+
+  { "id": "db-replica-001", "topic": "db", "subtopic": "scaling", "difficulty": 2, "type": "concept",
+    "question": "읽기 복제본을 두면 무엇이 좋아지고 무엇을 조심해야 하는가?",
+    "answerShort": "읽기 부하를 분산해 쓰기 노드를 지킬 수 있다. 조심할 것은 복제 지연이다. 방금 쓴 값을 복제본에서 읽으면 아직 없을 수 있다. 그래서 '쓴 직후의 읽기'는 쓰기 노드로 보내거나, 세션 단위로 일관성을 보장하는 장치가 필요하다.",
+    "keywords": ["읽기 복제본", "복제 지연", "read-your-writes"], "source": "seed" },
+
+  { "id": "db-shard-001", "topic": "db", "subtopic": "scaling", "difficulty": 3, "type": "concept",
+    "question": "샤딩을 도입할 때 가장 어려운 결정은 무엇인가?",
+    "answerShort": "샤드 키 선택이다. 한 번 정하면 바꾸기가 매우 어렵고, 잘못 고르면 특정 샤드에 부하가 몰리거나(핫스팟) 대부분의 쿼리가 여러 샤드를 훑게 된다. 조인과 트랜잭션이 샤드를 넘지 않도록 접근 패턴을 먼저 보고 정해야 한다.",
+    "answerDeep": "샤딩은 마지막 수단에 가깝다. 인덱스 개선, 캐시, 읽기 복제본, 수직 확장을 먼저 소진해야 한다. 샤딩을 하는 순간 크로스 샤드 조인·전역 유니크 제약·리밸런싱이라는 새 문제군이 생긴다.",
+    "keywords": ["샤딩", "샤드 키", "핫스팟", "크로스 샤드"], "source": "seed" },
+
+  { "id": "db-cap-001", "topic": "db", "subtopic": "distributed", "difficulty": 3, "type": "concept",
+    "question": "CAP 정리를 실무 언어로 옮기면 무슨 뜻인가?",
+    "answerShort": "네트워크 분단은 선택이 아니라 일어나는 일이므로, 실제 선택은 '분단이 났을 때 일관성을 지킬 것인가 가용성을 지킬 것인가'다. 결제는 일관성을, 피드는 가용성을 택하는 식으로 기능별로 다르게 정할 수 있다.",
+    "answerDeep": "CAP은 분단 상황만 다루므로 평시의 트레이드오프는 PACELC가 더 잘 설명한다 — 분단이 없을 때도 지연(Latency)과 일관성 사이에서 선택한다. 동기 복제는 일관적이지만 느리고, 비동기 복제는 빠르지만 지연된 값을 읽는다.",
+    "keywords": ["CAP", "PACELC", "분단", "결과적 일관성"], "source": "seed" },
+
+  { "id": "db-nosql-001", "topic": "db", "subtopic": "nosql", "difficulty": 2, "type": "concept",
+    "question": "관계형 DB 대신 문서형 DB를 고르는 기준은?",
+    "answerShort": "스키마가 자주 변하거나 한 덩어리로 읽고 쓰는 데이터라면 문서형이 맞다. 반대로 여러 엔티티를 조합해 조회하고 트랜잭션 일관성이 중요하면 관계형이 낫다. '유행'이 아니라 접근 패턴이 기준이다.",
+    "keywords": ["문서형 DB", "스키마리스", "접근 패턴"], "source": "seed" },
+
+  { "id": "db-redis-001", "topic": "db", "subtopic": "cache", "difficulty": 2, "type": "concept",
+    "question": "캐시 무효화 전략에는 어떤 것들이 있는가?",
+    "answerShort": "TTL로 시간이 지나면 버리는 방식, 쓰기 때 캐시를 지우는 write-invalidate, 쓰기 때 캐시도 갱신하는 write-through가 있다. TTL은 단순하지만 그동안 낡은 값을 보고, 무효화는 정확하지만 빠뜨리기 쉽다.",
+    "keywords": ["캐시 무효화", "TTL", "write-through"], "source": "seed" },
+
+  { "id": "db-redis-002", "topic": "db", "subtopic": "cache", "difficulty": 3, "type": "concept",
+    "question": "캐시 스탬피드(thundering herd)는 무엇이고 어떻게 막는가?",
+    "answerShort": "인기 키의 TTL이 만료되는 순간 수많은 요청이 동시에 원본 DB로 몰리는 현상이다. 하나만 갱신하도록 락을 걸거나, 만료 전에 미리 갱신하거나(early recompute), TTL에 무작위 지터를 섞어 만료 시각을 흩뜨려 막는다.",
+    "keywords": ["캐시 스탬피드", "지터", "뮤텍스", "TTL"], "source": "seed" },
+
+  { "id": "db-consistency-001", "topic": "db", "subtopic": "distributed", "difficulty": 3, "type": "concept",
+    "question": "분산 트랜잭션 대신 사가(Saga) 패턴을 쓰는 이유는?",
+    "answerShort": "2PC는 참여자 전체를 잠그고 조정자가 죽으면 멈춰 서, 마이크로서비스 규모에서 가용성을 해친다. 사가는 각 단계를 로컬 트랜잭션으로 처리하고 실패하면 보상 트랜잭션으로 되돌린다. 대신 중간 상태가 외부에 보이므로 그것을 설계에 반영해야 한다.",
+    "keywords": ["2PC", "Saga", "보상 트랜잭션", "결과적 일관성"], "source": "seed" },
+
+  { "id": "db-schema-001", "topic": "db", "subtopic": "operations", "difficulty": 3, "type": "concept",
+    "question": "무중단으로 컬럼을 추가하거나 이름을 바꾸려면?",
+    "answerShort": "확장-수축(expand-contract)으로 한다. 새 컬럼을 nullable로 추가하고, 양쪽에 쓰는 코드를 배포하고, 기존 데이터를 채우고, 읽기를 새 컬럼으로 옮긴 뒤, 마지막에 옛 컬럼을 지운다. 각 단계가 앞뒤 버전과 모두 호환돼야 한다.",
+    "keywords": ["expand-contract", "무중단 마이그레이션", "하위 호환"], "source": "seed" },
+
+  { "id": "db-perf-001", "topic": "db", "subtopic": "operations", "difficulty": 2, "type": "concept",
+    "question": "느린 쿼리를 만났을 때 무엇부터 보는가?",
+    "answerShort": "EXPLAIN으로 실행 계획을 본다. 풀스캔인지, 예상 행 수와 실제 행 수가 크게 다른지(통계 문제), 조인 순서가 이상한지, 임시 테이블이나 파일 정렬이 생기는지를 확인한다. 추측으로 인덱스를 추가하기 전에 계획부터 읽는다.",
+    "keywords": ["EXPLAIN", "실행 계획", "풀스캔", "통계"], "source": "seed" },
+
+  { "id": "db-conn-001", "topic": "db", "subtopic": "operations", "difficulty": 2, "type": "concept",
+    "question": "커넥션 풀은 왜 필요하고, 크게 잡으면 왜 오히려 나빠지는가?",
+    "answerShort": "연결 수립 비용이 비싸서 재사용하려는 것이다. 크게 잡으면 DB 쪽 동시 실행이 늘어 컨텍스트 스위칭과 락 경합이 심해지고, 디스크·CPU가 포화해 전체 처리량이 떨어진다. 코어 수와 디스크 특성에 맞춘 작은 풀이 대개 더 빠르다.",
+    "keywords": ["커넥션 풀", "동시성", "경합"], "source": "seed" },
+
+  { "id": "db-softdelete-001", "topic": "db", "subtopic": "modeling", "difficulty": 2, "type": "concept",
+    "question": "소프트 삭제(deleted_at)의 장단점은?",
+    "answerShort": "복구와 감사가 가능하고 참조 무결성이 깨지지 않는다. 대신 모든 쿼리에 조건이 붙어 빠뜨리면 지운 데이터가 노출되고, 유니크 제약이 지운 행과 충돌하며, 테이블이 계속 커진다. 부분 인덱스나 뷰로 실수를 줄일 수 있다.",
+    "keywords": ["소프트 삭제", "감사", "유니크 제약"], "source": "seed" },
+
+  { "id": "db-uuid-001", "topic": "db", "subtopic": "modeling", "difficulty": 3, "type": "concept",
+    "question": "PK로 UUID를 쓰면 성능에 어떤 영향이 있는가?",
+    "answerShort": "무작위 UUIDv4는 삽입 위치가 흩어져 B+ 트리 페이지 분할과 랜덤 I/O를 늘리고, 16바이트라 인덱스도 커진다. 시간 순서를 담은 UUIDv7이나 ULID를 쓰면 순차 삽입에 가까워져 이 문제가 크게 줄어든다.",
+    "keywords": ["UUID", "UUIDv7", "ULID", "페이지 분할"], "source": "seed" }
+]
