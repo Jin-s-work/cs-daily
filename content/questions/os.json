@@ -1,0 +1,395 @@
+[
+  {
+    "id": "os-process-001",
+    "topic": "os",
+    "subtopic": "process",
+    "difficulty": 1,
+    "type": "concept",
+    "question": "프로세스와 스레드의 차이는?",
+    "answerShort": "프로세스는 독립된 주소 공간을 갖는 실행 단위이고, 스레드는 한 프로세스 안에서 코드·데이터·힙을 공유하되 스택과 레지스터만 따로 갖는 실행 단위다. 그래서 스레드 간 통신은 싸지만 한 스레드의 잘못된 메모리 접근이 프로세스 전체를 죽인다.",
+    "keywords": [
+      "프로세스",
+      "스레드",
+      "주소 공간",
+      "PCB"
+    ],
+    "followUps": [
+      "스레드가 공유하지 않는 것은 무엇인가?",
+      "멀티프로세스 대신 멀티스레드를 고르는 기준은?"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-process-002",
+    "topic": "os",
+    "subtopic": "process",
+    "difficulty": 2,
+    "type": "concept",
+    "question": "컨텍스트 스위칭에서 실제로 저장되는 것은?",
+    "answerShort": "PC와 범용 레지스터, 스택 포인터, 메모리 관리 정보(페이지 테이블 베이스)를 PCB에 저장한다. 프로세스 간 전환이면 TLB가 무효화되고 캐시 지역성이 깨져서 비용이 커진다. 같은 프로세스의 스레드 간 전환은 주소 공간이 그대로라 더 싸다.",
+    "answerDeep": "비용의 정체는 레지스터 저장·복원이 아니라 캐시와 TLB 가 식는 것이다. 그래서 벤치마크에서 스위칭 자체는 수 마이크로초로 보여도, 이후 수십 마이크로초 동안 캐시 미스가 늘어난 상태로 돈다.",
+    "keywords": [
+      "컨텍스트 스위칭",
+      "PCB",
+      "TLB",
+      "캐시"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-deadlock-001",
+    "topic": "os",
+    "subtopic": "deadlock",
+    "difficulty": 2,
+    "type": "concept",
+    "question": "교착 상태(deadlock)의 네 가지 필요조건은?",
+    "answerShort": "상호 배제, 점유와 대기, 비선점, 순환 대기. 네 개가 동시에 성립해야 발생하므로 하나만 깨면 예방된다. 실무에서는 보통 순환 대기를 깬다 — 락에 전역 순서를 정하고 항상 그 순서로 획득한다.",
+    "keywords": [
+      "교착 상태",
+      "상호 배제",
+      "순환 대기",
+      "락 순서"
+    ],
+    "followUps": [
+      "은행원 알고리즘은 예방인가 회피인가?",
+      "실무에서 교착 상태를 탐지하는 방법은?"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-sync-001",
+    "topic": "os",
+    "subtopic": "sync",
+    "difficulty": 1,
+    "type": "concept",
+    "question": "뮤텍스와 세마포어의 차이는?",
+    "answerShort": "뮤텍스는 소유권이 있어 잠근 스레드만 풀 수 있고 카운트가 1이다. 세마포어는 소유권이 없고 카운트가 N이라 다른 스레드가 signal할 수 있으며, 상호 배제보다 자원 개수 제한이나 신호 전달에 쓴다.",
+    "keywords": [
+      "뮤텍스",
+      "세마포어",
+      "소유권",
+      "상호 배제"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-memory-001",
+    "topic": "os",
+    "subtopic": "memory",
+    "difficulty": 1,
+    "type": "concept",
+    "question": "가상 메모리가 필요한 이유는?",
+    "answerShort": "물리 메모리보다 큰 주소 공간을 쓰게 하고, 프로세스마다 격리된 주소 공간을 줘 보호하며, 물리 페이지를 공유해 메모리를 아낀다(공유 라이브러리, fork의 COW). 대가는 주소 변환 비용이고 TLB로 완화한다.",
+    "keywords": [
+      "가상 메모리",
+      "주소 공간",
+      "COW",
+      "TLB"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-memory-002",
+    "topic": "os",
+    "subtopic": "memory",
+    "difficulty": 2,
+    "type": "concept",
+    "question": "페이지 폴트가 나면 무슨 일이 벌어지는가?",
+    "answerShort": "MMU가 유효하지 않은 PTE를 만나 트랩을 걸고, 커널이 접근이 정당한지 확인한 뒤 빈 프레임을 잡아 디스크에서 페이지를 읽어 오고, PTE를 갱신하고 명령을 재시작한다. 빈 프레임이 없으면 교체 알고리즘이 희생 페이지를 고르고 더티면 먼저 쓴다.",
+    "keywords": [
+      "페이지 폴트",
+      "MMU",
+      "PTE",
+      "페이지 교체"
+    ],
+    "followUps": [
+      "major fault 와 minor fault 의 차이는?"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-memory-003",
+    "topic": "os",
+    "subtopic": "memory",
+    "difficulty": 3,
+    "type": "concept",
+    "question": "스래싱(thrashing)은 무엇이고 어떻게 대응하는가?",
+    "answerShort": "페이지 폴트 처리에 시간을 다 써서 실제 진행이 없는 상태다. 다중 프로그래밍 정도가 워킹셋 합보다 크면 발생한다. 워킹셋 모델이나 페이지 폴트 빈도(PFF) 기준으로 프로세스 수를 줄이거나 메모리를 늘린다.",
+    "keywords": [
+      "스래싱",
+      "워킹셋",
+      "PFF",
+      "다중 프로그래밍"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-kernel-001",
+    "topic": "os",
+    "subtopic": "kernel",
+    "difficulty": 1,
+    "type": "concept",
+    "question": "사용자 모드와 커널 모드를 나누는 이유는?",
+    "answerShort": "특권 명령(I/O, 페이지 테이블 변경, 인터럽트 제어)을 아무나 못 쓰게 막기 위해서다. 사용자 코드는 시스템 콜로만 커널에 진입하고, 그 경계에서 인자를 검증한다. 모드 전환 비용 때문에 잦은 시스템 콜은 성능 문제가 된다.",
+    "keywords": [
+      "커널 모드",
+      "특권 명령",
+      "시스템 콜",
+      "보호"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-kernel-002",
+    "topic": "os",
+    "subtopic": "kernel",
+    "difficulty": 2,
+    "type": "concept",
+    "question": "시스템 콜과 일반 함수 호출의 차이는?",
+    "answerShort": "일반 호출은 같은 특권 수준에서 스택 프레임만 쌓지만, 시스템 콜은 트랩을 걸어 커널 모드로 전환하고 커널 스택으로 갈아탄 뒤 인자를 복사·검증한다. 그래서 수십~수백 배 비싸고, 이 때문에 버퍼링과 배치가 의미를 갖는다.",
+    "answerDeep": "리눅스는 이 비용을 줄이려고 vDSO 를 둔다. gettimeofday 처럼 커널 데이터를 읽기만 하는 호출은 커널이 매핑해 둔 페이지에서 사용자 모드로 처리해 트랩 없이 끝낸다.",
+    "keywords": [
+      "시스템 콜",
+      "트랩",
+      "모드 전환",
+      "커널 스택"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-scheduling-001",
+    "topic": "os",
+    "subtopic": "scheduling",
+    "difficulty": 1,
+    "type": "concept",
+    "question": "선점형 스케줄링과 비선점형의 차이는?",
+    "answerShort": "선점형은 타이머 인터럽트로 실행 중인 프로세스를 강제로 뺏을 수 있어 응답성이 좋지만 컨텍스트 스위칭 비용과 동기화 문제가 늘어난다. 비선점형은 자발적으로 CPU를 놓을 때까지 기다려 단순하지만 한 프로세스가 붙잡으면 전체가 멈춘다.",
+    "keywords": [
+      "선점",
+      "타이머 인터럽트",
+      "응답성"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-scheduling-002",
+    "topic": "os",
+    "subtopic": "scheduling",
+    "difficulty": 3,
+    "type": "concept",
+    "question": "기아(starvation)와 우선순위 역전은 어떻게 다른가?",
+    "answerShort": "기아는 낮은 우선순위 작업이 계속 밀려 실행되지 못하는 상태이고, 에이징으로 완화한다. 우선순위 역전은 낮은 우선순위 스레드가 락을 쥔 채 중간 우선순위에 선점당해 높은 우선순위가 막히는 것이며, 우선순위 상속으로 푼다.",
+    "keywords": [
+      "기아",
+      "에이징",
+      "우선순위 역전",
+      "우선순위 상속"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-process-003",
+    "topic": "os",
+    "subtopic": "process",
+    "difficulty": 1,
+    "type": "concept",
+    "question": "fork()의 반환값은 부모와 자식에서 각각 무엇인가?",
+    "answerShort": "부모에게는 자식의 PID, 자식에게는 0을 준다. 실패하면 -1이다. 자식은 부모의 주소 공간 사본을 갖지만 실제로는 copy-on-write라 쓸 때까지 물리 페이지를 공유한다.",
+    "keywords": [
+      "fork",
+      "PID",
+      "COW"
+    ],
+    "refs": [
+      {
+        "title": "fork(2) — Linux manual page",
+        "url": "https://man7.org/linux/man-pages/man2/fork.2.html"
+      }
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-process-004",
+    "topic": "os",
+    "subtopic": "process",
+    "difficulty": 2,
+    "type": "concept",
+    "question": "좀비 프로세스와 고아 프로세스의 차이는?",
+    "answerShort": "좀비는 종료했지만 부모가 wait()로 종료 상태를 안 거둬 PCB만 남은 상태다. 고아는 부모가 먼저 죽은 프로세스이며 init(PID 1)에 입양되어 정상 회수된다. 문제가 되는 쪽은 PID 테이블을 채우는 좀비다.",
+    "keywords": [
+      "좀비",
+      "고아",
+      "wait",
+      "init"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-io-001",
+    "topic": "os",
+    "subtopic": "io",
+    "difficulty": 3,
+    "type": "concept",
+    "question": "블로킹 I/O와 논블로킹 I/O, 동기와 비동기는 어떻게 구분하는가?",
+    "answerShort": "블로킹 여부는 호출이 완료될 때까지 스레드를 세우는지이고, 동기·비동기는 완료를 누가 알려주는지다. select/epoll은 논블로킹이지만 여전히 동기다 — 준비됐음을 알려줄 뿐 데이터 복사는 호출자가 한다. 실제 비동기 I/O는 커널이 복사까지 끝내고 통보한다.",
+    "answerDeep": "흔한 오해가 \"논블로킹 = 비동기\"다. epoll 은 준비 여부만 알려주고 read() 는 여전히 호출자가 하므로 동기다. io_uring 이나 POSIX AIO 가 진짜 비동기에 해당한다.",
+    "keywords": [
+      "블로킹",
+      "논블로킹",
+      "동기",
+      "비동기"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-io-002",
+    "topic": "os",
+    "subtopic": "io",
+    "difficulty": 2,
+    "type": "concept",
+    "question": "epoll이 select보다 빠른 이유는?",
+    "answerShort": "select는 호출마다 전체 fd 집합을 커널로 복사하고 O(n)으로 훑는다. epoll은 관심 fd를 커널에 한 번 등록해 두고 준비된 것만 리스트로 받아 O(1)에 가깝다. fd 수가 많고 그중 소수만 활성일 때 차이가 벌어진다.",
+    "keywords": [
+      "epoll",
+      "select",
+      "fd",
+      "이벤트 루프"
+    ],
+    "followUps": [
+      "epoll 의 레벨 트리거와 엣지 트리거 차이는?"
+    ],
+    "refs": [
+      {
+        "title": "epoll(7) — Linux manual page",
+        "url": "https://man7.org/linux/man-pages/man7/epoll.7.html"
+      }
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-cache-001",
+    "topic": "os",
+    "subtopic": "cache",
+    "difficulty": 1,
+    "type": "concept",
+    "question": "캐시의 지역성 두 가지는?",
+    "answerShort": "시간 지역성은 방금 쓴 데이터를 곧 다시 쓴다는 것이고, 공간 지역성은 인접한 주소를 곧 쓴다는 것이다. 배열 순회가 연결 리스트 순회보다 빠른 이유가 공간 지역성이고, 캐시 라인 단위로 읽어 오기 때문이다.",
+    "keywords": [
+      "시간 지역성",
+      "공간 지역성",
+      "캐시 라인"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-memory-004",
+    "topic": "os",
+    "subtopic": "memory",
+    "difficulty": 3,
+    "type": "concept",
+    "question": "페이지 교체 알고리즘 LRU를 실제 OS가 그대로 쓰지 않는 이유는?",
+    "answerShort": "정확한 LRU는 접근마다 순서를 갱신해야 해서 하드웨어 지원 없이는 비싸다. 그래서 참조 비트를 이용한 clock(second-chance)이나 그 변형으로 근사한다.",
+    "answerDeep": "clock 은 페이지를 원형 큐로 두고 참조 비트가 1이면 0으로 내리고 지나가며, 0인 것을 만나면 그걸 희생시킨다. 한 바퀴 도는 동안 다시 참조되면 살아남으므로 LRU 를 거칠게 흉내낸다.",
+    "keywords": [
+      "LRU",
+      "clock",
+      "참조 비트",
+      "페이지 교체"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-memory-005",
+    "topic": "os",
+    "subtopic": "memory",
+    "difficulty": 2,
+    "type": "concept",
+    "question": "내부 단편화와 외부 단편화의 차이는?",
+    "answerShort": "내부 단편화는 할당 단위가 요청보다 커서 블록 안쪽이 남는 것이고(페이징), 외부 단편화는 전체 여유는 충분한데 연속 공간이 없어 못 쓰는 것이다(세그멘테이션). 페이징은 외부 단편화를 없애는 대신 내부 단편화를 받아들인 설계다.",
+    "keywords": [
+      "내부 단편화",
+      "외부 단편화",
+      "페이징",
+      "세그멘테이션"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-sync-002",
+    "topic": "os",
+    "subtopic": "sync",
+    "difficulty": 2,
+    "type": "concept",
+    "question": "레이스 컨디션이 생기는 조건과 방지 방법은?",
+    "answerShort": "둘 이상의 실행 흐름이 공유 자원에 동시에 접근하고 그중 하나가 쓰기이며 순서가 보장되지 않을 때 생긴다. 임계 구역을 락으로 감싸거나, 원자적 연산을 쓰거나, 애초에 공유를 없애(스레드 로컬, 불변 데이터) 막는다.",
+    "keywords": [
+      "레이스 컨디션",
+      "임계 구역",
+      "원자적 연산"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-ipc-001",
+    "topic": "os",
+    "subtopic": "ipc",
+    "difficulty": 2,
+    "type": "concept",
+    "question": "IPC 방식에는 무엇이 있고 어떤 기준으로 고르는가?",
+    "answerShort": "파이프·FIFO, 메시지 큐, 공유 메모리, 소켓, 시그널이 있다. 공유 메모리는 복사가 없어 가장 빠르지만 동기화를 직접 해야 하고, 소켓은 느리지만 기계를 넘어갈 수 있다. 데이터 크기와 프로세스가 같은 호스트에 있는지로 가른다.",
+    "keywords": [
+      "IPC",
+      "공유 메모리",
+      "파이프",
+      "소켓"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "os-sync-003",
+    "topic": "os",
+    "subtopic": "sync",
+    "difficulty": 2,
+    "type": "ox",
+    "question": "스핀락은 대기 중에도 CPU를 계속 소모한다.",
+    "answerShort": "O. 스핀락은 락을 얻을 때까지 루프를 돌며 계속 확인하므로 대기 시간 동안 CPU를 쓴다. 임계 구역이 아주 짧아 컨텍스트 스위칭 비용보다 쌀 때만 이득이고, 길어지면 뮤텍스가 낫다.",
+    "keywords": [
+      "스핀락",
+      "바쁜 대기",
+      "뮤텍스"
+    ],
+    "choices": [
+      "O",
+      "X"
+    ],
+    "correct": 0,
+    "source": "seed"
+  },
+  {
+    "id": "os-scheduling-003",
+    "topic": "os",
+    "subtopic": "scheduling",
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "평균 대기 시간을 최소화하는 것이 증명된 스케줄링 알고리즘은?",
+    "answerShort": "SJF(Shortest Job First)다. 다만 각 작업의 실행 시간을 미리 알아야 하는데 실제로는 알 수 없어서, 과거 실행 시간으로 추정하는 지수 평균을 쓰거나 다단계 피드백 큐로 근사한다.",
+    "answerDeep": "SJF 는 긴 작업이 계속 밀리는 기아를 낳는다. 에이징으로 완화하거나, 리눅스 CFS 처럼 가상 실행 시간이 가장 적은 작업을 고르는 방식으로 공정성과 응답성을 함께 잡는다.",
+    "keywords": [
+      "SJF",
+      "평균 대기 시간",
+      "기아",
+      "CFS"
+    ],
+    "choices": [
+      "FCFS",
+      "SJF",
+      "라운드 로빈",
+      "우선순위 스케줄링"
+    ],
+    "correct": 1,
+    "followUps": [
+      "SJF 를 실제로 못 쓰는 이유는?"
+    ],
+    "source": "seed"
+  }
+]
