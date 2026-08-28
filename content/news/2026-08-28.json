@@ -1,0 +1,126 @@
+[
+  {
+    "id": "22747b3420c306fdc533ebe3fa6f800a785c7bd5",
+    "title": "GitHub PR에 급증한 ‘Claude 같은’ 문체 - 46만 건의 어휘 변화 분석",
+    "url": "https://news.hada.io/topic?id=32970",
+    "source": "geeknews",
+    "publishedAt": "2026-08-28T02:45:02.000Z",
+    "summary": [
+      "GitHub PR 46만 건에서 ‘Claude 같은’ 문체 집단이 급증했다.",
+      "2025년 초 0.7%였던 집단이 2026년 중반 약 39%로 늘었고, 어휘만 분류했다.",
+      "load-bearing 같은 어휘가 꼽혔지만, 분류 방식과 원인은 아직 확인되지 않았다."
+    ],
+    "whyItMatters": "PR 작성 주체나 자동 생성 여부를 어휘로 판별하려 했다면, 이 분석의 분류 기준과 오탐 가능성을 먼저 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "3ceeb5bddfd632148a7f87b877d0c3eac6cdebea",
+    "title": "Judge Rules Trump Administration’s Blacklisting of Anthropic Was Illegal",
+    "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+    "source": "hackernews",
+    "publishedAt": "2026-08-28T02:03:38.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "21a87df7ff308221d09e83ba4a5691850db002fc",
+    "title": "EduRiskX: A Neuro-Symbolic Framework with F-Logic Reasoning for Early Academic Risk Prediction",
+    "url": "https://arxiv.org/abs/2608.26107",
+    "source": "arxiv",
+    "publishedAt": "2026-08-28T04:00:00.000Z",
+    "summary": [
+      "EduRiskX가 Transformer와 F-Logic을 결합해 온라인 학업 위험을 조기에 예측하는 방법을 제안했다.",
+      "OULAD 학생 단위 80/10/10 분할에서 정확도 0.900, F1 0.894를 기록했고 평균 9.32주에 위험을 찾았다.",
+      "38주차 결과이며, 신경망 확률과 학습 데이터로 만든 규칙 신뢰도를 logistic regression으로 합쳤다."
+    ],
+    "whyItMatters": "학습 로그로 위험 학생을 찾는다면 9.32주 시점의 조기 탐지와 규칙 설명을 함께 설계하는 기준이 생긴다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "7985b8afc0c2a883fbb55549a90a4a0a66cc9e82",
+    "title": "Google Antigravity Teamwork - 여러 AI 에이전트가 장기 연구·개발을 함께 수행하는 기능",
+    "url": "https://news.hada.io/topic?id=32969",
+    "source": "geeknews",
+    "publishedAt": "2026-08-28T01:26:00.000Z",
+    "summary": [
+      "Google Antigravity에 여러 AI 에이전트가 장기 연구·개발을 함께 수행하는 Teamwork 기능이 들어갔다.",
+      "에이전트들은 수시간에서 수일 동안 해법을 제안하고 서로 비판·검증·개선하며 문제를 푼다.",
+      "과제에 따라 코딩·증명·자체 검증·문서 검토 패턴을 고르고, 실행 중 팀 구성도 바꾼다."
+    ],
+    "whyItMatters": "장시간 작업을 한 에이전트에 맡기던 흐름이라면, 이제 역할을 나눠 상호 검증하는 구조를 비교해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "dacb3424514f96fed1ca2911aec99e0774d41ec3",
+    "title": "Gemini-3.5-Transcribe",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+    "source": "hackernews",
+    "publishedAt": "2026-08-27T18:03:42.000Z",
+    "summary": [
+      "Google이 음성 전사를 위한 새 모델 Gemini 3.5 Transcribe를 발표했다.",
+      "Gemini 3.5 Transcribe가 Gemini 계열의 지능형 전사 모델이라는 점이 제목에서 확인된다.",
+      "본문 발췌가 메뉴 위주라 정확도, 입력 형식, API와 출시 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "음성 전사 기능을 붙일 계획이라면 API와 요금이 공개됐는지 본문에서 먼저 확인해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "5f39c84bf0df6bb33461d5afb6c53277045b718b",
+    "title": "Standalone LLM and a Pre-specified Agentic Pipeline for Explaining ICU Mortality Predictions: a Feasibility Study on the eICU Demo Dataset",
+    "url": "https://arxiv.org/abs/2608.26109",
+    "source": "arxiv",
+    "publishedAt": "2026-08-28T04:00:00.000Z",
+    "summary": [
+      "eICU Demo 데이터에서 ICU 사망 설명용 단일 LLM과 4단계 agentic pipeline을 비교했다.",
+      "2,353건 자료에서 XGBoost AUROC는 0.855였고, 38건 설명 평가에서 단일 LLM은 결과 누출 1건을 냈다.",
+      "38건 평가에서 agentic pipeline은 결과 누출이 없었지만, 실사용 전 attribution 검증이 필요하다."
+    ],
+    "whyItMatters": "ICU 사망 위험 설명을 실제 임상에 붙이려면 agentic pipeline만 쓰지 말고 SHAP 같은 attribution 검사를 함께 넣어야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "3a7f97587491780e8a68df4da67ed5b806ba5083",
+    "title": "Route 53 Files 출시",
+    "url": "https://news.hada.io/topic?id=32968",
+    "source": "geeknews",
+    "publishedAt": "2026-08-28T01:23:38.000Z",
+    "summary": [
+      "Route 53 공개·비공개 호스팅 영역을 NFS로 마운트하는 비공식 서비스가 나왔다.",
+      "DNS 레코드 이름은 디렉터리, 레코드 세트는 파일, Alias는 심볼릭 링크로 보인다.",
+      "AWS 컴퓨팅 자원에서 표준 UNIX 도구로 편집하며, 무료지만 비공식 서비스다."
+    ],
+    "whyItMatters": "운영 DNS에 바로 붙이기보다 비공식 서비스라는 점을 감안해 테스트 영역부터 NFS 편집을 붙여야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "8196f2ef7bd1de7925af50bb194653a110b6d9a4",
+    "title": "We found a division by zero bug in FFmpeg with a vibecoded fuzzer",
+    "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
+    "source": "hackernews",
+    "publishedAt": "2026-08-27T17:53:40.000Z",
+    "summary": [
+      "FFmpeg에서 Sony PS2 VPK demuxer의 정수 0 나눗셈 버그가 퍼저로 발견됐다.",
+      "조작한 21바이트 입력이 nb_channels를 0으로 만들어 SIGFPE를 일으키고, VPK 앱이 충돌할 수 있다.",
+      "헤더 검사는 있지만 custom-AVIO 경로에서 값이 0으로 돌아가는 조건은 더 확인해야 한다."
+    ],
+    "whyItMatters": "신뢰할 수 없는 VPK 파일이나 스트림을 FFmpeg로 열고 있다면, 패치 전에는 해당 처리 경로를 막아야 한다.",
+    "tags": [
+      "보안",
+      "언어/런타임"
+    ]
+  }
+]
