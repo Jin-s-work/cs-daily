@@ -1,0 +1,119 @@
+[
+  {
+    "id": "13b5ce4ecb31df00060dae79967db48ce25ec83c",
+    "title": "cats.txt가 드러낸 llms.txt와 GEO 근거의 허점",
+    "url": "https://news.hada.io/topic?id=33017",
+    "source": "geeknews",
+    "publishedAt": "2026-08-29T22:02:56.000Z",
+    "summary": [
+      "llms.txt의 효과를 뒷받침하던 관찰 네 가지를 가짜 표준 cats.txt로 검증했다.",
+      "고양이의 직책·품종·애정 지표를 선언한 cats.txt도 같은 기준을 모두 통과했고, 여러 봇이 크롤링했다.",
+      "가짜 파일도 통과했으므로 봇의 크롤링만으로 llms.txt 효과를 판단할 수 없고, 실제 영향은 남아 있다."
+    ],
+    "whyItMatters": "llms.txt를 도입했다면 봇이 파일을 읽었다는 로그만으로 GEO 효과를 주장하지 말고 실제 검색 유입을 따로 검증해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "c7cdf2bd5eb5bc156a6250e26b0edc912eb7b04a",
+    "title": "DHS is using obscure law to snoop on journalists, non-profits, unions",
+    "url": "https://www.theguardian.com/us-news/2026/aug/29/trump-dhs-1509-summons-records-journalists-nonprofits",
+    "source": "hackernews",
+    "publishedAt": "2026-08-29T18:44:37.000Z",
+    "summary": [
+      "미국 Trump 행정부의 DHS가 언론인·비영리단체·노조를 비밀리에 들여다보고 있다.",
+      "기사 제목은 DHS가 잘 알려지지 않은 법률을 이용해 이들을 감시한다고 전한다.",
+      "발췌가 중간에 끊겨 해당 법률의 이름과 실제 수집 기록, 적용 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "언론·비영리·노조의 기록을 다룬다면 해당 법률에 따른 DHS 요구에 대비해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "76800ca5ed066bec02eadf184d53a15da838e842",
+    "title": "인터넷은 이제 약탈적 오물 구덩이가 됐다",
+    "url": "https://news.hada.io/topic?id=33016",
+    "source": "geeknews",
+    "publishedAt": "2026-08-29T20:33:24.000Z",
+    "summary": [
+      "현대 인터넷의 사기와 유해물이 취약한 사람을 겨냥하는 약탈 구조가 됐다는 글이다.",
+      "피드는 분노·공포·질투·욕망·희망을 상품에 연결하고, 이용자는 제안을 다시 퍼뜨린다.",
+      "소비자와 판매자와 상품의 경계가 흐려진다는 점 외의 세부 근거는 발췌에 없다."
+    ],
+    "whyItMatters": "피드 기반 서비스를 만들고 있다면 참여율보다 어떤 감정과 결제가 연결되는지 먼저 뜯어봐야 한다.",
+    "tags": [
+      "웹",
+      "업계"
+    ]
+  },
+  {
+    "id": "6472bbcb1287f6d68ab11c0dc94728f07470f800",
+    "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
+    "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+    "source": "hackernews",
+    "publishedAt": "2026-08-29T17:19:47.000Z",
+    "summary": [
+      "글쓴이는 13년 넘게 엔지니어링 업계를 보며 AI 도구보다 좋은 팀 문화가 생산성을 좌우한다고 주장한다.",
+      "AI가 생산성을 높여도 팀 문화가 나쁘면 부서 간 책임 공방과 수정 작업에 시간이 새어 나간다.",
+      "발췌에는 아직 구체적인 생산성 측정 수치나 문화 개선 방법이 나오지 않는다."
+    ],
+    "whyItMatters": "AI 도입만 재촉하기보다 팀의 협업 방식과 책임 공방부터 손보게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "42e64e323f38b4e2673a5a3bcde03fe8f1a13b00",
+    "title": "LLM 메모리를 만들다 우연히 프로그램 분석 엔진이 된 이야기",
+    "url": "https://news.hada.io/topic?id=33015",
+    "source": "geeknews",
+    "publishedAt": "2026-08-29T19:39:01.000Z",
+    "summary": [
+      "LLM 메모리 문제를 풀려다 Datalog 기반 프로그램 분석 엔진 Lemmalog를 만들었다.",
+      "Datalog로 사실과 규칙을 관리해 과거 대화 검색 대신 현재 참인 상태를 추적한다.",
+      "발췌만으로는 프로그램 분석 엔진이 어떤 분석을 수행하는지 구체적으로 확인되지 않는다."
+    ],
+    "whyItMatters": "LLM 기반 취약점 조사를 한다면 대화 기록보다 사실과 규칙을 분리해 관리하는 설계를 시험하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "9a034964e5e2725115e9b2996b2fce903f984caf",
+    "title": "GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)",
+    "url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
+    "source": "hackernews",
+    "publishedAt": "2026-08-29T15:26:28.000Z",
+    "summary": [
+      "GrapheneOS가 Pixel 11 시리즈 포트를 일주일 작업했지만 완성하지 못했다.",
+      "ARM 하드웨어 메모리 태깅(MTE) 지원이 소프트웨어·펌웨어와 하드웨어에 없는 것으로 보인다.",
+      "포트가 끝나지 않은 원인은 이 기능의 부재이며, Google이 비용 절감을 위해 뺐다는 해석은 아직 확인되지 않았다."
+    ],
+    "whyItMatters": "Pixel 11에 GrapheneOS를 올릴 계획이라면 MTE 기반 보안 기능이 빠질 가능성을 감안해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "df105baa26471bd8602711b5a06bf9d735345db7",
+    "title": "발산 정리로 터무니없이 빠르게 부피 계산하기(2018)",
+    "url": "https://news.hada.io/topic?id=33014",
+    "source": "geeknews",
+    "publishedAt": "2026-08-29T19:36:01.000Z",
+    "summary": [
+      "3D 메시의 부피를 내부를 채우지 않고 표면 적분으로 계산하는 방법이 정리됐다.",
+      "발산이 1인 벡터장 F(x,y,z)=〈x,0,0〉을 골라 삼각형마다 적분하고 결과를 더한다.",
+      "단순·폐쇄·삼각형 분할 메시가 전제이며, 모든 삼각형을 한 번씩 순회한다."
+    ],
+    "whyItMatters": "메시 부피를 계산해야 한다면 복셀화 대신 표면 삼각형을 한 번 순회하는 방식으로 구현하면 된다.",
+    "tags": [
+      "인프라"
+    ]
+  }
+]
