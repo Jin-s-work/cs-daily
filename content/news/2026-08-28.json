@@ -22,9 +22,15 @@
     "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
     "source": "hackernews",
     "publishedAt": "2026-08-28T02:03:38.000Z",
-    "summary": [],
-    "whyItMatters": "",
-    "tags": []
+    "summary": [
+      "법원이 Trump 행정부의 Anthropic 블랙리스트 지정이 불법이라고 판결했다.",
+      "발췌에는 판결문과 CourtListener 기록 링크만 있어, 법원이 문제 삼은 조치는 확인되지 않는다.",
+      "후속 조치나 정부 계약의 범위, Anthropic에 적용될 구제 내용은 본문이 없어 알 수 없다."
+    ],
+    "whyItMatters": "미국 정부 프로젝트에서 Anthropic을 쓰고 있다면, 계약 중단이나 재개 여부를 판결문 기준으로 다시 확인해야 한다.",
+    "tags": [
+      "업계"
+    ]
   },
   {
     "id": "21a87df7ff308221d09e83ba4a5691850db002fc",
