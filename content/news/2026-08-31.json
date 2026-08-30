@@ -1,0 +1,118 @@
+[
+  {
+    "id": "84dd34414d83541fc67709a34004c8d7a1d55ebd",
+    "title": "Show GN: Xazz - Rust 기반 AI 파이프라인 DSL (Polars+Burn 통합)",
+    "url": "https://news.hada.io/topic?id=33046",
+    "source": "geeknews",
+    "publishedAt": "2026-08-30T23:31:52.000Z",
+    "summary": [
+      "고등학교 2학년 개발자가 Rust로 AI 데이터 파이프라인 DSL·플랫폼 Xazz를 만들었다.",
+      "Xazz는 Polars와 Burn을 통합해 Python의 pandas·PyTorch 중심 프로토타이핑을 겨냥한다.",
+      "작성자는 파이프라인이 커질수록 타입 오류와 NaN이 런타임에 터지는 점을 문제로 꼽았고, 세부 구현은 본문 확인이 필요하다."
+    ],
+    "whyItMatters": "Python 파이프라인에서 타입 오류와 NaN을 실행 전에 잡으려는 개발이라면 Xazz의 설계와 구현을 직접 비교할 대상이 생겼다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "e3b8bb2b25ab16b5d2b83074c1047bd485325288",
+    "title": "Haiku R1/beta6 has been released",
+    "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
+    "source": "hackernews",
+    "publishedAt": "2026-08-30T16:01:10.000Z",
+    "summary": [
+      "Haiku Project가 약 2년 만에 Haiku R1/beta6를 릴리스했다.",
+      "기존 설치본은 업그레이드할 수 있고, 새 사용자는 릴리스 이미지를 내려받으면 된다.",
+      "직전 베타 이후 2년이 지났으며, 세부 변경 사항은 릴리스 노트에서 확인해야 한다."
+    ],
+    "whyItMatters": "Haiku 테스트 환경이 있다면 새 설치 대신 기존 환경을 beta6로 업그레이드해 바로 비교할 수 있다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "e654dfca500a417ea1568ca78766f7392e0e3f8b",
+    "title": "TwelveLabs Jockey로 강의 검수 파이프라인 만들기, 한 달 실측기",
+    "url": "https://news.hada.io/topic?id=33045",
+    "source": "geeknews",
+    "publishedAt": "2026-08-30T22:01:39.000Z",
+    "summary": [
+      "TwelveLabs Jockey로 인프런 강의 검수 파이프라인을 한 달간 만들고 실측한 기록이다.",
+      "18편의 강의에서 말 끊김·톤 점프, 강조 표시와 발화 일치, 페이싱을 따로 확인했다.",
+      "편집본마다 최소 2회 정주행해 전체 검수에 10시간 이상 들었고, 구체적 자동화 방식은 본문 확인이 필요하다."
+    ],
+    "whyItMatters": "강의 검수를 자동화하려는 경우, 반복 시청이 실제 병목인지 수치로 잡고 파이프라인을 설계하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "8a970b1f48f4986a11023f646599618f6220f841",
+    "title": "Omarchy: Any User Process Can Escalate to Root",
+    "url": "https://0xcc.io/posts/omarchy-root-creds/",
+    "source": "hackernews",
+    "publishedAt": "2026-08-30T15:59:49.000Z",
+    "summary": [
+      "Omarchy 기본 Docker 설정 때문에 데스크톱 세션의 모든 프로세스가 비밀번호 없이 root 권한을 얻을 수 있었다.",
+      "기본 사용자가 docker 그룹에 속해 Docker 소켓으로 root 컨테이너를 띄우고 호스트 파일을 읽을 수 있었다.",
+      "영향 범위는 Linux Omarchy 설치이며, 패치는 4.0.1에 들어갔고 다른 환경은 본문에서 다루지 않는다."
+    ],
+    "whyItMatters": "Omarchy를 쓰고 있다면 4.0.1로 업데이트하지 않는 한 데스크톱에서 실행되는 프로그램이 root 권한을 얻을 수 있다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "b1adcbb7cc4acba02ad60a3481db231ae9633412",
+    "title": "유럽연합 집행위원회, ProtectEU 전략으로 암호화 백도어 추진 재개",
+    "url": "https://news.hada.io/topic?id=33044",
+    "source": "geeknews",
+    "publishedAt": "2026-08-30T20:31:40.000Z",
+    "summary": [
+      "EU 집행위원회가 ProtectEU 전략에서 암호화 데이터 접근 추진을 다시 꺼냈다.",
+      "전략은 적대 국가와 범죄 조직 등에 대응할 6개 영역 가운데 법 집행 도구를 다룬다.",
+      "구체적인 정책안이 아니라 여러 해에 걸친 비전과 작업 계획이라 실제 방식은 아직 정해지지 않았다."
+    ],
+    "whyItMatters": "암호화 통신을 쓰는 서비스를 운영한다면 앞으로 법 집행기관의 데이터 접근 의무가 생길지 정책 변화를 확인해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "2de30eebda327685392186d9bfcb178c4d57d8cd",
+    "title": "European Commission Revives Push for Encryption Backdoors in ProtectEU Strategy",
+    "url": "https://reclaimthenet.org/eu-protecteu-strategy-encryption-backdoor-law-enforcement",
+    "source": "hackernews",
+    "publishedAt": "2026-08-30T15:12:40.000Z",
+    "summary": [
+      "EU 집행위가 ProtectEU 전략에서 수사기관의 암호화 접근을 다시 추진하는 구상을 내놨다.",
+      "전략은 수년간 이어질 비전·작업계획으로, 종단간 암호화를 약화할 백도어 로드맵을 ‘합법적 접근’으로 표현한다.",
+      "다만 이번 발표는 구체적인 정책 제안이 아니라 전략 수준에 머물러 실제 의무화 방식과 일정은 정해지지 않았다."
+    ],
+    "whyItMatters": "암호화 제품을 다룬다면 EU의 ‘lawful access’가 백도어 의무화로 이어지는지 정책 변화를 계속 확인해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "a108443c0576e82158c709f3256785c8d41f24ca",
+    "title": "Omarchy의 모든 사용자 프로세스가 root 권한을 얻을 수 있었던 취약점",
+    "url": "https://news.hada.io/topic?id=33043",
+    "source": "geeknews",
+    "publishedAt": "2026-08-30T19:32:40.000Z",
+    "summary": [
+      "Omarchy의 기본 Docker 설정에서 데스크톱 세션의 모든 프로그램이 root 권한을 얻을 수 있는 취약점이 발견됐다.",
+      "기본 사용자를 Linux docker 그룹에 넣어 root Docker 데몬 소켓에 접근시킨 것이 원인이었다.",
+      "암호나 sudo 확인이 없었고, 비공개 제보를 받은 뒤 취약점이 수정됐다."
+    ],
+    "whyItMatters": "Omarchy를 쓰고 있다면 최신 수정본으로 업데이트하고 Docker 소켓 접근 권한을 확인해야 한다.",
+    "tags": [
+      "보안",
+      "인프라"
+    ]
+  }
+]
