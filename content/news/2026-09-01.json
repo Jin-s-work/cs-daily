@@ -1,0 +1,132 @@
+[
+  {
+    "id": "a93cfc9252b4f720bb0ee9f5569bccb9f68d7638",
+    "title": "Hister - 방문한 웹페이지와 로컬 파일을 다시 찾는 개인 검색엔진",
+    "url": "https://news.hada.io/topic?id=33094",
+    "source": "geeknews",
+    "publishedAt": "2026-09-01T00:40:02.000Z",
+    "summary": [
+      "Hister가 방문한 웹페이지와 로컬 파일 본문을 색인하는 개인 검색엔진으로 소개됐다.",
+      "Firefox·Chrome 확장 프로그램이 새로 방문한 페이지를 자동으로 저장해, 읽었던 문장까지 다시 검색한다.",
+      "제목과 URL만 남기는 기록과 달리 본문을 찾지만, 파일 색인 방식과 지원 범위는 확인되지 않는다."
+    ],
+    "whyItMatters": "나중에 읽은 문장을 다시 찾아야 한다면 브라우저 기록 대신 본문 색인 도구를 쓰게 된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "313e6f4d324a84535890cbace30ebe54d4aafe09",
+    "title": "Google Has Removed MV2 Extensions from the Chrome Web Store, Including UBO",
+    "url": "https://webiterate.dev/google-removed-extensions-ublock-origin-108/",
+    "source": "hackernews",
+    "publishedAt": "2026-08-31T21:10:58.000Z",
+    "summary": [
+      "Chrome Web Store에서 Manifest V2 확장 기능이 모두 삭제됐고, uBlock Origin도 사라졌다.",
+      "Chrome 138 이하에 설치된 MV2는 남지만 업데이트와 재설치가 막히고, Brave는 4개를 별도 호스팅한다.",
+      "다른 Chromium 브라우저가 MV2를 계속 지원해도 Chrome Web Store에서는 설치할 수 없다."
+    ],
+    "whyItMatters": "uBlock Origin 같은 MV2 확장 기능이 필요하면 Chrome Web Store 재설치에 기대지 말고 설치 상태를 유지해야 한다.",
+    "tags": [
+      "웹",
+      "보안"
+    ]
+  },
+  {
+    "id": "0fa1aec7131928856bbd9d6ed043e4600e4587f1",
+    "title": "Time Capsule of Testable Human Knowledge: 41 Years of Jeopardy! in a Single Free Local Model",
+    "url": "https://arxiv.org/abs/2608.27459",
+    "source": "arxiv",
+    "publishedAt": "2026-08-31T04:00:00.000Z",
+    "summary": [
+      "Qwen2.5-14B 4-bit 모델 하나로 41년치 Jeopardy! 529,939문제를 평가했다.",
+      "9GB짜리 로컬 모델은 전체 정답률 67.0%, 사실형 범주에서는 85%를 넘겼다.",
+      "학습 cutoff 이후 문제에서 로컬 모델은 65%, Claude Opus 4.8은 95%, Watson은 0점을 기록했다."
+    ],
+    "whyItMatters": "로컬에서 일반상식 모델을 비교하려면 9GB 파일 하나로 41년치 검증 세트를 재현할 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "abbed17a994e617496ccfd50fd2526d469bc068e",
+    "title": "Starboard - macOS Dock 옆에 항상 붙어 있는 터미널",
+    "url": "https://news.hada.io/topic?id=33093",
+    "source": "geeknews",
+    "publishedAt": "2026-09-01T00:30:02.000Z",
+    "summary": [
+      "Starboard가 macOS Dock 옆에 늘 붙어 있는 터미널 앱으로 나왔다.",
+      "Dock 위치와 높이를 실시간으로 따라가며 모든 Space와 전체 화면 앱 위에 표시된다.",
+      "다른 앱을 쓰는 동안 포커스를 빼앗지 않고 필요할 때 명령을 입력할 수 있다."
+    ],
+    "whyItMatters": "터미널을 자주 오가며 쓰는 macOS 사용자라면 단축키 대신 Dock 옆 입력창에 바로 명령을 넣게 된다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "a045ecc9f202efaec26e588caf077d3197d4c899",
+    "title": "A walkable ASCII cyberpunk city in one HTML file [video]",
+    "url": "https://www.youtube.com/watch?v=3YtygAx_C6A",
+    "source": "hackernews",
+    "publishedAt": "2026-08-31T18:21:33.000Z",
+    "summary": [
+      "HTML 파일 하나로 걸어 다닐 수 있는 ASCII 사이버펑크 도시가 영상으로 소개됐다.",
+      "업데이트 영상에는 교통과 디테일, 건물 내부와 고도, 마천루 관련 내용이 붙었다.",
+      "실제 구현 방식과 브라우저 요구사항, 실행 조건은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "단일 HTML 데모를 만들 계획이라면 외부 파일 없이 ASCII 탐색 환경을 구성하는 방향을 시험해 볼 수 있다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "e1c584d4ed773e7b19343e85fd5e80d74150d4d1",
+    "title": "Rating the Raters: Rasch Measurement Theory for LLM Evaluation",
+    "url": "https://arxiv.org/abs/2608.27463",
+    "source": "arxiv",
+    "publishedAt": "2026-08-31T04:00:00.000Z",
+    "summary": [
+      "LLM 평가를 응시자·심판·평정자로 나눠 보고, Rasch 측정 이론을 적용한 연구가 나왔다.",
+      "9개 LLM의 혐오 발언 주석을 다면 Rasch 모델로 분석해 사람과의 차이를 분리했다.",
+      "기존 평가만으로는 이런 차이를 볼 수 없고, 사례 연구는 Measuring Hate Speech에 한정됐다."
+    ],
+    "whyItMatters": "LLM-as-rater 결과를 비교할 때 평균 점수만 보지 말고 모델별 편향과 문항 보정을 함께 점검해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "7397183b0136e8da79a3c8efc80ac1e7b1e49677",
+    "title": "11줄 코드로 만드는 더 나은 SQL",
+    "url": "https://news.hada.io/topic?id=33092",
+    "source": "geeknews",
+    "publishedAt": "2026-09-01T00:19:59.000Z",
+    "summary": [
+      "UCLA RePL이 SQL 질의를 11줄 코드로 더 짧고 읽기 쉽게 만드는 Prela를 개발 중이다.",
+      "Prela는 데이터를 이항 관계로 표현하고 합성하며, 20줄이 넘는 질의를 줄인다.",
+      "넓은 테이블을 6NF로 쪼개 열을 행 번호와 값의 쌍으로 바꾸지만, 세부 구현은 더 확인해야 한다."
+    ],
+    "whyItMatters": "SQL이 20줄을 넘기기 시작했다면 Prela의 이항 관계 모델로 질의를 다시 짜 볼 후보가 생긴다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "a622eb96d8e7b0916d63eac5453ca4278cbf4b4e",
+    "title": "I turned my security cameras into an automatic bird identification system",
+    "url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/",
+    "source": "hackernews",
+    "publishedAt": "2026-08-31T16:47:11.000Z",
+    "summary": [
+      "보안 카메라 3대의 마이크를 BirdNet-Go에 연결해 새 자동 식별 시스템을 만들었다.",
+      "Docker로 24시간 로컬 추론을 돌리며 새·박쥐·개구리 소리를 감지하고 분류한다.",
+      "Google Perch v2로 14,795종까지 다룰 수 있지만, 정확도와 하드웨어 사양은 확인되지 않는다."
+    ],
+    "whyItMatters": "집에 이미 카메라와 마이크가 있다면 클라우드 비용 없이 야생동물 소리 기록을 자동화할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  }
+]
