@@ -1,0 +1,135 @@
+[
+  {
+    "id": "2769d22eddf2c3a1ed85a5a215b739f7b53fd1de",
+    "title": "Claude Fable 5.1 과 Mythos 5.1 공개",
+    "url": "https://news.hada.io/topic?id=33129",
+    "source": "geeknews",
+    "publishedAt": "2026-09-01T19:38:00.000Z",
+    "summary": [
+      "Anthropic이 Claude Fable 5.1과 Mythos 5.1을 함께 공개했다.",
+      "두 모델은 같은 기반 모델에 서로 다른 보호 장치를 적용했고, 코딩·지식 노동·장기 문제 해결·과학 연구 성능을 높였다.",
+      "Fable 5.1은 일반 사용자용이고, Mythos 5.1은 검증된 사이버 보안·생명과학 전문가용이다."
+    ],
+    "whyItMatters": "Claude를 쓰려는 개발자는 일반 사용자용 Fable 5.1과 전문가용 Mythos 5.1 중 업무에 맞는 모델을 골라야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "db27e9b84b927c28a47699a1a03cc925f2137dc8",
+    "title": "Hang on to Your Firefox",
+    "url": "https://www.newsonaut.com/articles/hang-on-to-your-firefox",
+    "source": "hackernews",
+    "publishedAt": "2026-09-01T20:30:51.000Z",
+    "summary": [
+      "글쓴이는 Firefox가 X에 계정을 둔 일을 이유로 버리는 흐름을 비판한다.",
+      "Firefox는 Chromium 계열인 Vivaldi를 포함해 Google Chrome 스핀오프와 맞서는 남은 독립 엔진이다.",
+      "다만 X 계정 운영의 실제 목적이나 Firefox 점유율 수치는 본문에 제시되지 않는다."
+    ],
+    "whyItMatters": "Firefox를 쓰고 있다면 X 계정 때문에 바로 갈아타기보다, 엔진 경쟁을 잃을 비용까지 함께 보게 된다.",
+    "tags": [
+      "웹",
+      "업계"
+    ]
+  },
+  {
+    "id": "c5d69e7d88c3e62a644923c6ffe13ac368ebaf31",
+    "title": "Not All Explanations Are Sought: Information-Seeking Psychology for Human-Centered XAI",
+    "url": "https://arxiv.org/abs/2608.27464",
+    "source": "arxiv",
+    "publishedAt": "2026-09-01T04:00:00.000Z",
+    "summary": [
+      "새 논문은 설명 가능한 AI가 사용자의 정보 탐색 심리를 반영해야 한다고 주장한다.",
+      "사용자는 설명이 행동 개선·기분·이해에 줄 도움을 따지고, 인지 편향이 그 판단을 흔든다.",
+      "정보를 너무 찾거나 덜 찾는 두 실패가 생기며, 에이전트 AI의 개입 판단이 특히 어렵다."
+    ],
+    "whyItMatters": "설명 기능을 붙이는 데서 끝내지 말고, 사용자가 언제 확인하고 개입할지까지 설계해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "55d8a663f91d33742397157435b07ac6ada93875",
+    "title": "Play Store의 AuroraStore 차단으로 GrapheneOS 사용자 피해",
+    "url": "https://news.hada.io/topic?id=33128",
+    "source": "geeknews",
+    "publishedAt": "2026-09-01T18:33:07.000Z",
+    "summary": [
+      "Google Play가 AuroraStore의 익명 계정 사용을 막아 GrapheneOS 사용자가 앱 설치·업데이트에 실패한다.",
+      "여러 Android 환경에서 ‘Server busy, please try again later.’ 오류가 나며 VPN과 재설치도 소용없다.",
+      "캐시·데이터 삭제, 계정 갱신, 강제 종료와 기기 재시작도 해결책이 되지 않았다."
+    ],
+    "whyItMatters": "AuroraStore를 익명 계정으로 쓰고 있다면 앱 설치·업데이트가 멈출 수 있어 다른 경로를 준비해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "84c8424078f1fd3d96e9e2c3e8754a1c08fa4d8b",
+    "title": "Apple reveals 'shocking evidence' from ex-employee's MacBook in OpenAI suit",
+    "url": "https://9to5mac.com/2026/08/31/apple-openai-forensic-macbook-evidence/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-01T20:19:11.000Z",
+    "summary": [
+      "Apple이 OpenAI를 상대로 낸 소송에서 전직 엔지니어의 MacBook 포렌식 조사 결과를 법원에 제출했다.",
+      "Apple은 Chang Liu가 보안 버그를 이용해 기밀 엔지니어링 파일을 내려받았다는 정황이 나왔다고 주장했다.",
+      "다만 발췌문에는 ‘충격적 증거’의 구체적인 내용과 법원의 판단이 나오지 않았다."
+    ],
+    "whyItMatters": "Apple의 기밀 파일을 다루는 개발자라면 퇴사자 계정과 기기의 접근 기록을 먼저 점검해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "2bc9c8bbc35fd942276cbb58c8543d9d8d044795",
+    "title": "Retrieving Relations, Detecting Fallacies: A RAG Approach to Political Debate Analysis",
+    "url": "https://arxiv.org/abs/2608.27471",
+    "source": "arxiv",
+    "publishedAt": "2026-09-01T04:00:00.000Z",
+    "summary": [
+      "논문이 ElecDeb60to20 벤치마크에서 정치 토론의 오류를 찾고 분류하는 RAG 방식을 평가했다.",
+      "논쟁의 지지·공격 관계로 검색 문서를 고르고, 15GB 정치 문서 지식베이스에서 42개 검색 설정과 14개 모델을 시험했다.",
+      "오류 탐지 macro-F1은 최대 0.864, 분류는 최대 0.725까지 올라갔지만 정치 문서 데이터에 한정됐다."
+    ],
+    "whyItMatters": "정치 토론 분석기를 만든다면 관계 기반 검색과 외부 지식을 붙일 때 오류 분류 성능이 올라간다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "12881ea49223de1185ce741ad6f7fc465917d6a4",
+    "title": "ChatGPT Work 도구와 스킬 레퍼런스",
+    "url": "https://news.hada.io/topic?id=33127",
+    "source": "geeknews",
+    "publishedAt": "2026-09-01T17:44:21.000Z",
+    "summary": [
+      "ChatGPT Work와 Codex의 파일·명령·웹 검색·에이전트 도구 레퍼런스가 정리됐다.",
+      "도구별 입력 형식과 호출 조건을 모았고, 일정·조건 감시와 Gmail·Slack·GitHub 웹훅을 다룬다.",
+      "자동화는 개인 시간대를 설정할 수 있지만 시간당 폴링은 최대 1회이며, 앱 연결 조건 일부는 확인되지 않는다.ний."
+    ],
+    "whyItMatters": "ChatGPT Work나 Codex 자동화를 짠다면 도구 호출 형식과 폴링 제한을 먼저 맞춰야 한다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "afdf21187d9ff4559e090c44e28b7d38bb4a0ba6",
+    "title": "The ChatGPT/Codex app bundles a full copy of LibreOffice",
+    "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-01T20:07:57.000Z",
+    "summary": [
+      "ChatGPT로 이름이 바뀐 Codex 데스크톱 앱 캐시에 LibreOffice 전체가 들어 있다.",
+      "codex-primary-runtime 캐시는 1.7GB이고 Python·Node.js와 Poppler·git 바이너리가 들어 있다.",
+      "이 구성은 ~/.cache/codex-runtimes 아래에 있고, 문서 플러그인이 바이너리 사용법을 담고 있다."
+    ],
+    "whyItMatters": "Codex로 문서 변환을 자동화한다면 LibreOffice를 따로 설치하기 전에 앱 캐시의 바이너리와 호출 방식을 확인하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  }
+]
