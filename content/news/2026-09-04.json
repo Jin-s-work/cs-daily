@@ -1,0 +1,134 @@
+[
+  {
+    "id": "041fc54375f13b95c42d0681fe5907ec4bab13fe",
+    "title": "ARC-AGI-3에서 인간의 행동 효율성을 넘어선 OpenAI GPT-6 Astra",
+    "url": "https://news.hada.io/topic?id=33202",
+    "source": "geeknews",
+    "publishedAt": "2026-09-03T22:04:04.000Z",
+    "summary": [
+      "OpenAI GPT-6 Astra가 ARC-AGI-3 평가에서 인간의 행동 효율성을 넘어섰다.",
+      "Semi-Private 환경에서 Standard 하네스는 62.7%, Provider Adapter는 99.9%를 기록했다.",
+      "비용은 $26,098과 $18,817였고, 행동 수의 세부 조건은 발췌에서 확인되지 않는다."
+    ],
+    "whyItMatters": "ARC-AGI-3를 비교할 때 모델 이름만 보지 말고, 하네스별 점수와 실행 비용을 함께 기록해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "0f3b76bc480d3619c3aaf50d3bb915575c29f5aa",
+    "title": "GPT-6 Astra",
+    "url": "https://openai.com/index/gpt-6-astra/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-03T18:41:05.000Z",
+    "summary": [
+      "OpenAI 사이트에 GPT-6 Astra 페이지가 올라왔고, 관련 논의 링크도 함께 붙었다.",
+      "System Card가 연결됐고 ARC-AGI-3와 Coding Agent Index 성적 관련 논의가 이어진다.",
+      "발췌에는 모델의 기능, 출시 여부, 성능 수치가 없어 구체적인 변화는 확인되지 않는다."
+    ],
+    "whyItMatters": "실제 성능이나 사용 가능 여부를 확인하려면 본문과 System Card를 직접 읽어야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "276dbcb527e9837f228e350f84b05195ed6a2120",
+    "title": "EvalDetectBench: A Benchmark for Measuring Evaluation Awareness in Frontier Language Models",
+    "url": "https://arxiv.org/abs/2609.01611",
+    "source": "arxiv",
+    "publishedAt": "2026-09-03T04:00:00.000Z",
+    "summary": [
+      "EvalDetectBench가 frontier LLM의 평가 인식 능력을 재는 벤치마크로 나왔다.",
+      "기존 측정에서 배포 transcript 생성 모델이 분산의 11.25%를 차지하고 순위를 바꿨다.",
+      "모델별 probe 보정과 생성자 층화 조정으로 두 편향을 보정하며 Inspect 호환 평가에 붙인다."
+    ],
+    "whyItMatters": "평가 결과가 배포 시 행동을 대표해야 한다면, 이 벤치마크로 모델이 평가 중임을 알아채는지 먼저 확인해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "d848a95562ca5e5811cfaf9fcbe8ce74ac731039",
+    "title": "Qwen 3.8 27B, Cerebras에서 초당 1,500토큰으로 제공",
+    "url": "https://news.hada.io/topic?id=33201",
+    "source": "geeknews",
+    "publishedAt": "2026-09-03T21:23:01.000Z",
+    "summary": [
+      "Cerebras 공개 API에 Qwen 3.8 27B가 추가돼 초당 1,500토큰 출력을 쓸 수 있게 됐다.",
+      "270억 매개변수 Dense 멀티모달 모델로, 텍스트·이미지 입력을 받고 에이전트 코딩 등에 쓰인다.",
+      "조절 가능한 설정의 구체적인 범위와 가격, 사용 조건은 발췌문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Cerebras API에서 코딩 에이전트나 이미지 입력 워크플로를 돌린다면 응답 속도를 기준으로 선택지가 하나 늘어난다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "7e80672b84c6dda673cd175b773905e9e1ed5d2a",
+    "title": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
+    "url": "https://inference-docs.cerebras.ai/models/overview",
+    "source": "hackernews",
+    "publishedAt": "2026-09-03T18:32:13.000Z",
+    "summary": [
+      "Cerebras 공개 엔드포인트에서 Qwen 3.8 27B를 API로 쓸 수 있게 됐다.",
+      "27 billion 파라미터와 무료/유료 티어별 64k/128k 컨텍스트를 쓰며, 속도는 약 1500 tokens/s다.",
+      "무료 체험과 종량제에서 쓸 수 있지만, 각 티어의 rate limit과 가격이 적용된다."
+    ],
+    "whyItMatters": "로컬 추론 대신 Cerebras API를 쓰면 Qwen 3.8 27B를 빠른 응답 속도로 붙일 수 있지만, 먼저 티어별 rate limit과 가격을 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "84d7b7412eb483d10c4252b1b3e3b3e6c7bf38b7",
+    "title": "Meta-ethics and AI: exploring the novel meta-ethical questions in the era of AI",
+    "url": "https://arxiv.org/abs/2609.01685",
+    "source": "arxiv",
+    "publishedAt": "2026-09-03T04:00:00.000Z",
+    "summary": [
+      "AI가 도덕적 추론과 성찰을 하면 메타윤리학의 질문이 달라진다는 논문이 나왔다.",
+      "논문은 인간 윤리와 AI 자체 윤리를 네 관점으로 나눠 기존 이론이 어디서 흔들리는지 정리했다.",
+      "다만 이런 AI가 실제로 등장했다는 뜻은 아니며, 조건부로 가능한 질문을 제시한 연구다."
+    ],
+    "whyItMatters": "AI 에이전트의 도덕성을 평가할 때 인간 규범을 그대로 적용하는 전제가 흔들릴 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "13c99fbee3f61caf0a0c41482bb7e58cb1155ab5",
+    "title": "Any Human Ever - 인류 역사상 살았던 1,000억 명 중 한 사람을 무작위로 만나기",
+    "url": "https://news.hada.io/topic?id=33200",
+    "source": "geeknews",
+    "publishedAt": "2026-09-03T20:37:43.000Z",
+    "summary": [
+      "인류 역사상 살았던 약 1,000억 명 중 한 사람을 무작위로 만나는 프로젝트다.",
+      "When → Where → Life → Story 순서로 출생 연도와 지역, 당시 정착지에서 한 사람의 삶을 구성한다.",
+      "역사 기록에 남지 않은 평범한 사람을 다루며, 실제 인물이 아닌 통계적 구성이다."
+    ],
+    "whyItMatters": "비슷한 프로젝트를 만들 때 출생 시점, 장소, 생활 조건을 분리해 모델링하는 설계가 바로 적용된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "e6a4832f97cd535ef8ab015f26125c35dbbb3694",
+    "title": "K2 Horizon: A connected fleet of six open models",
+    "url": "https://ifm.ai/blog/k2/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-03T15:36:43.000Z",
+    "summary": [
+      "IFM이 K2 Horizon이라는 오픈 모델 6종 묶음을 9월 3일 공개했다.",
+      "모델은 375B-A23B부터 0.9B까지이며, Apache 2.0 라이선스로 학습 코드와 중간 체크포인트를 열었다.",
+      "데이터셋은 라이선스가 제각각이고, 재배포가 안 되면 데이터 구성법만 공개된다."
+    ],
+    "whyItMatters": "작은 모델을 엣지에 배포하거나 학습 과정을 재현하려는 경우, 0.9B·3.7B·7B와 공개 로그를 먼저 살펴보면 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]
