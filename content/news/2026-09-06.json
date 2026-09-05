@@ -1,0 +1,133 @@
+[
+  {
+    "id": "8a680aa0ac3b0bdf147f3ca79e5288c780d95706",
+    "title": "유럽을 벗어나지 않는 Git 호스팅",
+    "url": "https://news.hada.io/topic?id=33267",
+    "source": "geeknews",
+    "publishedAt": "2026-09-05T22:31:32.000Z",
+    "summary": [
+      "Pushin.eu가 공개·비공개 Git 저장소와 이슈·CI를 EU 안에서 운영한다.",
+      "GDPR과 개인정보 보호를 중심에 두고, 사용자 코드로 AI 모델을 학습하지 않는다.",
+      "파트너의 학습도 허용하지 않으며, AI 기능보다 개발자 경험과 고가용성에 집중한다."
+    ],
+    "whyItMatters": "코드와 CI를 EU 안에 두고 싶다면 GitHub 외에 데이터 주권을 앞세운 선택지가 생긴다.",
+    "tags": [
+      "인프라",
+      "보안"
+    ]
+  },
+  {
+    "id": "4c1db802f844371c1609fd4b6a84ecd023e525e4",
+    "title": "Private German rocket makes history, reaches orbit from European soil",
+    "url": "https://www.space.com/space-exploration/launches-spacecraft/isar-aerospace-second-launch-norway-andoya-spaceport-spectrum-rocket",
+    "source": "hackernews",
+    "publishedAt": "2026-09-05T20:31:38.000Z",
+    "summary": [
+      "독일 민간 우주기업 Isar Aerospace의 로켓이 유럽 땅에서 발사돼 궤도에 올랐다.",
+      "Norway의 Andøya Spaceport에서 Spectrum 로켓이 발사됐고, 이번이 두 번째 발사다.",
+      "발사 결과의 세부 내용과 탑재체, 임무 성공 범위는 본문이 없어 확인되지 않는다."
+    ],
+    "whyItMatters": "유럽에서 민간 기업이 자체 로켓으로 궤도에 오르는 발사 사례가 실제 운용 단계에 들어섰다.",
+    "tags": [
+      "인프라",
+      "업계"
+    ]
+  },
+  {
+    "id": "16782e343d11b4d0068cbab0bef4d72d9837cb3a",
+    "title": "Speculative Macro Commit for Faster Tool-Using Agents",
+    "url": "https://arxiv.org/abs/2609.03236",
+    "source": "arxiv",
+    "publishedAt": "2026-09-05T04:00:00.000Z",
+    "summary": [
+      "도구를 쓰는 에이전트가 다음 행동 묶음을 미리 실행하는 SMC가 나왔다.",
+      "Qwen3.5-27B가 공식 경로를 만들고, Qwen3.5-4B가 격리 환경에서 후속 행동을 미리 실행한다.",
+      "순차 대비 τ²-Bench Telecom은 18.59%, AppWorld는 44.9% 빨랐지만 완료율도 낮다."
+    ],
+    "whyItMatters": "도구 호출이 병목인 에이전트라면 공개된 코드로 SMC를 재현해 여러 단계 실행을 겹치고 지연 시간을 줄일 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "2273a82c9ba70bc8b9a95a681bbfa2cf909de6c2",
+    "title": "삶의 진정한 사치",
+    "url": "https://news.hada.io/topic?id=33266",
+    "source": "geeknews",
+    "publishedAt": "2026-09-05T21:31:30.000Z",
+    "summary": [
+      "60세를 지나 61세를 앞두며, 삶에서 진정으로 중요한 것이 무엇인지 돌아본다.",
+      "진정한 사치는 물건이 아니라 시간·건강·고요한 마음처럼 일상을 안정시키는 조건이다.",
+      "느긋한 아침과 죄책감 없는 휴식, 숙면, 평온하고 지루한 하루를 누리는 일도 쉽지 않다."
+    ],
+    "whyItMatters": "더 많은 물건보다 시간과 수면을 먼저 지키는 쪽으로 하루의 우선순위를 바꾸게 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "40e652a61cdbdcf8f36eaf199b178af7c4356b8d",
+    "title": "The Real Luxuries In Life",
+    "url": "https://feld.com/archives/2026/09/the-real-luxuries-in-life/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-05T17:46:16.000Z",
+    "summary": [
+      "Brad Feld가 60세를 앞두고 Amy에게 받은 ‘진짜 사치’ 목록을 글에 옮겼다.",
+      "목록에는 시간, 건강, 조용한 마음, 느린 아침, 여행, 죄책감 없는 휴식이 들어갔다.",
+      "좋은 잠과 평온한 날, 의미 있는 대화, 집밥, 서로 사랑하는 사람들도 꼽혔다."
+    ],
+    "whyItMatters": "개발 일정을 채우는 데만 몰두했다면 수면과 죄책감 없는 휴식도 일정에 넣게 된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "5cc26a1e1a5d0dffb4b4e1a6c5d16365b60ee69a",
+    "title": "Fresh Memory, Stale Plans: Dependency-Scoped Validation for Distributed LLM-Agent Memory",
+    "url": "https://arxiv.org/abs/2609.03340",
+    "source": "arxiv",
+    "publishedAt": "2026-09-05T04:00:00.000Z",
+    "summary": [
+      "분산 LLM 에이전트가 최신 사실을 읽어도 낡은 계획으로 실행하는 문제를 다룬 논문이 나왔다.",
+      "PlanFence는 계획이 참조한 공개 기록만 검증하고, 바뀌었으면 한 번 재계획하거나 실행을 막는다.",
+      "30개 통제 워크플로에서 잘못된 실행 없이 끝났지만, 일반적인 작업 정확도 향상은 아니다."
+    ],
+    "whyItMatters": "분산 LLM 에이전트에서 공유 상태의 최신성만 확인하던 코드는 이제 계획이 참조한 기록까지 검사해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "8628ca5ed50c47030e4a481f3cd4177c8b2f144a",
+    "title": "OpenRouter의 GPT-6 Astra 가격과 성능",
+    "url": "https://news.hada.io/topic?id=33265",
+    "source": "geeknews",
+    "publishedAt": "2026-09-05T20:32:35.000Z",
+    "summary": [
+      "OpenRouter에 GPT-6 Astra가 등록됐고, 고급 분석과 장기 에이전트 작업을 겨냥한다.",
+      "1,050,000토큰 컨텍스트와 최대 128,000 출력 토큰을 쓰며, 컴퓨터·브라우저를 활용한다.",
+      "기준 가격은 100만 토큰 단위로 책정되지만, 발췌문에는 정확한 금액이 없다."
+    ],
+    "whyItMatters": "OpenRouter에서 GPT-6 Astra를 쓸 계획이라면, 실제 비용을 확인하기 전까지 가격 비교를 끝낼 수 없다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "eb27643753db61926fe7cfa606a5960b58d91274",
+    "title": "Wikimedia Foundation Workers Overwhelmingly Vote to Form Union with CWA",
+    "url": "https://wikiworkersunited.org/announcements/2026-09-04-us-wikimedia-foundation-workers-overwhelmingly-vote-to-form-union-with-cwa/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-05T16:13:57.000Z",
+    "summary": [
+      "Wikimedia Foundation의 미국 직원들이 CWA와 함께 노조를 만들기로 투표했다.",
+      "노조 선거는 압도적 찬성으로 끝났고, CWA Local 9415에 가입하는 첫 정부 승인 교섭단위가 됐다.",
+      "구체적인 득표수와 단체협약 교섭 일정은 발췌문에 나오지 않아 아직 모른다."
+    ],
+    "whyItMatters": "미국 Wikimedia Foundation 직원과 협업한다면 앞으로 단체협약 교섭이 인력 운영과 프로젝트 일정에 영향을 줄 수 있다.",
+    "tags": [
+      "업계"
+    ]
+  }
+]
