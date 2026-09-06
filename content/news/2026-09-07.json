@@ -1,0 +1,120 @@
+[
+  {
+    "id": "1cafafe4ba62086e1a5a3a4c2ebec20beda5d4e4",
+    "title": "둠스크롤링으로 스스로를 죽음으로 몰아가는 우리",
+    "url": "https://news.hada.io/topic?id=33295",
+    "source": "geeknews",
+    "publishedAt": "2026-09-06T22:42:13.000Z",
+    "summary": [
+      "기사에서 James Marriott의 《The New Dark Ages》가 문해력 쇠퇴를 추적한다고 소개한다.",
+      "학생 독해력과 성인·아동의 여가 독서가 줄었고, 변화는 스마트폰 전 TV 확산에서 시작됐다.",
+      "책은 이 변화가 문화와 정치, 민주주의에 미친 영향을 다루지만, 발췌만으로 세부 근거는 확인되지 않는다."
+    ],
+    "whyItMatters": "정보 소비 습관을 점검할 때 스마트폰 이전의 TV 확산까지 거슬러 원인을 보게 한다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "e752bff20023ec5145af40bbe6ab9dbd5ebea5f9",
+    "title": "Nitter and XCancel resume service after legal advice",
+    "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+    "source": "hackernews",
+    "publishedAt": "2026-09-06T17:49:47.000Z",
+    "summary": [
+      "Nitter와 XCancel이 서비스 중단 이후 법률 자문을 거쳐 다시 시작했다.",
+      "관련 커밋과 사이트 링크는 확인되지만, 재개된 기능이나 변경 내용은 보이지 않는다.",
+      "발췌문에는 법률 자문의 내용과 서비스 재개 조건이 없어 구체적인 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "Nitter나 XCancel을 대체 프런트엔드로 쓰고 있었다면 서비스 재개 여부를 다시 확인해야 한다.",
+    "tags": [
+      "웹",
+      "업계"
+    ]
+  },
+  {
+    "id": "7ebcec22972b1652590f512a0ae323b57cbff87f",
+    "title": "Nitter와 XCancel, 법률 자문 후 서비스 재개",
+    "url": "https://news.hada.io/topic?id=33294",
+    "source": "geeknews",
+    "publishedAt": "2026-09-06T22:39:13.000Z",
+    "summary": [
+      "X Corp.가 Nitter 인스턴스와 프로젝트 저장소의 영구 폐쇄를 요구했지만, Nitter와 XCancel이 서비스를 재개했다.",
+      "Nitter는 법률 자문 뒤 프로젝트를 계속하기로 했고, 개인정보 보호와 성능을 중시하는 오픈소스 프런트엔드다.",
+      "모든 요청을 백엔드로 전달하는 구조지만, 법률 자문 내용과 XCancel의 재개 방식은 본문에서 확인되지 않는다."
+    ],
+    "whyItMatters": "Nitter나 XCancel을 직접 운영하려면 법률 자문 결과와 서비스 재개 조건을 먼저 확인해야 한다.",
+    "tags": [
+      "웹",
+      "보안"
+    ]
+  },
+  {
+    "id": "a8e8f9dc895a026b51bbe8a83b4fa897c6604f10",
+    "title": "An Alien Mind",
+    "url": "https://openai.com/index/an-alien-mind/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-06T16:27:05.000Z",
+    "summary": [
+      "OpenAI chief scientist가 2023년 이후 reasoning 모델 연구와 향후 자기개선 가능성을 정리했다.",
+      "2023년 RLSlow에서 모델이 스스로 사고 사슬을 만들며 추론 학습을 키울 수 있다는 결과를 얻었다.",
+      "내부 결과에 근거한 전망이며, 재귀적 자기개선이 실제로 언제 가능한지는 아직 정해지지 않았다."
+    ],
+    "whyItMatters": "reasoning 모델이 컴퓨터와 그래픽 인터페이스를 조작하고 연구 프로젝트까지 수행하므로, 에이전트 권한과 보안 경계를 분리해 설계해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "c75403e7d7d46ee4ee7afc83c8586c89c47161a7",
+    "title": "AI로 도구를 만드는 것과 기업을 바꾸는 것은 다른 일이다",
+    "url": "https://news.hada.io/topic?id=33293",
+    "source": "geeknews",
+    "publishedAt": "2026-09-06T21:46:00.000Z",
+    "summary": [
+      "AI로 도구를 만들고 업무를 처리하는 것과, 조직 전체의 일하는 방식을 바꾸는 일은 서로 다르다는 분석이다.",
+      "필요한 도구를 찾아내고 표준화해 조직에 퍼뜨리는 과정이, 도구 자체를 만드는 일보다 별도 과제로 남는다.",
+      "기업 소프트웨어는 전용 시스템과 Excel·이메일의 즉흥 업무를 오가며 발전했고, AI가 이 구도를 없앨지는 아직 불분명하다."
+    ],
+    "whyItMatters": "AI 코드를 만드는 데서 멈추지 않고, 조직에 정착시킬 표준화와 도입 과정을 따로 설계해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "7737bba1b986b4d29e3a346af8b48162fa073135",
+    "title": "A/I shuts down – Stay human",
+    "url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-06T14:34:34.000Z",
+    "summary": [
+      "Autistici/Inventati 집단이 A/I와 관련 서비스를 곧 종료한다고 알렸다.",
+      "글로벌 테러 조직으로 지정된 뒤 이용자와 주변 사람에게 법적·재정적 위험이 생겼다고 설명했다.",
+      "8월 26일 이후 버텼지만, 구체적인 종료 일정과 서비스별 계획은 아직 나오지 않았다."
+    ],
+    "whyItMatters": "A/I 서비스를 쓰고 있다면 곧 접속이 끊길 수 있어 계정과 데이터를 다른 인프라로 옮겨야 한다.",
+    "tags": [
+      "인프라",
+      "보안"
+    ]
+  },
+  {
+    "id": "18194b9621525fbbf8c8687e0aa1ff2655a3e8f0",
+    "title": "로봇 팔을 제어하는 GPT-6 Astra",
+    "url": "https://news.hada.io/topic?id=33292",
+    "source": "geeknews",
+    "publishedAt": "2026-09-06T21:40:42.000Z",
+    "summary": [
+      "Robocurve 실험에서 GPT-6 Astra가 카메라 영상을 보고 로봇 팔을 움직여 블록을 그릇에 넣었다.",
+      "20회 중 19회 성공해 Claude Fable 5.1의 8회를 앞섰고, 회당 평균 시간도 6.8분에서 2.5분으로 줄었다.",
+      "추정 모델 호출 비용은 2.12달러로 보이지만, 발췌가 잘려 계산 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "로봇 팔 제어에 비전 모델을 붙이는 중이라면, 같은 블록 작업으로 Astra와 기존 모델의 성공률과 시간을 비교하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]
