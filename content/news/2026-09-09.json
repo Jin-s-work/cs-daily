@@ -1,0 +1,111 @@
+[
+  {
+    "id": "2bd68d2c7890c4720cf865def81817727eb32234",
+    "title": "나비에-스토크스 해법 발표의 이면: 수학자가 공개한 OpenAI와의 협의 과정",
+    "url": "https://news.hada.io/topic?id=33379",
+    "source": "geeknews",
+    "publishedAt": "2026-09-08T22:56:58.000Z",
+    "summary": [
+      "Tristan Buckmaster와 Levent Alpöge가 나비에-스토크스 연구와 OpenAI 발표 전 협의 과정을 공개했다.",
+      "두 사람은 기존 수학자들의 접근법을 LLM의 도움으로 발전시킨 개인 공동연구라고 설명했다.",
+      "발표 전 협의의 구체적 내용과 OpenAI의 공식 입장은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "나비에-스토크스 해법 관련 발표를 인용할 때 연구 기여자와 협의 경위를 함께 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "1f2ecc4c6e8cf0b37fff94714fcf36951f9bb0b4",
+    "title": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
+    "url": "https://github.com/argonautlabsai/deltafin",
+    "source": "hackernews",
+    "publishedAt": "2026-09-08T20:07:55.000Z",
+    "summary": [
+      "GitHub에 Apple Silicon MacBook Pro에서 Kimi K3를 돌리는 Deltafin 포크가 올라왔다.",
+      "2.8T MoE 모델을 네 개의 SSD에서 스트리밍해 초당 1토큰을 생성하는 구성이다.",
+      "실행에 필요한 정확한 하드웨어와 성능 측정 조건은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Kimi K3를 로컬에서 돌릴 계획이라면, 네 개 SSD 스트리밍 구성을 시험할 출발점이 생긴다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "4c3ce686fdba3cae32984e2ea615d548a5f01189",
+    "title": "오래된 HTML 코드 조각과 유물들",
+    "url": "https://news.hada.io/topic?id=33378",
+    "source": "geeknews",
+    "publishedAt": "2026-09-08T22:48:27.000Z",
+    "summary": [
+      "과거 웹사이트의 비표준 HTML 코드 조각을 모아, 당시 브라우저 경쟁의 흔적을 돌아본다.",
+      "Internet Explorer 전용 태그는 호환 모드, 페이지 전환, 작업 표시줄 고정과 모바일 표시를 제어했다.",
+      "발췌만으로는 각 태그의 전체 목록과 사례별 동작 방식까지는 확인되지 않는다."
+    ],
+    "whyItMatters": "레거시 HTML을 만났을 때 낯선 태그를 바로 지우지 않고 브라우저 호환성과 연동 흔적부터 확인하게 된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "fdfa315dd9e278dd8faaaa4838e9894b9ab37c51",
+    "title": "Muse: Meta's personal AI agent, features and capabilities",
+    "url": "https://ai.meta.com/muse/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-08T19:25:00.000Z",
+    "summary": [
+      "Meta가 개인용 AI 에이전트 ‘Muse’의 기능과 동작 방식을 소개하는 페이지를 냈다.",
+      "페이지 제목상 개인용 AI 에이전트이며, 구체적인 기능 목록과 작동 방식은 발췌문에 없다.",
+      "본문을 확인하지 못해 어떤 모델을 쓰는지, 어디서 실행되는지는 알 수 없다."
+    ],
+    "whyItMatters": "본문을 확인하기 전까지는 Muse를 실제 개발 흐름에 연결할 근거가 없다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "5e9de14d9809d2c1ac0e16cc822f7b0934416e79",
+    "title": "ChatGPT Images 2.5",
+    "url": "https://news.hada.io/topic?id=33377",
+    "source": "geeknews",
+    "publishedAt": "2026-09-08T22:41:56.000Z",
+    "summary": [
+      "ChatGPT Images와 GPT‑Image API에 새 모델인 ChatGPT Images 2.5가 들어갔다.",
+      "참조 사진의 재현도와 편집 정확도를 높이고, 생성 지연 시간은 Images 2.0보다 최대 50% 짧아졌다.",
+      "지연 시간 최대 50% 단축이 어떤 조건에서 나온 수치인지는 확인되지 않는다."
+    ],
+    "whyItMatters": "이미지 생성 API를 쓰고 있다면 같은 요청의 대기 시간을 줄일 수 있는지 ChatGPT Images 2.5로 직접 비교해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "fbb79928f7d9c05194cccec7498bcabed16824b6",
+    "title": "On the Navier–Stokes Millennium Prize Problem",
+    "url": "https://openai.com/index/navier-stokes-solution/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-08T17:13:21.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "f7c07210c276c5a36f0cacd75d7e6c71593d9975",
+    "title": "DaVinci Resolve 21.1",
+    "url": "https://news.hada.io/topic?id=33376",
+    "source": "geeknews",
+    "publishedAt": "2026-09-08T22:39:50.000Z",
+    "summary": [
+      "DaVinci Resolve 21.1이 편집·색보정 도구와 제어 기능 100개 이상을 담아 출시됐다.",
+      "Claude, Claude Code, ChatGPT Codex에서 자연어로 프로젝트를 분석하는 연동이 들어갔다.",
+      "공식 웹사이트에서 무료 다운로드할 수 있지만, 새 기능별 세부 조건은 확인되지 않았다."
+    ],
+    "whyItMatters": "DaVinci Resolve를 쓰고 있다면 새 도구와 자연어 프로젝트 분석을 바로 시험해 볼 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]
