@@ -1,0 +1,132 @@
+[
+  {
+    "id": "465deaf9bcf3ce8d9d78345716f908dde43057df",
+    "title": "Rust: 빈 타입이 바닥 타입은 아닐 때",
+    "url": "https://news.hada.io/topic?id=33458",
+    "source": "geeknews",
+    "publishedAt": "2026-09-09T23:04:21.000Z",
+    "summary": [
+      "Rust의 never 타입 !을 모든 타입 표기에 허용하는 PR이 2026년 8월 25일 병합됐다.",
+      "이 변경은 !의 사용 범위를 넓히며, 모든 타입의 하위 타입인 바닥 타입보다 빈 타입으로 보는 해석이 정확하다.",
+      "Rust 1.100에 들어갈 예정이지만, 구체적인 문법 예시는 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "never 타입 !을 여러 위치에 쓰는 코드는 Rust 1.100 전후로 컴파일 결과를 다시 확인해야 한다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "4a117c1be7e3b1a93aaebd552d263e78cd15fd06",
+    "title": "iPhone Duo",
+    "url": "https://www.apple.com/iphone-duo/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-09T18:15:43.000Z",
+    "summary": [
+      "Apple이 첫 폴더블 iPhone인 iPhone Duo를 공개했고, 10월 16일 예약판매를 시작한다.",
+      "펼치면 iPhone 18 Pro Max보다 화면이 50% 크고, 48MP 카메라와 A20 Pro 칩이 들어갔다.",
+      "10월 23일부터 판매되며, Siri AI는 영어로 먼저 나온다. 가격은 발췌에서 확인되지 않는다."
+    ],
+    "whyItMatters": "폴더블 iPhone을 기다렸다면 10월 23일부터 실제 구매 후보에 넣을 수 있다.",
+    "tags": [
+      "업계",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "38987a8d0b0efc1ffaad2109257fb695328877a9",
+    "title": "Beyond Right and Wrong: Evaluating Second-order Social Reasoning in Large Language Models",
+    "url": "https://arxiv.org/abs/2609.05437",
+    "source": "arxiv",
+    "publishedAt": "2026-09-09T04:00:00.000Z",
+    "summary": [
+      "새 연구가 LLM의 2차 사회 추론, 즉 규범 위반 뒤의 제재 예측을 평가했다.",
+      "NormReact는 규범 위반 시나리오 450개를 성별·관계 거리별 감정과 행동으로 주석했다.",
+      "6개 모델은 사람이 가만히 있을 상황에도 부정적 제재를 과하게 예측했고, 사회적 거리가 멀수록 인간 판단과 어긋났다."
+    ],
+    "whyItMatters": "갈등 조정이나 정책 시뮬레이션에 LLM을 쓰면 실제보다 처벌을 크게 예측하는지 따로 점검해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "f0ba7ecb3378e45ddc043f56dae5be8e7872d6f2",
+    "title": "노 맨즈 스카이: 출시 10주년 Cosmos 업데이트 - 이제 우주 정거장까지 운영",
+    "url": "https://news.hada.io/topic?id=33457",
+    "source": "geeknews",
+    "publishedAt": "2026-09-09T21:36:18.000Z",
+    "summary": [
+      "No Man’s Sky가 출시 10주년을 맞아 Cosmos 7.0 업데이트를 내놨다.",
+      "심우주 재방문, 우주 정거장 운영, 은하 동맹과 궤도 기지 건설이 들어갔다.",
+      "항성계 지도에서 전초기지와 난파선을 찾지만, Gravitino Coil과 Tractor Beam의 용도는 확인되지 않는다."
+    ],
+    "whyItMatters": "기존 탐사 거점만 오가던 플레이어라면 정거장 운영과 궤도 기지 건설이 새 목표가 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "4d2b1da2b420af50821b9aa1ec85aaa4770646c4",
+    "title": "Apple Watch Series 12",
+    "url": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-09T17:56:17.000Z",
+    "summary": [
+      "Apple이 Health Sensing System과 S11 칩을 넣은 Apple Watch Series 12를 발표했다.",
+      "S11 칩이 심박수와 HRV를 더 높은 빈도로 측정해 새 readiness score를 계산한다.",
+      "Audio Intelligence와 iPhone용 Health 앱의 Longevity 탭은 올해 후반에 나온다."
+    ],
+    "whyItMatters": "Series 12를 살 계획이라면 심박수 측정뿐 아니라 readiness score와 후속 소프트웨어 기능의 출시 시점까지 봐야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "4a5e61d042aed4a7a7f3431cafc772a73ee83e09",
+    "title": "CriticGen: Generation-Aware Evaluation as Actionable Feedback",
+    "url": "https://arxiv.org/abs/2609.05439",
+    "source": "arxiv",
+    "publishedAt": "2026-09-09T04:00:00.000Z",
+    "summary": [
+      "CriticGen이 LLM 평가를 답변 개선에 바로 쓰는 피드백으로 바꾸는 프레임워크를 제안했다.",
+      "질문마다 평가 기준을 만들고 점수·이유·실행 가능한 수정안·개선 답변을 함께 생성한다.",
+      "개선된 답변의 73.17%가 좋아졌고 93.28%는 성능이 떨어지지 않았지만, 실험 조건은 초록에 없다."
+    ],
+    "whyItMatters": "LLM 평가기를 만든다면 일반적인 코멘트 대신 사례별 수정안을 생성하는 구조로 바꿔야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "d6311391ef907842531b999f2ae3c1914acff6c0",
+    "title": "Apple Watch Series 12 공개 - 더 촘촘한 심박 측정과 운동 준비 상태 확인",
+    "url": "https://news.hada.io/topic?id=33456",
+    "source": "geeknews",
+    "publishedAt": "2026-09-09T21:33:49.000Z",
+    "summary": [
+      "Apple이 Apple Watch Series 12를 공개하고, 심박·운동 상태를 더 촘촘히 보는 기능을 넣었다.",
+      "새 심박 센서와 S11 칩으로 심박수는 온종일 5초마다 재고, 심박 변이 측정 빈도는 최대 24배 높아졌다.",
+      "활동·훈련량·활력 징후·수면을 분석해 ‘준비 상태’ 점수를 만들지만, 출시일과 세부 산정 기준은 알려지지 않았다."
+    ],
+    "whyItMatters": "Apple Watch에서 운동 전 회복 여부를 따로 판단했다면, 활동·수면 데이터를 묶은 점수로 계속 운동할지 쉴지 정하게 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "adf1e0a04e761ec1ca5c4f6491a2c7da396a7503",
+    "title": "AirPods 5",
+    "url": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-09T17:39:24.000Z",
+    "summary": [
+      "Apple이 AirPods 5를 발표했다. 오픈형 ANC와 Live Translation을 넣었다.",
+      "AirPods 4 ANC 모델보다 외부 소음을 최대 50% 더 줄이고, 새 음향 구조와 Adaptive EQ를 쓴다.",
+      "기본형은 $129이고, Wireless Charging Case 모델은 $149다. 배터리 시간은 공개되지 않았다."
+    ],
+    "whyItMatters": "AirPods 4 ANC를 쓰고 있다면 외부 소음 감소와 Live Translation이 교체 판단 기준이 된다.",
+    "tags": [
+      "업계"
+    ]
+  }
+]
