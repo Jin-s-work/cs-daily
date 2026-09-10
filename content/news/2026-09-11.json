@@ -1,0 +1,128 @@
+[
+  {
+    "id": "e4c6fc97dd9f42b82130bd9b311124cae5139457",
+    "title": "나는 인터넷이 싫은 것 같다",
+    "url": "https://news.hada.io/topic?id=33502",
+    "source": "geeknews",
+    "publishedAt": "2026-09-10T22:40:32.000Z",
+    "summary": [
+      "Meta 서비스와 Sarah Wynn-Williams의 책을 계기로 인터넷에 대한 반감을 털어놨다.",
+      "Facebook·Instagram·WhatsApp을 떠난 뒤에도 그립지 않았고, 가치 낮은 콘텐츠 소비를 돌아봤다.",
+      "개인의 경험과 감상 중심 글이라 인터넷을 떠난 구체적인 방법이나 효과는 확인되지 않는다."
+    ],
+    "whyItMatters": "Meta 서비스 사용을 줄이려면 세 서비스를 끊은 뒤에도 그리움이 남는지, 가치 낮은 콘텐츠 소비가 줄어드는지 직접 확인하면 된다.",
+    "tags": [
+      "웹",
+      "업계"
+    ]
+  },
+  {
+    "id": "17adfa586ca5309b1d9a47af8267133affed6be1",
+    "title": "Neki – Sharded Postgres",
+    "url": "https://planetscale.com/blog/introducing-neki",
+    "source": "hackernews",
+    "publishedAt": "2026-09-10T15:43:49.000Z",
+    "summary": [
+      "PlanetScale이 sharded Postgres Neki를 platform preview로 내놨다.",
+      "표준 Postgres wire protocol로 연결해 기존 ORM과 connection string을 그대로 쓴다.",
+      "각 shard는 primary 1개와 replica 최소 2개를 3개 AZ에 둔다. 현재는 platform preview다."
+    ],
+    "whyItMatters": "단일 Postgres 머신이 병목인 서비스라면 기존 연결 방식을 유지한 채 Neki로 확장할 수 있지만, 아직 platform preview라는 점은 감안해야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "78589058745cec9581a5377ea815e85309612d1a",
+    "title": "OpenDiscoveryTrace: Process Traces for Evaluating AI Scientist Workflows",
+    "url": "https://arxiv.org/abs/2609.09203",
+    "source": "arxiv",
+    "publishedAt": "2026-09-10T04:00:00.000Z",
+    "summary": [
+      "AI 과학자 에이전트의 추론 과정을 담은 데이터셋 OpenDiscoveryTrace가 공개됐다.",
+      "124개 과제에서 558개 궤적을 모았고, 단계마다 9개 필드로 사고·도구 호출·오류를 기록했다.",
+      "363개 궤적 분석에서 Claude Opus 4.6은 GPT-5.4보다 오류가 30배 많았지만, 성공률은 비슷했다."
+    ],
+    "whyItMatters": "AI 에이전트를 최종 답만으로 평가하고 있다면, 다음 실험부터 도구 오용과 추론 오류를 분리해 기록해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "9e4808854bbb98de651a4198d4dadb73f3ac55bc",
+    "title": "Neki — PlanetScale의 샤딩 기반 Postgres 서비스",
+    "url": "https://news.hada.io/topic?id=33501",
+    "source": "geeknews",
+    "publishedAt": "2026-09-10T22:37:32.000Z",
+    "summary": [
+      "PlanetScale이 단일 머신을 넘은 Postgres를 여러 머신으로 나누는 Neki 플랫폼 프리뷰를 공개했다.",
+      "각 샤드에서 실제 Postgres를 실행하고, 앱은 표준 Postgres 와이어 프로토콜로 라우터에 연결한다.",
+      "기존 드라이버·ORM·연결 문자열 사용을 내세웠지만, 세부 샤딩 방식은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "기존 Postgres 앱의 샤딩 후보를 찾는다면, 드라이버 교체보다 라우터 연결부터 비교하게 된다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "69669daef8253424943211f15d577783392e0cbe",
+    "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+    "url": "https://cognition.com/blog/swe-2",
+    "source": "hackernews",
+    "publishedAt": "2026-09-10T15:29:47.000Z",
+    "summary": [
+      "Cognition이 코딩 모델 SWE-2를 내놓았고, FrontierCode 1.1 Main에서 50.0%를 기록했다.",
+      "SWE-2는 2.8T 파라미터 Kimi K3를 후처리하고, 모든 추론 비용 수준을 한 번에 RL 학습했다.",
+      "Fable 5.1보다 64% 저렴하지만 GPT-6 Astra에는 몇 점 뒤지며, 실제 운영 조건은 본문을 더 봐야 한다."
+    ],
+    "whyItMatters": "코딩 에이전트 비용을 줄이는 중이라면, SWE-2는 Fable 5.1급 점수와 64% 낮은 비용을 함께 비교할 후보가 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "1f4b13d8e5d9a64cb4001ae55f5b3d82bae5ec89",
+    "title": "Adaptive Entangled Game Modules in Artificial General Intelligence",
+    "url": "https://arxiv.org/abs/2609.09226",
+    "source": "arxiv",
+    "publishedAt": "2026-09-10T04:00:00.000Z",
+    "summary": [
+      "중국 장중 주식 데이터로 적응형 얽힘 게임 모듈을 분석한 논문이 LCA 가설까지 다뤘다.",
+      "거래 의사결정 패턴의 82~94%를 설명했고, 전체 평균은 89%로 집계됐다.",
+      "뉴스·환경에 적응한 행동은 2~12%였고, 독립적 행동은 5% 미만이었다."
+    ],
+    "whyItMatters": "트레이딩이나 AGI 시뮬레이션에서 독립 에이전트만 가정했다면, 상호작용 상태를 별도 모델링해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "5722ecbd637ad9ddef07723fb26514244eeb17ec",
+    "title": "ChatGPT Pro 구독 일시중단",
+    "url": "https://news.hada.io/topic?id=33500",
+    "source": "geeknews",
+    "publishedAt": "2026-09-10T22:06:06.000Z",
+    "summary": [
+      "OpenAI가 예고대로 ChatGPT Pro 200달러 플랜의 신규 구독을 일시중단했다.",
+      "월 100달러 플랜과 이미 구독 중인 사용자는 이번 조치의 영향을 받지 않는다.",
+      "중단이 언제 풀리는지와 재개 조건, 정확한 적용 기간은 현재 알려지지 않았다."
+    ],
+    "whyItMatters": "ChatGPT Pro를 새로 결제하려던 경우에는 200달러 플랜 대신 100달러 플랜을 선택해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "20455c8fab82ff81fc60ae951d14676d57cda7f4",
+    "title": "NASA Color Trick Was Meant for Mars. Now It's Unveiling Rock Art on Earth",
+    "url": "https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844",
+    "source": "hackernews",
+    "publishedAt": "2026-09-10T15:29:30.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  }
+]
