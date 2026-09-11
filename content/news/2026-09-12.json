@@ -1,0 +1,133 @@
+[
+  {
+    "id": "200d78b45b38b185812fc2e403db709ae90b60c5",
+    "title": "GrapheneOS, 재작성한 Messages 앱 출시",
+    "url": "https://news.hada.io/topic?id=33560",
+    "source": "geeknews",
+    "publishedAt": "2026-09-11T22:39:08.000Z",
+    "summary": [
+      "GrapheneOS가 기존 인터페이스를 걷어낸 새 Messages 앱 버전 13을 출시했다.",
+      "Jetpack Compose와 Material 3로 화면을 다시 만들고, 대화 고정·알림 일시 중지·읽지 않음 표시를 넣었다.",
+      "대화면 지원과 여러 메시지 삭제도 들어갔지만, 세부 변경점은 발췌만으로 알 수 없다."
+    ],
+    "whyItMatters": "GrapheneOS Messages를 쓰고 있다면 버전 13 업데이트 뒤 대화 관리와 화면 동작을 다시 확인해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "3273d48101551848f5d8c31225ac4512f1036cd3",
+    "title": "GrapheneOS' rewritten Messages app is released",
+    "url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
+    "source": "hackernews",
+    "publishedAt": "2026-09-11T18:50:36.000Z",
+    "summary": [
+      "GrapheneOS가 다시 작성한 Messages 앱을 Release 13으로 출시했다.",
+      "이번 릴리스가 GitHub 저장소에 올라왔다는 점 외에, 기능 변경과 내부 구성은 본문에서 확인되지 않는다.",
+      "본문이 없어 구체적인 변경 내용, 이전 버전과의 차이, 설치 조건과 호환성은 아직 확인할 수 없다."
+    ],
+    "whyItMatters": "GrapheneOS의 Messages 앱을 쓰고 있다면 Release 13의 변경 내역과 호환성을 확인한 뒤 업데이트해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "829be82f81c4a8d60bceb521f372a879f1633de2",
+    "title": "Subagents vs Agent Skills: Executing Reusable Knowledge for Long-Horizon Agentic Tasks",
+    "url": "https://arxiv.org/abs/2609.09233",
+    "source": "arxiv",
+    "publishedAt": "2026-09-11T04:00:00.000Z",
+    "summary": [
+      "재사용 지식 패키지를 메인 에이전트에 넣는 대신 서브에이전트로 실행하는 방식을 비교했다.",
+      "긴 작업에서는 별도 컨텍스트의 서브에이전트가 더 잘 작동했지만, 조정에 토큰 비용이 추가됐다.",
+      "입출력 계약이 명확하고 절차 지식이 담긴 패키지에서만 우세했으며, 조직과 호출 방식이 결과를 좌우했다."
+    ],
+    "whyItMatters": "재사용 스킬을 긴 작업에 붙이고 있다면, 지침을 메인 컨텍스트에 쌓기보다 입출력 계약을 정해 서브에이전트로 분리해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "ca8d2bf96c05ccbc241edab2e31cc12d04fafac4",
+    "title": "Google 앱 광고에 220달러를 썼는데 설치의 60%가 로봇이었다",
+    "url": "https://news.hada.io/topic?id=33559",
+    "source": "geeknews",
+    "publishedAt": "2026-09-11T22:36:08.000Z",
+    "summary": [
+      "Dayzle의 Google 앱 광고에서 2주간 과금된 설치 56건 중 33건이 봇 의심 패턴을 보였다.",
+      "실제 이용자로 분류된 13명은 모두 합쳐 92게임을 완료했으며, 광고비로 220달러가 들었다.",
+      "설치당 목표 비용 1.50달러를 해제하자 하루 예산 CA$40의 두 배인 CA$80이 즉시 소진됐다."
+    ],
+    "whyItMatters": "앱 설치 광고를 집행한다면 설치 수만 보지 말고 실제 플레이와 봇 패턴을 함께 확인해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "b037dd79699876100760c33de65b6409f383c557",
+    "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+    "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-11T18:24:55.000Z",
+    "summary": [
+      "Google Ads로 Android 앱을 광고했더니, 56건 중 33건이 봇 설치로 의심됐다.",
+      "하루 CA$40 예산에서 목표 CPI를 없애자 CA$80가 쓰였고, 21건 중 20건은 구버전 앱이었다.",
+      "이 기기들은 앱을 한 번 열고 0초 머문 뒤 돌아오지 않았으며, 실제 이용자는 13명이었다."
+    ],
+    "whyItMatters": "Android 앱 광고에서는 설치 수만 보지 말고 실제 재방문과 사용 시간을 함께 확인해야 한다.",
+    "tags": [
+      "업계",
+      "보안"
+    ]
+  },
+  {
+    "id": "90310deae7cae73938bca64f3b08c4e0357066de",
+    "title": "Gradland: On Phenomenal Experience, Differentiated Across Many Dimensions",
+    "url": "https://arxiv.org/abs/2609.09306",
+    "source": "arxiv",
+    "publishedAt": "2026-09-11T04:00:00.000Z",
+    "summary": [
+      "신경망이 사는 가상 세계 ‘Gradland’에서 현상적 경험의 구조를 설명하는 가설을 검토한 논문이 나왔다.",
+      "1차 구조인 gradient와 Jacobian을 effective rank·cohesion으로 수치화해 사례를 분석했다.",
+      "분석은 대부분 미분 가능한 이상화된 세계에서 이뤄져 현실 적용 여부는 남아 있다."
+    ],
+    "whyItMatters": "AI가 의식을 가졌다는 주장에 이 논문을 근거로 쓸 때는 이상화된 세계의 결과라는 한계를 함께 적어야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "8d5e5a9a1554d5fecd00c2d73e04eac5eabbfbab",
+    "title": "Show HN: AI 없는 Hacker News",
+    "url": "https://news.hada.io/topic?id=33558",
+    "source": "geeknews",
+    "publishedAt": "2026-09-11T21:31:15.000Z",
+    "summary": [
+      "Show HN에 ‘AI 없는 Hacker News’라는 프로젝트 소개 글이 올라왔다.",
+      "AI 기능이 없는 별도 서비스인지, 기존 화면에서 AI 요소만 제거했는지는 제목만으로 알 수 없다.",
+      "본문이 없어 구현 방식과 주소, 원래 Hacker News와의 차이는 확인되지 않는다."
+    ],
+    "whyItMatters": "AI 요약이나 추천이 없는 Hacker News를 찾는다면 실제로 쓸 수 있는 서비스인지 본문 확인 전에는 판단할 수 없다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "a8ab16342f9ce031df4bbc52e5f6cf61e97ff365",
+    "title": "The EPA is planning to scrap public review rules for data center pollution",
+    "url": "https://capitalbnews.org/data-centers-permit-rules-epa/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-11T18:05:21.000Z",
+    "summary": [
+      "미국 연방정부가 데이터센터 오염 허가 과정의 주민 의견 수렴 규칙을 없애는 방안을 추진한다.",
+      "규칙이 바뀌면 지역 주민은 대기오염 관련 프로젝트에 지금보다 적게 개입하게 된다.",
+      "기사 발췌만으로는 어떤 규칙을 어떻게 바꿀지 구체적인 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "미국 데이터센터 프로젝트의 환경영향을 추적한다면 주민 의견 제출 절차가 바뀔 수 있어 현행 규칙만 전제로 하면 안 된다.",
+    "tags": [
+      "인프라",
+      "업계"
+    ]
+  }
+]
