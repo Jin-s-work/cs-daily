@@ -1,0 +1,117 @@
+[
+  {
+    "id": "c2bd8b232e09c8d2a4357f23e67d5c63f673c9b1",
+    "title": "스타트업을 강력하게 만드는 법",
+    "url": "https://news.hada.io/topic?id=33659",
+    "source": "geeknews",
+    "publishedAt": "2026-09-13T22:42:36.000Z",
+    "summary": [
+      "글은 매출 증대보다 스타트업의 기업 가치를 크게 키우는 전환을 찾는 방법을 다룬다.",
+      "고객 관계와 자금 흐름을 확보하고, 다른 기업이 제품 위에 사업을 짓게 하는 방식을 언급한다.",
+      "네트워크 효과도 사례로 거론하지만, 본문이 없어 구체적인 실행 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "스타트업의 성장을 매출 목표 하나로만 보지 않고 고객·자금·생태계 설계까지 점검하게 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "0fa77dcd1de2b3ff110bb5fba32d639114576c27",
+    "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
+    "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+    "source": "hackernews",
+    "publishedAt": "2026-09-13T21:06:13.000Z",
+    "summary": [
+      "Claude Fable 5.1이 370년간 풀리지 않던 Cyphral Distich를 하루 안에 해독했다.",
+      "44분과 176k 토큰을 쓴 뒤, 32라는 단서와 두 가지 핵심 착상으로 해법에 도달했다.",
+      "다만 발췌문은 두 번째 착상의 내용과 평문 전체를 설명하기 전에 끝난다."
+    ],
+    "whyItMatters": "역사 암호를 LLM에 맡길 때 답만 보지 말고 사용 토큰과 풀이 단서도 함께 기록해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "b4944df4d1f998b82ddaaa5234f58f2550fc9ae8",
+    "title": "Claude Fable 5.1, 370년 된 암호문 Cyphral Distich 해독",
+    "url": "https://news.hada.io/topic?id=33658",
+    "source": "geeknews",
+    "publishedAt": "2026-09-13T22:39:36.000Z",
+    "summary": [
+      "Claude Fable 5.1이 370년 된 미해결 암호문 Cyphral Distich를 해독한 것으로 보인다.",
+      "암호문의 각 행에 있는 32개 숫자를 바로 앞의 32개 Proquiritations에 대응시켰다.",
+      "44분 동안 약 17만 6,000토큰을 썼고, 독립 검증 여부는 확인되지 않는다."
+    ],
+    "whyItMatters": "암호 해독 실험을 재현하려면 외부 암호표보다 원문 구조와 모델의 긴 추론 과정을 먼저 확보해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "f7df444a41f0229befe3d0b17b8935e0e214ced6",
+    "title": "Mark Zuckerberg: \"Cambridge Analytica\" (2017)",
+    "url": "https://twitter.com/TechEmails/status/2099214399840059428",
+    "source": "hackernews",
+    "publishedAt": "2026-09-13T20:08:45.000Z",
+    "summary": [
+      "Mark Zuckerberg의 2017년 1월 30일 ‘Cambridge Analytica’ 관련 기록이 X에 올라왔다.",
+      "게시물은 Internal Tech Emails 계정이 올렸고, 2026년 Facebook 증권 소송 자료라고 적혀 있다.",
+      "발췌에는 제목과 게시 정보만 있어, Zuckerberg가 당시 무엇을 말했는지는 확인되지 않는다."
+    ],
+    "whyItMatters": "원문을 확인하기 전에는 Cambridge Analytica 관련 주장이나 맥락을 사실로 받아들이면 안 된다.",
+    "tags": [
+      "업계",
+      "보안"
+    ]
+  },
+  {
+    "id": "aa350fe6116045d48c07416d7cb3517721a10480",
+    "title": "에이전트형 AI를 위한 데이터 준비하기",
+    "url": "https://news.hada.io/topic?id=33657",
+    "source": "geeknews",
+    "publishedAt": "2026-09-13T22:02:45.000Z",
+    "summary": [
+      "에이전트형 AI가 데이터 오류와 업무 맥락을 저절로 보완하지 못한다는 전제에서 데이터 준비 원칙을 설명한다.",
+      "데이터의 품질·의미·사용 권한을 시스템에 적고, 형식·최신성·품질 기준은 데이터 계약으로 검증한다.",
+      "데이터 계약을 통과하지 못한 데이터의 후속 처리 방식은 발췌가 끊겨 확인되지 않는다."
+    ],
+    "whyItMatters": "에이전트를 데이터 파이프라인에 붙인다면 입력 단계에서 계약 검증과 권한·의미 정의를 먼저 넣어야 한다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "003ff6da8e6d1b75b8717885be5cbf609d25c482",
+    "title": "I'm being cyberattacked by Tesla, Inc",
+    "url": "https://dreamstation.systems/personal/tesla.html",
+    "source": "hackernews",
+    "publishedAt": "2026-09-13T18:03:09.000Z",
+    "summary": [
+      "dreamstation.systems 운영자가 Tesla, Inc.에 사이버 공격을 받고 있다고 주장하는 글을 올렸다.",
+      "발췌에는 Firefox·nginx·SSI 설정과 사이트 화면 코드가 섞여 있지만 공격 증거와 경위는 보이지 않는다.",
+      "본문이 깨진 발췌만 있어 실제 공격 여부, 공격 방식, Tesla와의 연관성은 확인되지 않는다."
+    ],
+    "whyItMatters": "이 글만으로 Tesla를 공격 주체로 판단하거나 보안 대응을 시작하면 안 되고 원문과 별도 증거를 먼저 확인해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "1a69ff5cb741db36d9b75f4c8320c4f23fc418f1",
+    "title": "엔지니어링 매니저의 네 가지 핵심 책임 영역",
+    "url": "https://news.hada.io/topic?id=33656",
+    "source": "geeknews",
+    "publishedAt": "2026-09-13T21:52:05.000Z",
+    "summary": [
+      "엔지니어링 매니저의 핵심 역할을 네 가지 책임 영역으로 나누고, 팀 전체의 영향력을 높이는 데 초점을 둔다.",
+      "소통과 우선순위 조정, 목표 정렬, 의사결정을 통해 팀이 공동 목표를 향해 움직이게 한다.",
+      "사람 리더십에는 채용과 온보딩뿐 아니라 구성원의 동기와 성장 목표를 이해하는 일도 들어간다."
+    ],
+    "whyItMatters": "팀의 성과만 관리하던 엔지니어링 매니저라면 채용부터 성장 목표까지 사람 관리 범위를 다시 봐야 한다.",
+    "tags": [
+      "업계"
+    ]
+  }
+]
