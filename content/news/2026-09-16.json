@@ -1,0 +1,136 @@
+[
+  {
+    "id": "b8fa74a887728a1e6ea96f2d30d2378d4a0900bc",
+    "title": "Show HN: 20달러짜리 4G 무선 핫스팟을 메시지 기기로 개조하기",
+    "url": "https://news.hada.io/topic?id=33758",
+    "source": "geeknews",
+    "publishedAt": "2026-09-15T23:34:32.000Z",
+    "summary": [
+      "20달러 미만의 MF800 4G 핫스팟을 메시지 전용 휴대 기기로 개조한 제작기가 올라왔다.",
+      "OpenStick으로 기본 Android를 Linux로 바꾸고 Clicks 키보드와 SHARP 디스플레이를 붙였다.",
+      "원래 디바이스 트리에서 디스플레이 핀과 전원 정보를 찾아 하드웨어를 맞췄고, 세부 구현은 발췌에 없다."
+    ],
+    "whyItMatters": "비슷한 4G 모뎀이 있다면 Linux와 기존 부품을 조합해 전용 메시지 기기로 바꿔볼 수 있다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "642a1494ec3f8e04cc795f0d96e5fb4993a97fb7",
+    "title": "Introducing System One Models and Jev",
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "source": "hackernews",
+    "publishedAt": "2026-09-15T19:25:03.000Z",
+    "summary": [
+      "TypeSafe AI가 구조화된 결정을 자동화에 쓰는 System One 모델과 Jev를 공개했다.",
+      "Jev는 병렬 샘플러와 RLCD를 쓰며 기존 LLM과 비슷한 지능을 두 자릿수 빠르게 낸다고 한다.",
+      "초기 접근 단계이고 문자열 생성은 하지 않아 일반 텍스트 답변용으로는 맞지 않는다."
+    ],
+    "whyItMatters": "구조화된 출력만 필요한 자동화라면 텍스트 생성형 LLM 대신 Jev를 시험할 후보가 생겼다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "062061e61712ca0e45ffe8995faad5befec99a8a",
+    "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+    "url": "https://arxiv.org/abs/2609.13356",
+    "source": "arxiv",
+    "publishedAt": "2026-09-15T04:00:00.000Z",
+    "summary": [
+      "ZGCM-1은 처음부터 학습한 7B dense 기반 모델로, 수학 추론과 에이전트 검색을 겨냥한다.",
+      "16K·64K·256K 문맥, gated·full attention과 FP8 Muon으로 16K 학습이 약 4.2배 빨라졌다.",
+      "Qwen3-235B-A22B·GLM-5.1과의 경쟁력은 일부 평가 결과이며, 가중치·코드·데이터도 함께 풀렸다."
+    ],
+    "whyItMatters": "로컬 7B 모델로 수학 추론과 도구 사용 에이전트를 만들 때, 장문맥 학습 구성과 재현 자료를 바로 비교할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "5d5a2c07020e67eae5e3807842ef8330edb66098",
+    "title": "디스토피아적 감시가 현실이 되고 있음",
+    "url": "https://news.hada.io/topic?id=33757",
+    "source": "geeknews",
+    "publishedAt": "2026-09-15T22:39:28.000Z",
+    "summary": [
+      "Apple Watch에 Audio Intelligence가 들어가 대화를 상시 듣고 전사하는 기능이 예고됐다.",
+      "기기는 하루가 끝날 때 대화를 요약하며, 회의 기록이나 개인 일지에 쓸 수 있지만 상대 동의 없이 기록될 수 있다.",
+      "개인정보 보호 장치의 구체적인 작동 방식과 적용 조건은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "도입되면 회의에서 Apple Watch를 쓸 때 참석자 동의 없이 대화가 기록될 수 있어 녹음 여부를 먼저 알려야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "685a03460968997ddf56de4a1311abe38ac7cab0",
+    "title": "We got admin access to Baseten's production GitHub in 25 minutes",
+    "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
+    "source": "hackernews",
+    "publishedAt": "2026-09-15T18:11:24.000Z",
+    "summary": [
+      "Strix가 Baseten의 공개 컨테이너 이미지에서 살아 있는 GitHub 토큰을 찾아냈다.",
+      "토큰은 제품·클러스터용 GitOps·Homebrew 저장소에 관리자 권한이 있었고, 고객별 비공개 저장소도 읽고 쓸 수 있었다.",
+      "2023년 3월 빌드의 토큰은 2026년 7월 발견 당시에도 유효했고, Baseten은 다음 날 회수했다."
+    ],
+    "whyItMatters": "Baseten을 추론 서비스로 쓰려 했다면, 데이터를 맡기기 전에 노출된 자격 증명과 저장소 권한부터 확인해야 한다.",
+    "tags": [
+      "보안",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "f6a0573d6d76074bf2ff7e7704a77a08a73164d8",
+    "title": "Converge Then Diversify: Decoupling Convergence and Diversity in Multi-Objective Bayesian Optimisation",
+    "url": "https://arxiv.org/abs/2609.13396",
+    "source": "arxiv",
+    "publishedAt": "2026-09-15T04:00:00.000Z",
+    "summary": [
+      "다목적 Bayesian optimisation에서 수렴과 다양성을 두 단계로 나누는 CTD 방법이 제안됐다.",
+      "첫 단계는 한 점에 빠르게 수렴하고, 둘째 단계는 제한된 예산에서 해를 Pareto front 전체에 퍼뜨린다.",
+      "446개 중 72.9% 우세, 21.1% 동률, 6.1% 열세였고, 작은 예산·고차원에서 이점이 컸다."
+    ],
+    "whyItMatters": "평가 예산이 빠듯한 MOBO라면 두 목표를 동시에 쫓기보다 먼저 Pareto front에 닿은 뒤 해를 퍼뜨리는 방식으로 바꿔볼 만하다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "76b817e7de77419997870d3e41ab19e705324428",
+    "title": "25분 만에 Baseten의 프로덕션 GitHub 관리자 권한을 확보함",
+    "url": "https://news.hada.io/topic?id=33756",
+    "source": "geeknews",
+    "publishedAt": "2026-09-15T22:36:28.000Z",
+    "summary": [
+      "자율 해킹 에이전트 Strix가 자격 증명이나 소스 코드 없이 Baseten을 점검해 25분 만에 접근했다.",
+      "공개된 Harbor 컨테이너 레지스트리에서 이미지를 내려받고 Docker 빌드 이력에서 GitHub 토큰을 찾아냈다.",
+      "발견된 GitHub 토큰에 내부 저장소 관리자 권한이 있었지만, 전체 공격 경로와 영향 범위는 확인되지 않았다."
+    ],
+    "whyItMatters": "Baseten 같은 배포 플랫폼을 운영한다면 공개 컨테이너 이미지와 Docker 빌드 이력에 남은 토큰을 즉시 폐기하고 점검해야 한다.",
+    "tags": [
+      "보안",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "96d0250dcbd828a7c77303cb74c3cfd4c6dad818",
+    "title": "An Update on Wayback Machine Access",
+    "url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-15T17:52:18.000Z",
+    "summary": [
+      "Internet Archive가 Wayback Machine에 대량 자동화 트래픽이 몰렸다고 알렸다.",
+      "접속을 지키려고 HTTP 429 차단을 적용했지만, 일반 사용자도 오인 차단될 수 있다.",
+      "오인 차단자는 운영체제·브라우저·IP 주소를 적어 이메일로 문의해야 하며, 오류 감소 작업이 진행 중이다."
+    ],
+    "whyItMatters": "Wayback Machine을 자동 수집에 쓰고 있다면 429 차단과 오인 차단에 대비해 요청량과 재시도 방식을 조정해야 한다.",
+    "tags": [
+      "웹",
+      "보안"
+    ]
+  }
+]
