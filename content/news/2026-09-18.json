@@ -1,0 +1,130 @@
+[
+  {
+    "id": "41ef1af42f89c6971c45b82e00c4229b78a8aa0f",
+    "title": "왁스 모터",
+    "url": "https://news.hada.io/topic?id=33865",
+    "source": "geeknews",
+    "publishedAt": "2026-09-17T22:52:16.000Z",
+    "summary": [
+      "왁스 모터는 왁스의 상변화 때 생기는 부피 변화를 직선 운동으로 바꾸는 장치다.",
+      "밀폐된 왁스를 가열하면 플런저가 밀려나고, 식히면 스프링이나 추로 되돌아온다.",
+      "왁스는 녹을 때 보통 5~20% 팽창하며, 작동 온도와 힘의 크기는 본문만으로 알 수 없다."
+    ],
+    "whyItMatters": "열로 플런저를 움직이는 기계 장치를 설계한다면 전기 모터와 다른 구동 방식을 선택지에 넣게 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "c34963e03a4acf7495f2008869e0ab69ade8c1ff",
+    "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+    "url": "https://bend-lang.com/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-17T20:36:13.000Z",
+    "summary": [
+      "Bend가 AI가 만든 코드의 오류를 증명으로 막는 언어로 공개됐다. C 속도와 CUDA 병렬 실행을 겨냥한다.",
+      "네이티브 코드로 컴파일하며 한 코어에서는 C에 가깝게 실행되고, 같은 바이너리를 16코어와 GPU에서 돌릴 수 있다.",
+      "LAWS.bend로 규칙 위반을 막는 방식이며, 실제 검증 범위와 벤치마크 조건은 본문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Bend를 바로 프로덕션에 넣기보다, 먼저 LAWS.bend와 PROOF.bend로 현재 테스트를 대체할 수 있는지 검증해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "9221e123a178eb5b7560c4131d54fc86db95d2c6",
+    "title": "Making AI-Assisted Claims Independently Challengeable: Publication Authority and a Protocol for Falsifiable Publication Records",
+    "url": "https://arxiv.org/abs/2609.17631",
+    "source": "arxiv",
+    "publishedAt": "2026-09-17T04:00:00.000Z",
+    "summary": [
+      "AI가 만든 주장을 출판 전에 독립적으로 반박할 수 있게 하는 기록 규약이 제안됐다.",
+      "Publication Authority를 단일 사용·비양도 권한으로 두고, 6개 의무를 모두 통과한 기록만 출판을 실행한다.",
+      "110,764개 상태를 검사해 76개 위반을 찾았지만, 사실의 진실성이나 현장 효과는 입증하지 못했다."
+    ],
+    "whyItMatters": "AI가 만든 출판물을 검증할 때 증거와 승인 기록을 따로 보지 말고, 여섯 의무를 모두 통과한 단일 기록을 요구해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "c9233ef81d0b079feccf951a5b8a5e0b2be17402",
+    "title": "Bend - CPU와 GPU에서 증명으로 AI의 실수를 차단하는 언어",
+    "url": "https://news.hada.io/topic?id=33864",
+    "source": "geeknews",
+    "publishedAt": "2026-09-17T22:52:15.000Z",
+    "summary": [
+      "Bend가 AI가 작성한 코드의 규칙 준수를 증명하게 하는 언어로 나왔고, CPU와 GPU 실행을 함께 겨냥했다.",
+      "규칙을 코드로 선언하고 네이티브 코드로 컴파일하며, 단일 코어에서 C에 가까운 속도로 실행된다.",
+      "같은 바이너리를 여러 CPU 코어나 GPU에서 실행할 수 있지만, 증명의 구체적인 방식은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "AI가 짠 코드를 운영에 넣는다면 테스트만 두지 말고, 규칙을 코드로 선언하고 증명하는 흐름을 붙여야 한다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "363bbead77de9f9f7dbfde1a4706ff9439e8bd8d",
+    "title": "Astra for Law",
+    "url": "https://openai.com/index/astra-for-law/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-17T20:17:48.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "b0237729cd403d9527abe035c6074a05cda57550",
+    "title": "EvolveTrade: Experience-Driven Policy Refinement for Self-Evolving LLM Trading Agents",
+    "url": "https://arxiv.org/abs/2609.17632",
+    "source": "arxiv",
+    "publishedAt": "2026-09-17T04:00:00.000Z",
+    "summary": [
+      "EvolveTrade가 고정된 도구 사용 정책 대신 거래 중 정책을 스스로 고치는 방식을 제안했다.",
+      "Policy Agent가 결정 기록과 실제 포트폴리오 결과를 바탕으로 시스템 프롬프트를 갱신하고, LLM 본체는 고정한다.",
+      "대부분의 평가 설정에서 Sharpe Ratio와 Cumulative Return이 개선됐지만, 모든 경우가 같지는 않다."
+    ],
+    "whyItMatters": "거래 에이전트의 성능을 LLM 교체 없이 높이려면, 결정 기록과 포트폴리오 결과로 도구 사용 정책을 갱신하는 루프를 붙여야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "6b9475f3e3364aae1594dded7830a636235a25dc",
+    "title": "Astra for Law - 법률 업무용 AI",
+    "url": "https://news.hada.io/topic?id=33863",
+    "source": "geeknews",
+    "publishedAt": "2026-09-17T22:42:15.000Z",
+    "summary": [
+      "OpenAI가 법률 검색·분석·작성 지침을 묶은 GPT-6 Astra 기반 Astra for Law를 공개했다.",
+      "로펌과 법률 기술 기업은 자체 전문성을 반영한 AI 제품과 업무 흐름을 만들며, 2억 3,000만 개 이상 URL을 검색한다.",
+      "대상은 미국 판례·법률·규정 등이며, 검색 외의 구체적인 구현 방식과 사용 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "미국 법률 자료를 다루는 제품을 만든다면 2억 3,000만 개 URL 검색과 자체 전문성 반영을 설계에 넣게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "bf5dba8048fd7a78710000420ddca1fcfe34e8b9",
+    "title": "Hister: A private search engine for the pages you visit and the files you keep",
+    "url": "https://github.com/asciimoo/hister",
+    "source": "hackernews",
+    "publishedAt": "2026-09-17T16:25:37.000Z",
+    "summary": [
+      "Hister 프로젝트가 방문한 웹페이지와 보관한 파일을 찾는 개인용 검색 엔진으로 GitHub에 올라왔다.",
+      "검색 대상은 방문한 웹페이지와 보관한 파일이며, 개인 데이터 안에서 찾는 용도로 설명된다.",
+      "제공된 발췌문에는 설치법과 지원 파일 형식이 없어 로컬 동작 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "웹페이지와 로컬 파일을 한 번에 찾아야 한다면, 설치 조건을 확인한 뒤 기존 검색 도구와 바꿔 써볼 후보가 된다.",
+    "tags": [
+      "웹",
+      "보안"
+    ]
+  }
+]
