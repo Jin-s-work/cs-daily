@@ -1,0 +1,132 @@
+[
+  {
+    "id": "9b5a2bbb2e25016f0dd742d312ab681cf1dff7a5",
+    "title": "국경 요원, 영장이나 합리적 의심 없이 휴대전화 수색 가능",
+    "url": "https://news.hada.io/topic?id=33914",
+    "source": "geeknews",
+    "publishedAt": "2026-09-18T23:02:19.000Z",
+    "summary": [
+      "미국 제2연방항소법원이 국경에서 여행자의 휴대전화 수색을 허용하는 판결을 내렸다.",
+      "수동으로 내용을 살피는 통상적 수색에는 영장이나 합리적 의심이 필요 없다고 봤고, 휴대전화를 짐처럼 취급했다.",
+      "이번 판단은 미국 제2연방항소법원 관할에 해당하며, 모든 국경 수색에 그대로 적용되는지는 별도다."
+    ],
+    "whyItMatters": "미국 국경을 드나들며 기기를 검사받는다면 잠금과 데이터 분리 같은 대응을 다시 준비해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "9b0bea9a8f225cf06bd55b8852359086ed6971a6",
+    "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+    "url": "https://code.claude.com/docs/en/changelog",
+    "source": "hackernews",
+    "publishedAt": "2026-09-18T21:00:32.000Z",
+    "summary": [
+      "Claude Code가 Claude.md가 없을 때 AGENTS.md를 읽도록 변경됐다.",
+      "기존 Claude.md 대신 AGENTS.md에 적은 프로젝트 지침을 Claude Code가 읽는다.",
+      "Claude.md와 AGENTS.md가 함께 있을 때의 우선순위는 본문에서 확인되지 않는다."
+    ],
+    "whyItMatters": "저장소 규칙을 AGENTS.md에 두고 있다면 Claude Code가 그 지침을 읽게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "b92c247dcc1a31290b6b19c144e098c7014d48a5",
+    "title": "Regularized Emphatic Temporal-Difference Learning: Stability under Constant Stepsizes",
+    "url": "https://arxiv.org/abs/2609.19170",
+    "source": "arxiv",
+    "publishedAt": "2026-09-18T04:00:00.000Z",
+    "summary": [
+      "ETD의 평균 업데이트가 수축해도 샘플 경로는 불안정할 수 있다는 반례를 제시했다.",
+      "RETD는 trace와 ratio를 유지하고 leaky scalar에 신호를 저장해 지연 보정하며 ETD 고정점을 복원한다.",
+      "조화 감소 stepsize에서는 거의 확실히 수렴하지만, trace 분산은 줄지 않고 고정 stepsize 보장은 조건부다."
+    ],
+    "whyItMatters": "off-policy TD를 constant stepsize로 돌린다면 ETD의 평균 안정성만 믿지 말고 RETD의 지연 보정과 조건부 보장을 따로 검증해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "70669d7c7f907f5274749b1b981ee2d461886971",
+    "title": "Claude Code, 이제 CLAUDE.md가 없으면 AGENTS.md를 읽음",
+    "url": "https://news.hada.io/topic?id=33913",
+    "source": "geeknews",
+    "publishedAt": "2026-09-18T22:52:19.000Z",
+    "summary": [
+      "Claude Code가 프로젝트에 CLAUDE.md가 없으면 AGENTS.md를 읽는다.",
+      "이 동작은 /config의 “Project instructions”에서 바꿀 수 있고, 읽을 지침 파일을 설정할 수 있다.",
+      "Bedrock, Vertex, Foundry에서는 아직 이 대체 동작을 쓸 수 없다."
+    ],
+    "whyItMatters": "AGENTS.md를 표준으로 쓰는 저장소에서도 Claude Code가 파일을 따로 복사하지 않고 프로젝트 지침을 읽는다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "0789abb96b121c09bf4b179710ea0dfca8616b4c",
+    "title": "Korea raises data breach fines to 10% of revenue",
+    "url": "https://www.koreajoongangdaily.com/business/korea-raises-data-breach-fines-to-10-of-revenue/12869899",
+    "source": "hackernews",
+    "publishedAt": "2026-09-18T20:02:54.000Z",
+    "summary": [
+      "한국 개인정보보호위원회가 중대한 과실로 개인정보를 유출한 기업에 매출 10%까지 과징금을 매긴다.",
+      "개정 개인정보 규정에 따라 연간 매출을 기준으로 과징금 상한이 정해지며, 시행은 금요일부터다.",
+      "발췌문이 중간에 끊겨 대상 기업의 세부 요건과 실제 산정 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "개인정보를 다루는 서비스라면 사고 한 번의 비용 상한이 매출 10%로 바뀌어 보안 예산과 사고 대응 우선순위를 다시 잡아야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "7b3bd791b71a8d72e200c75b88b14d7837ee5def",
+    "title": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research",
+    "url": "https://arxiv.org/abs/2609.19180",
+    "source": "arxiv",
+    "publishedAt": "2026-09-18T04:00:00.000Z",
+    "summary": [
+      "BioPhys-Bridge가 생물물리학 문헌의 근거 기반 과학 추론을 평가하는 벤치마크로 나왔다.",
+      "초기판은 500개 사례와 1,517개 작업으로 구성되고, 6개 생물학 영역과 9개 물리 모델 계열을 다룬다.",
+      "예비 평가에서 DeepSeek-V4-Flash가 evidence-ID F1 0.360으로 가장 높았고, 후속 평가가 남았다."
+    ],
+    "whyItMatters": "문헌 QA나 RAG를 만든다면, 답의 내용뿐 아니라 evidence ID와 수치·단위 연결까지 이 벤치마크로 점검하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "9b62bb3f755a072500ec78a565aaf3079244efd5",
+    "title": "북한 핵실험이 수년간 이어지는 지진을 촉발함",
+    "url": "https://news.hada.io/topic?id=33912",
+    "source": "geeknews",
+    "publishedAt": "2026-09-18T21:42:20.000Z",
+    "summary": [
+      "2017년 북한의 최대 규모 핵실험 뒤 풍계리 주변 지진 활동이 2025년까지 이어졌다.",
+      "중국과 한국의 지진 기록에서 1,399건을 찾았고, 대부분 규모 2 미만이었다.",
+      "일부 지진은 실험장에서 20~30km 떨어진 곳에서도 발생했으며, 구체적인 원인은 확인되지 않았다."
+    ],
+    "whyItMatters": "지진 데이터를 다루는 시스템이라면 단기 기록보다 여러 지역의 장기 관측 자료를 함께 수집해야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "cdf355e36ec841399cd7b80ab2e54455838d4b95",
+    "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
+    "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
+    "source": "hackernews",
+    "publishedAt": "2026-09-18T19:03:09.000Z",
+    "summary": [
+      "Android 17 QPR1이 AOSP에 공개되지 않은 채 새 API를 추가한 첫 사례다.",
+      "Android 3.x 이후 처음으로, AOSP 릴리스 없이 새 API가 추가된다.",
+      "Mastodon 발췌만 남아 있어 어떤 API와 적용 조건인지는 확인되지 않는다."
+    ],
+    "whyItMatters": "Android 17 QPR1을 대상으로 작업한다면 AOSP 소스만 보고 API 추가 여부를 판단하면 안 된다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  }
+]
