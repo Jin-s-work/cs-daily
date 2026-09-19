@@ -1,0 +1,110 @@
+[
+  {
+    "id": "7e3210551654bdcac5183b4e592410b9871fa4fa",
+    "title": "Playwright를 2배 빠르게, 토큰 효율을 80% 높게 만들었습니다",
+    "url": "https://news.hada.io/topic?id=33959",
+    "source": "geeknews",
+    "publishedAt": "2026-09-19T22:52:25.000Z",
+    "summary": [
+      "Stagehand가 Playwright보다 2배 빠르고 토큰 효율은 80% 높아졌다는 내용이다.",
+      "TypeScript·Python·Go에서 Playwright식 API와 자연어 명령으로 웹 조작과 구조화된 추출을 처리한다.",
+      "접근성 트리의 하이브리드 가지치기를 쓰지만, 브라우저 옆 구성의 세부 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "Playwright 기반 에이전트를 만들고 있다면 실행 시간과 토큰 사용을 비교할 후보가 하나 늘어난다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "35721eb82dbc85d4a3d18cc849b80d8af05f8917",
+    "title": "I think you should almost never use AI to write",
+    "url": "https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai",
+    "source": "hackernews",
+    "publishedAt": "2026-09-19T16:35:24.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "36ce8b86393c3aac39a940ce5f797a00d31796a6",
+    "title": "미 제2연방항소법원, 정부의 국경 전자기기 수색 허용",
+    "url": "https://news.hada.io/topic?id=33958",
+    "source": "geeknews",
+    "publishedAt": "2026-09-19T22:52:24.000Z",
+    "summary": [
+      "미 제2연방항소법원이 국경에서 여행자 전자기기를 수색할 때 혐의나 의심이 없어도 된다고 판결했다.",
+      "사건은 United States v. Alisigwe로, 정부는 피고인의 휴대전화를 영장 없이 두 차례 수색했다.",
+      "수색으로 확보한 증거가 형사재판에 사용됐지만, 판결의 구체적인 법리는 발췌문에 없다."
+    ],
+    "whyItMatters": "미국 국경을 지나는 이용자의 기기를 다룬다면, 의심 없는 수색도 가능하다는 전제를 개인정보 처리 설계에 반영해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "28f5c2dee5be6445b352135e278d6668a3bb71c0",
+    "title": "Tin: full-text search for Postgres",
+    "url": "https://planetscale.com/blog/introducing-tin",
+    "source": "hackernews",
+    "publishedAt": "2026-09-19T13:52:06.000Z",
+    "summary": [
+      "PlanetScale이 Postgres용 전문 검색 확장 TIN을 GA 버전으로 출시했다.",
+      "CREATE INDEX로 색인을 만들고 ==>로 BM25 검색을 한다. 모든 Postgres와 Neki에서 쓸 수 있다.",
+      "구체적인 성능 수치와 기존 확장과의 비교 내용은 발췌문에 없어 확인되지 않는다."
+    ],
+    "whyItMatters": "Postgres에서 검색을 붙일 때 별도 검색 서버 대신 TIN을 먼저 시험해 볼 선택지가 생긴다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "670a895adfae1d7755f111e7dab532484097806b",
+    "title": "Alibaba, 암을 포함한 약 150개 질환을 탐지하는 AI 모델 오픈소스로 공개",
+    "url": "https://news.hada.io/topic?id=33957",
+    "source": "geeknews",
+    "publishedAt": "2026-09-19T22:52:23.000Z",
+    "summary": [
+      "Damo Academy가 CT 영상으로 약 150개 복부 질환을 찾는 AI 모델 Damo Radar를 오픈소스로 공개했다.",
+      "Damo Radar는 18개 복부 장기의 조영증강 CT를 분석해 악성 종양과 이상 소견을 식별하는 비전 언어 모델이다.",
+      "발췌문에는 150개 질환의 전체 목록과 실제 사용 방법이 나오지 않는다."
+    ],
+    "whyItMatters": "복부 CT 분석 파이프라인을 만들고 있다면 Damo Radar의 오픈소스 코드를 직접 비교 대상으로 삼게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "070246c7a0099671ba1404b34736132e856c29db",
+    "title": "I built non-autoregressive decision models with RL a year ago",
+    "url": "https://laya.convaiinnovations.com/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-19T10:46:58.000Z",
+    "summary": [
+      "Laya 개발자가 비자기회귀 결정 모델을 2025년부터 직접 만들었다고 주장했다.",
+      "모델은 텍스트를 생성하지 않고 구조화된 스키마의 확률을 33ms 안에 예측하며 100개 이상 언어를 다룬다.",
+      "본문에는 Jev의 구현 세부와 두 시스템의 직접 비교 결과가 없어 실제 동등성은 확인되지 않는다."
+    ],
+    "whyItMatters": "비자기회귀 결정 모델을 만드는 개발자라면 Laya의 공개 가중치와 데이터셋을 내려받아 직접 비교하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "dc4eb0409f5885f412490e99d3ec6140ad20d79f",
+    "title": "글쓰기에 AI를 거의 쓰지 말아야 한다고 생각하는 이유",
+    "url": "https://news.hada.io/topic?id=33956",
+    "source": "geeknews",
+    "publishedAt": "2026-09-19T22:52:22.000Z",
+    "summary": [
+      "아이디어와 논증을 전달하는 글에서는 AI에 집필을 맡기지 말아야 한다는 주장이다.",
+      "글을 직접 쓰는 과정이 사고의 일부라서, 메모를 주거나 결과물을 편집해도 대체하기 어렵다고 본다.",
+      "AI 문장의 모호함과 미묘한 오류가 그럴듯한 표현에 가려질 수 있다는 점도 이유다."
+    ],
+    "whyItMatters": "아이디어와 분석이 핵심인 글이라면 AI에게 초안을 맡기기보다 직접 문장을 만들게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
