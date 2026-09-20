@@ -1,0 +1,117 @@
+[
+  {
+    "id": "f5adb810475e21e4c72b2d121bbbdfd81d1528d0",
+    "title": "Ask GN: 3주간 코딩 에이전트에게 보낸 제 메시지를 분석해 봤습니다. 40%는 실제 작업이 아니었어요. 다른 분들...",
+    "url": "https://news.hada.io/topic?id=34012",
+    "source": "geeknews",
+    "publishedAt": "2026-09-20T19:11:12.000Z",
+    "summary": [
+      "지난 3주간 코딩 에이전트에 보낸 메시지를 분석했더니 40%가 실제 작업이 아니었다.",
+      "Claude Code와 Kimi를 주로 쓰고 Cursor와 Copilot도 가끔 쓰며, 메시지는 모델이 용도별로 분류했다.",
+      "키워드 검색이 아니라 모델이 메시지를 하나씩 읽어 분류한 분석이며, 원문 전체는 확인되지 않는다."
+    ],
+    "whyItMatters": "코딩 에이전트를 여러 개 쓰는데도 속도가 느렸다면, 먼저 메시지 중 실제 작업이 아닌 요청부터 줄이게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "54422eea02357412a8d8c9e8f98d07cc31fbaa2a",
+    "title": "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM",
+    "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+    "source": "hackernews",
+    "publishedAt": "2026-09-20T17:38:50.000Z",
+    "summary": [
+      "Samsung이 내년에 HBM4와 HBM4E 생산량을 올해보다 두 배 이상 늘릴 전망이다.",
+      "HBM 생산능력은 월 25만 장으로 늘고, 유리 캐리어 세정 외주는 월 2만 장에서 5만 장으로 증가한다.",
+      "6·7세대 칩이 전체 생산량의 80%를 차지할 계획이지만, 실제 출하량과 고객별 물량은 확인되지 않았다."
+    ],
+    "whyItMatters": "내년 HBM4 계열 수급을 계획한다면 삼성의 생산 확대를 전제로 일정과 공급처를 다시 잡아야 한다.",
+    "tags": [
+      "인프라",
+      "업계"
+    ]
+  },
+  {
+    "id": "0bc45278627356bc530e1af55b137164f5679fba",
+    "title": "Pirate Face - LLM 모델을 삭제로부터 구하는 서비스",
+    "url": "https://news.hada.io/topic?id=34011",
+    "source": "geeknews",
+    "publishedAt": "2026-09-20T17:42:25.000Z",
+    "summary": [
+      "Pirate Face가 Hugging Face 오픈 모델을 삭제에 대비해 토렌트로 미러링하는 서비스로 소개됐다.",
+      "체크섬으로 검증한 토렌트를 P2P 네트워크에 분산 보관하고, Hugging Face 웹 시드로 피어 없이도 받을 수 있다.",
+      "원본이 삭제돼도 배포를 이어갈 수 있지만, 운영 주체와 대상 모델은 본문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Hugging Face 모델을 오래 보관해야 한다면, 원본 삭제에 대비해 토렌트 미러를 함께 남기게 된다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "81b3da03dd64eeb7ade30468836e4ff236b64347",
+    "title": "ChatGPT now knows what you do on other websites via ad collector",
+    "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-20T15:18:44.000Z",
+    "summary": [
+      "한 분석 글이 OpenAI의 광고 수집기가 ChatGPT 계정과 외부 사이트 활동을 연결한다고 주장했다.",
+      "ChatGPT가 만든 __obi 쿠키가 광고주 사이트의 OpenAI 코드로 전송되며, 본문·상품 검색·구매 행동이 포함된다.",
+      "작성자는 1,029개 호스트명의 트래픽과 936개 광고 픽셀을 대조했지만, OpenAI의 공식 설명은 확인되지 않는다."
+    ],
+    "whyItMatters": "ChatGPT를 쓰면서 광고 추적을 원치 않으면, 로그인 계정과 연결되는 __obi 쿠키 및 동의 설정을 먼저 확인하게 된다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "8127b563242dd7fcc6e4d2954ce45433f76be364",
+    "title": "UTF-8000: 무제한 UTF-8",
+    "url": "https://news.hada.io/topic?id=34010",
+    "source": "geeknews",
+    "publishedAt": "2026-09-20T16:52:25.000Z",
+    "summary": [
+      "UTF-8000은 ASCII와 UTF-8을 포함하는 무제한 정수 인코딩 제안이다.",
+      "UTF-8의 선두 비트를 자기 동기화와 길이 표시로 나눠 연속 바이트에 길이를 기록한다.",
+      "독립 제안이라 Unicode Consortium의 승인이나 대표 표준 지위는 아직 없다."
+    ],
+    "whyItMatters": "UTF-8000을 파서나 저장 형식에 넣을 때는 표준 호환이 아니라 독립 제안이라는 점을 먼저 확인해야 한다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "d601f6dc2a99853a6665e27ad93d994c26dc811c",
+    "title": "Singapore’s National Library Board offers micropayments to build reading habits",
+    "url": "https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books",
+    "source": "hackernews",
+    "publishedAt": "2026-09-20T15:18:05.000Z",
+    "summary": [
+      "Singapore 국립도서관위원회가 매일 독서 습관을 만들기 위한 5년 시범사업을 시작했다.",
+      "ReadSG에서 하루 15분 읽으면 가상 코인 20개를 받고, 이 코인은 현금으로 바꿀 수 있다.",
+      "참여 조건과 실제 환전 방식은 발췌만으로 알 수 없고, 누적 750만 분이면 S$150,000 기부가 풀린다."
+    ],
+    "whyItMatters": "시민 대상 습관형 앱을 만든다면 15분 단위 보상과 누적 목표를 설계에 넣을 수 있다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "91c19224e798c371355ce38877572601ce2306d0",
+    "title": "ZK-JPEG - 영지식 이미지 편집 및 압축",
+    "url": "https://news.hada.io/topic?id=34009",
+    "source": "geeknews",
+    "publishedAt": "2026-09-20T16:42:25.000Z",
+    "summary": [
+      "ZK-JPEG이 비밀 입력을 공개하지 않고 이미지 편집·JPEG 압축의 정확성을 증명하는 도구로 소개됐다.",
+      "카메라 디지털 서명은 원본 출처를 증명하지만, 손실 압축·흐림·영역 가리기로 서명이 깨지는 문제를 다룬다.",
+      "발췌문만으로는 어떤 영지식 회로와 증명 시스템을 쓰는지, 실제 구현 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "이미지 원본을 공개하지 않고도 편집·압축 결과를 검증해야 한다면 ZK-JPEG를 살펴볼 이유가 생긴다.",
+    "tags": [
+      "보안"
+    ]
+  }
+]
