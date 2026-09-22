@@ -1,0 +1,127 @@
+[
+  {
+    "id": "b1894102f79b946c2dfb830abe8b85dd48e2694b",
+    "title": "수학과 인공지능 자문그룹",
+    "url": "https://news.hada.io/topic?id=34144",
+    "source": "geeknews",
+    "publishedAt": "2026-09-22T23:33:03.000Z",
+    "summary": [
+      "프린스턴 IAS를 거점으로 수학과 AI 기업을 잇는 독립 자문그룹이 출범했다.",
+      "AI가 낸 수학 연구 결과의 책임 있는 발표와 공개 방식을 자문하고, 연구계와 기업의 소통을 맡는다.",
+      "현재는 OpenAI가 내부 모델로 산출했다고 밝힌 다수의 중요한 수학 연구 결과 공개를 조율한다."
+    ],
+    "whyItMatters": "수학 문제를 푼 모델의 결과를 발표할 때는 성과보다 공개 책임과 연구계 조율을 먼저 챙겨야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "245d063e08eba24c3e01699478b6806f4355a345",
+    "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+    "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-22T19:03:38.000Z",
+    "summary": [
+      "미 국방부가 이란 학교 미사일 공격에 AI 과의존이 영향을 줬다고 설명했다.",
+      "기사 제목만으로는 어떤 AI가 표적 선정이나 공격 과정에 쓰였는지 알 수 없다.",
+      "본문이 없어 실제 판단 과정, 책임 소재와 사건의 세부 경위는 확인되지 않는다."
+    ],
+    "whyItMatters": "AI를 표적화와 공격 판단에 연결한 시스템을 쓰고 있다면, 자동화 결과를 사람이 다시 검증하는 절차가 필요하다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "f790dcf3a0002dccd4c761251343f4de3488125c",
+    "title": "CaLR: Causal Latent Revision for Robust Diffusion Reasoning",
+    "url": "https://arxiv.org/abs/2609.20981",
+    "source": "arxiv",
+    "publishedAt": "2026-09-22T04:00:00.000Z",
+    "summary": [
+      "CaLR가 확산 언어 모델의 병렬 추론 중간 단계를 고치는 프레임워크로 제안됐다.",
+      "전문가 모델의 인과 위상 행렬(CTM)과 암시적 미분으로 생각을 수정해 논리 일관성을 맞춘다.",
+      "복잡한 벤치마크와 Sudoku에서 AR 기준선을 넘었지만, 실제 적용 조건은 더 확인해야 한다."
+    ],
+    "whyItMatters": "확산 모델로 병렬 추론을 만들고 있다면, 중간 단계의 논리 오류를 자동 수정하는 설계를 다음 실험 대상으로 삼게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "a3c97b08248039cceac99cebce4e2676a194d3d8",
+    "title": "“우리가 FBI를 해킹했다”, 해커 그룹이 FBI 전체 직원의 정보 탈취 주장",
+    "url": "https://news.hada.io/topic?id=34143",
+    "source": "geeknews",
+    "publishedAt": "2026-09-22T22:33:11.000Z",
+    "summary": [
+      "해킹 그룹 ShinyHunters가 FBI 관련 서비스에 침입해 전 직원과 지원자 정보 탈취를 주장했다.",
+      "유출 자료에는 요원 이름·집 주소·전화번호와 배우자 정보가 포함됐고, 5,000명 샘플 일부는 일치했다.",
+      "다만 404 Media가 확인한 것은 샘플 일부이며, FBI 전체 직원 정보 유출 주장은 아직 확정되지 않았다."
+    ],
+    "whyItMatters": "비슷한 데이터를 다룬다면 직원·가족 정보가 함께 새는 경우까지 가정해 접근 권한과 외부 노출 경로를 바로 점검해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "3d48e529ad7a20b189a9c01e1c4d34221cb0505e",
+    "title": "GPT-6 Sol and Luna",
+    "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-22T18:00:34.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "438c183280ad361c7915153ad0cdb3c323ab024a",
+    "title": "LoRA Enhanced Contrastive Learning with SAS Vision Transformers",
+    "url": "https://arxiv.org/abs/2609.21061",
+    "source": "arxiv",
+    "publishedAt": "2026-09-22T04:00:00.000Z",
+    "summary": [
+      "DINOv3 ViT를 SAS 수중 음향 표적 인식에 LoRA로 맞춘 연구가 나왔다.",
+      "동결한 백본에서 가중치 0.26%만 학습해 AUPRC를 0.300에서 0.679±0.027로 높였다.",
+      "지역 분할·85% recall·3개 시드 평가에서 hard-negative mining과 SupCon의 추가 효과는 없었다."
+    ],
+    "whyItMatters": "SAS 표적 인식 모델을 만들고 있다면, 복잡한 누적 정제보다 LoRA 단일 적응부터 적용하면 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "805eb21fac24e7444070e687a370c1423c13c0f1",
+    "title": "Claude Opus 5.5, 추론 설정별 성능과 비용 비교",
+    "url": "https://news.hada.io/topic?id=34142",
+    "source": "geeknews",
+    "publishedAt": "2026-09-22T21:35:00.000Z",
+    "summary": [
+      "AAII 평가에서 Claude Opus 5.5 max가 지능 지수 58점으로 Opus 5와 Fable 5.1을 앞섰다.",
+      "추론 설정을 medium·high·xhigh·max로 높이면 점수가 51·54·56·58점으로 오르고 과제당 비용도 증가한다.",
+      "다만 비용의 구체적인 금액과 평가 과제 구성은 발췌문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Opus 5.5를 API에 붙인다면 모든 요청을 max로 보내지 말고 품질 기준에 맞춰 추론 설정을 나눠야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "4e69396feb63bee283a81c8cd44b7f22ce5ed32b",
+    "title": "'We hacked the FBI:' Hackers say they have data on all FBI employees",
+    "url": "https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-22T17:46:02.000Z",
+    "summary": [
+      "해커들이 온라인에서 FBI를 해킹해 모든 FBI 직원의 데이터를 확보했다고 주장했다.",
+      "제목상 표적은 FBI 전체 직원이며, 어떤 시스템에서 자료를 가져갔는지는 드러나지 않았다.",
+      "본문이 없어 유출 경로와 데이터 종류, 주장의 진위는 아직 확인되지 않는다."
+    ],
+    "whyItMatters": "FBI 직원 정보와 연결된 데이터를 다룬다면 이번 주장을 침해 사고로 단정하지 말고 출처와 범위를 따로 검증해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  }
+]
