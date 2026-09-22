@@ -1,0 +1,127 @@
+[
+  {
+    "id": "10e19a8d37828615019b7b0a678866024dafc01c",
+    "title": "미국, 광케이블 절단으로 동부 주요 공항 항공편 운항 중단",
+    "url": "https://news.hada.io/topic?id=34088",
+    "source": "geeknews",
+    "publishedAt": "2026-09-21T22:39:54.000Z",
+    "summary": [
+      "주 통신 회선 장애에 백업 광케이블 절단까지 겹쳐 FAA가 미국 동부행 항공편을 멈췄다.",
+      "뉴욕·보스턴·필라델피아 공항 노선 등이 영향을 받아 5,600편 이상 지연·취소, 100편 이상 회항했다.",
+      "장애가 발생한 회선과 공항별 복구 시점, 운항 재개 조건은 발췌문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "미 동부 공항을 거치는 배포·출장 일정은 항공편 지연과 회항을 전제로 다시 잡아야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "65539846fc8ff9423ea6ef5e1fae46bbf0179fbe",
+    "title": "Xiaomi MiMo v2.6",
+    "url": "https://mimo.xiaomi.com/mimo-v2-6",
+    "source": "hackernews",
+    "publishedAt": "2026-09-21T20:12:12.000Z",
+    "summary": [
+      "Xiaomi가 MiMo v2.6이라는 이름의 모델 관련 웹페이지를 올렸다.",
+      "페이지 제목 외에는 모델의 크기나 기능, 공개 범위가 본문 발췌에 나오지 않는다.",
+      "원문 본문이 없어 학습 데이터, 라이선스, API 사용 가능 여부는 확인되지 않는다."
+    ],
+    "whyItMatters": "지금은 모델 도입이나 벤치마크 비교를 시작하지 말고 원문과 배포 정보를 먼저 확인해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "34088336622fb08f661274baa0881ec9423d2125",
+    "title": "RBS-Attention: Radius-Bounded Sparse Prefill for Long-Context Large Language Models",
+    "url": "https://arxiv.org/abs/2609.20971",
+    "source": "arxiv",
+    "publishedAt": "2026-09-21T04:00:00.000Z",
+    "summary": [
+      "RBS-Attention이 긴 문맥 LLM의 prefill을 줄이는 학습 없는 희소 방식으로 나왔다.",
+      "centroid와 최대 key-block radius를 따로 골라 합쳐 mean dilution으로 빠지는 토큰을 살린다.",
+      "H100 128K의 Qwen3-30B에서 20.65배 빨라졌지만, dense 정확도는 88.65 대 89.52다."
+    ],
+    "whyItMatters": "긴 문맥 prefill이 병목이면 정확도 손실을 확인하면서 RBS-Attention을 붙여 TTFT를 줄일 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "56291fe36f33d9b854768829d08e10dbc5820d6b",
+    "title": "Python Workers 정식 출시",
+    "url": "https://news.hada.io/topic?id=34087",
+    "source": "geeknews",
+    "publishedAt": "2026-09-21T22:36:54.000Z",
+    "summary": [
+      "Cloudflare가 Python Workers를 정식 출시해 Python으로도 Workers를 개발할 수 있게 됐다.",
+      "기존 Python 코드·라이브러리를 쓰고, 바인딩 타입 변환은 런타임과 Python SDK가 처리한다.",
+      "사용 가능한 Python 버전과 실행 제한, 배포 조건은 발췌문에 나오지 않는다."
+    ],
+    "whyItMatters": "Python으로 만든 Worker를 Cloudflare에 올릴 계획이었다면 언어를 바꾸지 않고 기존 코드와 라이브러리부터 옮길 수 있다.",
+    "tags": [
+      "언어/런타임",
+      "인프라"
+    ]
+  },
+  {
+    "id": "196e695124f1721a6527e86c75cd49124e88352b",
+    "title": "Transformers Explained Visually",
+    "url": "https://poloclub.github.io/transformer-explainer/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-21T19:43:49.000Z",
+    "summary": [
+      "웹에서 Transformer의 토큰 처리와 self-attention 흐름을 시각적으로 살펴보는 도구가 나왔다.",
+      "GPT-2 small(1억 2,400만 개)이 embedding과 Transformer block의 계산을 단계별로 보여준다.",
+      "최신 모델이 아니라 GPT-2 small을 쓰므로 실제 LLM 성능 비교보다 구조 학습에 맞는다."
+    ],
+    "whyItMatters": "Transformer 내부 계산을 설명하거나 디버깅할 때 문서 대신 브라우저 시각화로 토큰별 흐름을 확인할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "37d9347772d8e7bb2afd986cc0a989b5ff614c9a",
+    "title": "Attention-Aware Routing: Coupling Routing and Attention in MoEs",
+    "url": "https://arxiv.org/abs/2609.20974",
+    "source": "arxiv",
+    "publishedAt": "2026-09-21T04:00:00.000Z",
+    "summary": [
+      "MoE의 라우터가 토큰 상태뿐 아니라 attention 가중치의 시간·주파수 특징도 보게 하는 AAR가 제안됐다.",
+      "기본 Transformer를 고정하고 라우팅 파라미터만 학습해 OLMoE에서 GSM8K가 3.37%포인트 올랐다.",
+      "층마다 효과가 달라 깊은 층에서는 수학 추론이 좋아졌지만, 무차별 적용은 사실 검색을 떨어뜨렸다."
+    ],
+    "whyItMatters": "MoE 라우팅을 손댄다면 모든 층에 같은 설정을 넣지 말고, 추론과 검색을 나눠 층별로 평가해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "a34329f65a407671d47312b02c2e71eda5484f88",
+    "title": "NASA/ESA의 화성 시료 귀환 임무가 취소됨",
+    "url": "https://news.hada.io/topic?id=34086",
+    "source": "geeknews",
+    "publishedAt": "2026-09-21T21:38:10.000Z",
+    "summary": [
+      "미국 의회의 예산 절충안이 NASA·ESA의 Mars Sample Return 종료를 지지했다.",
+      "화성 암석을 지구로 가져오는 임무로, NASA의 예상 비용은 110억 달러에서 70억 달러로 낮아졌다.",
+      "법안은 아직 상하원 통과와 대통령 서명이 남아 있어 최종 취소는 확정되지 않았다."
+    ],
+    "whyItMatters": "Mars Sample Return 관련 연구나 일정에 기대고 있었다면 최종 법안 통과 여부부터 다시 확인해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "6eeee864170986cac0b9ce8615dd483a55ee85a2",
+    "title": "NASA’s Mars Sample Return mission is dead",
+    "url": "https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead",
+    "source": "hackernews",
+    "publishedAt": "2026-09-21T19:14:12.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  }
+]
