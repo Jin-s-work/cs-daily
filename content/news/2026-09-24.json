@@ -1,0 +1,126 @@
+[
+  {
+    "id": "e0cb099aecd6f790fa9f590735a51d0374621e52",
+    "title": "GitHub 위키는 안티패턴이다 (2022)",
+    "url": "https://news.hada.io/topic?id=34199",
+    "source": "geeknews",
+    "publishedAt": "2026-09-23T22:40:09.000Z",
+    "summary": [
+      "2022년, GitHub 프로젝트 위키 대신 문서를 저장소 안에서 관리하자는 글이 나왔다.",
+      "문서를 /docs 폴더에 코드와 함께 버전 관리하고 GitHub Pages로 게시하면 저장소 복제 때 문서도 함께 내려받는다.",
+      "발췌만으로는 위키를 안티패턴으로 보는 구체적 근거와 예외 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "코드와 문서를 따로 관리 중이라면 /docs와 GitHub Pages를 묶어 변경 이력을 한곳에서 관리하게 된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "f82afb648776b0979dfc3530a9c045662279b45f",
+    "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+    "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+    "source": "hackernews",
+    "publishedAt": "2026-09-23T18:06:47.000Z",
+    "summary": [
+      "Anthropic이 2026년 봄 Claude 기반 생명과학 연구팀과 자체 실험실을 만들었다.",
+      "Claude는 DNA 데이터를 훑어 미특성 단백질군을 찾고, CRISPR와 닮은 새 효소 시스템을 발견했다.",
+      "과학자들은 높은 수준의 방향만 줬고 실험 검증까지 진행했지만, 세부 작동 방식과 수치 결과는 발췌문에 없다."
+    ],
+    "whyItMatters": "생물학 데이터에서 후보를 찾고 실험까지 잇는 자동화 흐름을 만들려면 Claude의 역할과 검증 단계를 함께 설계해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "53b8ae5109253f0bd53b92019cd74ef3b82c6f84",
+    "title": "Do Synthetic Personas Predict Real Audience Response? A Sim-to-Real Study Where a No-Persona Baseline Beats Persona-Based Copy Simulation",
+    "url": "https://arxiv.org/abs/2609.25010",
+    "source": "arxiv",
+    "publishedAt": "2026-09-23T04:00:00.000Z",
+    "summary": [
+      "Upworthy 실제 클릭 데이터로 LLM 합성 페르소나의 예측력을 검증한 연구가 나왔다.",
+      "10명 페르소나보다 무페르소나 방식이 더 잘 맞았고, Kendall τ는 0.361 대 0.084였다.",
+      "신뢰할 수 있는 A/B 테스트는 399건뿐이고, 세 분할과 다른 도메인에서도 방향만 재현돼 일반화 범위는 제한적이다."
+    ],
+    "whyItMatters": "카피의 클릭률을 예측할 때 페르소나 패널을 붙이기보다 기본 LLM 랭커를 먼저 비교해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "a5d98a06618f43bf1ef30294d817ce79765b950b",
+    "title": "Stripe의 사내 업무용 AI 플랫폼, Kai",
+    "url": "https://news.hada.io/topic?id=34198",
+    "source": "geeknews",
+    "publishedAt": "2026-09-23T22:37:09.000Z",
+    "summary": [
+      "Stripe가 영업·재무·규정 준수 업무에 쓰는 사내 AI 플랫폼 Kai를 구축했다.",
+      "발표 시점에 직원 83%가 매주 사용했고, 기존 도구의 에이전트는 4,000개를 넘었다.",
+      "에이전트가 중복 프롬프트와 품질·유지보수 문제를 낳았지만, Kai의 구체적인 방식은 본문이 없어 확인되지 않는다."
+    ],
+    "whyItMatters": "사내 에이전트를 만들고 있다면 기능을 따로 늘리기보다 중복 프롬프트와 유지보수를 한곳에서 다루는 구조가 필요해진다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "5dce497623aece16d58146ac0b2e4091e78053aa",
+    "title": "Italian parliament votes for return to nuclear energy",
+    "url": "https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567",
+    "source": "hackernews",
+    "publishedAt": "2026-09-23T17:06:16.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "9ade661cec5e297eb8b874647aed033e076f40c1",
+    "title": "Do Existing Preconditioners Improve Biomedical Tabular Foundation Learning? An Empirical Study on TabPFN Optimization",
+    "url": "https://arxiv.org/abs/2609.25013",
+    "source": "arxiv",
+    "publishedAt": "2026-09-23T04:00:00.000Z",
+    "summary": [
+      "TabPFN v2.5의 바이오메디컬 파인튜닝에서 다섯 가지 AdamW 계열 전처리기를 비교했다.",
+      "알츠하이머·유방암 등 59개 데이터셋에서 기본 AdamW가 성능과 통계 순위 모두 가장 좋았다.",
+      "곡률 인식 전처리기는 일관된 개선에 실패했고, 바이오메디컬 전용 방식이 아직 필요하다."
+    ],
+    "whyItMatters": "TabPFN v2.5를 바이오메디컬 데이터에 미세조정한다면 복잡한 preconditioner보다 기본 AdamW를 먼저 써야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "14eb4c15e241caf0189ddd2059efc31a84fac3db",
+    "title": "기업 채용 사이트 공고의 28%, 90일 넘게 게시 중",
+    "url": "https://news.hada.io/topic?id=34197",
+    "source": "geeknews",
+    "publishedAt": "2026-09-23T21:39:10.000Z",
+    "summary": [
+      "기업 자체 채용 사이트 공고 약 61만 개 중 28.3%가 90일 넘게 남아 있었다.",
+      "게시일을 확인할 수 있는 공고의 게시 기간 중앙값은 36일이었고, 16.3%는 6개월을 넘겼다.",
+      "게시일을 확인할 수 있는 공고만 집계했으며, 오래 남은 공고의 세부 원인은 확인되지 않는다."
+    ],
+    "whyItMatters": "채용 데이터를 볼 때 오래 남은 공고를 실제 채용 수요로 곧바로 세면 안 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "58a4ef2e527bcfbc1ec473ebe956e4804c7d59d4",
+    "title": "28% of job postings on company career sites have been open over 90 days",
+    "url": "https://unlisted.careers/ghost-jobs/report/2026-09",
+    "source": "hackernews",
+    "publishedAt": "2026-09-23T16:35:34.000Z",
+    "summary": [
+      "2026년 9월 조사에서 기업 채용 사이트 공고의 28.3%가 90일 넘게 열린 상태로 남아 있다.",
+      "607,050개 공고를 15개 ATS에서 모았고, 90일 초과 공고는 163,057개, 중앙값은 36일이었다.",
+      "게시일이 기록된 공고 기준이며, 게시일 데이터는 95.0%에만 있고 폐쇄 수치는 29일 관찰 기간에 한정된다."
+    ],
+    "whyItMatters": "채용 공고를 인력 수요의 즉시 신호로 쓰고 있다면, 90일 이상 열린 공고를 따로 걸러야 한다.",
+    "tags": [
+      "업계"
+    ]
+  }
+]
