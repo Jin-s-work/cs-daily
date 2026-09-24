@@ -1,0 +1,127 @@
+[
+  {
+    "id": "c0eb4ba1c2b8545aca6131394e76b6085ec26b7b",
+    "title": "Toyota, Corolla 전기차 출시 준비",
+    "url": "https://news.hada.io/topic?id=34246",
+    "source": "geeknews",
+    "publishedAt": "2026-09-24T23:33:36.000Z",
+    "summary": [
+      "Toyota가 차세대 Corolla에 순수 전기차와 플러그인 하이브리드를 처음 넣을 예정이다.",
+      "현행 TNGA-C 플랫폼을 크게 손봐 가솔린·하이브리드까지 여러 동력계를 함께 구성한다.",
+      "출시 시점과 배터리 용량, 주행거리 등 구체적인 사양은 아직 확인되지 않았다."
+    ],
+    "whyItMatters": "Corolla 전기차를 기다렸다면 앞으로 순수 전기차와 플러그인 하이브리드 중에서 고를 수 있게 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "185ddb0abcfc6b08da60c0e454dca6b9220f67e5",
+    "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+    "url": "https://github.com/devdotfast/whiteboard",
+    "source": "hackernews",
+    "publishedAt": "2026-09-24T17:21:36.000Z",
+    "summary": [
+      "Whiteboard가 사람과 에이전트가 함께 설계하는 오픈소스 데스크톱 IDE로 공개됐다.",
+      "코드와 연결되는 캔버스, Rust 기반 AST 의미 diff, 에이전트 Decision Log를 한곳에 묶었다.",
+      "VSCode의 키바인딩·LSP를 쓰며, WASM 플러그인으로 diff 표시 규칙을 바꿀 수 있다."
+    ],
+    "whyItMatters": "에이전트가 만든 코드의 결정 과정과 변경점만 빠르게 확인해야 한다면 Whiteboard를 기존 Claude Code나 Codex 흐름에 붙여볼 이유가 생긴다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "b9bacbebab7c0995274b449a836aac667b2c7dab",
+    "title": "4DGS-JEPA: Temporally Compositional Joint-Embedding Prediction for Dynamic Gaussian Splatting",
+    "url": "https://arxiv.org/abs/2609.25036",
+    "source": "arxiv",
+    "publishedAt": "2026-09-24T04:00:00.000Z",
+    "summary": [
+      "4DGS-JEPA라는 모델이 동적 Gaussian Splatting 장면의 미래 상태를 예측하는 구조로 제안됐다.",
+      "장면·움직임 그룹·Gaussian을 계층적으로 묶고, 전이 연산으로 여러 미래 시점을 직접 또는 재귀적으로 예측한다.",
+      "완전한 미래 외형 복원은 요구하지 않으며, 재배열·위상 변화에서는 최적수송 대응을 섞는다."
+    ],
+    "whyItMatters": "동적 Gaussian 장면 예측을 만든다면 외형 전체 복원 대신 계층적 기하와 경로 일관성 학습을 실험하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "d09c8769c0cb9de128cd4486e327048fdd17e4a6",
+    "title": "Whiteboard (YC W26) - 신중한 소프트웨어 설계를 위한 오픈소스 IDE",
+    "url": "https://news.hada.io/topic?id=34245",
+    "source": "geeknews",
+    "publishedAt": "2026-09-24T22:42:05.000Z",
+    "summary": [
+      "Whiteboard가 사람과 코딩 에이전트가 함께 설계하는 오픈소스 IDE로 소개됐다.",
+      "Claude Code나 Codex를 연결하면 에이전트가 SDK로 캔버스에 작업을 그린다.",
+      "제공된 발췌가 잘려 있어 전체 기능과 지원 범위는 아직 확인되지 않는다."
+    ],
+    "whyItMatters": "설계 문서와 코드 탐색을 한 화면에 묶고 싶다면 Claude Code나 Codex를 캔버스 작업에 연결해 볼 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "6e8691490283cb3c1c13e7f6b377b00381d0fb18",
+    "title": "Why is the liver so weirdly regenerative?",
+    "url": "https://dynomight.substack.com/p/liver",
+    "source": "hackernews",
+    "publishedAt": "2026-09-24T16:23:00.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "26684cb49eceb14e9db9945c1b7b842b35489a68",
+    "title": "An Accurate and Interpretable Hyper Graph Neural Network for GBM Survival Prediction",
+    "url": "https://arxiv.org/abs/2609.25088",
+    "source": "arxiv",
+    "publishedAt": "2026-09-24T04:00:00.000Z",
+    "summary": [
+      "GBM 생존 예측에서 정확도와 해석 가능성을 함께 잡는 멀티모달 모델이 제안됐다.",
+      "sheaf hypergraph가 조직 패치의 고차 관계를 잡고, 임상·유전체 정보는 gated fusion으로 합쳤다.",
+      "593명 대상 5-fold 검증에서 c-index 0.643, 표준편차 0.015였고 임상 적용성은 미확인이다."
+    ],
+    "whyItMatters": "GBM MRI 예후 모델을 만든다면 concept bottleneck과 EST를 붙여 설명의 충실도를 학습 단계에서 검사하는 설계를 참고하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "2102b2f6e1e736d374b53877b620d04f01f82b12",
+    "title": "간은 왜 유독 재생 능력이 뛰어날까?",
+    "url": "https://news.hada.io/topic?id=34244",
+    "source": "geeknews",
+    "publishedAt": "2026-09-24T22:39:05.000Z",
+    "summary": [
+      "간의 뛰어난 재생 능력은 독소와 병원체에 반복 노출되는 환경과 관련 있다는 가설이 나왔다.",
+      "손상된 간을 빠르게 복구하는 대신 암 위험이 커질 수 있어, 낮은 재생 능력도 방어 전략일 수 있다.",
+      "다만 여러 예외와 제약이 있는 추측적 통합 가설이라, 재생과 암의 인과관계는 확정되지 않았다."
+    ],
+    "whyItMatters": "간의 재생을 무조건 좋은 특성으로 보지 말고 암 위험과 함께 해석해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "50c0b912a0edf25f07ef0c234fbb94ca651e5bd0",
+    "title": "F-Droid 2.0",
+    "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
+    "source": "hackernews",
+    "publishedAt": "2026-09-24T15:26:12.000Z",
+    "summary": [
+      "F-Droid가 10년 만에 공식 Android 앱을 전면 개편한 2.0을 출시했다.",
+      "핵심 화면을 Kotlin Compose로 다시 만들고, 내비게이션을 Discover·Search·My Apps 세 영역으로 줄였다.",
+      "14번의 테스트 릴리스 뒤 출시됐고, 앞으로 몇 주에 걸쳐 사용자에게 순차 배포된다."
+    ],
+    "whyItMatters": "F-Droid 앱을 쓰고 있다면 새 화면과 My Apps에서 업데이트와 문제 앱 관리를 한곳에서 하게 된다.",
+    "tags": [
+      "업계",
+      "보안"
+    ]
+  }
+]
