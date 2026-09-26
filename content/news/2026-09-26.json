@@ -1,0 +1,133 @@
+[
+  {
+    "id": "21929dcfe7deac0bea996f71cee0ac4b6e24a711",
+    "title": "Ollaya - 오픈소스 Jev 스타일 의사결정 모델을 위한 Ollama",
+    "url": "https://news.hada.io/topic?id=34288",
+    "source": "geeknews",
+    "publishedAt": "2026-09-25T21:32:54.000Z",
+    "summary": [
+      "Ollaya가 오픈소스 Jev 스타일 의사결정 모델을 로컬에서 실행하는 도구로 등장했다.",
+      "텍스트나 타입 지정 JSON 질문에 토큰을 순차 생성하지 않고 한 번의 순전파로 답한다.",
+      "RTX 4090에서 Laya로 질문 5개를 처리하는 HTTP API 전체 시간은 확인되지 않는다."
+    ],
+    "whyItMatters": "로컬 추론 도구를 만들고 있다면 토큰 생성 방식이 아닌 단일 순전파 모델도 비교 대상이 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "d1defbaf4de8e0ab8e4da3a822241d1fa67250a7",
+    "title": "Ollaya – Ollama for open-source, Jev-style decision models",
+    "url": "https://ollaya.dev/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-25T18:33:50.000Z",
+    "summary": [
+      "Ollaya가 오픈소스 결정 모델을 로컬에서 실행하는 베타 도구로 나왔다.",
+      "텍스트나 JSON 질문에 확률·위험도·행동 판단을 반환하며, RTX 4090에서 decider:2b가 178ms에 답했다.",
+      "측정값은 RTX 4090과 각기 다른 설정 기준이라 실제 지연시간은 달라질 수 있다."
+    ],
+    "whyItMatters": "로컬에서 결정 모델을 써야 한다면 Ollaya로 네트워크 없이 TypeSafe SDK 기반 판단 흐름을 구성할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "2907ba2fb91d5107313a0937307927e55f7a4549",
+    "title": "When Should Forecasting Agents Reason? Behavioral Stress Tests for Reliability Routing",
+    "url": "https://arxiv.org/abs/2609.28475",
+    "source": "arxiv",
+    "publishedAt": "2026-09-25T04:00:00.000Z",
+    "summary": [
+      "예측 에이전트가 검색·추론·시장 사전확률 중 무엇을 쓸지 고르는 문제를 ReliabilityRoute로 시험했다.",
+      "워크포워드 규칙은 과거 결과로 임계값을 다시 맞춰 이후 16개 LLM 빈티지에서 평균 Brier 점수가 가장 좋았다.",
+      "다만 개선 폭은 작았고, 과거 자료·검색 기준선이 여전히 경쟁력 있어 더 많이 추론한다고 늘 낫지는 않다."
+    ],
+    "whyItMatters": "예측 에이전트를 만든다면 추론을 무조건 늘리기보다 데이터 출처와 증거 상태에 따라 검색·추론 경로를 먼저 나눠야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "4c3d20782cbdb6c2f8b1540ad1b173a6725ee82f",
+    "title": "Oracle, 데이터센터에 전력이 공급되지 않아도 투자자에게 대금 지급 의무",
+    "url": "https://news.hada.io/topic?id=34287",
+    "source": "geeknews",
+    "publishedAt": "2026-09-25T20:43:27.000Z",
+    "summary": [
+      "Oracle이 데이터센터에 전력이 공급되지 않아도 투자자에게 대금을 지급해야 한다는 내용이 전해졌다.",
+      "전력 공급 여부와 관계없이 투자자 대금 지급 의무가 발생하는 구조라는 점이 핵심이다.",
+      "주어진 발췌만으로는 어떤 계약과 투자자가 대상인지, 지급 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "Oracle의 데이터센터 투자 구조를 다룬다면 전력 공급 전에도 지급 의무가 있는지 계약 조건부터 확인해야 한다.",
+    "tags": [
+      "인프라",
+      "업계"
+    ]
+  },
+  {
+    "id": "5e8bd66ca873dc86ab449f9eff652125dbfa8969",
+    "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+    "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+    "source": "hackernews",
+    "publishedAt": "2026-09-25T15:29:25.000Z",
+    "summary": [
+      "미 연방 항소법원이 국방부의 Anthropic 공급망 위험 지정을 유지했다.",
+      "이번 지정으로 미군은 Anthropic 모델을 쓸 수 없고, 방산업체도 국방부 업무에 사용할 수 없다.",
+      "Anthropic은 Trump 행정부를 상대로 지정 취소를 요구했지만, 항소심에서 뒤집지 못했다."
+    ],
+    "whyItMatters": "미 국방부 관련 소프트웨어를 만든다면 Anthropic 모델을 기술 스택에서 제외해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "18734c63e6d8f8c47012c80741d54a7db665b014",
+    "title": "TW3Cast: A Frozen Router of Lightly Fine-Tuned Foundation Models for Time-Series Forecasting on GIFT-Eval, Selected Entirely on the Training Split",
+    "url": "https://arxiv.org/abs/2609.28506",
+    "source": "arxiv",
+    "publishedAt": "2026-09-25T04:00:00.000Z",
+    "summary": [
+      "TW3Cast가 GIFT-Eval 130개 항목 중 평균 MASE 순위 3위에 올랐고, 에이전트와 언어 모델은 쓰지 않았다.",
+      "97개 설정마다 고정된 표가 네 모드 중 하나를 고르며, 전문가는 LoRA 또는 전체 미세조정으로 만든다.",
+      "선택은 학습 분할의 백테스트에서만 했으며, 기본 모델 33.8에서 전체 라우터 19.4로 평균 MASE 순위가 낮아졌다."
+    ],
+    "whyItMatters": "GIFT-Eval을 비교 기준으로 쓰면 에이전트 도입 전에 고정 라우팅과 가벼운 미세조정 조합을 베이스라인으로 돌리게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "872702da6d0b95ae637cbeb727b67b606008f163",
+    "title": "시험",
+    "url": "https://news.hada.io/topic?id=34286",
+    "source": "geeknews",
+    "publishedAt": "2026-09-25T20:40:27.000Z",
+    "summary": [
+      "기술 업계 거물의 터무니없는 말이 주변의 복종 여부를 가르는 시험처럼 작동한다.",
+      "Jensen Huang은 기초 수학을 잊거나 주소와 전화번호를 몰라도 사는 일이 가능하다고 말했다.",
+      "이 발언들이 처음부터 의도적으로 설계된 시험인지는 본문 맥락만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "이런 발언을 그대로 제품 판단이나 교육 원칙으로 받아들이지 않게 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "018be5fe23863b96404c1aa622a401e47cc4a2c8",
+    "title": "Factorio that you can touch",
+    "url": "https://factorio.com/blog/post/fff-447",
+    "source": "hackernews",
+    "publishedAt": "2026-09-25T14:24:42.000Z",
+    "summary": [
+      "Factorio 개발팀이 게임 속 공장을 현실에서 조립하는 물리 모형 프로젝트를 시작했다.",
+      "Prusa Research와 함께 3D 프린터로 Wriggler를 만들었고, 이후 운송 벨트 기반의 격자 시스템을 설계했다.",
+      "아직 공개된 완성품이나 판매 방식, 게임과의 연동 여부는 본문 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Factorio 팬용 실물 키트를 만들 생각이라면 운송 벨트 격자가 핵심 설계 단위가 된다.",
+    "tags": [
+      "업계"
+    ]
+  }
+]
