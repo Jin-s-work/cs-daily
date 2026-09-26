@@ -1,0 +1,126 @@
+[
+  {
+    "id": "42053994333cb8d9178766cd4058156c8aa267ad",
+    "title": "DeepSeek Elastic Compute (DSec)",
+    "url": "https://news.hada.io/topic?id=34341",
+    "source": "geeknews",
+    "publishedAt": "2026-09-26T23:44:50.000Z",
+    "summary": [
+      "DeepSeek이 대규모 LLM 에이전트 학습·평가용 샌드박스 플랫폼 DSec을 내놨다.",
+      "FnCall, 컨테이너, microVM, 전체 VM을 하나의 SDK로 묶고 샌드박스를 동시에 대량 생성한다.",
+      "CPU가 쉬는 동안에도 상태를 유지해 탄력적 배치와 고밀도 자원 관리가 가능하다."
+    ],
+    "whyItMatters": "대규모 에이전트 학습·평가를 운영한다면 FnCall부터 전체 VM까지 같은 SDK로 실행 환경을 통일할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "cf39f2b97963708c567dda88e85ad80a7d97f379",
+    "title": "I'm the mom in that viral Giants clip. Let me tell you about my husband",
+    "url": "https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clip",
+    "source": "hackernews",
+    "publishedAt": "2026-09-26T16:12:18.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "cf5b2e75fb0cb868be1fbd0e86afda3b88f283ac",
+    "title": "Stable and Faithful Explanations for Knowledge Tracing",
+    "url": "https://arxiv.org/abs/2609.28502",
+    "source": "arxiv",
+    "publishedAt": "2026-09-26T04:00:00.000Z",
+    "summary": [
+      "Knowledge tracing 설명의 안정성과 충실도를 함께 검증하는 프로토콜 연구가 나왔다.",
+      "ASSISTments 2009·2012에서 XGBoost와 딥러닝 4종을 동일 정보로 비교해 AUC 0.786을 기록했다.",
+      "원본 2009 데이터의 중복 행은 누수를 일으켰고, 학생별 해석 사례는 검증된 권고가 아니다."
+    ],
+    "whyItMatters": "ASSISTments 기반 모델을 재현한다면 중복 행으로 인한 누수를 먼저 제거하고, 설명 순위를 그대로 권고로 쓰면 안 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "4f48edbf3be002cf4ed956194565fa888c18fba5",
+    "title": "Automattic, CEO 휴직 시도 무산 후 새 이사회 구성",
+    "url": "https://news.hada.io/topic?id=34340",
+    "source": "geeknews",
+    "publishedAt": "2026-09-26T23:41:50.000Z",
+    "summary": [
+      "Automattic CEO Matt Mullenweg가 자신을 휴직시키려던 이사회 시도 무산 뒤 이사회를 재구성했다.",
+      "Mullenweg는 자신이 통제한 의결권 84%로 경영권을 되찾고 관련 이사들을 교체했다.",
+      "휴직 시도부터 복귀까지의 구체적인 경과와 새 이사회 구성은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Automattic의 정책과 제품 방향을 읽을 때 CEO 개인의 의결권 84%가 이사회보다 우선하는 구조로 봐야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "81a1eba7987b772c03148d41b2bbc0cd721344ce",
+    "title": "Plunging test scores are a slow-moving catastrophe",
+    "url": "https://www.economist.com/leaders/2026/09/10/plunging-test-scores-are-a-slow-moving-catastrophe",
+    "source": "hackernews",
+    "publishedAt": "2026-09-26T15:24:08.000Z",
+    "summary": [
+      "The Economist가 하락하는 시험 성적을 장기적으로 진행되는 재난으로 다룬다.",
+      "제목만으로는 어느 나라의 어떤 시험인지, 하락 원인이 무엇인지는 알 수 없다.",
+      "본문이 없어 성적 하락의 규모와 개발자에게 미치는 영향은 확인되지 않는다."
+    ],
+    "whyItMatters": "본문이 없어 당장 개발 업무나 채용 판단을 바꿀 근거는 없다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "6fd07ea9d134cd908f1023e2775c5bd7cc3e8264",
+    "title": "SMILESGNN: Interpretable Clinical Toxicity Prediction via SMILES-Graph Cross-Attention Fusion",
+    "url": "https://arxiv.org/abs/2609.28553",
+    "source": "arxiv",
+    "publishedAt": "2026-09-26T04:00:00.000Z",
+    "summary": [
+      "SMILESGNN이 SMILES Transformer와 GATv2를 결합해 임상 독성 예측 모델을 제안했다.",
+      "ClinTox에서 0.4M 파라미터로 AUC 0.987, F1 0.906을 내고 GNNExplainer로 구조를 해석한다.",
+      "Tox21 12개 태스크의 평균 AUC-ROC는 0.750으로 ChemBERTa-2와 비슷하다."
+    ],
+    "whyItMatters": "독성 예측 모델에 SMILES와 분자 그래프를 함께 넣고 GNNExplainer로 예측 근거 구조까지 추적할 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "9033368a95860a85636925fc2af805d9b61e37a1",
+    "title": "Show HN: Reladraw - 요소를 어디에 놓을지 직접 정하는 다이어그램 언어",
+    "url": "https://news.hada.io/topic?id=34338",
+    "source": "geeknews",
+    "publishedAt": "2026-09-26T22:32:41.000Z",
+    "summary": [
+      "Reladraw가 요소 간 상대적 위치를 텍스트로 지정하는 다이어그램 언어로 소개됐다.",
+      "소스가 배치 관계를 정하면 엔진이 필요한 거리를 계산하고, 요소 추가나 긴 텍스트에 맞춰 최소 간격 제약을 푼다.",
+      "자동 배치와 수동 절대 좌표 편집 사이를 겨냥하며, 본문이 없어 구체적인 문법과 출력 형식은 확인되지 않는다."
+    ],
+    "whyItMatters": "다이어그램을 코드로 관리한다면 좌표값 대신 요소 간 관계를 수정하는 편집 흐름을 시험하게 된다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "ded6585d0069d44a79a6e6e0a3e290d206290cb4",
+    "title": "Breaking Up with Google Play: Why Conversations Is Now Free",
+    "url": "https://gultsch.de/posts/breaking-up-with-google-play/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-26T10:55:56.000Z",
+    "summary": [
+      "Conversations 개발자가 Google Play 유료 배포를 끝내고 앱을 무료로 전환했다.",
+      "이 앱은 Android용 연합형 메신저이며, 2014년부터 유료 바이너리로 배포됐다.",
+      "발췌는 무료 전환의 구체적인 이유와 이후 수익 구조를 아직 설명하지 않는다."
+    ],
+    "whyItMatters": "기존에 Play Store 매출에 의존했다면, 무료 전환 뒤 수익원이 어떻게 바뀌는지 확인하기 전까지 배포 전략을 그대로 따라 하기 어렵다.",
+    "tags": [
+      "업계",
+      "언어/런타임"
+    ]
+  }
+]
