@@ -1,0 +1,111 @@
+[
+  {
+    "id": "abd802ca494bc0dfb4936ff35be4e97f3523c31f",
+    "title": "Show HN: TinyAIArena, AI 에이전트들의 대결을 관전하는 서비스",
+    "url": "https://news.hada.io/topic?id=34390",
+    "source": "geeknews",
+    "publishedAt": "2026-09-27T23:37:34.000Z",
+    "summary": [
+      "TinyAIArena가 AI 에이전트 대결을 관전하는 서비스로 등장했다. 순위와 경기 기록을 한곳에서 볼 수 있다.",
+      "완료된 경기의 Elo로 순위를 매기고, 모든 모델은 1000점에서 시작한다. 화면에는 43경기가 모두 끝난 상태로 보인다.",
+      "경기 기록을 클릭하면 해당 대결을 관전할 수 있지만, 발췌문만으로는 경기당 진행 방식과 세부 규칙은 확인되지 않는다."
+    ],
+    "whyItMatters": "AI 에이전트의 작업 품질을 경기 기록으로 비교하려면 별도 평가판을 만들지 않고 이 서비스의 완료 경기와 Elo를 먼저 보면 된다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "3bd40c5dcc31f1689cdcee0bd64a92d01fdf5b55",
+    "title": "When did Google get so weird?",
+    "url": "https://sancho.bearblog.dev/google-weird/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-27T20:12:54.000Z",
+    "summary": [
+      "Google 검색이 농구 밈을 찾던 이용자에게 엉뚱한 공감형 AI 답변을 내놨다.",
+      "이용자는 “hes never coming over dario”로 2010년대 옛 트윗을 찾으려 했지만, AI Overview는 이를 연애 고민으로 읽었다.",
+      "이는 한 이용자의 사례이며, Google이 왜 이런 의도 해석을 했는지는 글에서 확인되지 않는다."
+    ],
+    "whyItMatters": "검색어를 그대로 찾는 작업에서는 AI Overview가 원문 검색보다 앞서지 않는지 직접 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "5a5d4395f6722dc8b7b64e008f55da0d8a355578",
+    "title": "Go 코드를 GitHub에 결합하지 말자",
+    "url": "https://news.hada.io/topic?id=34389",
+    "source": "geeknews",
+    "publishedAt": "2026-09-27T23:34:34.000Z",
+    "summary": [
+      "Go 패키지 경로에 GitHub 주소를 직접 쓰면 저장소 이전 때 코드가 함께 묶인다.",
+      "Go는 별도 중앙 패키지 관리 시스템 없이 호스팅 주소를 패키지 경로로 사용한다.",
+      "GitHub에서 GitLab으로 옮기면 기존 경로를 고쳐야 하고, 발췌에는 우회 방법이 없다."
+    ],
+    "whyItMatters": "저장소를 옮길 가능성이 있다면 import 경로에 GitHub를 박아 넣지 말고 이전 경로를 추상화해야 한다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "a365d26f319b69b091537462f6c06ce55040e994",
+    "title": "Ember-1",
+    "url": "https://fireworks.ai/blog/ember-1",
+    "source": "hackernews",
+    "publishedAt": "2026-09-27T17:31:53.000Z",
+    "summary": [
+      "Fireworks Research가 Kimi K3 기반 전문 모델 Ember-1을 출시했다.",
+      "Kimi K3의 답변 품질을 유지하면서 토큰 사용량을 40% 줄이도록 불필요한 추론을 잘라냈다.",
+      "외부 벤치마크와 고객 A/B 테스트, 내부 코딩 작업에서 품질이 유지됐다고 했지만 세부 수치는 없다."
+    ],
+    "whyItMatters": "Kimi K3를 대규모 자동 코딩에 쓰고 있다면 토큰 비용을 줄일 후보가 생겼다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "914872c39fb9309926d39def5fb48151bea07939",
+    "title": "브라질, 온라인 베팅 금지",
+    "url": "https://news.hada.io/topic?id=34388",
+    "source": "geeknews",
+    "publishedAt": "2026-09-27T22:45:59.000Z",
+    "summary": [
+      "브라질 대통령 Luiz Inacio Lula da Silva가 온라인 베팅 영업 금지 행정명령을 발표했다.",
+      "명령은 즉시 발효되며, 효력을 유지하려면 의회가 120일 안에 승인해야 한다.",
+      "이용자는 10월 5일까지 잔액을 돌려받을 수 있으며, 앱스토어와 네트워크 제공업체의 조치는 확인되지 않았다."
+    ],
+    "whyItMatters": "브라질 대상 베팅 서비스나 결제 흐름을 운영한다면 10월 5일 환불과 앱 차단 여부를 확인해야 한다.",
+    "tags": [
+      "웹",
+      "업계"
+    ]
+  },
+  {
+    "id": "f94c0a1e56c738b9711fcfeb1582c88ce7987126",
+    "title": "The Normalization of Inexplicable Failures",
+    "url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
+    "source": "hackernews",
+    "publishedAt": "2026-09-27T15:26:40.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "767f879f94721dcdd5a4e97800d37677789ebbf9",
+    "title": "fakecloud - 통합 테스트를 위한 로컬 AWS 클라우드 에뮬레이터",
+    "url": "https://news.hada.io/topic?id=34387",
+    "source": "geeknews",
+    "publishedAt": "2026-09-27T22:42:59.000Z",
+    "summary": [
+      "fakecloud는 AWS SDK와 CLI를 그대로 쓰는 로컬 클라우드 에뮬레이터다.",
+      "애플리케이션은 일반 AWS API를 호출하고 전용 SDK로 이메일·메시지·Lambda 결과를 검사한다.",
+      "발췌에는 비동기 처리까지 언급됐지만, 지원하는 AWS 서비스 범위와 세부 동작 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "AWS 연동 테스트에 실제 계정과 네트워크를 쓰던 프로젝트라면 로컬 테스트 구성으로 바꿀 후보가 생긴다.",
+    "tags": [
+      "인프라"
+    ]
+  }
+]
