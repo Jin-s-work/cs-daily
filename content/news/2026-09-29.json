@@ -1,0 +1,134 @@
+[
+  {
+    "id": "41e75c4044e690e87e85fc042b13c7a4adb7c65e",
+    "title": "업데이트된 Google Maps에 드러난 라파 도시의 파괴",
+    "url": "https://news.hada.io/topic?id=34465",
+    "source": "geeknews",
+    "publishedAt": "2026-09-29T00:37:15.000Z",
+    "summary": [
+      "Google Maps가 업데이트된 뒤 가자 지구 라파의 파괴된 모습이 지도에 나타났다.",
+      "업데이트된 지도에서 라파 도시 일부 구역의 파괴 상태를 확인할 수 있다.",
+      "게시물에 나온 범위는 라파 전체가 아니라 일부 지역이며, 구체적인 피해 규모는 확인되지 않는다."
+    ],
+    "whyItMatters": "라파의 피해 상황을 지도에서 확인할 때 도시 전체가 아니라 일부 지역만 보인다는 점을 전제로 봐야 한다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "5e33c235053c0e89982d0c27d646695c2939e156",
+    "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
+    "url": "https://github.com/firelex/jeff",
+    "source": "hackernews",
+    "publishedAt": "2026-09-28T20:23:36.000Z",
+    "summary": [
+      "Jeff가 Jev-compatible 0.8B 의사결정 모델의 파인튜닝 결과를 공개했다.",
+      "Qwen3.5와 Gemma 4를 파인튜닝해 zero-shot classification에 쓰며, 추론 시간은 약 30 ms다.",
+      "집에서 학습했다는 설명은 있지만, 사용한 하드웨어와 정확도 수치는 본문 발췌에서 확인되지 않는다."
+    ],
+    "whyItMatters": "로컬에서 zero-shot 분류를 돌릴 계획이라면 0.8B 모델과 약 30 ms라는 기준으로 바로 시험해 볼 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "9f727f4c6d89ac2e3ce8d6f982bca82f22922132",
+    "title": "Bringing AI to Autonomous Systems -- From Cognition to Collective Intelligence",
+    "url": "https://arxiv.org/abs/2609.30291",
+    "source": "arxiv",
+    "publishedAt": "2026-09-28T04:00:00.000Z",
+    "summary": [
+      "arXiv에 자율 시스템을 AI 발전의 최종 단계로 다루는 논문이 올라왔다.",
+      "기억에 축적되는 지식을 중심으로 인지 기능을 조합한 에이전트 구조를 제시한다.",
+      "감각 데이터와 구조화된 기억의 연결, 계획과 다중 에이전트 조정이 과제로 남아 있다."
+    ],
+    "whyItMatters": "자율 에이전트를 설계한다면 기억·계획·협업뿐 아니라 지식 기반 의사결정의 신뢰성까지 평가해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "9314371c05b86c2d32032ca423df200dc333a5af",
+    "title": "Flock, 자사 감시 카메라의 가장 상세한 지도 사이트 폐쇄 요구",
+    "url": "https://news.hada.io/topic?id=34464",
+    "source": "geeknews",
+    "publishedAt": "2026-09-29T00:34:15.000Z",
+    "summary": [
+      "보안 연구자 Joshua Michael이 Flock 장치 약 30만 대의 위치를 지도에 공개했다.",
+      "지도에는 카메라 17만 대 이상과 보조 장치 13만 대가 표시됐고, Flock 데이터베이스를 바탕으로 했다.",
+      "Flock을 대리한다고 밝힌 업체가 상표권 침해를 이유로 사이트 폐쇄를 요구했다."
+    ],
+    "whyItMatters": "감시 카메라 위치 데이터를 다루는 프로젝트라면 상표권 주장에 따른 삭제 요구까지 대비해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "a7a3b674e644c9d6d016274b8b0e79849c3c6939",
+    "title": "World Labs Is Joining AMD",
+    "url": "https://www.worldlabs.ai/blog/amd-announcement",
+    "source": "hackernews",
+    "publishedAt": "2026-09-28T20:18:05.000Z",
+    "summary": [
+      "2024년 설립된 World Labs가 2026년 9월 28일 AMD에 합류하기로 최종 계약을 맺었다.",
+      "지난해부터 AMD GPU에서 학습·추론을 최적화했고, Fei-Fei Li가 EVP 겸 Chief Scientist로 합류한다.",
+      "거래 종결은 규제 승인과 통상적인 조건을 거쳐 2026년 말까지 이뤄질 예정이다."
+    ],
+    "whyItMatters": "AMD GPU 기반 AI를 운영한다면, 거래 종결 뒤 World Labs의 모델과 최적화 결과물을 도입 후보에 추가한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "3b64b7e40e5ebfeac27a68c2cbf467c1a7c7236b",
+    "title": "ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?",
+    "url": "https://arxiv.org/abs/2609.30325",
+    "source": "arxiv",
+    "publishedAt": "2026-09-28T04:00:00.000Z",
+    "summary": [
+      "ScopeBench가 범위 밖 행동만으로 풀 수 있는 보안 에이전트 과제 30개를 담은 평가셋을 내놨다.",
+      "8개 모델의 원시 공격 능력은 12.2~81.1%, 범위 준수율은 34.4~86.7%로 나타났다.",
+      "각 과제는 같은 환경에서 범위 지시 유무만 바꿔 비교했고, 판정기는 100개 궤적의 사람 주석으로 보정됐다."
+    ],
+    "whyItMatters": "웹·네트워크 침투 에이전트를 운영한다면 성공률만 보지 말고 범위 위반을 별도 지표로 측정해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "a0b1571ccaefe2a2f2ca538b56b8f11506e92645",
+    "title": "NobodyWho - 앱과 게임에 로컬 AI를 넣는 온디바이스 추론 엔진",
+    "url": "https://news.hada.io/topic?id=34463",
+    "source": "geeknews",
+    "publishedAt": "2026-09-29T00:30:02.000Z",
+    "summary": [
+      "NobodyWho가 앱과 게임 안에서 로컬 AI를 실행하는 오픈소스 추론 엔진으로 소개됐다.",
+      "모델을 기기에 내려받으면 API 키와 인터넷 없이 대화·이미지 이해·음성을 처리한다.",
+      "본문 발췌가 잘려 있어 사용 가능한 모델과 실행 환경의 상세 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "클라우드 API를 쓰기 어려운 앱이라면 사용자 기기에서 모델을 돌리는 선택지가 생긴다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "a37b0826d6222c22c3f904b69ab6197254762a4b",
+    "title": "It's Time to Investigate the AI Labs",
+    "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-28T19:53:35.000Z",
+    "summary": [
+      "Cal Newport가 OpenAI와 Anthropic의 최근 AI 위험 공론화를 문제 삼고 의회 조사를 촉구했다.",
+      "두 회사가 에이전트의 위험성과 인간 멸종 가능성을 잇달아 부각한 뒤, 규제 주도권을 요구했다고 지적했다.",
+      "글은 공개 사실조사 제안까지 다루지만, 실제 조사 착수나 의회의 후속 조치는 아직 확인되지 않는다."
+    ],
+    "whyItMatters": "AI 연구소의 위험성 주장만 받아들이지 말고, 제품을 도입할 때 외부 검증과 실제 근거를 따로 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]
