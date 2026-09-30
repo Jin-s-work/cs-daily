@@ -1,0 +1,127 @@
+[
+  {
+    "id": "5b4f91a236972069dbd37a7606a4af38351f6e55",
+    "title": "LatticeDB - 그래프, 벡터, 전문 검색을 한 파일에 담는 임베디드 DB",
+    "url": "https://news.hada.io/topic?id=34517",
+    "source": "geeknews",
+    "publishedAt": "2026-09-30T00:30:02.000Z",
+    "summary": [
+      "LatticeDB가 그래프·벡터·전문 검색을 한 파일에 담는 임베디드 DB로 소개됐다.",
+      "관계 탐색과 의미 기반 문서 검색, 키워드 검색을 앱 안에서 로컬로 처리한다.",
+      "별도 서버나 설정 없이 실행하며 데이터는 이동 가능한 단일 DB 파일로 보관된다."
+    ],
+    "whyItMatters": "애플리케이션에 관계형·벡터·키워드 검색을 넣을 때 별도 검색 서버를 운영하지 않아도 된다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "da5f1161c391a5dc2918c21e2fadc7b5a8c9ee3e",
+    "title": "U.S. postal inspectors shut down website selling counterfeit postage labels",
+    "url": "https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-29T19:30:17.000Z",
+    "summary": [
+      "미국 우편검사국이 위조 USPS 배송 라벨을 팔던 LabelsBank.com 도메인을 압수했다.",
+      "파키스탄 국적 운영자는 라벨 510만 장을 팔아 USPS에 1억2600만 달러 손실을 냈다는 혐의를 받는다.",
+      "고객 5000명 이상이 이용했으며, 법원 기록에 나온 혐의 단계라 유죄 여부는 아직 확정되지 않았다."
+    ],
+    "whyItMatters": "배송 시스템에서 지나치게 싼 우편 라벨은 발급 경로와 진위를 먼저 확인해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "f4dcb391bfd5a3efea37c2c5587c605d27d78fcb",
+    "title": "SMARtCARE: Privacy-Preserving Agentic AI Systems for Bounded-Autonomy Clinical Decision Support",
+    "url": "https://arxiv.org/abs/2609.31763",
+    "source": "arxiv",
+    "publishedAt": "2026-09-29T04:00:00.000Z",
+    "summary": [
+      "SMARtCARE가 긴 문맥 밖 환자 이력을 바로 검색하지 않는 임상 의사결정 지원 구조를 제안했다.",
+      "과거 경로를 6채널 손실 지문으로 줄이고, 현재 활력징후 변화가 맞을 때만 의료진 검토를 거쳐 원기록을 불러온다.",
+      "MIMIC-III에서 14명 중 1건, MIMIC-IV에서 9명 중 0건만 지문이 맞았으며, 임상 효과 검증은 아니다."
+    ],
+    "whyItMatters": "ICU 장기 이력을 다루는 시스템이라면 자동으로 원기록을 끌어오지 말고, 이상 신호가 맞을 때 의료진 승인 단계를 넣어야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "21d7351066944bb64d79a3744874fbe2cbc437f7",
+    "title": "SPA 자동화 테스트를 작성한 경험",
+    "url": "https://news.hada.io/topic?id=34516",
+    "source": "geeknews",
+    "publishedAt": "2026-09-30T00:08:06.000Z",
+    "summary": [
+      "React 기반 오디오 플레이어를 Playwright와 실제 브라우저로 테스트한 경험을 정리했다.",
+      "개별 동작보다 가입부터 주요 기능 사용까지 이어지는 전체 사용자 여정을 중심으로 테스트했다.",
+      "테스트마다 서버와 DB를 따로 띄우지 않고, 같은 DB에서 각자 데이터를 만들었다."
+    ],
+    "whyItMatters": "SPA의 핵심 흐름을 검증하려면 단위 동작만 보지 말고 실제 브라우저에서 가입부터 기능 사용까지 돌리는 테스트를 추가해야 한다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "ff45c3d479d2cf69b574c2ae597284b2fa3876d4",
+    "title": "Tcl/Tk 9.1",
+    "url": "https://www.tcl-lang.org/software/tcltk/9.1.html",
+    "source": "hackernews",
+    "publishedAt": "2026-09-29T17:13:38.000Z",
+    "summary": [
+      "Tcl/Tk 9.1.0이 2026년 9월 29일 공개됐고, Tcl과 Tk 9.0을 바탕으로 개발 중이다.",
+      "Tcl에는 Unicode 정규화, 단조 시계 기반 마이크로초 timer, lfilter가 들어갔고 C API도 늘었다.",
+      "Tk에서는 스크린 리더가 동작하고 RTL 텍스트를 일부 처리하지만, 아직 안정 릴리스 전이다."
+    ],
+    "whyItMatters": "Tcl/Tk 확장 모듈이나 임베디드 앱을 만들고 있다면 초기화 루틴 호출과 새 C API 호환성을 먼저 확인해야 한다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "d0a2a9c2dc692ed37196873affa1485c0fe851cd",
+    "title": "Witeness Overlap: Directional Provenance Inside Open-Weight Model Families",
+    "url": "https://arxiv.org/abs/2609.31784",
+    "source": "arxiv",
+    "publishedAt": "2026-09-29T04:00:00.000Z",
+    "summary": [
+      "논문은 Open-Weight 모델 계보에서 부모와 자식 체크포인트의 방향을 가르는 Witness Overlap을 제안했다.",
+      "16개 모델 계열의 176개 LLM 체크포인트에서 한 증인만 써 부모-자식 방향 판정 95.3%를 기록했다.",
+      "프롬프트·학습 없이 백색상자에서 작동하고, SVD weight reduction 방식이 noise와 pruning에 강했다."
+    ],
+    "whyItMatters": "모델 계보를 감사한다면 제3의 같은 계열 체크포인트를 함께 확보해 부모 방향까지 판정하는 검사를 추가하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "b8b221ad7cefbf7fedc52ef72d4f9c6816ffee74",
+    "title": "CoW - Wayland용 스태킹 윈도 매니저",
+    "url": "https://news.hada.io/topic?id=34515",
+    "source": "geeknews",
+    "publishedAt": "2026-09-30T00:05:06.000Z",
+    "summary": [
+      "CoW가 River를 컴포지터로 쓰는 Wayland용 스태킹 윈도 매니저로 나왔다.",
+      "FVWM과 MWM의 1990년대 룩앤필을 재현하면서 현대적인 스타일도 허용한다.",
+      "직접 실행하는 명령과 설정 파일의 명령이 같고, IPC 스크립트도 쓴다."
+    ],
+    "whyItMatters": "Wayland에서 1990년대식 스태킹 레이아웃을 쓰고 싶다면 CoW의 설정 명령과 IPC 연동을 직접 시험해 볼 대상이 생긴다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "884977ecb8004cb31230ef13f646e2ff87ff115a",
+    "title": "Dots: Always-on agents",
+    "url": "https://openai.com/index/introducing-dots/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-29T17:07:57.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  }
+]
