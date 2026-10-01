@@ -1,0 +1,136 @@
+[
+  {
+    "id": "e0cfb35879770f6984117dbe3b8800f9eadb747b",
+    "title": "EDG C++ 프런트엔드 소스 공개",
+    "url": "https://news.hada.io/topic?id=34577",
+    "source": "geeknews",
+    "publishedAt": "2026-10-01T00:38:30.000Z",
+    "summary": [
+      "EDG C++ 프런트엔드가 2026년 9월 30일 소스를 공개하기로 했다.",
+      "운영 주체가 비영리 조직 The C++ Alliance로 바뀌며, 자금 조달 방식도 달라진다.",
+      "기존 엔진과 구현 표준, 전문적인 유지보수는 이어지지만 라이선스는 아직 알려지지 않았다."
+    ],
+    "whyItMatters": "EDG C++ 프런트엔드를 쓰는 프로젝트라면 2026년 9월 30일 이후 소스 공개와 라이선스 조건을 확인해야 한다.",
+    "tags": [
+      "언어/런타임",
+      "업계"
+    ]
+  },
+  {
+    "id": "9e57e69aee78667d7c2d81cadc59430fc2302453",
+    "title": "Gemini 4 Argon",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-30T20:04:37.000Z",
+    "summary": [
+      "Google이 공식 블로그의 모델·연구 섹션에 Gemini 4 Argon 관련 글을 올렸다.",
+      "확인된 정보는 제품명과 Google 블로그 게시물 링크뿐이며, 구성과 수치는 보이지 않는다.",
+      "원문 본문을 확인하지 못해 출시 시점과 사용 조건, 기존 Gemini 모델과의 차이는 알 수 없다."
+    ],
+    "whyItMatters": "구체적인 비교나 도입 판단은 원문을 확인할 때까지 미룬다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "863c1a823301d41276763b38cc1492bac3d72872",
+    "title": "OpenAI-HuggingFace: A Reproduction & Lessons for Alignment Testing",
+    "url": "https://arxiv.org/abs/2609.35799",
+    "source": "arxiv",
+    "publishedAt": "2026-09-30T04:00:00.000Z",
+    "summary": [
+      "OpenAI-HuggingFace 사건의 정렬 실패 행동을 공개 모델로 재현한 연구가 나왔다.",
+      "감사 에이전트가 고수준 설명만으로 행동을 끌어냈고, 문맥 내 강화학습으로 필요한 연산량이 줄었다.",
+      "연산량은 행동마다 달랐고, 재현은 실제 인프라가 아닌 모의 환경에서 이뤄졌으며 코드와 기록을 공개했다."
+    ],
+    "whyItMatters": "정렬 테스트를 설계한다면 모델 능력만 보지 말고 연산 예산을 늘린 자동 탐색과 RL을 함께 넣어야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "a98331b1d916917a921f16cdd7e614d34d7bf8aa",
+    "title": "싱가포르 정부 데이팅 앱, Gale-Shapley 안정 결혼 알고리듬 사용",
+    "url": "https://news.hada.io/topic?id=34576",
+    "source": "geeknews",
+    "publishedAt": "2026-10-01T00:35:30.000Z",
+    "summary": [
+      "싱가포르 정부 데이팅 앱 FirstDate가 Gale-Shapley 알고리듬으로 이용자를 매칭한다.",
+      "이용자의 선호와 수용 불가 조건으로 순위를 만들고, 제안과 보류를 반복해 안정적인 조합을 찾는다.",
+      "다만 발췌문에는 실제 서비스 운영 방식과 매칭 결과, 적용 조건이 구체적으로 나오지 않는다."
+    ],
+    "whyItMatters": "매칭 기능을 만든다면 선호 순위와 수용 불가 조건을 입력으로 받아 Gale-Shapley를 적용할 수 있다.",
+    "tags": [
+      "웹",
+      "업계"
+    ]
+  },
+  {
+    "id": "09f54a7fb5d15b75d81ec152ef37e527b063fad6",
+    "title": "A brief history of the Bloomberg terminal",
+    "url": "https://spectrum.ieee.org/bloomberg-terminal",
+    "source": "hackernews",
+    "publishedAt": "2026-09-30T14:34:07.000Z",
+    "summary": [
+      "IEEE Spectrum이 Bloomberg Terminal의 역사를 기술 발전 맥락에서 정리한 글을 실었다.",
+      "발췌에는 본문 내용이 없어 단말의 설계, 데이터 처리 방식과 성장 과정은 확인되지 않는다.",
+      "제목과 페이지 정보만 확인되며, 어떤 시기와 인물이 핵심이었는지는 알 수 없다."
+    ],
+    "whyItMatters": "Bloomberg Terminal의 탄생 배경을 조사한다면 원문에서 연혁과 기술 변화를 확인해야 한다.",
+    "tags": [
+      "업계",
+      "인프라"
+    ]
+  },
+  {
+    "id": "c11d277ad8de8ce97c376da720d3fc46829713f5",
+    "title": "Neurosymbolic Routing for Reliable Reasoning on Resource-Constrained Edge Devices",
+    "url": "https://arxiv.org/abs/2609.35833",
+    "source": "arxiv",
+    "publishedAt": "2026-09-30T04:00:00.000Z",
+    "summary": [
+      "Raspberry Pi 4B에서 질문을 분류해 심볼릭 솔버와 소형 언어 모델로 보내는 라우터가 나왔다.",
+      "L*로 학습한 DFA가 라우팅 100%, 전체 98.3%를 기록했고, 단어 문제 정확도는 93.3%였다.",
+      "100개 테스트에서 정형 질의는 1~11ms였고, 30토큰 설정은 PoT보다 8.8배 빠르고 에너지는 2.8배 덜 썼다."
+    ],
+    "whyItMatters": "엣지에서 산술·논리 질의를 SLM에 맡기던 시스템이라면 DFA 라우터로 정확도와 전력 사용량을 함께 줄일 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "360d5b47f093ca55aac01a61ec055206a34d9202",
+    "title": "Traycer - 여러 코딩 에이전트의 문맥과 협업을 한곳에서 관리",
+    "url": "https://news.hada.io/topic?id=34575",
+    "source": "geeknews",
+    "publishedAt": "2026-10-01T00:30:02.000Z",
+    "summary": [
+      "Traycer가 여러 코딩 에이전트를 병렬로 돌리고 작업 문맥을 한곳에서 관리하는 오픈소스 앱으로 소개됐다.",
+      "Claude Code, Codex, Cursor, OpenCode를 연결해 모델과 제공자가 달라도 같은 작업 문맥을 공유한다.",
+      "기존 에이전트 구독을 연결하거나 Traycer 자체 추론 서비스를 쓸 수 있지만, 세부 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "여러 에이전트를 번갈아 쓰는 개발자라면 작업 문맥을 따로 옮기는 수고가 줄어든다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "62b3fa80745aa4bbb93c5a06c327944a8074cbb6",
+    "title": "The last time my family was replaced by technology",
+    "url": "https://manuel.darcemont.fr/posts/the-last-time-my-family-was-replaced-by-technology/",
+    "source": "hackernews",
+    "publishedAt": "2026-09-30T13:06:11.000Z",
+    "summary": [
+      "한 개발자가 자동차를 보고 직업을 바꾼 고조부의 이야기를 AI 시대와 겹쳐 썼다.",
+      "말발굽을 다루고 농부의 수레를 고치던 그는 자동차가 나타난 뒤 정비공이 됐다.",
+      "기술이 직업을 바꿔도 사람의 이동을 돕는 목적은 남는다는 점이 글의 핵심이다."
+    ],
+    "whyItMatters": "AI로 개발자 일이 바뀌어도 없어진 업무보다 계속 해결할 사람의 문제를 먼저 찾아야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]
