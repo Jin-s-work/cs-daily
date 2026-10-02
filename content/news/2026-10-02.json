@@ -1,0 +1,133 @@
+[
+  {
+    "id": "884d1f39ab65ec30d5256e22860a868beb045482",
+    "title": "Show GN: oh-my-jev - Jev-Style 판단 모델을 벤치마크하고 테스트하고 직접 파인튜닝까지 가능한 오픈소스 도구",
+    "url": "https://news.hada.io/topic?id=34649",
+    "source": "geeknews",
+    "publishedAt": "2026-10-02T00:56:22.000Z",
+    "summary": [
+      "oh-my-jev가 Jev-Style 판단 모델을 서빙·비교·학습하는 오픈소스 도구로 나왔다.",
+      "CLI와 웹 UI에서 선택지별 확률을 내는 판단 모델을 테스트하고, 직접 파인튜닝할 수 있다.",
+      "본문 발췌만으로는 지원 모델 목록과 학습 세부 방식까지는 확인되지 않는다."
+    ],
+    "whyItMatters": "판단 모델을 직접 비교하거나 파인튜닝하려면 별도 도구를 조합하지 않고 oh-my-jev의 CLI와 웹 UI부터 써보면 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "bb8d543dd58de38595e3b693755ac33851302b1b",
+    "title": "The death of web development education",
+    "url": "https://molily.de/web-dev-education/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-01T21:07:37.000Z",
+    "summary": [
+      "생성형 AI 확산으로 웹 개발 교육과 독립 강사들의 사업이 잇따라 무너지고 있다.",
+      "개발자들은 강의·전자책 대신 오류가 잦고 과거 지향적인 챗봇을 교육 수단으로 쓰고 있다.",
+      "AI 크롤러가 트래픽 대부분을 가져가 광고 수익이 없어져 책과 블로그를 오프라인으로 돌린다."
+    ],
+    "whyItMatters": "웹 개발 교육 자료를 만들고 있다면 AI 크롤러가 트래픽만 늘리고 수익은 남기지 않는 상황을 전제로 배포 방식을 바꿔야 한다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "8008f7ae2f6164bbf59116f830f946b2d4af26e2",
+    "title": "Improving OCR Faithfulness via Gated and Attenuated On-Policy Distillation",
+    "url": "https://arxiv.org/abs/2609.38282",
+    "source": "arxiv",
+    "publishedAt": "2026-10-01T04:00:00.000Z",
+    "summary": [
+      "이미지 속 이상한 글자를 멋대로 고치는 OCR 문제를 줄이는 GAD-RL이 제안됐다.",
+      "학생 성능에 따라 teacher 증류를 끄거나 약하게 하고, Top-1 토큰 확률로 KL 가중치를 조절한다.",
+      "Qwen3.5-2B에서 Micro Recall 59.92%로 GRPO보다 8.45%p, OPD보다 4.43%p 높았다."
+    ],
+    "whyItMatters": "OCR 학습을 조정할 때 고정된 teacher 가중치를 쓰지 않고, 학생 성능에 따라 증류를 끄거나 줄이는 설정을 쓰게 된다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "5e0cca8cc906b283b78fe7096fcc31fb4a65a7be",
+    "title": "RacketCon이 토요일에 열림",
+    "url": "https://news.hada.io/topic?id=34648",
+    "source": "geeknews",
+    "publishedAt": "2026-10-02T00:41:54.000Z",
+    "summary": [
+      "제16회 RacketCon이 2026년 10월 3~4일 미국 캘리포니아주 Oakland에서 열린다.",
+      "Racket에 관심 있는 누구나 참여할 수 있고, 등록이 시작됐으며 9월 13일 전에는 조기 등록 할인이 적용된다.",
+      "토요일에는 타입 추론, 저수준 프로그래밍, 매크로 관련 세션이 예정돼 있지만, 일요일 일정은 확인되지 않는다."
+    ],
+    "whyItMatters": "Racket 관련 행사에 갈 계획이라면 9월 13일 전에 등록해야 조기 할인을 받는다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "f796b39f9fcc2117565beb828789ebebf211430b",
+    "title": "Pi 1.0",
+    "url": "https://earendil.com/posts/pi-1-0/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-01T19:33:05.000Z",
+    "summary": [
+      "Hacker News에 Pi 1.0이라는 글이 올라왔고, Pi Durable 관련 링크가 붙었다.",
+      "발췌에는 Pi Durable 링크만 있고, 버전 변경 내용이나 구현 방식은 적혀 있지 않다.",
+      "본문이 없어 Pi 1.0의 기능, 사용 조건, 호환성 정보는 확인되지 않는다."
+    ],
+    "whyItMatters": "Pi를 도입하려던 상황이라면 원문을 확인하기 전에는 버전 변경과 사용법을 판단할 수 없다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "9ec943da0996df831e6945da0af38112b1eb3869",
+    "title": "AREX-2: Advancing Self-Improving Agents through Long-Horizon Reflective Tasks",
+    "url": "https://arxiv.org/abs/2609.38288",
+    "source": "arxiv",
+    "publishedAt": "2026-10-01T04:00:00.000Z",
+    "summary": [
+      "AREX-2가 테스트 시점에 해법을 반복 개선하는 LLM 에이전트 연구 결과를 정리했다.",
+      "Qwen3.8-27B 에이전트가 MLE-bench Lite 81.8과 Frontier-CS 70.7을 기록했다.",
+      "학습 데이터는 머신러닝·알고리즘 과제에서 만들었고, 라운드 예산이 늘수록 성능이 계속 올랐다."
+    ],
+    "whyItMatters": "장기 작업을 여러 번 개선하는 에이전트를 만들 때는 검증 가능한 과제에서 만든 학습 궤적과 충분한 라운드 예산이 필요하다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "9ece572892a0810b2bc97792b7facbaaaf3d21f4",
+    "title": "웹 개발 교육의 죽음",
+    "url": "https://news.hada.io/topic?id=34647",
+    "source": "geeknews",
+    "publishedAt": "2026-10-02T00:38:54.000Z",
+    "summary": [
+      "생성형 AI로 학습 수요가 옮겨가며 웹 개발 교육 시장과 독립 교육자들이 흔들리고 있다.",
+      "강좌·전자책·튜토리얼로 벌던 독립 교육자들의 매출이 급감했고, Axel Rauschmayer의 도서 판매 수입은 0이 됐다.",
+      "Josh W. Comeau 등의 사례와 사업 중단 배경의 구체적인 내용은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "웹 개발 교육 콘텐츠로 수익을 내려 했다면 AI가 학습자 유입과 매출을 바꾸고 있어 사업 모델을 다시 짜야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "8d8c225d2284d88856c5451287d4794a51885b68",
+    "title": "Pi Durable",
+    "url": "https://earendil.com/posts/pi-durable/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-01T19:24:08.000Z",
+    "summary": [
+      "earendil.com에 ‘Pi Durable’라는 글이 올라왔지만, 발췌에는 제목 외 내용이 없다.",
+      "관련 링크로 ‘Pi 1.0’ Hacker News 글이 붙었고, 해당 글에는 댓글 184개가 달렸다.",
+      "Pi Durable의 구현 방식과 사용 조건은 본문이 없어 확인되지 않는다."
+    ],
+    "whyItMatters": "Pi Durable을 바로 적용하려 했다면, 본문을 확인하기 전에는 구현 방식과 전제조건을 알 수 없다.",
+    "tags": [
+      "업계"
+    ]
+  }
+]
