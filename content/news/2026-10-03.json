@@ -1,0 +1,132 @@
+[
+  {
+    "id": "591b8b6bbae9c0f949c0d8c79467326caa2a45c8",
+    "title": "PicoMQ - S3 기반 실시간 데이터 스트림 서버",
+    "url": "https://news.hada.io/topic?id=34694",
+    "source": "geeknews",
+    "publishedAt": "2026-10-03T00:30:02.000Z",
+    "summary": [
+      "PicoMQ라는 S3 기반 실시간 데이터 스트림 서버가 소개됐다. 채팅과 기기 이벤트를 다룬다.",
+      "이벤트를 순서대로 S3 호환 저장소에 쌓고, 읽던 위치부터 재개하거나 과거 기록을 다시 읽으며 WAL도 함께 사용한다.",
+      "성능 수치와 장애 시 동작 방식은 이번 발췌만으로 구체적으로 확인되지 않는다."
+    ],
+    "whyItMatters": "S3를 이미 쓰는 시스템이라면 별도 이벤트 저장소 없이 실시간 구독과 과거 재생을 한 구조로 묶는 선택지가 생긴다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "0a4cfd02f5729f8d5b90c6288e921994821c59a7",
+    "title": "Zig v0.17.0",
+    "url": "https://ziglang.org/download/0.17.0/release-notes.html",
+    "source": "hackernews",
+    "publishedAt": "2026-10-02T20:56:36.000Z",
+    "summary": [
+      "Zig 0.17.0이 5개월간 진행된 925개 커밋과 206명 기여를 거쳐 정식 릴리스됐다.",
+      "빌드 시스템을 다시 짜고 Build Server Protocol을 넣었다.",
+      "ELF Linker는 x86_64-linux에서 증분 컴파일이 작동할 전망이며, 다른 플랫폼 정보는 발췌에 없다."
+    ],
+    "whyItMatters": "Zig 빌드 시스템을 직접 다루고 있다면 Build Server Protocol 도입으로 빌드 도구 연동을 다시 확인해야 한다.",
+    "tags": [
+      "언어/런타임",
+      "인프라"
+    ]
+  },
+  {
+    "id": "1d9ebfbb76c99688c1db5d4b559a8f9a348f292a",
+    "title": "Heavy-Tailed Memory Traces in Long-Horizon Language Agents",
+    "url": "https://arxiv.org/abs/2610.00010",
+    "source": "arxiv",
+    "publishedAt": "2026-10-02T04:00:00.000Z",
+    "summary": [
+      "장기 언어 에이전트의 메모리 사용이 소수 핵심 상태와 긴 꼬리로 쏠리는 현상을 분석했다.",
+      "CTWM은 지수 τ 하나로 예산을 나누고 꼬리를 요약해, Graph World 토큰 5.9%와 꼬리 오류 13.6%를 줄였다.",
+      "정책에 따라 효과가 달랐고, LongMemEval은 정확도를 유지하며 토큰을 24.48% 줄였다."
+    ],
+    "whyItMatters": "장기 에이전트의 메모리를 설계할 때 핵심 상태에 검색 예산을 몰고 꼬리는 요약하는 방식을 바로 실험할 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "065265914ff486ffd780c55e346d43c0164faeee",
+    "title": "Waterfox 6.7.5, 내장 피드 리더 추가",
+    "url": "https://news.hada.io/topic?id=34693",
+    "source": "geeknews",
+    "publishedAt": "2026-10-03T00:07:15.000Z",
+    "summary": [
+      "Waterfox 6.7.5에 피드 관리자와 브라우저 내장 피드 리더가 추가됐다.",
+      "Live Bookmarks 게시물을 한곳에 모아 전체 피드·북마크 폴더·구독별로 검색하고 읽지 않은 글만 볼 수 있다.",
+      "브라우저에서 읽을 수 있는 피드 콘텐츠만 다루며 목록·격자 보기로 정리할 수 있다."
+    ],
+    "whyItMatters": "피드를 따로 읽는 도구 없이 Waterfox 안에서 구독 글을 검색하고 읽지 않은 글만 추릴 수 있다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "f645ab769782e3f8179ebcb2bc5a8677b299a3e2",
+    "title": "Apple Pass Designer",
+    "url": "https://developer.apple.com/pass-designer/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-02T19:06:56.000Z",
+    "summary": [
+      "Apple이 Wallet 패스를 만들고 미리 보는 웹 도구 Pass Designer를 공개했다.",
+      "Apple 템플릿이나 직접 만든 템플릿으로 시작하고, 로고·배경·스트립 이미지를 가져와 패스를 완성한다.",
+      "편집 중 미리보기가 갱신되지만, 사용 가능한 패스 종류와 배포 방식은 본문에서 확인되지 않는다."
+    ],
+    "whyItMatters": "Wallet 패스를 직접 만들어야 한다면 기존 디자인 도구로 이미지를 준비해 Pass Designer에서 마무리하면 된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "3e14a998894f54ef12ef11a119c01f5fa21c139c",
+    "title": "When Do Causal World Models Help Modular LLM Agents",
+    "url": "https://arxiv.org/abs/2610.00012",
+    "source": "arxiv",
+    "publishedAt": "2026-10-02T04:00:00.000Z",
+    "summary": [
+      "모듈형 LLM 에이전트에서 인과적 월드 모델이 언제 유용한지 분석한 연구가 나왔다.",
+      "FedCausalCompose는 모듈 간 행동의 개입-반응 증거로 인터페이스를 복원해, 개입 범위가 넓을수록 예측을 개선한다.",
+      "구조화된 도구 환경에서는 효과가 컸지만, 대화·서사 환경에서는 짧은 주의 단서가 없으면 인과 정보를 잘 쓰지 못했다."
+    ],
+    "whyItMatters": "API 기반 도구를 조합하는 에이전트를 만든다면 관찰 로그만 믿지 말고 개입 실험과 짧은 인과 단서를 설계에 넣어야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "c7962149b233d1f7b385e934ff8e53775fff1624",
+    "title": "실제 RFC 1149 패킷이 경매에 출품됨",
+    "url": "https://news.hada.io/topic?id=34692",
+    "source": "geeknews",
+    "publishedAt": "2026-10-03T00:04:15.000Z",
+    "summary": [
+      "RFC 1149에 따라 전서구로 보낸 실제 IP/ICMP ‘ping’ 패킷 인쇄물이 Christie’s 경매에 나왔다.",
+      "이 패킷은 2001년 실제 전송됐고, RFC 1149는 비둘기로 인터넷 패킷을 보내는 방법을 기술한 문서다.",
+      "RFC 1149는 David Waitzman이 1990년 만우절에 썼으며, 낙찰가와 경매 일정은 확인되지 않는다."
+    ],
+    "whyItMatters": "RFC 1149를 소개하거나 네트워크 전송 매체의 차이를 설명할 때 실제 패킷 유물을 사례로 들 수 있다.",
+    "tags": [
+      "인프라",
+      "업계"
+    ]
+  },
+  {
+    "id": "f52e74133e2d25d6d706b167a088a0d71f74e510",
+    "title": "With most information hidden, the game Stratego had stumped AI until now",
+    "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-02T14:11:24.000Z",
+    "summary": [
+      "AI가 정보 대부분이 가려진 보드게임 Stratego에서 역사상 최고 선수를 꺾었다.",
+      "Stratego는 상대 말의 정체를 모르는 게임이라 AI가 오래 풀지 못한 영역이었다.",
+      "제공된 발췌에는 어떤 모델과 학습 방식으로 이겼는지 구체적으로 나오지 않는다."
+    ],
+    "whyItMatters": "불완전한 정보 게임 에이전트를 만든다면, 완전정보 게임과 다른 학습·탐색 설계를 먼저 고려해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
