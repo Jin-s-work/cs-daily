@@ -1,0 +1,116 @@
+[
+  {
+    "id": "241f8544a26367f7d8ed80cb4e814b1faf6a0b3a",
+    "title": "네덜란드의 컴퓨터 박물관들(2022)",
+    "url": "https://news.hada.io/topic?id=34737",
+    "source": "geeknews",
+    "publishedAt": "2026-10-03T23:47:19.000Z",
+    "summary": [
+      "2022년 네덜란드에 서로 다른 방식으로 컴퓨터를 만나는 전시 공간 세 곳이 소개됐다.",
+      "Helmond의 HomeComputerMuseum은 1980년대 이후 컴퓨터 500대 이상을 소장한다.",
+      "나머지 두 곳은 대규모 창고와 외딴 헛간의 DEC 컬렉션이며, 전체 작동 여부는 알 수 없다."
+    ],
+    "whyItMatters": "컴퓨터 역사 전시를 찾는다면 장소마다 체험 방식이 달라 방문 목적에 맞춰 골라야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "6a468f70a022a31e8d6657237d7b1620eed686f9",
+    "title": "Federal judge calls Flock 'indiscriminate mass surveillance'",
+    "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-03T22:07:13.000Z",
+    "summary": [
+      "미 연방법원이 Flock Safety의 차량번호 검색을 영장 없는 수색으로 판단했다.",
+      "Tulsa 보안관 대리인이 California 번호판만을 이유로 Flock 데이터베이스를 조회한 사건이다.",
+      "판결은 구속력 있는 선례가 아니며, 기사 발췌만으로 증거 배제 결과는 확인되지 않는다."
+    ],
+    "whyItMatters": "Flock 검색 결과를 수사 근거로 쓰는 시스템이라면 영장 발급 여부를 먼저 확인해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "b233d28997bf2194090c1765e50d6972f112705c",
+    "title": "Kolibri - 기술 보고서 [PDF]",
+    "url": "https://news.hada.io/topic?id=34736",
+    "source": "geeknews",
+    "publishedAt": "2026-10-03T23:44:19.000Z",
+    "summary": [
+      "Kolibri 기술 보고서가 나왔다. 영어와 독일어를 처리하는 MoE 모델이다.",
+      "전체 781억 개 파라미터 중 토큰마다 34.6억 개만 활성화하고, 가중치는 Apache 2.0으로 공개됐다.",
+      "공공행정·산업·항공우주 조직의 자체 인프라 배포가 목표지만, 상세한 학습 방식은 발췌에서 확인되지 않는다."
+    ],
+    "whyItMatters": "민감한 데이터를 외부 API로 보내기 어려운 팀은 Apache 2.0 가중치로 자체 배포 후보를 하나 더 갖게 된다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "75a5212102f5c1961926b62d0d8f3b2b5fa8787b",
+    "title": "Hole Punch: Sling your spaceship around gravitational fields",
+    "url": "https://notoriousbfg.com/hole-punch/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-03T18:06:45.000Z",
+    "summary": [
+      "Hole Punch라는 웹 게임이 공개됐고, 중력장을 이용해 우주선을 이동시키는 방식이다.",
+      "화면에는 Matter와 Holes 수치가 표시되고, Launch·Undo·Reset·Replay 조작이 있다.",
+      "모바일에서는 기기를 가로로 돌려야 하며, 현재 화면에는 Sector 01과 Unit 0426이 보인다."
+    ],
+    "whyItMatters": "짧게 플레이해 볼 물리 퍼즐을 찾는다면 브라우저에서 바로 중력 이동 실험을 시작하면 된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "47991470d0894f436ed2e219384bf938af237c2e",
+    "title": "미 연방 판사, Flock을 ‘무차별적 대규모 감시’로 규정",
+    "url": "https://news.hada.io/topic?id=34735",
+    "source": "geeknews",
+    "publishedAt": "2026-10-03T23:41:19.000Z",
+    "summary": [
+      "미 연방 판사가 Flock의 차량번호판 조회를 ‘무차별적 대규모 감시’로 규정했다.",
+      "Tulsa 보안관보가 영장 없이 캘리포니아 번호판을 조회한 행위는 수정헌법 제4조 위반으로 판결됐다.",
+      "판사는 캘리포니아 번호판이라는 점 외에 뚜렷한 조회 이유가 없었다고 봤다."
+    ],
+    "whyItMatters": "Flock으로 번호판 데이터를 조회하는 절차가 있다면, 영장과 구체적 사유 없이는 같은 방식으로 처리하기 어려워진다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "a650c74fe354cb9f07b74f64ee2a44ec35c59eab",
+    "title": "Kolibri: A Sovereign Open-Weight Model",
+    "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-03T09:36:04.000Z",
+    "summary": [
+      "Aleph Alpha가 ‘Kolibri’라는 sovereign open-weight 모델을 내놨다.",
+      "관련 기술 보고서와 추가 논문 링크가 함께 올라왔지만, 모델 구성은 발췌문에 없다.",
+      "본문 발췌가 없어 학습 데이터, 성능 수치, 사용 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "오픈 웨이트 모델을 도입하려면 Kolibri의 실제 가중치 공개 범위와 라이선스를 원문에서 먼저 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "e5bf416abd6a9f6f28fca7b2d3096a7b344d8469",
+    "title": "Claude와 Claude Code에서 Opus 5.5를 최대한 활용하는 방법",
+    "url": "https://news.hada.io/topic?id=34734",
+    "source": "geeknews",
+    "publishedAt": "2026-10-03T22:42:52.000Z",
+    "summary": [
+      "Claude와 Claude Code에서 Opus 5.5를 쓸 때의 작업 지시 방식이 소개됐다.",
+      "작업 전체와 완료 조건, 멈춰 물어볼 조건을 한 번에 주면 긴 다단계 코딩을 이어간다.",
+      "적은 감독으로 수 시간 코딩했다는 내용은 초기 테스터 사례이며 일반화 여부는 알 수 없다."
+    ],
+    "whyItMatters": "Opus 5.5를 쓴다면 짧은 질문을 나누기보다 완료 조건과 중단 조건까지 포함한 작업 단위로 맡기게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
