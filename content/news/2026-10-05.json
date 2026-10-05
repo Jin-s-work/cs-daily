@@ -1,0 +1,118 @@
+[
+  {
+    "id": "4dd7ad844d43177889dd7e496415e13d56fc20fb",
+    "title": "과업이 곧 일의 목적은 아니다",
+    "url": "https://news.hada.io/topic?id=34789",
+    "source": "geeknews",
+    "publishedAt": "2026-10-05T00:03:04.000Z",
+    "summary": [
+      "코딩 에이전트가 구현 속도를 높여도, 만들 가치 판단까지 좋아지진 않는다.",
+      "구현 시간이 줄면 무엇을 만들지, 어떤 진전이 필요한지 결정하는 단계에 더 빨리 닿는다.",
+      "Jobs To Be Done은 도구가 아니라 사람이 이루려는 진전에 초점을 맞춘다."
+    ],
+    "whyItMatters": "코딩 에이전트를 붙일수록 구현량보다 어떤 사용자 진전을 만들지 먼저 정의해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "60650629a12a0158bf75977193b35edde630ba66",
+    "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
+    "url": "https://github.com/omlahore/RemoveMacAI",
+    "source": "hackernews",
+    "publishedAt": "2026-10-04T19:42:25.000Z",
+    "summary": [
+      "GitHub에 macOS 27의 Apple Intelligence를 끄는 도구가 올라왔다.",
+      "명령어 한 번으로 기능을 끄고 관련 디스크 공간을 되찾으며, 작업은 완전히 되돌릴 수 있다.",
+      "본문 발췌만으로는 필요한 권한과 실제로 확보되는 디스크 공간의 크기를 알 수 없다."
+    ],
+    "whyItMatters": "macOS 27에서 Apple Intelligence가 필요 없고 저장 공간이 부족하다면, 한 번의 명령으로 끄고 되돌릴 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "a3a7933980bb68f5443feff2fc329a2c29b76341",
+    "title": "Rust의 derive는 종종 inline을 암묵적으로 포함함",
+    "url": "https://news.hada.io/topic?id=34788",
+    "source": "geeknews",
+    "publishedAt": "2026-10-05T00:01:59.000Z",
+    "summary": [
+      "Rust의 #[derive(...)]가 생성하는 구현에 #[inline]이 붙는 경우가 확인됐다.",
+      "레퍼런스 예제와 매크로 확장을 보면 Debug 같은 자동 구현에 이 힌트가 들어간다.",
+      "다만 #[inline]은 보장이 아니라 힌트라서 컴파일러가 실제 인라이닝을 약속하지 않는다."
+    ],
+    "whyItMatters": "derive 구현의 인라이닝을 성능 계약으로 삼으면 안 되므로, 최적화 결과는 빌드마다 확인해야 한다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "758d3c86e8ca673d3c836573f81c1c43ff698892",
+    "title": "Improper redaction reveals Google Data Center water and electricity usage",
+    "url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-04T19:37:05.000Z",
+    "summary": [
+      "Nebraska 데이터센터 보고서의 가림 처리가 부실해 Google의 물·전력 사용량이 드러났다.",
+      "Google은 Lincoln·Omaha·Papillion 세 곳의 사용량을 영업비밀로 분류해 공개를 막았다.",
+      "기사 발췌만으로는 실제 사용량 수치와 커서로 어떻게 드러났는지는 확인되지 않는다."
+    ],
+    "whyItMatters": "Nebraska에서 데이터센터의 전력·용수 사용량을 확인할 때 공개 문서의 가림 처리를 그대로 믿으면 안 된다.",
+    "tags": [
+      "인프라",
+      "보안"
+    ]
+  },
+  {
+    "id": "9a88ffd3b7d8acf261689b7a7f8ee1bacbe545c5",
+    "title": "영국 정부 기구, 극단주의 대응 정책 비판자들의 온라인 게시물 수집",
+    "url": "https://news.hada.io/topic?id=34787",
+    "source": "geeknews",
+    "publishedAt": "2026-10-04T23:31:50.000Z",
+    "summary": [
+      "영국 내무부 연계 기구 StaCU가 Prevent 비판자들의 온라인 게시물을 수집했다.",
+      "2024년 3월부터 2025년 2월까지 관찰 기록 77건을 작성했고, 대부분 X에서 모았다.",
+      "수집 기준과 기록의 실제 활용 방식은 현재 발췌문만으로는 확인되지 않는다."
+    ],
+    "whyItMatters": "영국의 정책 비판 글도 정부 연계 기관의 관찰 대상이 될 수 있어, 공개 글을 쓸 때 기록과 활용 가능성을 염두에 둬야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "6c8faad5b1f9303783b3d341e5544f26a9cd5595",
+    "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+    "url": "https://github.com/Niko1221/Strata",
+    "source": "hackernews",
+    "publishedAt": "2026-10-04T12:51:53.000Z",
+    "summary": [
+      "Strata가 소비자용 하드웨어에서 Qwen 3.8 Flash Next 125B를 실행하는 도구로 올라왔다.",
+      "RTX 4090에서 100T/s를 내세우며, Windows·Linux 원클릭 설치와 localhost API를 묶었다.",
+      "OpenAI·Anthropic API와 선택적 이미지 입력을 쓸 수 있지만, 실제 성능 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "로컬에서 대형 Qwen 모델을 돌리려 했다면 Strata를 설치해 RTX 4090에서 직접 성능을 확인할 선택지가 생겼다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "9c83fc46bc9d62277f0ff49ce41a1c4b26ee0f3f",
+    "title": "미국 살인범의 형량, 법정에서 상영된 피해자 AI 영상 때문에 파기",
+    "url": "https://news.hada.io/topic?id=34786",
+    "source": "geeknews",
+    "publishedAt": "2026-10-04T22:49:19.000Z",
+    "summary": [
+      "애리조나 항소법원이 피해자를 재현한 AI 영상의 법정 상영을 문제 삼아 형량을 파기했다.",
+      "징역 10년을 받은 Gabriel Paul Horcasitas 사건에서, 영상은 실제 기록이 아니라 피해자 자매의 상상으로 만들어졌다.",
+      "항소심 결정에 따라 형량을 다시 정해야 하며, 새 형량은 아직 정해지지 않았다."
+    ],
+    "whyItMatters": "법정 제출용 AI 재현물을 만들고 있다면 실제 기록과 창작이 섞이지 않도록 출처를 분리해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]
