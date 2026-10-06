@@ -1,0 +1,135 @@
+[
+  {
+    "id": "c6ffd58446c3b00f937a24f7b116785d1515f0d1",
+    "title": "디자인 총괄이 진짜 디자인 책임자는 아니다",
+    "url": "https://news.hada.io/topic?id=34864",
+    "source": "geeknews",
+    "publishedAt": "2026-10-06T01:45:02.000Z",
+    "summary": [
+      "회사에서 진짜 디자인 책임자는 직함보다 관심과 최종 결정권으로 정해진다는 글이다.",
+      "경영진이 디자인에 관심을 두지 않으면 디자인 시스템과 리뷰 절차만으로 품질을 지키기 어렵다고 짚는다.",
+      "디자인 총괄은 특정 담당자가 없어도 관심과 원칙이 이어지게 해야 하지만, 실제 운영 방법은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "디자인 시스템과 리뷰를 운영 중이라면 최종 결정권자가 직접 품질 기준을 붙들고 있는지 확인해야 한다.",
+    "tags": [
+      "업계",
+      "웹"
+    ]
+  },
+  {
+    "id": "cf509067bcf919569d0030202653b61eeeb0e172",
+    "title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
+    "url": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-05T22:46:45.000Z",
+    "summary": [
+      "ChatGPT가 가짜 New Yorker 만화에 실제 만화가의 서명을 붙인다.",
+      "OpenAI의 챗봇은 잡지 화풍을 흉내 내는 데서 그치지 않고 실제 만화가의 서명도 붙인다.",
+      "본문 발췌가 중간에 끊겨 서명이 어떻게 추가됐는지와 대상 만화가들은 확인되지 않는다."
+    ],
+    "whyItMatters": "이 기능을 그대로 쓰면 생성물이 실제 작가의 작품이나 승인처럼 오해받을 수 있어 출처 표기를 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "3fb0589f112d08285e18ff62e12a459e16c0947f",
+    "title": "MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching",
+    "url": "https://arxiv.org/abs/2610.02260",
+    "source": "arxiv",
+    "publishedAt": "2026-10-05T04:00:00.000Z",
+    "summary": [
+      "MintFlow라는 학습 없이 작동하는 제약 샘플링 프레임워크가 arXiv에 나왔다.",
+      "중간 flow 상태를 가장 적게 바꾼 뒤, 기존 flow field를 따라가며 관측값과 물리 법칙을 맞춘다.",
+      "반복 최적화 없이 adjoint로 perturbation을 계산하고 개입 시점을 조절하지만, 세부 수치는 초록에 없다."
+    ],
+    "whyItMatters": "제약을 맞추면서도 기존 생성 분포를 덜 흔들어야 한다면, 샘플러를 바꾸지 않고 MintFlow를 비교 대상으로 넣게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "d2a72b7ec4f0b03701625c8aa8d3eac2467412df",
+    "title": "Put-That-There - 1980년 MIT 음성·포인팅 데모를 브라우저에서 재현",
+    "url": "https://news.hada.io/topic?id=34863",
+    "source": "geeknews",
+    "publishedAt": "2026-10-06T01:36:53.000Z",
+    "summary": [
+      "1980년 MIT의 음성·포인팅 데모 ‘Put-That-There’를 브라우저에서 재현했다.",
+      "화면을 가리키며 “put that there”라고 말하면 컴퓨터가 지시한 대로 객체를 옮긴다.",
+      "OpenAI GPT-6 Astra 출시 영상에 등장해 다시 알려졌고, 구현 세부사항은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "음성 명령과 포인팅을 결합한 UI를 만들 때 1980년대 상호작용 모델을 브라우저에서 직접 시험해 볼 수 있다.",
+    "tags": [
+      "웹",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "ec9915c4fbdd328c884dba2e7d30a23ee328f548",
+    "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+    "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+    "source": "hackernews",
+    "publishedAt": "2026-10-05T21:00:21.000Z",
+    "summary": [
+      "Claude Opus 5.5 에이전트 팀이 상온에서 작동할 것으로 예측한 반강자성 반도체 후보 두 개를 찾았다.",
+      "두 후보 모두 순자기장은 0이지만 전자 스핀은 서로 다르게 분류해 메모리에 쓸 수 있다.",
+      "계산 결과일 뿐 실험으로 확인된 물질은 아니며, 연구진은 전체 계산·코드와 알려진 한계를 함께 적었다."
+    ],
+    "whyItMatters": "상온 스핀트로닉스 메모리를 연구한다면 실험 검증 전에는 이 물질을 부품 후보로 확정하면 안 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "4db1850702f9bca75ea2160bafe4c1660774d88c",
+    "title": "Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses",
+    "url": "https://arxiv.org/abs/2610.02267",
+    "source": "arxiv",
+    "publishedAt": "2026-10-05T04:00:00.000Z",
+    "summary": [
+      "LLM 에이전트의 단일패스 의사결정 모델 두 개를 11개 항목에서 비교 평가했다.",
+      "Jev는 11개 중 9개에서 Laya보다 10.8~46.0%포인트 정확도가 높았다.",
+      "제로샷 라우팅은 우연 수준이고, 비용 절감은 23.9%가 아니라 4.3%였다."
+    ],
+    "whyItMatters": "에이전트 하네스에서 LLM 호출을 줄이려 했다면 라우팅부터 자동화하지 말고 실제 비용과 정확도를 다시 측정해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "dc72254a79b6cd08b9edccf15dd5158b63506e7f",
+    "title": "샌프란시스코의 두 지점 사이에서 가장 평탄한 경로 찾기",
+    "url": "https://news.hada.io/topic?id=34862",
+    "source": "geeknews",
+    "publishedAt": "2026-10-06T01:31:38.000Z",
+    "summary": [
+      "Flatten SF가 샌프란시스코 두 지점 사이의 최단·최평탄 경로를 찾는 서비스를 만들었다.",
+      "16만 개 도로 구간을 브라우저에서 계산하며 거리와 오르막 사이의 절충안을 보여준다.",
+      "USGS의 1m 라이다 고도 데이터와 Overture 지도를 쓰지만 자세한 경로 알고리즘은 확인되지 않는다."
+    ],
+    "whyItMatters": "샌프란시스코에서 경로를 고를 때 거리만 짧은 길과 오르막이 적은 길을 바로 비교할 수 있다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "7ded5c03aba57f680f22552c6d116234727948e8",
+    "title": "Beam: Reflection's 501B open-weight model",
+    "url": "https://reflection.ai/blog/introducing-beam",
+    "source": "hackernews",
+    "publishedAt": "2026-10-05T19:16:35.000Z",
+    "summary": [
+      "Reflection이 코딩·추론·에이전트용 오픈 웨이트 모델 Beam을 발표했다.",
+      "총 501B·활성 23B sparse MoE이며 23.8T 토큰으로 사전학습했다.",
+      "RL은 10.5K NVIDIA GB300에서 4주간 1억 회 넘게 돌렸고, 최종 평가 뒤 이달 말 공개된다."
+    ],
+    "whyItMatters": "코딩 에이전트를 운영한다면, 이달 말 공개될 23B 활성 모델을 기존 오픈 모델과 비용·성능으로 바로 비교하면 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
