@@ -1,0 +1,134 @@
+[
+  {
+    "id": "6ce6adfa925dcefb22f51bc660d0784cdae0da36",
+    "title": "여러 팀의 시스템을 이해하기 위한 AI 집단 지성 구축하기",
+    "url": "https://news.hada.io/topic?id=34920",
+    "source": "geeknews",
+    "publishedAt": "2026-10-07T00:55:02.000Z",
+    "summary": [
+      "SumUp이 여러 팀의 시스템을 파악하려고 약 66개 저장소를 연결한 AI 에이전트 시스템을 만들었다.",
+      "저장소를 기술 스택이 아니라 제품과 팀 구조로 묶고, 도메인별 AGENTS.md에 원칙과 조직 맥락을 담았다.",
+      "기존처럼 엔지니어 3~4명을 모으는 대신 쓰는 방식이며, 에이전트의 구체적인 동작은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "여러 저장소와 팀 맥락을 함께 찾아야 한다면 사람을 모으기 전에 이런 에이전트 구조를 먼저 시험하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "47b9255d8fa0f8e89c91be9f3fca6f4f2b924e04",
+    "title": "Sharing AI progress in mathematics",
+    "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-06T22:17:21.000Z",
+    "summary": [
+      "OpenAI가 수학 분야에서 AI의 진전 내용을 공유하는 글을 관련 자료와 함께 게시했다.",
+      "코드와 사전 출판물을 담은 openai/math GitHub 저장소 링크가 함께 올라왔다.",
+      "발췌문에는 사용한 모델이나 증명 방식, 성능 수치가 없어 구체적인 내용은 확인되지 않는다."
+    ],
+    "whyItMatters": "수학 관련 AI 결과를 재현하려면 본문보다 먼저 openai/math 저장소와 preprints를 확인하면 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "995ab148ded04e428f188478ad7e9ff9fbfeaa3c",
+    "title": "Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery",
+    "url": "https://arxiv.org/abs/2610.03872",
+    "source": "arxiv",
+    "publishedAt": "2026-10-06T04:00:00.000Z",
+    "summary": [
+      "수치해석 솔버가 왜 실패하는지 진단한 뒤 개선 방법을 찾는 ADSD가 나왔다.",
+      "전력 흐름, AC 최적 전력 흐름 제어, stiff ODE, 이질 확산 PDE 네 영역에서 정확도·견고성·효율이 개선됐다.",
+      "GOC-500 전력 흐름에서 평균 솔버 오차가 거의 71배 줄었고, 학습에 없던 계통과 운전 조건에도 효과가 전이됐다."
+    ],
+    "whyItMatters": "수치 솔버를 직접 고치고 있다면 실패 원인 분석과 재사용 가능한 개선 절차를 한 흐름으로 묶을 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "dff08bdf7f57fa2800414685fffa07fa78079c4a",
+    "title": "Show GN: AI 송도 월드 - LLM 여섯 개가 나눠 맡은 AI 에이전트 2,400명이 사는 3D 도시",
+    "url": "https://news.hada.io/topic?id=34919",
+    "source": "geeknews",
+    "publishedAt": "2026-10-07T00:53:30.000Z",
+    "summary": [
+      "GPT·Claude·Gemini 등 6개 LLM이 맡은 AI 시민 2,400여 명의 3D 도시가 브라우저에서 열렸다.",
+      "시민마다 모델을 나눠 배정했고, 가입 없이 도시 안에서 에이전트들의 생각과 행동을 볼 수 있다.",
+      "브라우저에서 볼 수 있지만, 시민 간 상호작용 방식과 실제 모델 호출 구조는 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "AI 에이전트 군집을 관찰하고 싶다면 가입 없이 브라우저에서 실제 시민들의 행동을 바로 확인하면 된다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "232920737ce217dd4e58ea44a382c53cdb034682",
+    "title": "Paramount Skydance has completed its $111B merger with Warner Bros. Discovery",
+    "url": "https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-06T20:33:47.000Z",
+    "summary": [
+      "Paramount Skydance가 Warner Bros. Discovery와 1,110억 달러 합병을 마쳤다.",
+      "합병 뒤 회사 이름은 Skydance로 바뀌며 Paramount+와 HBO Max, CBS, CNN이 한 회사에 묶였다.",
+      "California 등 12개 주의 소송으로 일정이 지연됐고, Elena Kagan이 마지막 차단 시도를 기각했다."
+    ],
+    "whyItMatters": "Paramount+·HBO Max와 관련된 개발·배포 계약을 다룬다면 이제 상대 회사와 브랜드 구성이 달라진다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "911136effb704c31a5afb9a03c4f22400a655469",
+    "title": "REACT: Physically and Chemically Consistent Reconstruction of Marine Active Tracers",
+    "url": "https://arxiv.org/abs/2610.03888",
+    "source": "arxiv",
+    "publishedAt": "2026-10-06T04:00:00.000Z",
+    "summary": [
+      "REACT라는 해양 pH 재구성 프레임워크를 제안한 논문이 arXiv에 나왔다.",
+      "DIC를 보존하는 탄소 상태를 운반한 뒤 보정하고, 탄산염 평형으로 pH를 계산한다.",
+      "시뮬레이션에서 pH NRMSE는 14.7%, 화학 일관성 오차는 24.0% 줄었고 실제 관측 검증은 없다."
+    ],
+    "whyItMatters": "해양 pH를 복원하는 모델을 만든다면 pH 오차만 보지 말고 DIC 보존과 탄산염 평형도 함께 검증해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "1881921d485e852b075c03224cee00a7d4c4abf5",
+    "title": "소프트웨어로서의 브랜드",
+    "url": "https://news.hada.io/topic?id=34918",
+    "source": "geeknews",
+    "publishedAt": "2026-10-07T00:45:01.000Z",
+    "summary": [
+      "브랜드팀이 반복 제작 대신 이미 내린 디자인 결정을 소프트웨어로 구현하는 접근이 소개됐다.",
+      "Figma와 AI는 누구나 만들게 했지만, 판단력과 안목까지 자동으로 나눠주지는 못한다.",
+      "다만 팀 구조가 그대로인 상황에서 어떤 변화가 생기는지는 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "브랜드 작업을 반복 생산하는 팀이라면 디자인 결정을 코드로 남기는 방식으로 작업 흐름을 바꾸게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "18b28720d67acd4a7cbd5091593e1d77832eb333",
+    "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+    "url": "https://github.com/FeSens/openTPU",
+    "source": "hackernews",
+    "publishedAt": "2026-10-06T16:23:25.000Z",
+    "summary": [
+      "AI가 오픈소스 AI 가속기 OpenTPU를 RTL부터 컴파일러까지 한 저장소로 공개했다.",
+      "ISA, 시뮬레이터, 프로파일러도 함께 들어갔고, Kintex-7 PCIe 카드에서 Qwen3 등을 실행한다.",
+      "현재 확인된 실행 모델은 Qwen3, LFM2.5, Qwen3.5이며 다른 FPGA와 성능 수치는 알 수 없다."
+    ],
+    "whyItMatters": "FPGA에서 Qwen 계열을 직접 돌려볼 계획이라면 RTL부터 프로파일링까지 한 저장소에서 따라갈 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  }
+]
