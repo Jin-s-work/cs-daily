@@ -1,0 +1,134 @@
+[
+  {
+    "id": "0a2907815041a4a605ddbcf1cdad7e0857574e1e",
+    "title": "Show GN: sysone_trans - 선택형 AI가 문자·자모를 골라 만드는 번역 실험",
+    "url": "https://news.hada.io/topic?id=34984",
+    "source": "geeknews",
+    "publishedAt": "2026-10-08T01:08:38.000Z",
+    "summary": [
+      "sysone_trans라는 CLI 번역 실험이 소개됐다. 선택지 중 하나를 고르는 AI로 번역문을 만든다.",
+      "문장 전체를 한 번에 생성하지 않고, 매 단계에서 다음 문자나 한글 자모를 골라 이어 붙인다.",
+      "각 결정 때 원문 전체와 지금까지 만든 결과를 함께 넣지만, 실제 모델과 번역 품질은 확인되지 않는다."
+    ],
+    "whyItMatters": "번역 모델이 문장 전체를 자유롭게 생성해야 한다는 전제를 버리고 선택형 모델로 만드는 구조를 직접 시험해볼 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "ffaeefda6df4a38864b15dfdc5bc81056807ef88",
+    "title": "Margaret Hamilton has died",
+    "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+    "source": "hackernews",
+    "publishedAt": "2026-10-07T21:16:18.000Z",
+    "summary": [
+      "Apollo 프로그램 소프트웨어 개발을 이끈 컴퓨팅 선구자 Margaret Hamilton이 90세로 별세했다.",
+      "Hamilton은 MIT에서 20년 넘게 일하며, 인간을 달로 보낸 최초의 컴퓨터를 프로그래밍한 팀을 이끌었다.",
+      "MIT는 2026년 10월 7일 소식을 전했으며, 구체적인 개발 방식과 팀 구성은 발췌문에 담기지 않았다."
+    ],
+    "whyItMatters": "Apollo 소프트웨어의 역사를 정리한다면 Hamilton의 팀 리더십과 MIT에서의 20년 이상 경력을 함께 기록하게 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "35c5e69129de49f6f603c319358f78c365e6b9d0",
+    "title": "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities",
+    "url": "https://arxiv.org/abs/2610.03894",
+    "source": "arxiv",
+    "publishedAt": "2026-10-07T04:00:00.000Z",
+    "summary": [
+      "블랙박스 LLM 에이전트의 잘못된 tool call을 별도 모델로 감시하는 연구가 나왔다.",
+      "같은 문맥을 읽은 오픈 웨이트 surrogate의 log-probability로 인자와 호출 전체를 채점한다.",
+      "학습 없이 한 번의 prefill만 추가하며, 어려운 코딩 과제 AUROC가 0.825였다."
+    ],
+    "whyItMatters": "Tool call을 실행하기 전에 surrogate 점수가 낮은 호출만 검토로 보내는 게이트를 붙일 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "b2127bef28ba262e461921cd4a87a6dfc8c615f7",
+    "title": "에이전트에도 네트워크 효과가 생길까?",
+    "url": "https://news.hada.io/topic?id=34983",
+    "source": "geeknews",
+    "publishedAt": "2026-10-08T01:06:02.000Z",
+    "summary": [
+      "에이전트가 서로 연결되면 같은 제품을 써야만 생기는 네트워크 효과는 약해질 수 있다는 논의다.",
+      "이메일·메시지·API로 다른 에이전트와 소통하고 문서·행사·웹사이트·그룹 채팅을 함께 만든다.",
+      "개인 비서만으로 승자독식이 되는지는 아직 결론이 없고 발췌문만으로는 구체적인 사례를 알 수 없다."
+    ],
+    "whyItMatters": "에이전트 제품을 고를 때 자체 생태계의 사용자 수보다 외부 에이전트와 실제로 연결되는지를 먼저 보게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "a3e9723993ae6e82ce69207c64b165fd3212904d",
+    "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+    "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-07T18:49:40.000Z",
+    "summary": [
+      "Meta와 Microsoft가 사내 직원의 Anthropic Claude 사용을 줄이고 자체 코딩 도구로 옮기기 시작했다.",
+      "Microsoft는 내부 AI 지출 한도를 직원당 월 10만 달러에서 대부분 1만 달러로 낮췄다.",
+      "고객의 Microsoft 경로 Claude 이용 중단은 아니며, 두 회사는 여전히 Anthropic 고객이다."
+    ],
+    "whyItMatters": "사내에서 Claude를 쓰고 있다면 예산과 허용 도구가 바뀔 수 있어 GitHub Copilot 같은 대안을 준비해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "747f76e8751f5d3b737c79bf1561f13e35bccf59",
+    "title": "SGAnalog: An End-to-End Circuit Benchmark from Open-Source Silicon Tapeouts",
+    "url": "https://arxiv.org/abs/2610.03934",
+    "source": "arxiv",
+    "publishedAt": "2026-10-07T04:00:00.000Z",
+    "summary": [
+      "오픈소스 실리콘 테이프아웃 회로 273개로 아날로그 회로용 SGAnalog 벤치마크가 나왔다.",
+      "66개 회로 전사에서 최고 모델의 그래프 완전 일치율은 56.1%였고, 17개 소자 사이징에서는 91.2점을 받았다.",
+      "Claude 최신 두 모델은 사이징 요청을 각각 4개와 11개 거부했고, 모델별 순위도 두 과제에서 달랐다."
+    ],
+    "whyItMatters": "회로 설계 모델을 평가할 때 회로도 전사와 소자 사이징을 별도 과제로 나눠 봐야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "d8432868d2c5b217bf18f065aa6cfe6c27ea73c4",
+    "title": "아이폰 Duo를 준비하는 개발자를 위한 가이드",
+    "url": "https://news.hada.io/topic?id=34982",
+    "source": "geeknews",
+    "publishedAt": "2026-10-08T01:05:02.000Z",
+    "summary": [
+      "Apple의 폴더블 iPhone인 Duo에 맞춘 앱 레이아웃 가이드가 나왔다.",
+      "고정된 기기나 화면 크기 대신 현재 앱에 배정된 공간으로 레이아웃을 짜야 한다.",
+      "외부·내부 화면과 여러 접힘 상태에서 작업 상태와 기능을 유지해야 한다."
+    ],
+    "whyItMatters": "폴더블 대응 앱이라면 기기별 분기보다 주어진 공간을 기준으로 화면을 다시 짜야 한다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "4bb428a07b2a9a894359b0d63ae89b1801d7736f",
+    "title": "Claude Haiku 5.5",
+    "url": "https://www.anthropic.com/claude-haiku-5-5",
+    "source": "hackernews",
+    "publishedAt": "2026-10-07T18:01:32.000Z",
+    "summary": [
+      "Anthropic이 Claude Haiku 5.5를 출시했고 고빈도·저비용 작업을 겨냥했다.",
+      "Haiku 4.5보다 평균 실행 비용이 75% 낮고, Anthropic의 가장 빠른 모델이다.",
+      "월별 API 크레딧은 Claude Max·Team 구독자 대상이며, 발췌에는 구체적 한도가 없다."
+    ],
+    "whyItMatters": "고빈도 요약·분류나 브라우저 작업을 운영한다면 비용과 응답 속도를 함께 다시 계산해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]
