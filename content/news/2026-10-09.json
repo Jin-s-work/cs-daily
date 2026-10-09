@@ -1,0 +1,135 @@
+[
+  {
+    "id": "e6cca9ca0739ba1c6534df4001121084a9b4ffd7",
+    "title": "AI는 디자인을 어떻게 바꾸고 있는가?",
+    "url": "https://news.hada.io/topic?id=35042",
+    "source": "geeknews",
+    "publishedAt": "2026-10-09T01:15:02.000Z",
+    "summary": [
+      "현업 디자이너 대화에서 AI가 디자인 제작 속도와 탐색 범위를 넓힌다는 결과가 나왔다.",
+      "하지만 AI를 써서 작업 품질이 좋아졌다고 답한 사람은 없었고, 원하는 결과가 뚜렷할수록 다루기 어려웠다.",
+      "AI는 열린 탐색에는 유용하지만 숙련자의 정밀한 의도를 구현할 때는 오히려 한계가 드러났다."
+    ],
+    "whyItMatters": "아이디어를 넓게 찾는 단계에는 AI를 쓰되, 정밀한 결과물은 디자이너가 직접 다듬어야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "497aa58319b869656291f598454974633767c2ac",
+    "title": "ADHD as a circadian rhythm disorder: evidence and implications for chronotherapy (2025)",
+    "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full",
+    "source": "hackernews",
+    "publishedAt": "2026-10-08T20:42:16.000Z",
+    "summary": [
+      "Frontiers in Psychiatry에 ADHD를 일주기 리듬 장애로 보는 논문이 실렸다.",
+      "논문은 ADHD와 일주기 리듬의 연관성에 대한 근거와 chronotherapy 적용 가능성을 다룬다.",
+      "발췌에는 연구 대상, 분석 방법, 치료 효과를 판단할 구체적 수치가 없다."
+    ],
+    "whyItMatters": "ADHD 치료를 수면 시간과 분리해 보던 사람이라면 chronotherapy 근거를 읽을 때 일주기 리듬도 함께 봐야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "51950507c74bac47d4e87d543deab61a4a3e5ad8",
+    "title": "Adaptive Workflow Intelligence: A Cognitive Architecture for Context-Driven Enterprise Automation",
+    "url": "https://arxiv.org/abs/2610.08793",
+    "source": "arxiv",
+    "publishedAt": "2026-10-08T04:00:00.000Z",
+    "summary": [
+      "기업 자동화용 AI 에이전트 구조로 AWI를 제안하고, 환경 변화에 대응하는 방식을 실험했다.",
+      "PCAR 네 층을 순환하며, 성찰 메모리와 피드백으로 환경에 맞게 정책을 조정한다.",
+      "지연된 결과와 통제된 체제 전환을 넣은 시뮬레이션에서, 규칙을 지키며 정적 자동화보다 빨리 회복했지만 효과는 소폭이었다."
+    ],
+    "whyItMatters": "지연된 결과와 정책 변화가 있는 자동화를 만든다면, 정적 규칙만 두지 말고 성찰 루프의 안정성 비용까지 측정해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "bcb92baaf87ebf6fae915d7a5f6ca80ecefbbf80",
+    "title": "AI 시대에 SaaS 기업을 피벗하는 방법",
+    "url": "https://news.hada.io/topic?id=35041",
+    "source": "geeknews",
+    "publishedAt": "2026-10-09T01:05:02.000Z",
+    "summary": [
+      "AI 코딩 도구로 기능 개발과 복제가 싸진 시대에 SaaS 피벗 전략을 다룬 글이 나왔다.",
+      "기능을 몇 개 더하는 방식보다 안정적인 운영 역량과 기존 고객 접점을 경쟁력으로 삼으라고 짚는다.",
+      "본문 전체가 없어 구체적인 피벗 절차, 실행 순서, 성과 수치는 확인되지 않는다."
+    ],
+    "whyItMatters": "기능 추가만으로 차별화하려던 SaaS라면 운영 체계와 이미 가진 고객 접점을 먼저 투자 대상으로 바꿔야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "f60f4e33788def015af306ef8458718d3903efea",
+    "title": "Theranos.world",
+    "url": "https://www.theranos.world/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-08T17:51:49.000Z",
+    "summary": [
+      "Theranos.world라는 웹 페이지에 Elizabeth Holmes 이름의 데스크톱 화면이 나왔다.",
+      "로그인 비밀번호 없이 들어가며, 의자에 앉고 화면을 끌거나 확대하는 조작이 들어갔다.",
+      "실제 서비스인지 인터랙티브 전시인지, 안쪽 내용은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "직접 접속하면 로그인 절차 없이 데스크톱형 인터랙션을 바로 확인할 수 있다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "7e59625af804879b58058dfaa407df44da358438",
+    "title": "Accelerating Floating-Point Satisfiability Solving via Gradient Normalization",
+    "url": "https://arxiv.org/abs/2610.08808",
+    "source": "arxiv",
+    "publishedAt": "2026-10-08T04:00:00.000Z",
+    "summary": [
+      "GradSAT이 부동소수점 SMT 풀이의 그래디언트 쏠림 문제를 다루는 프레임워크로 제시됐다.",
+      "각 절을 MTL 작업으로 보고 GradNorm으로 그래디언트를 동적으로 정규화하며, GPU 탐색과 비트 정밀 검색을 잇는다.",
+      "연속 완화에서 후보를 찾은 뒤 정확한 할당을 구하지만, 실제 성능 수치는 초록에서 확인되지 않는다."
+    ],
+    "whyItMatters": "최적화 기반 부동소수점 SMT 솔버를 만든다면, 절 하나가 탐색을 가로막는 상황을 줄이는 새 구현 경로가 생긴다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "619fc863f98a172a9a276cfeff29df599471d37e",
+    "title": "5년 계획을 세우지 말고, 대신 이렇게 하라",
+    "url": "https://news.hada.io/topic?id=35040",
+    "source": "geeknews",
+    "publishedAt": "2026-10-09T00:55:02.000Z",
+    "summary": [
+      "5년 뒤의 모습을 미리 정하기보다, 미래에 고를 수 있는 길을 넓히라는 글이다.",
+      "지금 가진 경험만 따라가면 기존 경력의 변형만 떠올리기 쉬우며, 새 역량과 만남이 필요하다.",
+      "새로운 역량을 배우고 다른 사람과 환경을 만나야 이전에 보지 못한 진로와 기회가 열린다고 설명한다."
+    ],
+    "whyItMatters": "5년 계획 대신 학습과 만남에 시간을 배분해 미래의 선택지를 늘리게 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "f9a7f01f513e16ea73247b44e10f8d38a511f975",
+    "title": "Whistle: Speech to Text in 16.9 MB",
+    "url": "https://cactuscompute.com/blog/whistle",
+    "source": "hackernews",
+    "publishedAt": "2026-10-08T16:59:39.000Z",
+    "summary": [
+      "Cactus가 모바일과 임베디드 기기용 오픈 음성 인식 모델 Whistle을 공개했다.",
+      "CPU에서 의존성 없이 동작하고, 7개 언어를 처리하며 첫 토큰까지 11ms가 걸린다.",
+      "입력은 16kHz 모노 음성 최대 30초이며, 단어별 시작·종료 시각과 확률도 계산한다."
+    ],
+    "whyItMatters": "서버로 음성을 보내기 어려운 모바일·로봇 앱에서 16.9MB 모델로 온디바이스 입력을 붙일 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  }
+]
