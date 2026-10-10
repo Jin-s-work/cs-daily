@@ -1,0 +1,130 @@
+[
+  {
+    "id": "eb1309fb6f68bcdb02447c2881e41844df742c8c",
+    "title": "a16z의 2026년 기술 시장 분석 - 소프트웨어에서 AI 인프라로 이동하는 투자",
+    "url": "https://news.hada.io/topic?id=35094",
+    "source": "geeknews",
+    "publishedAt": "2026-10-10T00:55:01.000Z",
+    "summary": [
+      "a16z가 2026년 기술 시장을 분석하며, 투자 중심이 소프트웨어에서 AI 인프라로 옮겨간다고 짚었다.",
+      "2026년 S&P 500 이익 증가분의 약 76%가 기술 산업에서 나오고, 클라우드 설비투자는 연 8,000억 달러에 이른다.",
+      "2027년부터 설비투자가 1조 달러를 넘을 전망이며, AI 투자에서 GPU 외 항목의 구체적인 내용은 발췌문에 없다."
+    ],
+    "whyItMatters": "AI 인프라를 계획한다면 GPU뿐 아니라 2027년 이후 클라우드 설비투자 확대까지 예산에 넣어야 한다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "4e55dc1f06ea0a932e3ca82ded8c368dab411f02",
+    "title": "YouTuber Says Cops Visited Him After He Built a Flock-Style Camera to Track Cops",
+    "url": "https://gizmodo.com/youtuber-says-cops-paid-him-a-visit-after-he-built-flock-style-camera-to-track-cops-2000824306",
+    "source": "hackernews",
+    "publishedAt": "2026-10-09T21:06:59.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "1a2a886b4baf54cfa3745ca0f591fbb4c866b4d2",
+    "title": "An Explainable Header-Centric Framework for Large-Scale Semantic Table Interpretation and Data Quality Assessment",
+    "url": "https://arxiv.org/abs/2610.10541",
+    "source": "arxiv",
+    "publishedAt": "2026-10-09T04:00:00.000Z",
+    "summary": [
+      "표 셀 값 없이 헤더만으로 표의 의미와 데이터 품질을 해석하는 프레임워크가 나왔고 KG에 쓰인다.",
+      "헤더를 39개 FinalFormat 유형으로 분류하고, 토큰별 근거와 규칙으로 누락·중복·도메인 위반 등을 찾는다.",
+      "약 12만 개 컬럼을 평가했지만 SemTab 2024 공식 GT-strict 평가는 낮았고, 진단 감사는 점수 수정이 아니다."
+    ],
+    "whyItMatters": "헤더만 확보되는 파이프라인이라면 셀 값을 복원하지 않고도 컬럼 품질 검사를 붙일 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "7356f39d652587f86cb4e6629dd321cf3da885d0",
+    "title": "독일, 옛 탄광을 유럽 최대 호수 지대로 전환",
+    "url": "https://news.hada.io/topic?id=35093",
+    "source": "geeknews",
+    "publishedAt": "2026-10-10T00:51:19.000Z",
+    "summary": [
+      "독일 동부 Lusatian Lakeland에서 폐탄광을 유럽 최대 호수 지대로 바꾸는 사업이 수십 년째 진행 중이다.",
+      "인공호수 23개가 들어서고 총 수면적은 1만 4,000헥타르에 이르며, Lake Sedlitz가 마지막 주요 구성 요소다.",
+      "Lake Sedlitz는 2026년 4월 말 수영과 보트 이용객에게 열릴 예정이며, 전체 사업의 종료 시점은 알 수 없다."
+    ],
+    "whyItMatters": "폐탄광 재활용 사업을 비교할 때, 단일 시설이 아니라 수십 년짜리 호수 네트워크와 단계별 개방 일정으로 봐야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "623cc6d828853721ea885fa6cb80a450b197335f",
+    "title": "Show HN: Carrier-Explode: iPhone, Pixel and Galaxy carrier settings decoded",
+    "url": "https://carrierexplode.com/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-09T18:10:55.000Z",
+    "summary": [
+      "Carrier-Explode가 iPhone·Pixel·Galaxy 통신사 설정을 계속 모아 기록한다.",
+      "baseband 구성 파일을 해독하고, 설정 항목이 무엇인지 설명하는 기능도 담겼다.",
+      "가정 검증은 아직 덜 끝났고, 일부 애호가 그룹에서 이미 유용하게 쓰였다."
+    ],
+    "whyItMatters": "휴대폰별 통신사 설정 차이를 직접 비교하고 baseband 구성을 추적할 수 있다.",
+    "tags": [
+      "보안",
+      "인프라"
+    ]
+  },
+  {
+    "id": "7555d57bfd576d99eae38a4bac5f866a0270426f",
+    "title": "Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction",
+    "url": "https://arxiv.org/abs/2610.10549",
+    "source": "arxiv",
+    "publishedAt": "2026-10-09T04:00:00.000Z",
+    "summary": [
+      "STS가 기업 시스템을 흉내 낸 환경에서 학습·평가용 데이터를 합성하는 방식을 제안했다.",
+      "LLM 에이전트가 정책 적용 API를 실행해 데이터를 만들고, DB 스키마 없이 구조적 유효성을 보장한다.",
+      "10개 환경에서 평균 주변부 충실도 0.88과 제약 만족률 100%를 냈지만, 항공 환경 궤적의 82%는 실패했다."
+    ],
+    "whyItMatters": "기업 데이터에 직접 접근하기 어려운 팀도 시뮬레이션 환경과 정책 API를 만들어 에이전트 학습용 데이터를 반복 생성할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "bc398a5a78715d3c1e1209fd4197e32a83ed6508",
+    "title": "MXC - 샌드박스 코드 실행 시스템",
+    "url": "https://news.hada.io/topic?id=35092",
+    "source": "geeknews",
+    "publishedAt": "2026-10-10T00:48:19.000Z",
+    "summary": [
+      "MXC가 모델 출력과 플러그인처럼 신뢰할 수 없는 코드를 격리 실행하는 시스템으로 소개됐다.",
+      "Windows·Linux·macOS에서 앱에 내장하는 SDK로 동작하고, 네이티브 프로세스부터 VM까지 백엔드를 쓴다.",
+      "제공된 발췌가 중간에 끊겨 세부 백엔드 구성과 격리 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "모델이 만든 코드를 실행하는 앱이라면 일반 프로세스 실행 대신 OS 샌드박스나 VM으로 분리해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "04902b83f5b9f29562e468fa5c4c3bd40f8485bd",
+    "title": "Typesafe AI raises $870M at $7.5B",
+    "url": "https://typesafe.ai/blog/series-ai",
+    "source": "hackernews",
+    "publishedAt": "2026-10-09T17:02:31.000Z",
+    "summary": [
+      "TypeSafe AI가 Andreessen Horowitz 주도로 8억7000만 달러를 조달했다.",
+      "이번 Series A에는 Sequoia Capital, DCVC와 엔젤 투자자들이 참여했고 기업가치는 75억 달러다.",
+      "Martin Casado가 이사회에 합류하며, 자금의 구체적인 사용처와 일정은 본문에 적혀 있지 않다."
+    ],
+    "whyItMatters": "TypeSafe AI의 Jev나 API를 쓰고 있다면, 앞으로 모델과 기업용 기능이 늘어날 계획을 염두에 둬야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]
