@@ -1,0 +1,135 @@
+[
+  {
+    "id": "2e81ee3f14d140fc7ff5e00ec404f4626b03a661",
+    "title": "아, 표준 C에서는 문자열의 부동소수점 변환 오류를 이식성 있게 검사할 수 없는 모양이다",
+    "url": "https://news.hada.io/topic?id=35139",
+    "source": "geeknews",
+    "publishedAt": "2026-10-11T00:04:54.000Z",
+    "summary": [
+      "표준 C의 문자열→부동소수점 변환에서 오류 검출 방식이 구현마다 달라진다는 지적이 나왔다.",
+      "math_errhandling 설정에 따라 오류 보고 방식이 달라지고, 언더플로 보고는 선택 사항이다.",
+      "모든 표준 C 구현에서 언더플로 검출을 보장할 수 없으며, POSIX의 구체적 처리는 확인되지 않는다."
+    ],
+    "whyItMatters": "이식 가능한 C 코드에서 변환 오류를 검사할 때 언더플로를 표준 동작으로 가정하면 구현별로 결과가 달라진다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "77a6fe42b025eb623cb7e69312f7e01a8644dce7",
+    "title": "Bitwarden Dual License Model",
+    "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+    "source": "hackernews",
+    "publishedAt": "2026-10-10T14:32:50.000Z",
+    "summary": [
+      "Bitwarden이 다음 릴리스부터 앱 스토어에 상업용 라이선스 빌드를 올린다.",
+      "GPLv3 OSS 버전은 GitHub에서 계속 갱신되며, 두 버전의 현재 기능은 같다.",
+      "변경은 Bitwarden을 재포장해 판매하는 쪽에 해당하고, 셀프호스팅은 그대로다."
+    ],
+    "whyItMatters": "앱 스토어 배포판을 재포장하거나 판매하고 있다면 앞으로 상업용 라이선스를 확인해야 한다.",
+    "tags": [
+      "업계",
+      "보안"
+    ]
+  },
+  {
+    "id": "8e3cf582f4f57b8455c0671317420c9dc33f9bce",
+    "title": "Agent-Controlled Forgetting for Tool-Using Agents: Reversible Context Curation in Practice",
+    "url": "https://arxiv.org/abs/2610.10590",
+    "source": "arxiv",
+    "publishedAt": "2026-10-10T04:00:00.000Z",
+    "summary": [
+      "도구를 쓰는 에이전트가 과거 결과를 요약해 문맥을 줄이는 방식을 연구한 논문이 나왔다.",
+      "원문은 위치에 짧은 메모를 남기고 보관소에 저장했으며, 입력 토큰은 50% 줄었다.",
+      "기본 평가는 통과했지만 후속 평가는 미달했고, 요청이 늘어 17% 느려졌으며 다른 작업쌍엔 절약이 없었다."
+    ],
+    "whyItMatters": "도구 호출이 많은 에이전트라면 비용을 줄일 수 있지만, 요청 증가와 작업별 편차까지 함께 측정해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "399bed5dc18b22ee3ef9a276c43948a348b4ac13",
+    "title": "전구형 컴퓨터",
+    "url": "https://news.hada.io/topic?id=35138",
+    "source": "geeknews",
+    "publishedAt": "2026-10-10T22:32:29.000Z",
+    "summary": [
+      "Lightbulb Computer는 프로젝터와 컴퓨터 비전을 전구 형태에 결합한 기기 구상이다.",
+      "일상 공간의 표면과 사물에 정보를 투사하고, 음성 명령과 손가락 가리키기를 인식한다.",
+      "레시피·지도·스마트홈 제어를 예로 들었지만, 실제 구현 방식과 출시 여부는 확인되지 않는다."
+    ],
+    "whyItMatters": "공간에 정보를 투사하는 인터페이스를 만들고 있다면 음성과 손가락 가리키기를 함께 입력으로 쓰는 설계를 참고하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "aa1828d42874739ef99a1e5ee628e455ef05b610",
+    "title": "I would like the value of my home to rise, while my property taxes fall",
+    "url": "https://conversableeconomist.com/2026/09/28/i-would-like-the-value-of-my-home-to-rise-while-my-property-taxes-fall/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-10T13:29:03.000Z",
+    "summary": [
+      "미국 여러 주에서 주택 보유자의 재산세 부담을 낮추는 개편이 잇따르고 있다.",
+      "자가주택 세금 혜택을 키우고 학교·경찰 비용을 상업용 부동산과 다른 세금으로 옮긴다.",
+      "Florida·Ohio·North Dakota·Texas 일부는 재산세 폐지도 검토했지만, 글의 후반부는 발췌가 끊겨 있다."
+    ],
+    "whyItMatters": "주택 가격 상승과 세금 인하를 함께 기대한다면, 비용이 상업용 부동산이나 다른 세금으로 이동할 수 있다는 점을 봐야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "405bef6dbfdc3938b006dcd3e36ebd6b46c6e776",
+    "title": "Verification and Self-Improvement in Agentic AI: Foundations and Limits",
+    "url": "https://arxiv.org/abs/2610.10611",
+    "source": "arxiv",
+    "publishedAt": "2026-10-10T04:00:00.000Z",
+    "summary": [
+      "에이전트형 AI의 자기개선을 검증 방식과 탐색·지원 변화로 나눠 분석한 이론 연구가 나왔다.",
+      "독립 다수결 증폭은 언어를 보존하지만, 무작위 테이프의 존재적 수용은 오답을 허용할 수 있다.",
+      "제한된 자기수정은 같은 검증 복잡도에 머물지만, 후보 선택의 조건부 오류 예산은 별도로 필요하다."
+    ],
+    "whyItMatters": "에이전트가 후보를 고르는 시스템을 만든다면, 검증 통과율과 오답 선택 확률을 따로 측정해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "b54ee4accabc0476ad5d1b0539ed20843d22a0ea",
+    "title": "Mxc: Microsoft Execution Containers 버전 1.0.0",
+    "url": "https://news.hada.io/topic?id=35136",
+    "source": "geeknews",
+    "publishedAt": "2026-10-10T21:32:20.000Z",
+    "summary": [
+      "Microsoft Execution Containers(MXC) 1.0.0이 정식 출시됐다.",
+      "허용할 파일과 네트워크를 미리 선언하면 컨테이너가 실행 중 그 경계를 강제한다.",
+      "정책은 에이전트 통제 밖에 남아 모델·생성 코드·플러그인·도구가 임의로 바꾸기 어렵다."
+    ],
+    "whyItMatters": "에이전트에 파일·네트워크 권한을 맡기고 있다면 실행 전에 선언한 자원 경계를 컨테이너 정책으로 고정할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "6d8c08c1945787e29f4aa061607822477e600948",
+    "title": "Apple/macOS removed from official Unix registry",
+    "url": "https://www.opengroup.org//openbrand/register/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-10T10:57:31.000Z",
+    "summary": [
+      "Apple/macOS가 The Open Group의 공식 UNIX 인증 제품 등록부에서 빠진 것으로 전해졌다.",
+      "현재 페이지 본문에는 UNIX 인증 기준과 등록부 설명만 있고, 삭제 시점은 나오지 않는다.",
+      "macOS의 과거 인증 상태와 이번 변경이 의도적인지는 본문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "macOS의 UNIX 인증 여부를 전제로 호환성을 판단했다면 현재 등록 상태를 다시 확인해야 한다.",
+    "tags": [
+      "업계",
+      "언어/런타임"
+    ]
+  }
+]
