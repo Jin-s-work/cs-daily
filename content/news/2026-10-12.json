@@ -1,0 +1,111 @@
+[
+  {
+    "id": "a663749e74044e242cf9d089cc75d6eb90679e28",
+    "title": "컨텍스트가 새로운 코드다",
+    "url": "https://news.hada.io/topic?id=35211",
+    "source": "geeknews",
+    "publishedAt": "2026-10-12T00:35:02.000Z",
+    "summary": [
+      "AI 에이전트에 넣는 컨텍스트를 코드처럼 관리하고 수명주기를 적용하자는 글이다.",
+      "생성·평가·배포·관찰 단계로 운영하며, 문법 검사보다 실제 코드베이스 작업 결과로 품질을 잰다.",
+      "변경 전후 비교도 필요하지만, 구체적인 평가 방법과 배포 방식은 본문 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "AI 에이전트의 프롬프트와 문서를 따로 관리했다면 다음부터 변경 이력과 실제 작업 결과를 함께 검증해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "5947d794c16d80ca7ef584704a14c3efa68c78fe",
+    "title": "Passkeys are a trap. Do not use them",
+    "url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+    "source": "hackernews",
+    "publishedAt": "2026-10-11T21:59:48.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "03070453d24624b780b2871f200b05fd01982424",
+    "title": "하루 160장 웹캠 촬영을 거부한 원격근무 직원, 회사는 그녀를 해고했다",
+    "url": "https://news.hada.io/topic?id=35210",
+    "source": "geeknews",
+    "publishedAt": "2026-10-12T00:32:10.000Z",
+    "summary": [
+      "뉴저지 소송에서 Sutherland Healthcare Solutions가 웹캠 감시를 거부한 원격근무 직원을 해고했다.",
+      "회사가 도입한 Sentinel AI는 약 3분마다 웹캠으로 촬영해 하루 약 160장의 사진을 남긴다.",
+      "직원이 거부한 이유와 회사의 구체적인 해고 사유는 발췌문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "원격근무자의 생산성 감시를 위해 웹캠 사진을 수집하고 있다면 법적·노무 리스크를 다시 따져야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "44c65736f8dd5ac9d4bf0dfeb77dd474b3bddea7",
+    "title": "The gap in shared understanding of LLM capability is widening",
+    "url": "https://twitter.com/karpathy/status/2109361546505966046",
+    "source": "hackernews",
+    "publishedAt": "2026-10-11T20:20:52.000Z",
+    "summary": [
+      "Karpathy가 LLM 능력에 대한 사람들 사이의 이해 격차가 더 커졌다고 말했다.",
+      "약 60억 명은 거의 접하지 못하고, 10~20억 명은 무료 챗봇을 가끔 쓴다.",
+      "수학·코드 전문 사용자는 약 2,000만 명, 내부 최전선 접근자는 약 5,000명이며 모두 대략적 추산이다."
+    ],
+    "whyItMatters": "LLM을 단순 검색 도구로만 보고 있다면, 에이전트가 복잡한 수학·코드 작업을 끝내는 사용자층과 경험 차이를 따로 봐야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "4483f14582888a100e1e119f6fb9b22a583612c4",
+    "title": "jevgrep - 코드의 동작을 질문해 관련 파일을 찾는 코딩 에이전트용 CLI",
+    "url": "https://news.hada.io/topic?id=35208",
+    "source": "geeknews",
+    "publishedAt": "2026-10-12T00:30:03.000Z",
+    "summary": [
+      "jevgrep가 코드 동작을 질문으로 받아 관련 파일과 원문 코드 발췌를 찾는 CLI로 소개됐다.",
+      "“인증을 어디서 검사해?”나 “재시도 테스트는?”처럼 묻으면 관련 파일과 원문 코드 일부를 반환한다.",
+      "낯선 코드베이스를 겨냥하지만, 검색 정확도와 사용 가능한 언어 등 자세한 조건은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "낯선 저장소를 다룰 때 grep만 반복하지 않고 동작 질문으로 에이전트의 파일 탐색을 시작하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "f4f2e2c5ae116e99597813b2f94e8e10c5d6ca9a",
+    "title": "Cartographers of North Korea (2019)",
+    "url": "https://cartographers-nk.wonyoung.so/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-11T19:46:40.000Z",
+    "summary": [
+      "2019년작 ‘Cartographers of North Korea’라는 북한 지도 제작 프로젝트가 소개됐다.",
+      "사이트는 북한의 지도 제작자를 다루는 웹 앱 형태로 보이며, JavaScript가 필요하다.",
+      "발췌문만으로는 지도 데이터의 출처와 제작 방식, 담긴 내용은 확인되지 않는다."
+    ],
+    "whyItMatters": "북한 지도 제작을 다룬 자료를 보려면 JavaScript를 켜고 원문 사이트를 직접 열어야 한다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "57923e661259cfd69317c4bbb50e312be90af677",
+    "title": "사티아 나델라: 초지능 시대, 모델도 내부자처럼 위험으로 다뤄야 한다",
+    "url": "https://news.hada.io/topic?id=35207",
+    "source": "geeknews",
+    "publishedAt": "2026-10-12T00:24:19.000Z",
+    "summary": [
+      "사티아 나델라가 초지능 모델을 민감한 시스템의 내부자 위험처럼 다뤄야 한다고 말했다.",
+      "모델이 악의가 없어도 실수하거나 침해당할 수 있어, 민감한 데이터와 핵심 업무 접근 자체가 위험이 된다.",
+      "특정 학습 데이터나 가중치 구성만으로 모델의 행동 원인을 추적하기 어렵다는 점도 지적됐다."
+    ],
+    "whyItMatters": "민감한 데이터나 운영 시스템에 모델을 붙인다면 권한을 사람처럼 제한하고 행동을 따로 감시해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  }
+]
