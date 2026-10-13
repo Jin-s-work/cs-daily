@@ -1,0 +1,127 @@
+[
+  {
+    "id": "26a219dedb5a879a6a5574ab563dee75224c908c",
+    "title": "RJ Mitte 별세",
+    "url": "https://news.hada.io/topic?id=35273",
+    "source": "geeknews",
+    "publishedAt": "2026-10-13T02:31:02.000Z",
+    "summary": [
+      "RJ Mitte가 별세했다는 소식이 전해졌다는 내용의 게시물이 올라왔다.",
+      "현재 발췌문에는 사망 시점이나 원인, 나이 등 구체적인 정보가 적혀 있지 않다.",
+      "본문이 없어 사실관계와 유가족·관계자의 공식 입장도 아직 확인되지 않는다."
+    ],
+    "whyItMatters": "본문 확인 전에는 이 소식을 사실로 전제해 공유하거나 인용하면 안 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "271c8f22cf1dbb24982e899beabdc82335d44a7a",
+    "title": "RJ Mitte has died",
+    "url": "https://news.sky.com/story/breaking-bad-star-rj-mitte-dies-aged-34-13598332",
+    "source": "hackernews",
+    "publishedAt": "2026-10-12T22:15:29.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "cbcd28745789d4296efa28f4ed543bffa9a7216c",
+    "title": "Faithfulness Without Anchors: A Position Paper on the Structural Misalignments of Explainable AI Faithfulness Metrics for Feature Importance",
+    "url": "https://arxiv.org/abs/2610.12493",
+    "source": "arxiv",
+    "publishedAt": "2026-10-12T04:00:00.000Z",
+    "summary": [
+      "XAI 설명의 faithfulness 지표가 모델과 설명의 어긋남을 제대로 재지 못한다는 position paper가 나왔다.",
+      "논문은 기존 지표의 한계 5가지를 짚고, 신뢰도를 높일 연구 방향 4가지를 제안한다.",
+      "현재 faithfulness를 엄밀하게 수치화하려면 계산량이 크거나 사실상 어려우며, 해결책의 검증 여부는 확인되지 않는다."
+    ],
+    "whyItMatters": "XAI를 신뢰도 표시로 쓰고 있다면 지표 숫자를 검증값으로 취급하지 말고 디버깅 단서로 제한해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "40582d367952c62d17316fc5aa73c873096672a6",
+    "title": "Ruby의 바이마르 시대 - AI로 생태계의 오래된 빈틈을 메우다",
+    "url": "https://news.hada.io/topic?id=35270",
+    "source": "geeknews",
+    "publishedAt": "2026-10-13T01:03:40.000Z",
+    "summary": [
+      "LLM 도구를 Ruby 재작성보다 생태계의 오래된 빈틈을 메우는 데 쓰자는 글이다.",
+      "PDF 생성, GUI, Parquet, gRPC 같은 영역에서 새 Ruby 라이브러리와 개선 작업이 나왔다.",
+      "본문 발췌만으로는 각 라이브러리의 구현 방식과 성숙도는 확인되지 않는다."
+    ],
+    "whyItMatters": "Ruby로 PDF나 Parquet 처리가 필요했다면 기존 한계만 보지 말고 새 라이브러리 후보를 찾아봐야 한다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "9202dbf6eedd440b126bb645b68164ca05614ffc",
+    "title": "AI is a tool and using it well takes skill",
+    "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-12T21:40:18.000Z",
+    "summary": [
+      "Huahai가 Rich Hickey의 ‘LLM은 도구가 아니다’ 주장에 반박했다.",
+      "LLM도 입력을 정하고 결과를 검사하며 다음 행동을 고르는 도구이고, 잘 쓰려면 숙련이 필요하다고 설명했다.",
+      "다만 발췌문이 문장 중간에 끝나 후반부의 구체적인 논지는 확인되지 않는다."
+    ],
+    "whyItMatters": "LLM을 코드 작업에 쓴다면 생성 결과를 그대로 믿지 말고 검증과 수정까지 맡아야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "6cf0ccffbf38bf7cdbb267820ca58c4848c92e19",
+    "title": "EliteTable: Self-Improving Program Search for Executable Control Policies",
+    "url": "https://arxiv.org/abs/2610.12536",
+    "source": "arxiv",
+    "publishedAt": "2026-10-12T04:00:00.000Z",
+    "summary": [
+      "EliteTable이 LLM으로 실행 가능한 제어 프로그램을 세대별로 개선하는 검색 알고리즘으로 제시됐다.",
+      "6개 Gymnasium 과제를 10세대·세대당 50개 후보로, 과제마다 10회 독립 검색했다.",
+      "후보 중앙값은 6개 모두 상승했지만 Acrobot은 10회 중 6회 held-out 하락했고, 비교·ablation은 없다."
+    ],
+    "whyItMatters": "LLM으로 제어 정책을 탐색한다면 기존 검색법을 대체하기보다 held-out 성능을 함께 재고, 비교 실험 전까지는 실험용으로 남겨야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "3a122b435a7afd6bd2528b1b96b4ea4527f088b2",
+    "title": "StreamRender-H3 - 실시간 스트리밍 확산 렌더링으로 구현하는 코드 기반 인터랙티브 세계",
+    "url": "https://news.hada.io/topic?id=35269",
+    "source": "geeknews",
+    "publishedAt": "2026-10-13T00:46:57.000Z",
+    "summary": [
+      "StreamRender-H3는 코드 기반 게임 엔진과 비디오 모델을 결합한 실시간 렌더링 구조다.",
+      "엔진이 세계 상태와 규칙을 관리하고, 시맨틱 맵은 장면 구조와 움직임을 비디오 모델에 전달한다.",
+      "참조 이미지와 프롬프트가 영상의 외관을 정하지만, 성능 수치와 모델 정보는 확인되지 않는다."
+    ],
+    "whyItMatters": "게임 상태와 영상 생성을 분리할 때 엔진은 규칙을 맡기고 모델에는 시맨틱 맵과 외관 입력을 넘기게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "6001ee7ed96b9e1ada0c53cbd087627698197eed",
+    "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+    "url": "https://github.com/openai/codex/issues/48195",
+    "source": "hackernews",
+    "publishedAt": "2026-10-12T18:29:04.000Z",
+    "summary": [
+      "Codex CLI가 지속 실행되고 자동 업데이트되는 백그라운드 데몬을 기본으로 설치한다는 이슈가 올라왔다.",
+      "`daemon_auto_start`를 기본값에서 opt-in으로 바꾸자는 제안이며, 데몬은 계속 실행되고 스스로 업데이트된다.",
+      "본문 내용이 없어 데몬의 설치 경로와 업데이트 시점, 실제 적용 여부는 확인되지 않는다."
+    ],
+    "whyItMatters": "Codex CLI를 쓰고 있다면 백그라운드 프로세스와 자동 업데이트를 원치 않을 때 기본 동작을 먼저 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  }
+]
