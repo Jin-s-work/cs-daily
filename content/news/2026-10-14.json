@@ -1,0 +1,118 @@
+[
+  {
+    "id": "544c9189098cb97adf4832912bdf0dcfa16f5e4e",
+    "title": "AI 코딩이 그렇게 뛰어나다면, 새롭고 좋은 소프트웨어는 다 어디에 있나?",
+    "url": "https://news.hada.io/topic?id=35319",
+    "source": "geeknews",
+    "publishedAt": "2026-10-14T00:06:50.000Z",
+    "summary": [
+      "AI 코딩이 뛰어나다는데도 새롭고 좋은 소프트웨어가 드문 이유를 묻는 글이다.",
+      "기존 제품 개선, 비공개 도구 증가, 조직 병목 등 9가지 가설을 제시한다.",
+      "각 가설의 검증 결과와 실제 사례는 제공된 발췌문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "AI 코딩 도입 효과를 새 제품 수로만 판단하지 않고 유지보수와 내부 도구 성과까지 함께 측정하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "a8983c3740ba20e7c940b5600a401a4a962f909c",
+    "title": "OpenAI engineer arrested in bugging of executive conference room",
+    "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-13T20:23:55.000Z",
+    "summary": [
+      "OpenAI 엔지니어가 임원 회의실 도청 의혹 사건으로 체포됐다는 보도가 나왔다.",
+      "기사 제목상 임원 회의실 도청 혐의가 체포 사유로 언급됐지만, 구체적인 수법은 나오지 않았다.",
+      "본문 대신 X 게시물 링크만 있어 체포 시점과 수사기관, OpenAI의 입장은 확인되지 않는다."
+    ],
+    "whyItMatters": "OpenAI 관련 보안·내부통제 이슈를 다룰 때 사실관계가 확인되기 전까지는 의혹으로만 기록해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "15ee5b58cb54e68c27e95dcd1b85d5f9ef258296",
+    "title": "Gentoo 개발자, 순수 Python 패키지에 uv-build를 쓰지 말아 달라고 호소",
+    "url": "https://news.hada.io/topic?id=35318",
+    "source": "geeknews",
+    "publishedAt": "2026-10-14T00:03:50.000Z",
+    "summary": [
+      "Gentoo 개발자가 순수 Python 패키지의 빌드 백엔드로 uv-build를 쓰지 말아 달라고 요청했다.",
+      "핵심 의존성 하나가 바뀌면서 십여 개 패키지에서 일부 아키텍처 지원 표식이 사라졌다.",
+      "Rust 기반 uv-build는 작은 Python 백엔드보다 의존성이 크고 릴리스도 잦다는 지적이 나왔다."
+    ],
+    "whyItMatters": "Gentoo 패키지를 관리한다면 순수 Python 프로젝트에 uv-build를 넣기 전에 의존성과 아키텍처 표식 변화를 따져야 한다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "01b0fbae59fa451d10f851323c60704b0ded657c",
+    "title": "Show HN: Guitoro, a virtual guitar you strum with your keyboard",
+    "url": "https://guitoro.com/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-13T19:11:48.000Z",
+    "summary": [
+      "Guitoro가 실제 악기 녹음을 쓰는 무료 브라우저 기타로 공개됐다. 키보드로 줄을 튕길 수 있다.",
+      "어쿠스틱·클래식·일렉트릭 기타와 베이스를 고르고, 키보드·마우스·터치스크린으로 연주한다. 코드 운지도 표시된다.",
+      "곡 연습은 속도를 20%까지 낮출 수 있고 가입이나 다운로드 없이 쓴다. 코드 도구와 튜너도 무료다."
+    ],
+    "whyItMatters": "브라우저에서 기타를 연습하려는 개발자라면 설치나 계정 없이 바로 소리와 코드 운지를 확인할 수 있다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "4b8d8548168317121f6371e8b21a9049a0540c12",
+    "title": "Guitoro, 키보드로 줄을 튕겨 연주하는 가상 기타",
+    "url": "https://news.hada.io/topic?id=35316",
+    "source": "geeknews",
+    "publishedAt": "2026-10-13T23:38:28.000Z",
+    "summary": [
+      "Guitoro가 설치와 회원가입 없이 브라우저에서 연주하는 가상 기타로 나왔다.",
+      "키보드 왼손으로 코드를 누르고 오른손으로 스트로크하며, 터치 화면에서는 줄을 쓸어 연주한다.",
+      "어쿠스틱·클래식·일렉트릭 기타와 4현 베이스가 있으며, 저장 기능은 확인되지 않는다."
+    ],
+    "whyItMatters": "기타를 꺼내기 어려운 상황에서도 설치 없이 코드와 스트로크 입력을 바로 시험할 수 있다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "1609f5d4ca7309cc4d2d3a5b373cc93c5c64c3d0",
+    "title": "Gemini 4 Argon for Robotics",
+    "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-13T16:55:47.000Z",
+    "summary": [
+      "Google이 로보틱스용 새 모델 Gemini 4 Argon을 발표했다.",
+      "제목만으로는 Gemini 4 Argon의 기능과 구조, 성능 수치를 확인할 수 없다.",
+      "본문이 없어 대상 로봇, 입력 방식, 출시 조건과 사용 방법은 확인되지 않는다."
+    ],
+    "whyItMatters": "로봇 제어에 Gemini 4 Argon을 쓰려 했다면 세부 사양이 나올 때까지 도입을 미뤄야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "60765c0932bc27dad9b8ff3ee7c31c35f2917c93",
+    "title": "OpenAI 엔지니어, 임원 회의실 도청 혐의로 체포",
+    "url": "https://news.hada.io/topic?id=35315",
+    "source": "geeknews",
+    "publishedAt": "2026-10-13T23:35:27.000Z",
+    "summary": [
+      "OpenAI 엔지니어 Abdulrahman Alfozan이 샌프란시스코 본사 임원 회의실에 녹음 장치를 숨긴 혐의로 체포됐다.",
+      "고소장에는 회의실 TV 뒷면 USB 포트에 장치를 연결해 구두 대화를 가로채려 했다고 적혔다.",
+      "현재 확인된 내용은 체포와 기소 혐의이며, 실제 녹음 여부와 재판 결과는 아직 알려지지 않았다."
+    ],
+    "whyItMatters": "사내 회의실의 USB 포트와 녹음 장치 접근 통제를 다시 점검해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  }
+]
