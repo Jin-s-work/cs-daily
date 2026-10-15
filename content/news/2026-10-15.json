@@ -1,0 +1,135 @@
+[
+  {
+    "id": "98948f505d84bd0024e44ccdefed991e11c97248",
+    "title": "군은 어떻게 선거를 해킹할 것인가",
+    "url": "https://news.hada.io/topic?id=35373",
+    "source": "geeknews",
+    "publishedAt": "2026-10-14T23:42:53.000Z",
+    "summary": [
+      "미군 Task Force Raider가 2026년 중간선거를 앞두고 범정부 선거 보안 활동에 참여한다.",
+      "확보 문서와 익명 군 관계자 증언에 따르면 투표 집계 조작보다 러시아·중국의 여론 영향력 행사에 집중한다.",
+      "임무에는 해외 익명 메시지 발송이 포함되지만, 선거 개입의 구체적 방식과 범위는 확인되지 않았다."
+    ],
+    "whyItMatters": "선거 관련 서비스를 만든다면 투표 시스템 공격뿐 아니라 국가 차원의 여론 영향 작전도 위협 모델에 넣어야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "7db63d362d928ed7bf24240584b456744d4aa1af",
+    "title": "OpenCode 2.0",
+    "url": "https://anoma.ly/notes/opencode-2-0/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-14T20:48:24.000Z",
+    "summary": [
+      "OpenCode 2.0이 나와 로컬의 터미널·웹·데스크톱을 한 서비스로 묶어 연결했다.",
+      "백그라운드 서버 하나가 자동 실행되고, @opencode/client는 이를 찾아 연결하며 CLI·API 호출도 가능하다.",
+      "다른 호스트는 서버를 노출한 뒤 /pair 또는 opencode pair로 연결하며, 네이티브 앱은 아직 개발 중이다."
+    ],
+    "whyItMatters": "OpenCode를 여러 화면이나 예약 작업에서 쓰고 있다면, 이제 같은 로컬 서버와 클라이언트 연결을 기준으로 구성하면 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "a16d50c7df94b811aa7e2995c05a3f2dc93a1b93",
+    "title": "Artificiality's First Exam: An LLM-Referenced C-test for Supraintelligence",
+    "url": "https://arxiv.org/abs/2610.14005",
+    "source": "arxiv",
+    "publishedAt": "2026-10-14T04:00:00.000Z",
+    "summary": [
+      "LLM을 기준 기계로 삼아 초지능 수준까지 평가하는 새 C-test가 arXiv에 나왔다.",
+      "Levin의 Kt로 난도를 비트 단위로 추정하고, 12개 LLM에 인증 문항을 시험했다.",
+      "사람과 현행 frontier model보다 먼저 만들 수 있지만, 실제 초지능을 입증한 결과는 아니다."
+    ],
+    "whyItMatters": "LLM 평가를 사람이나 기존 모델의 난도에 맞추고 있었다면, 다음 벤치마크는 미리 인증한 고난도 문항으로 바꿔야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "9ca20c645852948ff62eafba2160263e164c2304",
+    "title": "Yandex 장애: 데이터에 따르면 악성 봇은 멈추지 않고 이동했음",
+    "url": "https://news.hada.io/topic?id=35372",
+    "source": "geeknews",
+    "publishedAt": "2026-10-14T23:39:53.000Z",
+    "summary": [
+      "Yandex 장애 뒤 Cloudflare 관측에서 줄어든 트래픽은 검색 크롤링과 일부 공격성 요청으로 나타났다.",
+      "Yandex Search에서 사라진 요청은 거의 모두 검증된 검색 크롤러였고, 악성 자동화는 다른 호스팅 사업자로 옮겨갔다.",
+      "주된 영향은 웹페이지와 뉴스 크롤링이며, 장애가 얼마나 지속됐는지는 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Yandex 장애를 원인으로 트래픽 변화를 분석할 때 악성 봇이 사라졌다고 단정하면 안 된다.",
+    "tags": [
+      "인프라",
+      "보안"
+    ]
+  },
+  {
+    "id": "d91ead6950e7810dc4c1bbb22c25ffad91815109",
+    "title": "Anthropic's Scion is heavily inspired by Mononoke",
+    "url": "https://sunshowers.io/posts/anthropic-mononoke/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-14T20:30:54.000Z",
+    "summary": [
+      "Anthropic의 새 버전 관리 시스템 Scion이 Meta의 Mononoke 설계와 매우 닮았다는 비판이 나왔다.",
+      "핵심인 ‘derived data’로 blame 같은 연산을 빠르게 처리하는 방식이 2017~18년 Mononoke에도 있었다.",
+      "Scion 설명에는 Sapling의 교훈만 언급됐고 Mononoke는 빠졌으며, 글쓴이는 이를 표절에 가깝다고 주장했다."
+    ],
+    "whyItMatters": "LLM으로 새 시스템을 설계한다면 기존 오픈소스의 선행 사례를 확인하고 출처를 명시해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "574863154eacbf968c9b5d24434b5e900d0257de",
+    "title": "The Silent Failures in Agentic Data Science",
+    "url": "https://arxiv.org/abs/2610.14115",
+    "source": "arxiv",
+    "publishedAt": "2026-10-14T04:00:00.000Z",
+    "summary": [
+      "데이터 과학 에이전트의 정확도만으로는 조용한 실패를 잡지 못한다는 연구가 나왔다.",
+      "220개 데이터 과제와 여섯 가지 통제 테스트로 데이터 누수와 잘못된 검증 같은 실패를 분석했다.",
+      "대부분의 에이전트에 실패가 하나 이상 있었고, 데이터 누수가 많을수록 예측 성능이 높아지는 경향도 확인됐다."
+    ],
+    "whyItMatters": "정확도만 보고 에이전트의 코드를 믿으면 데이터 누수로 잘못된 결론을 승인하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "d47762516da4b7349d7080de674947e68819bace",
+    "title": "OpenCode 2.0",
+    "url": "https://news.hada.io/topic?id=35371",
+    "source": "geeknews",
+    "publishedAt": "2026-10-14T23:36:53.000Z",
+    "summary": [
+      "OpenCode 2.0이 TUI·웹 인터페이스·데스크톱 앱 구조를 중앙 서비스 중심으로 바꿨다.",
+      "백그라운드 서비스 하나가 자동 실행되고, 세 클라이언트가 같은 중앙 프로세스에 연결된다.",
+      "Code Mode에서는 MCP 서버와 OpenAPI 엔드포인트를 스크립트 함수로 바꿔 도구를 조합할 수 있다."
+    ],
+    "whyItMatters": "OpenCode를 여러 UI에서 쓰거나 자동화하려면 각 앱보다 중앙 서비스와 Code Mode 연결 방식을 먼저 맞춰야 한다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "d99ce6561eba5656272e1c36437478c2cfe2f0b7",
+    "title": "Yandex outage: data shows that instead of going dark, malicious bots moved",
+    "url": "https://blog.cloudflare.com/yandex-outage/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-14T20:29:13.000Z",
+    "summary": [
+      "Cloudflare가 Yandex 장애 때 악성 봇 트래픽이 사라지지 않고 이동했다고 분석했다.",
+      "공개된 제목과 발췌만으로는 봇이 어디로, 어떤 경로로 이동했는지 확인되지 않는다.",
+      "본문이 없어 장애 원인과 관측한 데이터의 범위도 구체적으로 알 수 없다."
+    ],
+    "whyItMatters": "Yandex 장애를 분석할 때는 악성 봇 트래픽 감소를 공격 종료로 단정하지 않고 이동 여부를 확인해야 한다.",
+    "tags": [
+      "보안",
+      "인프라"
+    ]
+  }
+]
