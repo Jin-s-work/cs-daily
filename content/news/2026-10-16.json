@@ -1,0 +1,132 @@
+[
+  {
+    "id": "458920ec7599f5f66885414496ea9b6e1a6202b1",
+    "title": "토렌트 사이트의 누군가가 내 Sonarr를 계속 엿 먹이고 있었다",
+    "url": "https://news.hada.io/topic?id=35438",
+    "source": "geeknews",
+    "publishedAt": "2026-10-15T23:33:48.000Z",
+    "summary": [
+      "공개 트래커에 South Park 에피소드로 위장한 .exe 악성코드가 올라왔다.",
+      "Sonarr는 이 파일을 가져온 뒤 90초마다 자동으로 가져오기 실패를 반복했다.",
+      "실제 실행 파일은 118KB였지만 뒤에 886MB 데이터를 붙여 일부 스캐너가 대용량 검사를 포기하게 만들었다."
+    ],
+    "whyItMatters": "Sonarr를 자동 다운로드에 쓰고 있다면 공개 트래커 파일의 확장자와 크기만 믿지 말고 실행 검사를 따로 확인해야 한다.",
+    "tags": [
+      "보안",
+      "인프라"
+    ]
+  },
+  {
+    "id": "11184580e6212df98f014c0a57a495c666c6d9a3",
+    "title": "What I Self-Host",
+    "url": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-15T20:23:25.000Z",
+    "summary": [
+      "작성자가 스트리밍 서비스를 끊고 Jellyfin을 시작한 뒤 셀프호스팅한 서비스와 이유를 정리했다.",
+      "공개 인터넷에 직접 노출하지 않고, 라우터에서 VPN 서버만 운영하며 업그레이드 시점도 직접 정한다.",
+      "본문 발췌가 중간에 끊겨 전체 서비스 목록과 나머지 운영 규칙은 확인되지 않는다."
+    ],
+    "whyItMatters": "클라우드 서비스의 자동 추천과 잦은 변경을 피하고 싶다면 Jellyfin 같은 자체 운영 방식으로 관리 범위를 가져오게 된다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "8ddbcf370a8474f8db13f005b6517a8b07fbf73f",
+    "title": "ClawLoop: Self-Improving Agents via Harness-Native Training Loop",
+    "url": "https://arxiv.org/abs/2610.14118",
+    "source": "arxiv",
+    "publishedAt": "2026-10-15T04:00:00.000Z",
+    "summary": [
+      "ClawLoop이 외부 교사 모델 없이 harness 기반 에이전트를 스스로 개선하는 학습 루프를 제안했다.",
+      "작업 합성·SFT/RL 학습·행동 진단 피드백을 반복하고, Qwen3.6-27B로 세 벤치마크에서 꾸준히 올랐다.",
+      "만든 작업을 Qwen3.5-4B와 9B에 옮겨 모든 벤치마크에서 개선됐지만, 점수와 학습 비용은 초록에 나오지 않는다."
+    ],
+    "whyItMatters": "이 방식을 쓰면 외부 모델 없이 작업 생성부터 진단까지 이어지는 에이전트 학습 루프를 직접 돌릴 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "5acd11f1ec076e2c34989d12c309a1db8b32565d",
+    "title": "의사결정 AI Jev, 트롤리 문제를 만나다",
+    "url": "https://news.hada.io/topic?id=35437",
+    "source": "geeknews",
+    "publishedAt": "2026-10-15T21:34:09.000Z",
+    "summary": [
+      "Jev 등 14개 의사결정 AI 모델에 트롤리 문제를 여러 방식으로 물었고, 답이 질문 문구에 따라 달라졌다.",
+      "사람 20명과 자신의 서버 중 하나를 구하는 조건에서 Jev의 선택은 48개 질문 버전 사이에서도 일관되지 않았다.",
+      "발췌만으로는 48개 질문 버전에서 Jev가 어떤 비율로 선택했는지는 확인되지 않는다."
+    ],
+    "whyItMatters": "의사결정 로직에 LLM을 넣었다면 질문 문구와 설명 순서만 바꿔도 결과가 달라지는지 먼저 반복 테스트해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "32a34d9916618b3b27f16bb85a680f304b7bf468",
+    "title": "Someone on Torrent Sites Kept Fucking with My Sonarr",
+    "url": "https://thereallo.dev/blog/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup",
+    "source": "hackernews",
+    "publishedAt": "2026-10-15T19:21:38.000Z",
+    "summary": [
+      "Sonarr가 South Park 에피소드로 위장한 EXE 토렌트를 공개 트래커에서 자동으로 받았다.",
+      "파일은 x64 PE 실행 파일이고 실제 프로그램은 118KB, 나머지 886MB는 뒤에 붙은 랜덤 데이터였다.",
+      "qBittorrent는 다운로드 총량을 0으로 표시했고, 글 발췌가 중간에 끝나 내부 동작은 확인되지 않는다."
+    ],
+    "whyItMatters": "같은 Sonarr와 qBittorrent 구성을 쓴다면 실행 파일 확장자를 차단하고 자동 임포트 실패만으로 안전하다고 보면 안 된다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "8974705b93896c8b5c1475755f1757a2580767b2",
+    "title": "Correction Training for Diffusion Models",
+    "url": "https://arxiv.org/abs/2610.14136",
+    "source": "arxiv",
+    "publishedAt": "2026-10-15T04:00:00.000Z",
+    "summary": [
+      "Diffusion 모델의 샘플링 중간 예측을 고치는 corrector 학습법이 나왔다.",
+      "base denoiser의 예측을 정답과 다시 학습해 DiT·SiT·JiT의 FID를 개선했고 CFG 수준에 근접했다.",
+      "CFG와 결합하면 다양성이 늘고 과포화가 줄며, distillation으로 추가 추론 비용도 없앨 수 있다."
+    ],
+    "whyItMatters": "무가이드 Diffusion 생성을 쓴다면 CFG 없이도 품질을 끌어올릴 후보가 생겼고, 추가 비용은 distillation으로 줄일 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "bb1897e7a52c4c3ccf7e38a19e1099bc8e72222f",
+    "title": "Fortran 70주년을 기념하며",
+    "url": "https://news.hada.io/topic?id=35436",
+    "source": "geeknews",
+    "publishedAt": "2026-10-15T20:38:07.000Z",
+    "summary": [
+      "2026년 10월 15일, 첫 Fortran 매뉴얼 발행 70주년을 맞는다.",
+      "Fortran은 원자력 공학, 기상·기후 예측, 재료과학에서 지금도 쓰이며 ICCS가 12월 1일 기념 워크숍을 연다.",
+      "다만 워크숍의 세부 발표 내용과 Fortran의 현재 사용 규모는 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "수치해석이나 과학 컴퓨팅 코드를 다룬다면 Fortran이 아직 현업 언어라는 전제를 놓치면 안 된다.",
+    "tags": [
+      "언어/런타임",
+      "업계"
+    ]
+  },
+  {
+    "id": "34bf133078de58bf25dce317eec6455575fe6c35",
+    "title": "Muse Spark Open",
+    "url": "https://research.meta.ai/blog/muse-spark-open",
+    "source": "hackernews",
+    "publishedAt": "2026-10-15T17:47:39.000Z",
+    "summary": [
+      "Meta Research 페이지에 ‘Muse Spark Open’이라는 새 프로젝트가 올라왔다.",
+      "관련 Hugging Face 경로의 모델 이름은 ‘Muse-Spark-Open-816B-A42B’로 표시돼 있다.",
+      "발췌에는 모델 구조, 가중치 형식, 라이선스와 사용 조건이 없어 구체적인 내용은 확인되지 않는다."
+    ],
+    "whyItMatters": "모델을 바로 가져다 쓸지 판단하려면 본문과 Hugging Face 저장소의 구조와 라이선스 확인이 먼저다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
