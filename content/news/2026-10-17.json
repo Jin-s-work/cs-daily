@@ -1,0 +1,134 @@
+[
+  {
+    "id": "38a743cdc89cbbfdbc411e9f94da338488c8611a",
+    "title": "B2B에서 YouTube로 잠재 고객을 확보하는 방법",
+    "url": "https://news.hada.io/topic?id=35503",
+    "source": "geeknews",
+    "publishedAt": "2026-10-16T23:41:42.000Z",
+    "summary": [
+      "B2B YouTube의 목표를 조회수보다 잠재 고객의 이메일 확보와 매출 전환에 둔 전략이 소개됐다.",
+      "영상마다 고객 유입 경로 구축, 전문성 강화, 직접 판매 중 하나를 목표로 정하고 조합한다.",
+      "본문이 없어 긴 영상으로 확장하는 구체적인 방식과 측정 기준은 확인되지 않는다."
+    ],
+    "whyItMatters": "YouTube 채널을 운영한다면 구독자 수보다 영상별 전환 목표와 이메일 수집 경로를 먼저 설계하게 된다.",
+    "tags": [
+      "업계",
+      "웹"
+    ]
+  },
+  {
+    "id": "70d10452e1ce4ca4f9de5483b3d0f9b5bc75372c",
+    "title": "I never authorized an integration that scans my secrets",
+    "url": "https://github.com/home-assistant/home-assistant.io/issues/49314",
+    "source": "hackernews",
+    "publishedAt": "2026-10-16T20:33:41.000Z",
+    "summary": [
+      "Home Assistant 사용자가 승인하지 않은 통합 기능이 비밀정보를 스캔한다고 GitHub 이슈를 올렸다.",
+      "이슈 제목으로는 해당 통합 기능의 존재와 비밀정보 스캔 주장만 확인되며, 대상과 실행 방식은 나오지 않는다.",
+      "본문 발췌가 없어 어떤 권한으로 무엇을 읽었는지, 실제 유출이나 오작동이 있었는지는 확인되지 않는다."
+    ],
+    "whyItMatters": "Home Assistant에 통합을 추가할 때 비밀정보 접근 권한과 스캔 범위를 먼저 확인해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "5a4c85ab654b4c130dac9517dd298276ee632fc3",
+    "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+    "url": "https://arxiv.org/abs/2610.20665",
+    "source": "arxiv",
+    "publishedAt": "2026-10-16T04:00:00.000Z",
+    "summary": [
+      "실시간으로 게임이 진행되는 환경에서 LLM 에이전트를 평가하는 RealtimeBench가 나왔다.",
+      "180개 과제를 6종 게임으로 구성했고, GPT-6.1-sol은 일시정지 때 앞섰지만 진행 중에는 Jev에 뒤졌다.",
+      "TORSI를 두 차례 적용하자 Jev 점수가 13.51에서 24.19로 올랐고, 플레이 중에는 학생 모델만 행동한다."
+    ],
+    "whyItMatters": "실시간으로 상태가 바뀌는 작업을 다룬다면, 느린 모델의 정답률만 보지 말고 제한 시간 안에 도착하는지도 평가해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "24f3747e7f673c6cc1cb9576e5829e56aebf186b",
+    "title": "Apache Spark 리소스 최적화: 하루 800만 건의 작업 실행에서 얻은 교훈",
+    "url": "https://news.hada.io/topic?id=35502",
+    "source": "geeknews",
+    "publishedAt": "2026-10-16T23:40:20.000Z",
+    "summary": [
+      "Salesforce Data 360이 하루 800만 건의 Spark 실행에서 리소스 낭비를 찾은 사례를 공유했다.",
+      "할당량과 실제 작업량을 비교하고, 공통 제출 관문인 DPC에 계측 플러그인을 주입했다.",
+      "작업이 성공했더라도 리소스 구성이 효율적인지는 알 수 없고, 세부 절감 수치는 없다."
+    ],
+    "whyItMatters": "Spark 작업이 성공했다는 이유만으로 클러스터 설정을 유지하지 말고 실제 사용량을 비교해야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "7fd7e06ab2f4b840c01c364743d2c0e2fcb3de17",
+    "title": "How the Claude Code team does code review",
+    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-16T19:04:47.000Z",
+    "summary": [
+      "Claude Code 팀이 에이전트가 만든 코드를 검토하는 절차를 공개했다.",
+      "Anthropic 모노레포의 하루 변경량은 5월 약 2,500건에서 9월 3만 건 이상으로 늘었다.",
+      "사람 검토를 없앤 것은 아니며, 되돌림과 사고를 늘리지 않는 최소 시간을 목표로 삼았다."
+    ],
+    "whyItMatters": "에이전트가 만든 변경이 많다면 모든 코드를 읽기보다 되돌리기 쉬운 흐름과 위험한 변경에 집중하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "4f5a3d65e49a40752f15414b2d491689d065647c",
+    "title": "Evaluating Model Capabilities After Benchmark Saturation",
+    "url": "https://arxiv.org/abs/2610.20667",
+    "source": "arxiv",
+    "publishedAt": "2026-10-16T04:00:00.000Z",
+    "summary": [
+      "AI 벤치마크 점수가 포화돼도, 문제를 푼 전체 기록에는 모델 능력 차이가 남는다는 연구가 나왔다.",
+      "정답 풀이 기록만으로도 다른 문제의 능력을 예측했으며, pairwise judging이 기준보다 오차를 5.3배 줄였다.",
+      "다만 분포 이동에서 일반화가 깨졌고, 2025년 초 reasoning models의 능력을 낮게 예측했다."
+    ],
+    "whyItMatters": "벤치마크 점수만 저장하는 평가 파이프라인이라면, 풀이 기록을 보존해 pairwise judging으로 다음 평가를 보강해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "dbaf77b0922995f9c7ff21f97a254762049c2d25",
+    "title": "PostgreSQL 무중단 마이그레이션: 안전한 스키마 변경을 위한 프로덕션 실무 가이드",
+    "url": "https://news.hada.io/topic?id=35501",
+    "source": "geeknews",
+    "publishedAt": "2026-10-16T23:38:43.000Z",
+    "summary": [
+      "PostgreSQL을 멈추지 않고 구버전과 신버전 앱이 함께 동작하게 스키마를 바꾸는 실무 가이드다.",
+      "확장-축소(expand-contract) 패턴으로 스키마를 먼저 추가하고, 데이터를 옮긴 뒤 읽기·쓰기를 전환한다.",
+      "서비스 품질과 데이터 정확성을 유지해야 하며, 발췌문만으로 세부 명령과 롤백 절차는 확인되지 않는다."
+    ],
+    "whyItMatters": "PostgreSQL 스키마를 운영 중 바꿔야 한다면 애플리케이션 호환 기간과 데이터 이전 단계를 배포 계획에 넣게 된다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "7a6a342eb9583796b00ba8488e92f11c4c3f9a88",
+    "title": "Claude reveals ECDSA curve origins",
+    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+    "source": "hackernews",
+    "publishedAt": "2026-10-16T18:55:59.000Z",
+    "summary": [
+      "Anthropic이 Claude를 이용해 ECDSA 곡선의 기원을 추적한 연구 내용을 공개했다.",
+      "본문 발췌에는 Filippo Valsorda의 ‘Seeds solved’ 글 링크만 남아 있다.",
+      "전달된 발췌만으로는 어떤 곡선과 시드가 어떤 방식으로 밝혀졌는지 확인되지 않는다."
+    ],
+    "whyItMatters": "ECDSA의 곡선 생성 과정을 확인하려면 원문과 연결된 ‘Seeds solved’ 글까지 읽어야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  }
+]
