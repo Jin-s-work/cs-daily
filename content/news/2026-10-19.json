@@ -1,0 +1,111 @@
+[
+  {
+    "id": "6631636f4e0321bc0094831135f056a4805bc85c",
+    "title": "혼자 만든 웹 MMORPG에 사람이 10배 몰리자 벌어진 일",
+    "url": "https://news.hada.io/topic?id=35601",
+    "source": "geeknews",
+    "publishedAt": "2026-10-18T23:01:17.000Z",
+    "summary": [
+      "혼자 만든 웹 MMORPG에 이전보다 10배 많은 사람이 몰리며 운영 문제가 생겼다.",
+      "기존에는 월 6달러짜리 VPS 한 대에서 동접 1,000명을 봇으로 부하 시험했다.",
+      "본문 발췌가 잘려 있어 사람이 10배 몰린 뒤의 실제 장애 원인과 대응 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "비슷한 게임을 운영한다면 봇 테스트만 믿지 말고 실제 사용자 10배 유입을 견디는지 따로 확인해야 한다.",
+    "tags": [
+      "인프라",
+      "업계"
+    ]
+  },
+  {
+    "id": "907596fd16fa8be9ef0db2d4bd46f6a76caeaa36",
+    "title": "Namecheap just seized and disabled all my domains",
+    "url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-18T16:56:56.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "d3b0320e2422460c111a7afc4931eec693249096",
+    "title": "Anthropic의 고용은 어떻게 변하고 있는가",
+    "url": "https://news.hada.io/topic?id=35600",
+    "source": "geeknews",
+    "publishedAt": "2026-10-18T22:38:26.000Z",
+    "summary": [
+      "Anthropic이 빠르게 성장하는 동안 주니어 기술직 채용 비중을 줄이고 있다.",
+      "2025년 초 이후 기술직 신규 채용에서 주니어 비중이 27%에서 9%로 떨어졌고, AI 에이전트 도입 뒤 산출량도 늘었다.",
+      "영업과 법무에도 변화가 생겼다는 설명이 있지만, 발췌가 끊겨 세부 내용과 원인은 확인되지 않는다."
+    ],
+    "whyItMatters": "Anthropic의 채용을 지켜보거나 지원한다면 주니어 포지션 감소를 감안해 경력 요건을 먼저 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "a709c24b2f05ad3dcc271ee5c91df70141e496c4",
+    "title": "Someone behind the software",
+    "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-18T16:32:00.000Z",
+    "summary": [
+      "Karri Saarinen은 소프트웨어에 만든 사람의 경험과 관점이 스며든다고 썼다.",
+      "같은 고객과 기술을 가진 팀도 판단 기준과 만드는 방식에 따라 전혀 다른 제품을 만든다.",
+      "에이전트가 개발 파이프라인을 자동화해도 제품의 성격은 제작자의 선택에서 생긴다는 주장이다."
+    ],
+    "whyItMatters": "에이전트로 개발 과정을 자동화하더라도 제품의 차이를 만드는 판단 기준을 팀 안에서 먼저 정해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "e3888fa7a861c1375ca82f30492d730df25e046b",
+    "title": "Tesla, Roadster 예약자에게 차량을 인도할 수 있을지조차 “보장 불가”",
+    "url": "https://news.hada.io/topic?id=35599",
+    "source": "geeknews",
+    "publishedAt": "2026-10-18T22:35:26.000Z",
+    "summary": [
+      "Tesla가 새 Roadster 예약 약관에서 차량 인도 시점과 실제 인도 여부를 보장하지 않는다고 명시했다.",
+      "최대 25만 달러를 미리 내도 확정 생산 물량이 배정되는 것은 아니며, 양산 시 대략적인 대기 순서만 잡힌다.",
+      "차량은 아직 개발 중이고, 양산 여부와 최종 인도 일정은 약관상 정해지지 않았다."
+    ],
+    "whyItMatters": "Roadster를 예약했다면 25만 달러를 내도 차량을 확정 구매한 상태가 아니라는 점을 전제로 계획을 세워야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "27de333cbad38f7b4281b0bd3d3207fa7084936a",
+    "title": "RepRapMicron",
+    "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+    "source": "hackernews",
+    "publishedAt": "2026-10-18T13:48:48.000Z",
+    "summary": [
+      "VikOlliver의 GitHub에 RepRapMicron 위키 페이지가 올라와 있다.",
+      "발췌에는 GitHub 기본 탐색 화면만 있어 프로젝트의 기능과 구성은 드러나지 않는다.",
+      "제목과 링크 외 본문이 없어 사용법, 하드웨어, 개발 상태는 확인되지 않는다."
+    ],
+    "whyItMatters": "본문이 채워질 때까지 이 프로젝트를 도입 대상으로 잡지 않는다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "8b34badad1513cdb1b7e246a45beb5df5184a17c",
+    "title": "Java sealed 타입의 함정 - 새 하위 타입이 기존 코드를 깨뜨릴 수 있다",
+    "url": "https://news.hada.io/topic?id=35598",
+    "source": "geeknews",
+    "publishedAt": "2026-10-18T21:31:31.000Z",
+    "summary": [
+      "Java sealed 타입은 하위 타입 목록을 고정하지만, 새 하위 타입 추가가 기존 코드를 깨뜨릴 수 있다는 글이다.",
+      "switch에서 모든 허용 타입을 처리하면 default 없이 컴파일할 수 있지만, 목록이 바뀌면 기존 코드가 오류가 된다.",
+      "sealed의 완전성 검사는 현재 목록 기준이라, 새 하위 타입을 추가할 때 기존 switch도 함께 고쳐야 한다."
+    ],
+    "whyItMatters": "sealed 계층에 새 타입을 추가할 계획이라면 기존 switch 코드가 깨지는지 함께 확인해야 한다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  }
+]
