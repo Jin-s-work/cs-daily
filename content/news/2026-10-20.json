@@ -1,0 +1,133 @@
+[
+  {
+    "id": "30b35659b9a1389a07ae1ec27ec8c26dfbcecf03",
+    "title": "Anatomy - 기술 개념을 움직이는 입체 도해로 만드는 AI 에이전트 스킬",
+    "url": "https://news.hada.io/topic?id=35670",
+    "source": "geeknews",
+    "publishedAt": "2026-10-20T00:30:02.000Z",
+    "summary": [
+      "Anatomy는 코딩 에이전트로 기술 개념을 움직이는 입체 도해로 만드는 스킬이다.",
+      "캐시와 연결 풀을 기계나 장치에 빗대어 부품·배관·음영이 있는 SVG로 표현한다.",
+      "설명할 개념과 수치, 출력 형식을 지정해 요청하는 방식이며, 실제 생성 품질은 본문에서 확인되지 않는다."
+    ],
+    "whyItMatters": "문서나 교육 자료에 쓸 도해를 코드로 만들려면 설명과 수치만 넘겨 SVG 제작을 자동화할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "e3ef569967110d0cce9be6a2ab255bbd9fec29a5",
+    "title": "Putting Linux on my RTX Spark laptop because I don't have a Microsoft account",
+    "url": "https://josie.lol/blog/linux-rtx-spark",
+    "source": "hackernews",
+    "publishedAt": "2026-10-19T21:08:18.000Z",
+    "summary": [
+      "Windows 전용인 RTX Spark 노트북에 Arch Linux를 설치해 구동한 글이다.",
+      "Arch Linux ARM과 NVIDIA의 커널 작업을 바탕으로 116.0 GiB 메모리를 OS와 CUDA에서 똑같이 인식한다.",
+      "Arch Linux ARM에는 하드웨어 패치와 ACPI 수정이 필요하고, 공식 지원 OS는 Windows뿐이다."
+    ],
+    "whyItMatters": "RTX Spark에서 로컬 모델을 돌릴 계획이면 Windows 계정 없이 Arch Linux ARM으로 개발 환경을 만들 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "cf37ab98c0305cdbcc3a4e0fa80fa9aa32bac375",
+    "title": "When is a large language model a good calibration agent? Physics-labeled prompting for budgeted engineering simulator calibration",
+    "url": "https://arxiv.org/abs/2610.22379",
+    "source": "arxiv",
+    "publishedAt": "2026-10-19T04:00:00.000Z",
+    "summary": [
+      "물리 진단을 붙인 LLM이 비싼 공학 시뮬레이터 보정의 초기 탐색에 효과를 보였다.",
+      "첫 제안은 25회 중 23회 초기 설계를 개선했고, 5회 평가 뒤 오차 중앙값이 21.9배 낮았다.",
+      "효과는 15회 평가 뒤 사라졌고 성능 편차도 9.8배였지만, 일반 최적화와 결합하면 9회 실행에 목표 정확도에 도달했다."
+    ],
+    "whyItMatters": "시뮬레이터 호출 예산이 적다면 LLM을 최적화기 대신 초기값 생성기로 쓰고, 이후에는 수치 최적화기로 넘기면 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "c4f02d1a3f8d35a15a57abf4fe979c1ef308d71c",
+    "title": "사이트 가이드라인과 AI/LLM 태그 변경",
+    "url": "https://news.hada.io/topic?id=35667",
+    "source": "geeknews",
+    "publishedAt": "2026-10-20T00:03:37.000Z",
+    "summary": [
+      "Lobsters가 컴퓨팅 콘텐츠에 집중하도록 사이트 가이드라인과 AI/LLM 태그를 바꾼다.",
+      "주제 적합성과 자기 홍보 규칙을 명확히 하고, 배포 뒤에는 코드 저장소 자체 제출을 막는다.",
+      "코드 제출 글은 제작 이유와 목적, 해결한 과제와 유용성을 설명해야 하며 세부 내용은 발췌에 없다."
+    ],
+    "whyItMatters": "Lobsters에 코드 저장소 링크만 올리려 했다면, 이제는 제작 이유와 해결한 문제를 함께 써야 한다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "5e113e86ceaa012cb7b719390682b38118b62ddc",
+    "title": "The reverts will continue until morale improves",
+    "url": "http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves",
+    "source": "hackernews",
+    "publishedAt": "2026-10-19T18:42:32.000Z",
+    "summary": [
+      "PostgreSQL 19 베타 이후 주요 기능 8~10개가 브랜치에서 되돌려졌다.",
+      "일부는 아키텍처 결함이 컸고, LLM 보조 코드 리뷰가 사소한 엣지 케이스도 일찍 찾았다.",
+      "일반적인 사이클보다 많은 되돌리기가 발생했지만, 각 기능의 원인과 최종 교훈은 아직 정리되지 않았다."
+    ],
+    "whyItMatters": "PostgreSQL 19에 기능을 기대하고 있다면 베타 이후 사라진 기능 목록과 최종 브랜치 상태를 다시 확인해야 한다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "bd4444bbd50b259576f12200d80107eb7cb3442b",
+    "title": "Trust but Verify: Designing Region-Inhomogeneous Forward Dynamics for Discrete Diffusion",
+    "url": "https://arxiv.org/abs/2610.22380",
+    "source": "arxiv",
+    "publishedAt": "2026-10-19T04:00:00.000Z",
+    "summary": [
+      "Discrete diffusion에서 문맥도 일부 오염시키는 학습 방식을 설계해 이진 신뢰 문제를 다룬 연구다.",
+      "170M 파라미터 masked diffusion 모델을 8,000스텝, 6GB 노트북 GPU에서 5시간 이내로 파인튜닝했다.",
+      "무작위 오염 recall 0.96·precision 0.91이었고, 유사 오염은 0.5 F1점 개선에 그쳐 유의하지 않았다."
+    ],
+    "whyItMatters": "문맥이 틀릴 수 있는 infilling이라면 무작위 오염에는 이 방식을 붙여 성능 저하를 줄일 수 있지만 자연스러운 오류에는 효과를 기대하기 어렵다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "9fa157767ab562a68ac63f2ec7ee03040567e8a5",
+    "title": "Microsoft 계정이 없어 RTX Spark 노트북에 Linux 설치하기",
+    "url": "https://news.hada.io/topic?id=35665",
+    "source": "geeknews",
+    "publishedAt": "2026-10-19T23:32:58.000Z",
+    "summary": [
+      "ASUS ProArt P16 RTX Spark에 Arch Linux ARM을 설치하는 방법이 나왔다.",
+      "NVIDIA의 Ubuntu용 커널 작업에 ACPI·콘솔·키보드·오디오 패치와 부팅 USB 구성을 더했다.",
+      "Windows만 공식 운영체제인 기기라 Microsoft 계정 없이 설치할 수 있다."
+    ],
+    "whyItMatters": "Windows만 공식 운영체제인 ASUS 노트북을 샀다면 Microsoft 계정 없이 Linux 설치 USB를 만들 수 있다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "f30a44480c497b17dc53e12aa212b5f24780430d",
+    "title": "Mercury 3: Diffusion at scale",
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+    "source": "hackernews",
+    "publishedAt": "2026-10-19T17:27:11.000Z",
+    "summary": [
+      "Inception이 diffusion 기반 LLM Mercury 3를 출시했다. 기존 모델보다 성능이 높고 빠르다고 밝혔다.",
+      "초당 1,068토큰을 처리하고 컨텍스트는 1M 토큰이다. 100만 토큰당 입력 $0.20, 출력 $0.70이다.",
+      "출시 시 50% 할인되고 캐시 토큰은 입력료가 90% 싸지만, 장기 운영 결과는 아직 확인되지 않았다."
+    ],
+    "whyItMatters": "실시간 검색이나 브라우저 에이전트를 만들고 있다면, 초당 1,068토큰과 1M 컨텍스트를 기준으로 API 비용을 비교하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
