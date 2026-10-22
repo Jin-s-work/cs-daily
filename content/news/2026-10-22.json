@@ -1,0 +1,133 @@
+[
+  {
+    "id": "1b15537763b287258c87650dcebc38ef894a599d",
+    "title": "10월 28일 Lobsters 뉴욕 밋업",
+    "url": "https://news.hada.io/topic?id=35784",
+    "source": "geeknews",
+    "publishedAt": "2026-10-22T00:04:35.000Z",
+    "summary": [
+      "Lobsters 이용자들이 10월 28일 뉴욕에서 오프라인 밋업을 열자는 제안이 나왔다.",
+      "다음 주 뉴욕 방문에 맞춘 자리로, Array Language 커뮤니티 사람들도 함께할 예정이다.",
+      "시작 시간은 오후 5시 30분이며 Bryant Park 또는 다른 장소가 제안됐고 종료 시각은 정해지지 않았다."
+    ],
+    "whyItMatters": "뉴욕에 있는 Lobsters나 Array Language 이용자라면 10월 28일 오후 5시 30분 일정만 먼저 잡고 장소 확정을 기다리면 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "5699ea0146a98f847ef4646a2c965924a2f84dc0",
+    "title": "Railway Security Disclosure",
+    "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+    "source": "hackernews",
+    "publishedAt": "2026-10-21T21:58:03.000Z",
+    "summary": [
+      "Railway가 10월 21일 고객 환경변수 저장 시스템의 이상 활동을 감지해 보안 사고를 알렸다.",
+      "암호화된 변수에 무단 접근했을 가능성이 있으며, 일부 복호화 값도 노출됐을 수 있다.",
+      "영향 계정은 아직 확정되지 않았고, 조사 중이라 변수 교체와 로그 점검이 필요하며 배포도 중단됐다."
+    ],
+    "whyItMatters": "Railway에 키를 저장했다면 지금 전부 교체하고 관련 서비스 로그에서 이상 사용을 확인해야 한다.",
+    "tags": [
+      "보안",
+      "인프라"
+    ]
+  },
+  {
+    "id": "87e93c1ec32785aed6dcbe261de24859347da833",
+    "title": "Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Horizon Post-Training",
+    "url": "https://arxiv.org/abs/2610.26887",
+    "source": "arxiv",
+    "publishedAt": "2026-10-21T04:00:00.000Z",
+    "summary": [
+      "Navalia가 검증 가능한 작업 합성과 장기 사후학습으로 Cowork Agent를 훈련하는 방법을 제시했다.",
+      "기업 재무보고서에서 근거와 계산 체인을 만들고, 검증된 작업으로 SFT와 RL을 진행했다.",
+      "Qwen3.6-35B-A3B에서 시작해 5개 벤치마크 모두 개선됐지만, 수치와 검증 세부 절차는 초록에 없다."
+    ],
+    "whyItMatters": "재무 문서 기반 에이전트를 만든다면, 답과 근거를 함께 검증한 작업으로 SFT·RL 데이터를 만들 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "08f1fd4e15dbc992fefcf6349deb685f1084084e",
+    "title": "Firefox Local Mode - 로컬 파일을 맞춤 HTTPS URL로 불러오는 개발 도구 기능",
+    "url": "https://news.hada.io/topic?id=35782",
+    "source": "geeknews",
+    "publishedAt": "2026-10-22T00:01:35.000Z",
+    "summary": [
+      "Firefox 153에 Local Mode가 들어가 로컬 폴더를 맞춤 HTTPS URL에 연결한다.",
+      "별도 HTTP 서버 없이 로컬 페이지를 열고 Secure Contexts 전용 웹 API까지 테스트할 수 있다.",
+      "프로젝트별 설정 방식과 브라우저에서 가능한 구체적인 API 범위는 발췌문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "로컬 파일을 file://로만 열어 테스트했다면 HTTP 서버를 띄우지 않고도 HTTPS 전용 API를 확인할 수 있다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "5dbb54a005401fc70149c16868b8f3287a1f4a20",
+    "title": "Claude Duet",
+    "url": "https://claude.com/product/claude-duet",
+    "source": "hackernews",
+    "publishedAt": "2026-10-21T19:14:01.000Z",
+    "summary": [
+      "Anthropic이 Claude Duet을 연구 프리뷰로 내놨다. 먼저 챙길 일을 찾아 움직이는 개인용 AI 비서다.",
+      "매일 아침 브리핑과 다음 단계 초안을 만들고, 6,000개가 넘는 커넥터·플러그인과 연결된다.",
+      "Opus 5.5로 작동하며 미국의 Pro·Max 요금제에서만 쓸 수 있고, 현재는 대기자 명단을 받는다."
+    ],
+    "whyItMatters": "반복 업무를 Claude에 맡길 때 작업을 시키고 기다리는 대신 승인 지점을 포함한 흐름으로 설계하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "fa9ca748fe8d9ff46e391e6444befd0bf380a5ed",
+    "title": "Large language model and reinforcement learning based autonomous construction and progress updates",
+    "url": "https://arxiv.org/abs/2610.26899",
+    "source": "arxiv",
+    "publishedAt": "2026-10-21T04:00:00.000Z",
+    "summary": [
+      "arXiv에 LLM과 강화학습으로 크레인 시공을 자동화하는 방법이 나왔다.",
+      "강화된 Soft Actor-Critic이 작업별 크레인 동작을 정하고, 맞춤형 embedding이 환경 정보를 추출한다.",
+      "ChatGPT 5가 진행 상황을 갱신하고 안전 정보와 보고서를 만들며, 검증은 retaining wall 실험에 한정됐다."
+    ],
+    "whyItMatters": "크레인 자동화 시스템을 만든다면 LLM의 역할을 진행 기록과 안전 정보 생성으로 나눠 설계해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "8fb7b009acaad9844e782181d602b2028a14b64d",
+    "title": "Show GN: 서버 업로드 없이 브라우저에서 음원 6트랙 분리·자동 마스터링하는 도구",
+    "url": "https://news.hada.io/topic?id=35781",
+    "source": "geeknews",
+    "publishedAt": "2026-10-21T23:58:29.000Z",
+    "summary": [
+      "결소리(Gyeolsori)가 음원을 서버에 올리지 않고 브라우저에서 처리하는 웹 도구로 공개됐다.",
+      "Suno 등으로 만든 곡을 보컬·드럼·베이스·피아노·기타·그 외 악기 6트랙으로 나눈다.",
+      "자동 마스터링까지 되지만, 지원 브라우저와 처리 시간 같은 조건은 발췌에서 확인되지 않는다."
+    ],
+    "whyItMatters": "음원 파일을 외부 서버에 올릴 수 없는 작업에서도 별도 설치 없이 스템 분리와 마스터링을 시도할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "ca78317f24e4363bcf58f22924d9705605255d3e",
+    "title": "Google's Rust Style Guide",
+    "url": "https://google.github.io/styleguide/rustguide.html",
+    "source": "hackernews",
+    "publishedAt": "2026-10-21T19:11:57.000Z",
+    "summary": [
+      "Google이 Rust 프로젝트용 Style Guide에 코드 작성 규칙을 모아뒀다.",
+      "작은 crate와 명시적 import를 권하고, Rc·Arc·깊은 복사를 피하며 borrow를 우선한다.",
+      "Chrome과 Fuchsia에만 적용되는 규칙도 있고, async/.await와 표준 라이브러리 스레드 생성은 금지한다."
+    ],
+    "whyItMatters": "Rust 프로젝트에서 Google식 규칙을 따를 생각이라면 새 코드 리뷰에 crate 구성과 ownership 기준을 바로 넣게 된다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  }
+]
