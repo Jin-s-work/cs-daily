@@ -1,0 +1,137 @@
+[
+  {
+    "id": "2327f0d8f7ab94699aa2415a98fc764859d0bbce",
+    "title": "Google, Gmail과 Google Photos 데이터를 타깃 광고에 사용할 수도 있다고 밝힘",
+    "url": "https://news.hada.io/topic?id=35889",
+    "source": "geeknews",
+    "publishedAt": "2026-10-23T23:31:42.000Z",
+    "summary": [
+      "Google이 개인정보처리방침을 바꿔 Gmail·Drive·Google Photos 데이터를 맞춤 광고에 쓸 수 있게 했다.",
+      "Personal Intelligence로 들어온 데이터가 AI Mode와 다른 검색 도구의 광고 개인화에 활용될 수 있다.",
+      "다만 사용자가 데이터를 다른 Google 서비스에 넘기는 경우에만 해당하며, 실제 적용 범위는 본문에서 더 확인해야 한다."
+    ],
+    "whyItMatters": "Gmail이나 Google Photos 데이터를 Google 서비스에 연결해 쓰고 있다면 광고 개인화 대상이 될 수 있어 설정과 정책 변경을 확인해야 한다.",
+    "tags": [
+      "보안",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "55f38e2b0de99dcec02bd5e181d20522fbd198b1",
+    "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+    "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+    "source": "hackernews",
+    "publishedAt": "2026-10-23T19:34:15.000Z",
+    "summary": [
+      "Google이 Gmail과 Google Photos 데이터를 광고 타기팅에 쓸 수 있다고 정책에 적었다.",
+      "대상으로 거론된 데이터는 Gmail 메일과 Google Photos 사진이며, 광고 타기팅 목적이 명시됐다.",
+      "발췌문에는 어떤 데이터가 언제 쓰이는지, 사용자가 거부할 방법이 있는지 나오지 않는다."
+    ],
+    "whyItMatters": "Google 서비스를 쓰고 있다면 광고 개인화 설정과 새 정책의 적용 여부를 직접 확인해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "7cb665abb87f3a8301a3be8441800136219aacbb",
+    "title": "The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols",
+    "url": "https://arxiv.org/abs/2610.30151",
+    "source": "arxiv",
+    "publishedAt": "2026-10-23T04:00:00.000Z",
+    "summary": [
+      "AI 에이전트 통신 프로토콜 3종의 핸드셰이크 비용을 처음으로 단계별 측정한 벤치마크가 나왔다.",
+      "구형 MCP는 50ms RTT에서 왕복 3회·230ms가 걸렸고, A2A는 왕복 1회·61.0ms였다.",
+      "MCP 2026은 왕복을 2회로 줄였고, 200개 기능 상대의 메타데이터가 20만 토큰의 11%를 차지한다."
+    ],
+    "whyItMatters": "에이전트가 많은 기능 목록을 매번 읽는 구조라면 핸드셰이크를 캐시하거나 재접속 경로를 따로 설계해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "5fe614da6ef48d436a2e59f4165be95973d9e94f",
+    "title": "SaaS 실적 발표에서 드러난 AI의 15가지 흐름",
+    "url": "https://news.hada.io/topic?id=35888",
+    "source": "geeknews",
+    "publishedAt": "2026-10-23T23:28:09.000Z",
+    "summary": [
+      "상장 SaaS 기업 67곳의 실적 발표를 분석해 AI 관련 흐름 15가지를 정리했다.",
+      "대부분 기업이 전망 초과·상향, 성장 가속, 수익성 개선 중 하나를 기록했고 AI 제품은 계약과 매출에 기여했다.",
+      "경쟁력은 범용 모델보다 맥락·데이터·업무 흐름·통합에 있었지만, 기업별 수치는 없다."
+    ],
+    "whyItMatters": "SaaS를 만들거나 고르는 입장이라면 모델 이름보다 기존 데이터와 업무 흐름에 붙는지를 먼저 봐야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "2ca67924f9fca88f90b4b29f6c6565e8ee2418b1",
+    "title": "Dessa: the most authentic full-duplex speech model ever built",
+    "url": "https://block.xyz/dessa",
+    "source": "hackernews",
+    "publishedAt": "2026-10-23T19:09:54.000Z",
+    "summary": [
+      "Block이 음성만으로 학습한 full-duplex 대화 모델 Dessa를 내놨다.",
+      "텍스트나 사전학습 모델 없이 사람 대화 소리만 듣고, 실시간으로 말할 차례와 목소리까지 정한다.",
+      "공개된 예시는 라이브 녹음이며 자막은 나중에 붙였다; 실제 성능과 학습 데이터 규모는 알 수 없다."
+    ],
+    "whyItMatters": "음성의 감정과 끼어들기를 다루는 모델을 만들고 있다면, 텍스트 변환을 거치지 않는 설계를 비교 대상으로 삼게 된다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "034f91c7a6ef5f4b42e082d9bd0415da5e910ccd",
+    "title": "MCP vs CLI for AI Agents: A Comparative Analysis of Tool Integration Strategies for Autonomous Systems",
+    "url": "https://arxiv.org/abs/2610.30157",
+    "source": "arxiv",
+    "publishedAt": "2026-10-23T04:00:00.000Z",
+    "summary": [
+      "새 논문이 AI 에이전트의 CLI와 MCP를 14개 평가 항목에서 비교하고 운영 환경에는 하이브리드 구성을 권장했다.",
+      "CLI는 단일 사용자·로컬 작업에서 효율적이고, MCP는 권한 제어·자격 증명 격리·감사·멀티테넌시를 다룬다.",
+      "점진적 공개를 적용하면 MCP의 컨텍스트 창 부담이 CLI와 비슷한 토큰 효율로 줄어든다는 분석이다."
+    ],
+    "whyItMatters": "로컬 단일 사용자 에이전트는 CLI를 쓰고, 여러 사용자가 공유하는 운영 환경은 MCP와 CLI를 섞는 설계가 필요해진다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "a21563fc647c3406ef3591b3aaec1400400ba698",
+    "title": "에이전트 시대의 사고 모델",
+    "url": "https://news.hada.io/topic?id=35887",
+    "source": "geeknews",
+    "publishedAt": "2026-10-23T23:24:18.000Z",
+    "summary": [
+      "에이전트 시대에는 기존 사고 모델만으로 자동화 범위와 권한을 정하기 어렵다.",
+      "같은 명세도 매번 다른 결과를 내는 확률적 제품이라 검증 방식이 달라진다.",
+      "경제성은 토큰 단가가 아니라 허용 기준을 통과한 작업당 비용으로 판단해야 한다."
+    ],
+    "whyItMatters": "에이전트를 도입할 때 토큰 가격보다 검증을 통과한 작업당 비용과 권한 설계를 먼저 보게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "1fd8476b4493a52be8d2b181f06e7c6ec459ff85",
+    "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "source": "hackernews",
+    "publishedAt": "2026-10-23T16:59:08.000Z",
+    "summary": [
+      "Kimi 블로그에 K3.1 Pro와 K3.1 Pro Highspeed 관련 글이 올라왔다.",
+      "두 모델의 성능, 가격, 사용 조건 같은 구체적인 차이는 발췌문만으로는 알 수 없다.",
+      "본문이 없어 모델 구조, 속도 차이, 실제 사용 조건은 아직 확인되지 않는다."
+    ],
+    "whyItMatters": "Kimi 모델을 비교하거나 도입하려면 공식 문서에서 성능과 사용 조건을 확인하기 전까지 선택을 확정하면 안 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
