@@ -1,0 +1,133 @@
+[
+  {
+    "id": "e514bdcd319e804c37d16065c5dffc7b2945d5b4",
+    "title": "Goose - 힙 없이 메모리 안전성을 제공하는 시스템 프로그래밍 언어",
+    "url": "https://news.hada.io/topic?id=35942",
+    "source": "geeknews",
+    "publishedAt": "2026-10-24T22:38:03.000Z",
+    "summary": [
+      "Goose는 힙 할당기와 GC 없이 메모리 안전성을 다루는 시스템 프로그래밍 언어다.",
+      "동적 값은 컴파일러가 관리하는 데이터 스택에 인라인 저장되고, 참조 소유권과 수명도 추론한다.",
+      "배열이 커져도 기존 참조가 유지되며, 발췌문만으로 세부 수명 규칙은 확인되지 않는다."
+    ],
+    "whyItMatters": "힙과 GC 없는 시스템 언어를 찾고 있다면, Goose의 인라인 데이터 배치와 수명 추론을 기존 언어와 비교하게 된다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "031828a0b81e748ecd7fd7f3e6101d51b283b66f",
+    "title": "Show HN: Steal My Bitcoin",
+    "url": "https://stealmybitcoin.com/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-24T20:30:31.000Z",
+    "summary": [
+      "누군가 PHP RCE를 실제로 악용할 수 있는지 보려고 ‘Steal My Bitcoin’을 만들었다.",
+      "최근 며칠간 논란이 된 PHP RCE로 Bitcoin 탈취를 시험하는 사이트로 보인다.",
+      "발췌에는 취약점의 대상, 재현 절차, 방어 방법과 실제 피해 여부가 담겨 있지 않다."
+    ],
+    "whyItMatters": "해당 PHP RCE를 다루고 있다면 실제 악용 가능성을 확인하기 전에 재현 절차와 피해 범위를 먼저 검증해야 한다.",
+    "tags": [
+      "보안",
+      "웹"
+    ]
+  },
+  {
+    "id": "d4b59164bfba642a301c80b5a50163e54b505f51",
+    "title": "baseVultra: Compact Nonlinear Recurrence with Reallocated Capacity",
+    "url": "https://arxiv.org/abs/2610.30154",
+    "source": "arxiv",
+    "publishedAt": "2026-10-24T04:00:00.000Z",
+    "summary": [
+      "baseVultra가 LSTM·GRU의 게이트 연산 일부를 후보 생성에 재배치한 소형 순환 셀로 제안됐다.",
+      "200K 실험에서 손실 1.594로 LSTM 1.604·GRU 1.616보다 낮았고, 조밀 연산은 GRU의 54%였다.",
+      "text8에서는 1.854 bpc로 GRU·LSTM에 뒤졌고, 큰 hidden size에서는 이점이 사라졌다."
+    ],
+    "whyItMatters": "작은 hidden size의 스트리밍 모델을 만든다면 게이트보다 후보 생성에 파라미터를 배분하는 설계를 비교 대상으로 넣게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "80691251ad790a35e411ec53579b562bac37109c",
+    "title": "Show HN: 내 비트코인을 훔쳐보세요",
+    "url": "https://news.hada.io/topic?id=35941",
+    "source": "geeknews",
+    "publishedAt": "2026-10-24T22:35:03.000Z",
+    "summary": [
+      "서버에 숨겨진 약 500달러 상당의 비트코인 키를 먼저 찾는 보안 도전이 올라왔다.",
+      "키는 PHP 사용자 계정에서 print-flag 바이너리를 거쳐 접근하며, 서버 PHP 버전도 단서다.",
+      "발췌가 중간에 끊겨 있어 PHP2SHELL CVE와 관련된 구체적인 공략 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "PHP 서버 취약점 실습을 하려는 개발자라면 실제 키를 목표로 접근 권한과 바이너리 경로를 점검하게 된다.",
+    "tags": [
+      "보안",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "074b7d5e1602db74c1fe6fb1c2ecbd9316e0e876",
+    "title": "No signs of AI payoff outside the tech sector",
+    "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+    "source": "hackernews",
+    "publishedAt": "2026-10-24T19:47:19.000Z",
+    "summary": [
+      "Apollo는 기술 업계 밖에서는 AI 투자 성과가 아직 보이지 않는다고 짚었다.",
+      "AI 붐은 기술 기업에 집중됐지만 다른 산업의 실적 개선은 확인되지 않았다는 분석이다.",
+      "발췌에는 비교 기간이나 산업별 수치, 성과를 판단한 방식이 나오지 않는다."
+    ],
+    "whyItMatters": "AI를 도입한 비기술 기업의 실적을 평가할 때 기대감보다 실제 재무 지표를 먼저 보게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "98fc2abbb2d4293bc213731b2482dc830f7592f7",
+    "title": "Lighthouse: On Building a Trustworthy Digital Assistant for Exploring History with Civil Rights Archives",
+    "url": "https://arxiv.org/abs/2610.30158",
+    "source": "arxiv",
+    "publishedAt": "2026-10-24T04:00:00.000Z",
+    "summary": [
+      "미국 사우스캐롤라이나 자료로 민권운동사를 탐색하는 디지털 비서 Lighthouse가 논문으로 소개됐다.",
+      "LLM의 신경망 학습과 규칙 기반 추론을 결합하고, 1만8천 건 넘는 1차 자료와 객관·주관 질문 평가를 쓴다.",
+      "주관식 답변의 기준은 여러 독립 전문가 답변을 합쳐 만들었고, 시스템은 쉽게 확장할 수 있다고 설명한다."
+    ],
+    "whyItMatters": "역사 자료를 다루는 챗봇을 만든다면 생성 답변을 규칙으로 점검하고 주관식 평가 기준도 따로 만들어야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "33c742dac89343d0ea27a4ba27dbf0a588f80e6b",
+    "title": "덴마크 정부, MS Office 퇴출 계획을 조용히 철회",
+    "url": "https://news.hada.io/topic?id=35939",
+    "source": "geeknews",
+    "publishedAt": "2026-10-24T21:41:28.000Z",
+    "summary": [
+      "덴마크 디지털화부가 Microsoft Office를 Collabora로 바꾸려던 시범사업을 중단했다.",
+      "2025년 여름 직원 38명이 cBrain의 업무 시스템 F2에 연결한 Collabora로 문서를 처리했다.",
+      "후속 보도에 나온 2026년 계획과 중단 이유의 구체적인 내용은 발췌문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "공공기관용 문서 협업 도구를 고르는 팀은 Collabora가 곧 표준이 된다고 전제하지 말고 시범사업 결과와 중단 이유를 먼저 확인해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "84c9b463e77e350073151a77b3e64b6ccdd6507c",
+    "title": "The Goose Programming Language",
+    "url": "https://aardappel.github.io/goose/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-24T19:06:55.000Z",
+    "summary": [
+      "The Goose Programming Language라는 새 프로그래밍 언어 프로젝트가 소개됐다.",
+      "페이지에는 X 게시물 링크가 함께 걸려 있지만, 언어의 문법이나 구현 방식은 확인되지 않는다.",
+      "현재 발췌만으로는 실행 환경, 라이선스, 현재 사용 가능 여부를 알 수 없다."
+    ],
+    "whyItMatters": "새 언어를 써보려면 먼저 홈페이지에서 문법과 저장소 상태를 확인해야 한다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  }
+]
