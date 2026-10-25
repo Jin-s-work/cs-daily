@@ -1,0 +1,111 @@
+[
+  {
+    "id": "dc416b1c4e3fa6267860f80311dccc98802dd857",
+    "title": "Moderna와 Merck, mRNA 암 백신으로 사망 또는 재발 위험 42% 감소했다고 발표",
+    "url": "https://news.hada.io/topic?id=35995",
+    "source": "geeknews",
+    "publishedAt": "2026-10-25T22:36:42.000Z",
+    "summary": [
+      "Moderna와 Merck가 흑색종 3상 시험에서 mRNA 암 백신 결과를 발표했다.",
+      "개인 맞춤형 intismeran과 Keytruda를 함께 쓴 군은 대조군보다 재발·사망 위험이 42% 낮았다.",
+      "대조군은 Keytruda와 위약을 받았고, 발췌에는 백신 투여 방식과 전체 생존 데이터가 없다."
+    ],
+    "whyItMatters": "임상 데이터나 의료 AI를 다룬다면, 42%라는 상대위험 감소를 전체 생존율이나 승인 확정으로 오해하지 않게 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "ae2ca87a8fe4ebad1b6df6722c9d9f2c1de844a7",
+    "title": "Serbia's Vucic concedes election defeat in historic win for student movement",
+    "url": "https://www.reuters.com/world/europe/serbia-votes-students-seek-unseat-vucic-snap-election-2026-10-25/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-25T21:08:28.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "977c61368b53794367a29fd85cfb3e8820fb8aca",
+    "title": "JetBrains Thinkrail - 명세로 프로젝트 지식을 유지하는 에이전트 IDE",
+    "url": "https://news.hada.io/topic?id=35994",
+    "source": "geeknews",
+    "publishedAt": "2026-10-25T22:33:42.000Z",
+    "summary": [
+      "JetBrains가 프로젝트 지식을 세션 너머 유지하는 에이전트 IDE ThinkRail을 내놨다.",
+      "pi 코딩 에이전트에 편집기·터미널·검토 도구를 묶고, 갱신되는 명세와 재사용 가능한 스킬을 쓴다.",
+      "git worktree마다 브랜치와 작업 디렉터리를 분리하지만, 세부 동작은 제공된 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "에이전트에게 프로젝트 맥락을 매번 다시 설명했다면, 명세를 저장하고 worktree를 분리하는 방식으로 다음 작업의 준비를 줄일 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "89e06d81e035773e874b16087863c67464a33c9c",
+    "title": "Dolly Parton's Imagination Library",
+    "url": "https://imaginationlibrary.com/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-25T18:23:54.000Z",
+    "summary": [
+      "Dolly Parton's Imagination Library라는 어린이 독서 프로그램이 소개됐다.",
+      "Dolly Parton은 지역사회가 아이들의 꿈을 키우는 책의 씨앗을 심는다고 설명한다.",
+      "발췌에는 대상 연령, 운영 지역, 신청 방법과 비용 같은 구체적인 조건이 없다."
+    ],
+    "whyItMatters": "개발자 업무와 직접 연결된 내용은 없어, 이 링크를 기술 뉴스보다 지역 아동 지원 프로그램 소개로 보면 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "a41b3531616d9ca916a74f27aee9498d493488d4",
+    "title": "2026년에 Gopher로 블로그를 만드는 이유",
+    "url": "https://news.hada.io/topic?id=35993",
+    "source": "geeknews",
+    "publishedAt": "2026-10-25T21:41:48.000Z",
+    "summary": [
+      "한 개발자가 2026년에 Gopher로 블로그를 만드는 이유와 그 즐거움을 이야기한다.",
+      "목적은 옛 인터넷 프로토콜을 통해 도구의 작동 원리를 직접 탐구하는 데 있다.",
+      "17세 자녀와 친구들은 단순한 기술을 찾지만, 구체적인 구현 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "새 프로젝트에서 최신 스택만 고르지 않고, 작동 원리를 익힐 단순한 도구도 함께 찾게 한다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "ba8662066c8993297ab0baad0ed1f2459472f1fa",
+    "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
+    "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-25T18:04:11.000Z",
+    "summary": [
+      "Oregon주 Eugene 경찰이 지역 매체의 경찰관 기록 요청에 250만 달러를 청구했다.",
+      "Double Sided Media가 2018~2026년 비위 기록을 요청하자 경찰은 검색·처리에 최소 44,816시간이 든다고 답했다.",
+      "요청 대상 경찰관은 교통 단속 중 주민의 얼굴을 때렸다는 민원을 받은 인물이다."
+    ],
+    "whyItMatters": "공공기록을 요청할 때 수백만 달러의 처리 비용이 청구될 수 있어 취재·감사 예산을 먼저 확인해야 한다.",
+    "tags": [
+      "업계",
+      "보안"
+    ]
+  },
+  {
+    "id": "55058a1adebf20c0accc258476af4c86ed771225",
+    "title": "온라인 검열이 인디 웹코믹을 짓누르고 있다",
+    "url": "https://news.hada.io/topic?id=35992",
+    "source": "geeknews",
+    "publishedAt": "2026-10-25T21:38:48.000Z",
+    "summary": [
+      "Hazel & Bell이 플랫폼 검열과 결제 업체의 압력으로 창작과 생계가 막힌 현실을 웹코믹으로 그렸다.",
+      "Webtoon은 성적 콘텐츠, Bluesky와 Tumblr는 남성 유두 노출, TikTok은 욕설을 이유로 게시물을 차단했다.",
+      "기사 발췌만으로는 각 플랫폼의 세부 규정이나 결제 중단 규모는 확인되지 않는다."
+    ],
+    "whyItMatters": "웹코믹을 여러 플랫폼에 올린다면 같은 작품도 성적 표현·노출·욕설 기준에 따라 게시 경로와 수익원이 달라진다.",
+    "tags": [
+      "웹",
+      "업계"
+    ]
+  }
+]
