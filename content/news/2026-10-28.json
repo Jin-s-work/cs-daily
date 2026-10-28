@@ -1,0 +1,133 @@
+[
+  {
+    "id": "ae500e281491088c56398946b7142d972fc09e94",
+    "title": "baidu/Unlimited-OCR-2 - 고정 크기 참조로 초장문 문서를 파싱하는 OCR 모델",
+    "url": "https://news.hada.io/topic?id=36137",
+    "source": "geeknews",
+    "publishedAt": "2026-10-28T00:37:25.000Z",
+    "summary": [
+      "Baidu의 Unlimited-OCR 2가 고정 크기 참조로 초장문 문서를 처리하는 OCR 모델로 나왔다.",
+      "SR-SWA가 텍스트와 시각 정보의 어텐션을 고정 크기 참조 집합으로 압축하고, 여러 페이지를 한 요청에 넣는다.",
+      "실제 처리 가능한 문서 길이와 정확도, 모델의 공개 범위는 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "초장문 문서를 페이지별로 쪼개 처리하던 파이프라인이라면, 페이지 간 문맥을 유지하는 OCR을 시험할 후보가 생겼다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "2fb0f351f38405364daa1e0520141fa488c415a6",
+    "title": "Tailscale SSH: Investigation and remediation update",
+    "url": "https://tailscale.com/ssh-investigation-update",
+    "source": "hackernews",
+    "publishedAt": "2026-10-27T19:55:21.000Z",
+    "summary": [
+      "Tailscale이 Tailscale SSH 문제를 조사하고 수정 조치의 진행 상황을 업데이트했다.",
+      "업데이트 제목만 확인됐고, 어떤 SSH 문제가 발생했는지와 적용한 수정 내용은 본문에서 확인되지 않는다.",
+      "현재 발췌에는 영향받은 버전, 사용자 조건, 추가로 필요한 조치도 적혀 있지 않다."
+    ],
+    "whyItMatters": "Tailscale SSH를 운영 중이라면 영향 범위와 패치 여부를 확인하기 전까지 업데이트를 완료한 것으로 보면 안 된다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "fdabadb313a82febf15906410818f7ba06e3ac51",
+    "title": "Patronizing and Condescending Language Detection in English and Mandarin",
+    "url": "https://arxiv.org/abs/2610.31808",
+    "source": "arxiv",
+    "publishedAt": "2026-10-27T04:00:00.000Z",
+    "summary": [
+      "영어와 Mandarin에서 취약계층을 깎아내리는 PCL 자동 탐지 시스템을 제안했다.",
+      "정적 임베딩+CNN과 fine-tuned BERT를 비교했고 BERT가 개발 세트 F1 0.528을 기록했다.",
+      "PCL은 노골적인 혐오 발언보다 사람도 판별하기 어려운 표현이며, 데이터셋 범위는 초록에서 확인되지 않는다."
+    ],
+    "whyItMatters": "영어와 Mandarin PCL 분류기를 만들고 있다면, 우선 BERT fine-tuning 결과를 기준선으로 삼게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "59d593666939453b334af4ed62f04362f75d80bf",
+    "title": "StreamFusion - Flink SQL을 Rust 기반 네이티브 실행기로 가속하는 도구",
+    "url": "https://news.hada.io/topic?id=36136",
+    "source": "geeknews",
+    "publishedAt": "2026-10-28T00:30:02.000Z",
+    "summary": [
+      "StreamFusion이 Flink SQL 실행을 Rust 기반 네이티브 실행기로 가속한다.",
+      "쿼리는 Rust·Apache Arrow·DataFusion 기반 네이티브 실행기로 처리된다.",
+      "Flink는 SQL 계획과 작업 조정, checkpoint를 계속 맡고, 애플리케이션 코드는 고치지 않아도 된다."
+    ],
+    "whyItMatters": "기존 streaming SQL 작업을 수정하지 않고 Rust 실행 경로를 붙일 수 있어 애플리케이션 변경 비용을 줄인다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "62b1fcdba263ec2da2b2a051c1fe220065c7bfb5",
+    "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+    "url": "https://www.brangus.io/survival-llm",
+    "source": "hackernews",
+    "publishedAt": "2026-10-27T19:55:06.000Z",
+    "summary": [
+      "인터넷이 끊겨도 작동하는 무료 오픈소스 AI 비서 Survival LLM이 나왔다.",
+      "모델과 문서를 컴퓨터에 저장하고, 답변마다 읽은 글과 해당 문장을 출처로 표시한다.",
+      "실행 때 메모리를 확인해 모델을 고르며, 16–31GB 환경에는 IBM Granite 4.2 8B가 들어간다."
+    ],
+    "whyItMatters": "오프라인 환경에서 쓰려면 인터넷이 있을 때 설치하고, 모델과 라이브러리에 필요한 저장 공간을 미리 비워둬야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "589eb8bb0bb373411e3231720f648fed44ada34c",
+    "title": "PaperFormalizer: Author-in-the-Loop Autoformalization of Research Papers in Lean",
+    "url": "https://arxiv.org/abs/2610.31810",
+    "source": "arxiv",
+    "publishedAt": "2026-10-27T04:00:00.000Z",
+    "summary": [
+      "PaperFormalizer가 LaTeX 논문을 Lean 검증본으로 바꾸는 저자 참여형 파이프라인으로 나왔다.",
+      "LaTeX 소스에서 명제 의존성 그래프를 만들고, 자연어 점검 뒤 Mathlib 기준으로 Lean 형식화와 증명을 진행한다.",
+      "모호한 문장은 저자가 수정 방향을 골라야 하며, 결과물은 변경 보고서와 연결된 Lean 코드로 남는다."
+    ],
+    "whyItMatters": "논문을 Lean으로 검증하려 했다면, 형식화 중 의미가 바뀌는 지점을 저자가 직접 승인하거나 되돌릴 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "e5ceb20725172209e6b760192f634b560b03d59f",
+    "title": "AI 시대의 개발자를 꿈꾸는 학생 개발자에게",
+    "url": "https://news.hada.io/topic?id=36135",
+    "source": "geeknews",
+    "publishedAt": "2026-10-28T00:13:02.000Z",
+    "summary": [
+      "2018년 백엔드 개발자 글의 후속편으로, AI 시대 학생 개발자 이야기를 다룬다.",
+      "AI 시대 개발자의 역할과 취업·학습에 관한 질문에 답하며, AI에 방향을 지시하고 결과를 책임지는 역할을 짚는다.",
+      "발췌문에는 전체 답변과 구체적인 학습법·취업 조언이 없어 세부 내용은 확인되지 않는다."
+    ],
+    "whyItMatters": "학생 개발자라면 AI를 쓰는 법만이 아니라 방향을 정하고 결과를 검증하는 책임까지 학습 목표에 넣게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "4b0c52a0ad809c9c69135502d03b08dfe41e56d2",
+    "title": "Discord will soon let anyone find public server messages through Google",
+    "url": "https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover",
+    "source": "hackernews",
+    "publishedAt": "2026-10-27T18:44:17.000Z",
+    "summary": [
+      "Discord가 공개 서버의 메시지를 Google 검색 결과에 노출하는 기능을 곧 시작한다.",
+      "검색 대상은 공개 서버 메시지이며, 누구나 Google에서 해당 내용을 찾게 된다.",
+      "본문이 없어 적용 시점과 검색에서 제외되는 메시지 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "공개 Discord 서버에서 비공개로 남는다고 생각한 대화를 쓰고 있다면 Google 검색 노출을 전제로 메시지를 정리해야 한다.",
+    "tags": [
+      "웹"
+    ]
+  }
+]
