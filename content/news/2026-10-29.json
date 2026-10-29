@@ -1,0 +1,135 @@
+[
+  {
+    "id": "7e272252bf60cfa41517c10e0e83e5e489027a10",
+    "title": "kern - AI 생성 코드를 매번 새 컨테이너에서 실행하는 경량 루트리스 런타임",
+    "url": "https://news.hada.io/topic?id=36200",
+    "source": "geeknews",
+    "publishedAt": "2026-10-29T00:30:03.000Z",
+    "summary": [
+      "kern이 AI 생성 코드와 에이전트 도구 호출을 격리 실행하는 Linux 런타임으로 소개됐다.",
+      "실행마다 새 컨테이너를 만들고, 데몬·소켓 없이 정적 바이너리 하나로 동작한다.",
+      "호스트 root 권한 없이 실행되며, 컨테이너가 없을 때 런타임이 상주하는지는 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "AI가 만든 코드를 호스트에서 직접 돌리지 않으려면 kern을 실행 경로에 붙여 격리 컨테이너로 돌리게 하면 된다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "2365cd15a3284330e09c4eecdb39661d19b94b34",
+    "title": "Why is this fingerprinting script creating bioweapons?",
+    "url": "https://nullpt.rs/fingerprinting-bioweapons",
+    "source": "hackernews",
+    "publishedAt": "2026-10-28T17:13:29.000Z",
+    "summary": [
+      "한 개발자가 10,000개 웹사이트를 크롤링해 브라우저 지문 캔버스를 수집했다.",
+      "Playwright로 브라우저 canvas 호출을 가로채 1,033개 렌더링을 fingerprint.garden에 모았다.",
+      "이 글은 캔버스 수집 과정을 설명하지만 제목의 bioweapons 연결은 확인되지 않는다."
+    ],
+    "whyItMatters": "브라우저 지문 방어를 만든다면 흔한 라이브러리뿐 아니라 실제 사이트의 캔버스 패턴도 테스트 데이터로 넣어야 한다.",
+    "tags": [
+      "보안",
+      "웹"
+    ]
+  },
+  {
+    "id": "389ab8c96373c83b252f25852ab16213ddc910a6",
+    "title": "Counting the Bandages: On measuring the time that AI saves",
+    "url": "https://arxiv.org/abs/2610.35942",
+    "source": "arxiv",
+    "publishedAt": "2026-10-28T04:00:00.000Z",
+    "summary": [
+      "AI가 시간을 줄였는지 볼 때 시계가 아니라 오류까지 함께 따져야 한다는 분석이 나왔다.",
+      "METR의 246개 이슈 재분석에서 추정법별 속도 저하는 19% 또는 24%였고, AI 도움 비율은 3~82%였다.",
+      "GPT-5는 GDPval에서 검토를 포함하면 최대 3.6배 빨랐고, 오류율을 숨긴 검토자는 틀린 수치를 22.5% 통과시켰다."
+    ],
+    "whyItMatters": "AI로 절약한 시간을 말하려면 작업 시간만 보지 말고, 검토 비용과 놓친 오류를 함께 계산해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "7d8ed5a792956bc02778cdb1891a8c82f68606d4",
+    "title": "AAII v5 공개 - 비공개 평가 비중을 60%로 높인 AI 모델 역량 지수",
+    "url": "https://news.hada.io/topic?id=36197",
+    "source": "geeknews",
+    "publishedAt": "2026-10-29T00:10:15.000Z",
+    "summary": [
+      "Artificial Analysis Intelligence Index v5가 AI 모델 역량 지수의 새 버전으로 공개됐다.",
+      "벤치마크 2개를 추가하고 3개를 개편했으며, 지수의 60%는 비공개 테스트 세트나 비공개 정답 기반 평가로 구성된다.",
+      "Claude Opus 5.5 (max)가 58점, GPT-6 Astra (max)가 57점이며 나머지 순위는 발췌문에 없다."
+    ],
+    "whyItMatters": "모델 순위를 비교할 때 공개 벤치마크 점수만 보지 말고 비공개 평가 비중도 함께 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "d76d59f8ae2e3cb28898b79647e4447cd8fa8668",
+    "title": "MacBook Pro with PROLED XDR Display and Touch",
+    "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-28T17:10:37.000Z",
+    "summary": [
+      "Apple 사이트에 PROLED XDR Display와 Touch를 단 MacBook Pro 페이지가 올라왔다.",
+      "제목으로 확인되는 변화는 디스플레이 이름과 Touch 추가이며, 세부 사양은 보이지 않는다.",
+      "발췌문이 뉴스룸 URL 일부뿐이라 출시일과 실제 입력 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "MacBook Pro를 고르는 중이라면 두 기능이 실제로 무엇을 뜻하는지 확인하기 전에는 사양 비교를 끝내면 안 된다.",
+    "tags": [
+      "업계",
+      "웹"
+    ]
+  },
+  {
+    "id": "e5ad0fc304d938a568ebf91c5f830db2deaba030",
+    "title": "Enhancing Deep Learning Model Performance through Data Generation Strategies: Classification of Olive Tree Diseases",
+    "url": "https://arxiv.org/abs/2610.35984",
+    "source": "arxiv",
+    "publishedAt": "2026-10-28T04:00:00.000Z",
+    "summary": [
+      "올리브나무 질병 분류에서 데이터 생성 전략을 비교해 딥러닝 성능 변화를 평가한 연구다.",
+      "전통적 증강, CutMix, MixUp, DCGAN 합성 이미지를 세 방식으로 나눠 EfficientNetV2B0에 적용했다.",
+      "클래스 균형과 클래스당 샘플 수를 바꾼 세 조건에서 정확도는 올랐지만, 개선 폭의 수치는 초록에 없다."
+    ],
+    "whyItMatters": "올리브 질병 이미지 분류를 다룬다면 클래스 불균형을 먼저 확인하고, 데이터 증강 방식을 조건별로 비교해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "2583890d5277ad33ccbe60a5defaecb5e9362356",
+    "title": "NVIDIA Nemotron 3.5 Transcribe - 한국어 포함 40개 언어를 지원하는 공개 음성 인식 모델",
+    "url": "https://news.hada.io/topic?id=36196",
+    "source": "geeknews",
+    "publishedAt": "2026-10-29T00:06:36.000Z",
+    "summary": [
+      "NVIDIA Nemotron 3.5 Transcribe가 한국어 포함 40개 언어 음성 인식 모델로 공개됐다.",
+      "전사·화자 구분·번역·오디오 질의응답을 한 모델에서 처리하고 자연어 지시로 출력 형식을 바꾼다.",
+      "한국어와 영어의 양방향 번역도 되지만, 최대 1시간 녹음의 세부 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "음성 앱을 만든다면 여러 모델을 붙이지 않고 한 모델의 지시 방식으로 전사와 번역을 묶을 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "6318bf62f2c5750d4debc093ba5deffe66f9f836",
+    "title": "Gemini 4 Carbon",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-28T17:01:23.000Z",
+    "summary": [
+      "Google이 ‘Gemini 4 Carbon’이라는 새 Gemini 모델 관련 글을 공식 블로그에 게시했다.",
+      "제목에는 이를 ‘차세대 프런티어 모델’이라고 적었지만, 구조와 성능 수치는 본문 발췌에 없다.",
+      "발췌가 사이트 메뉴와 제목에 그쳐 출시 시점·사용 조건·API 정보는 확인되지 않는다."
+    ],
+    "whyItMatters": "본문을 확인하기 전에는 Gemini 4 Carbon의 API 도입 여부를 전제로 작업하지 않는다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
