@@ -1,0 +1,125 @@
+[
+  {
+    "id": "c598740bb9d172ade545226f430a54fb2ceb8d2d",
+    "title": "Show GN: 데드라인 렌즈 - 고지서 사진에서 납부기한을 찾아 알림을 거는 온디바이스 Android 앱",
+    "url": "https://news.hada.io/topic?id=36256",
+    "source": "geeknews",
+    "publishedAt": "2026-10-29T23:26:41.000Z",
+    "summary": [
+      "Show GN에 고지서 사진에서 납부기한을 찾아 관리하는 온디바이스 Android 앱이 소개됐다.",
+      "사진이나 공유한 텍스트에서 할 일과 날짜를 제안하고, 근거 문장과 함께 확인·수정하게 한다.",
+      "확정한 일정만 저장하며 기한 전 알림과 홈 화면 D-day 위젯, .ics 파일을 쓸 수 있다."
+    ],
+    "whyItMatters": "고지서와 안내문을 자주 처리한다면 날짜를 직접 옮겨 적는 대신 앱에서 확인한 뒤 일정으로 저장하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "4c4b30fd3641aca8b36641c7fdf5208951b46381",
+    "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+    "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+    "source": "hackernews",
+    "publishedAt": "2026-10-29T21:38:59.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "5876e7a1f71653ec5e38372da91da670950d05af",
+    "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+    "url": "https://arxiv.org/abs/2610.36077",
+    "source": "arxiv",
+    "publishedAt": "2026-10-29T04:00:00.000Z",
+    "summary": [
+      "The Trinity가 멀티모달 에이전트의 재귀적 자기개선 프레임워크를 제안했다.",
+      "Creator·Explorer·Evolver가 능력 트리를 만들고, 평균 성능을 34점 높였다.",
+      "28개 학습 벤치마크에서 34점, 미학습 18개에서 26점 올랐고, 실제 embodied task 2개도 포함됐다."
+    ],
+    "whyItMatters": "멀티모달 작업을 능력별로 묶어 Harness 모듈을 재사용하고, 태스크 정보로 조합을 고르는 설계를 가져올 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "3c83baaf5687c2ab431b4e2e79561f79acab903b",
+    "title": "Show GN: 반토막 - 매일 다른 물건을 반으로 자르는 웹 퍼즐",
+    "url": "https://news.hada.io/topic?id=36255",
+    "source": "geeknews",
+    "publishedAt": "2026-10-29T23:25:39.000Z",
+    "summary": [
+      "매일 다른 물건에 선을 그어 두 부분으로 나누는 웹 퍼즐 ‘반토막’이 플랫폼에 추가됐다.",
+      "오늘은 물건 세 개가 나오고, 각 물건마다 세 번 도전해 자른 균형을 기록하고 비교한다.",
+      "개발자는 플랫폼에 추가한 게임의 플레이 방식에 대한 의견을 듣고 싶다고 했다."
+    ],
+    "whyItMatters": "매일 갱신되는 간단한 웹 퍼즐을 찾는다면 세 물건에 세 번씩만 시도하면 된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "1ffd1f6b6f1e33fffd8d713e4d8a30a066e78041",
+    "title": "Patrick Stewart has died",
+    "url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+    "source": "hackernews",
+    "publishedAt": "2026-10-29T19:41:39.000Z",
+    "summary": [
+      "NYT에 배우 Patrick Stewart가 사망했다는 기사가 2026년 10월 29일자로 올라왔다.",
+      "기사 본문 대신 archive.ph와 Wikipedia 링크만 발췌돼 사망 원인과 나이는 확인되지 않는다.",
+      "제공된 발췌에는 활동 이력이나 유족 발표 등 추가 사실이 없어 세부 내용은 확인되지 않는다."
+    ],
+    "whyItMatters": "Patrick Stewart 관련 콘텐츠나 데이터를 다룬다면 사망 여부를 단정하기 전에 NYT 원문과 공식 발표를 대조해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "3f4a7b9162566fdae596627aaf24de19b33b5514",
+    "title": "CohortFlow: A Steerable Clinical Cohort Curation Agent with Localized Semantic Correction",
+    "url": "https://arxiv.org/abs/2610.36100",
+    "source": "arxiv",
+    "publishedAt": "2026-10-29T04:00:00.000Z",
+    "summary": [
+      "CohortFlow가 100개 시나리오와 126번 수정, MIMIC 13개 상태에서 시험됐다.",
+      "8B 모델에서 micro-F1은 77.0%, 전체 재생성은 76.4%였고 차이는 유의하지 않았다(p=0.493).",
+      "지연시간은 완료 뒤 64.8%, 실행 중 44.3%, 모델 호출은 38.1% 줄었다."
+    ],
+    "whyItMatters": "임상 코호트 조건을 자주 수정하는 파이프라인이라면 전체 재실행 대신 바뀐 계산만 다시 돌려 대기시간과 모델 호출을 줄일 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "624787132102fb19c871bcd33a49a916c2aad42d",
+    "title": "좀비 통계: AI가 인용하는 숫자는 어디에서 오는가",
+    "url": "https://news.hada.io/topic?id=36254",
+    "source": "geeknews",
+    "publishedAt": "2026-10-29T22:44:46.000Z",
+    "summary": [
+      "5개 AI 서비스가 인용한 통계 1,285건의 출처를 추적한 조사 결과가 나왔다.",
+      "인용 페이지에 숫자가 실제로 있던 비율은 82%였지만, 원연구와 내용이 일치한 비율은 40%였다.",
+      "원연구를 직접 인용한 비율은 21%에 그쳐, 인용 링크만으로 숫자의 기원을 확인할 수 없다."
+    ],
+    "whyItMatters": "AI가 붙인 링크를 근거로 숫자를 재사용하지 말고, 원연구까지 열어 대조해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "6e8fb8e0c17daa04ba020560ad5e720ecdf04826",
+    "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+    "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-29T17:43:48.000Z",
+    "summary": [
+      "중국 스파이로 지목된 인물이 Nvidia CEO Jensen Huang과 가까운 관계였다는 보도가 나왔다.",
+      "보도는 관계가 가까웠다고만 전하며, 접촉 내용이나 정보 전달 정황은 제시하지 않는다.",
+      "발췌에는 해당 인물의 신원과 혐의 근거, Nvidia의 공식 입장이 담겨 있지 않다."
+    ],
+    "whyItMatters": "Nvidia와 중국 관련 인사의 접촉을 다루는 보도라서, 사실 확인 전에는 내부 정보 유출로 단정하면 안 된다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  }
+]
