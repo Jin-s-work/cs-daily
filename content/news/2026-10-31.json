@@ -1,0 +1,133 @@
+[
+  {
+    "id": "eb1f341eae38d70b1c4e8bbd21d15804ba56b58c",
+    "title": "CleanYourTV - Android TV의 불필요한 앱을 끄고 Apple TV 스타일 홈 화면으로 바꾸는 도구",
+    "url": "https://news.hada.io/topic?id=36315",
+    "source": "geeknews",
+    "publishedAt": "2026-10-31T00:30:02.000Z",
+    "summary": [
+      "CleanYourTV가 Android TV와 Google TV의 기본 앱을 끄고 Apple TV 스타일 홈 화면으로 바꾼다.",
+      "루팅이나 펌웨어 교체 없이 Wi-Fi로 연결한 뒤 ADB로 앱을 삭제하지 않고 사용 중지한다.",
+      "변경 전 상태를 기록하고 복구 스크립트를 남기지만, 지원 기기 목록은 본문에서 확인되지 않는다."
+    ],
+    "whyItMatters": "TV를 루팅하거나 펌웨어를 건드리지 않고 광고·텔레메트리와 기본 앱을 정리할 수 있어 거실 기기 설정에 바로 써먹을 수 있다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "2638e7ac2619f2490ab34d37b25a43f49286e903",
+    "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
+    "url": "https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-30T20:23:30.000Z",
+    "summary": [
+      "Patrick Stewart가 세상을 떠났고, Boston Globe가 Captain Jean-Luc Picard를 추모했다.",
+      "Star Trek: The Next Generation의 1990년대 연기와 Alzheimer’s를 함께 돌아본 글이다.",
+      "발췌문이 중간에 끊겨 Picard에게서 얻는 교훈의 구체적인 내용은 확인되지 않는다."
+    ],
+    "whyItMatters": "당장 개발 작업에서 바꿀 것은 없고, Star Trek 팬이라면 Picard와 Stewart를 함께 기억할 글이다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "ea36b5ffc5dc7110ba8a3574dccadd6d0c7ea874",
+    "title": "LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes",
+    "url": "https://arxiv.org/abs/2610.37720",
+    "source": "arxiv",
+    "publishedAt": "2026-10-30T04:00:00.000Z",
+    "summary": [
+      "LRMoE가 메모리 제한 노드에서 MoE 학습의 backward 부하를 다시 배분하는 방식을 제안했다.",
+      "forward에서 보존량과 expert 배치를 정한 뒤, token-expert 쌍을 골라 통신·버퍼 사용량을 줄인다.",
+      "두 모델 실험에서 누적 MoE 학습 시간이 SYMI보다 21.2~44.8% 줄었다."
+    ],
+    "whyItMatters": "메모리가 빠듯한 GPU에서 MoE를 학습한다면 expert 복제보다 backward 통신과 버퍼를 줄이는 LRMoE를 비교하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "392904ab3071b094c19f31a3add404c3d00afd37",
+    "title": "좋아하는 웹사이트가 있다면 백업하세요",
+    "url": "https://news.hada.io/topic?id=36313",
+    "source": "geeknews",
+    "publishedAt": "2026-10-31T00:06:56.000Z",
+    "summary": [
+      "개인이 좋아하는 웹사이트와 온라인 정보를 직접 아카이브하는 방법이 소개됐다.",
+      "ArchiveWeb.page로 브라우저에서 페이지를 보면서 단일 페이지와 소셜 미디어 게시물을 저장할 수 있다.",
+      "Internet Archive 같은 대형 조직에만 맡길 필요는 없지만, 세부 기능과 보존 방식은 본문에서 더 확인해야 한다."
+    ],
+    "whyItMatters": "좋아하는 사이트가 사라질까 걱정된다면 ArchiveWeb.page로 필요한 페이지를 직접 저장하게 된다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "662ba9639d099382ea3ded626f98ad3bc06b7670",
+    "title": "Bunny CDN Security Incident",
+    "url": "https://status.bunny.net/incidents/p6gf1by9kr7m",
+    "source": "hackernews",
+    "publishedAt": "2026-10-30T19:05:22.000Z",
+    "summary": [
+      "Bunny.net의 인프라 제공업체에서 침해가 발생해 Armenia의 CDN 노드가 영향받았다.",
+      "Bunny.net은 20분 안에 해당 서버의 트래픽을 끊고 로그를 보존한 뒤 서버를 삭제했다.",
+      "관리형 인증서는 중단 없이 새 키로 재발급 중이며, 자체 인증서는 폐기 후 다시 발급해야 한다."
+    ],
+    "whyItMatters": "자체 TLS 인증서를 쓰고 있다면 기존 인증서를 폐기하고 새 개인 키로 즉시 발급해야 한다.",
+    "tags": [
+      "인프라",
+      "보안"
+    ]
+  },
+  {
+    "id": "2007d3c141e1c29ff0492261e1b98bc0d5ec1f7e",
+    "title": "Amortized Localized Posterior Inference for Model Calibration with Application to an Ocean Turbulence Closure",
+    "url": "https://arxiv.org/abs/2610.37731",
+    "source": "arxiv",
+    "publishedAt": "2026-10-30T04:00:00.000Z",
+    "summary": [
+      "모델 보정에서 맥락별 사후분포를 추정하는 방법을 제안하고 해양 난류 모델에 적용했다.",
+      "관측 likelihood를 목표 맥락과의 거리로 가중하고, conditional normalizing flow로 사후분포를 근사한다.",
+      "Branin-Hoo와 단일기둥 해양 모델에서 전역 보정보다 예측 오차가 줄었지만, 두 실험 모두 국소 보상이 가능하게 설계됐다."
+    ],
+    "whyItMatters": "맥락에 따라 오차가 달라지는 시뮬레이터라면, 전역 보정값 하나 대신 목표 조건별 파라미터 분포를 계산하는 방식으로 바뀐다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "b0f9ad59ae9bb83edfe3150ecbb41c314485e085",
+    "title": "AT Protocol 사용자들은 이 데이터가 공개된다는 사실을 알고 있을까?",
+    "url": "https://news.hada.io/topic?id=36312",
+    "source": "geeknews",
+    "publishedAt": "2026-10-31T00:03:56.000Z",
+    "summary": [
+      "AT Protocol 앱의 공개 데이터에서 개인용 RSS 피드와 채팅 메시지가 쉽게 검색된다.",
+      "RSS 리더 Skyreader는 구독 피드 주소를 공개 데이터로 저장하고, 계정 이름만으로 해당 사용자를 찾을 수 있다.",
+      "사용자들이 이 공개 범위와 RSS·채팅 정보 노출 위험을 알고 있는지는 본문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "AT Protocol 앱을 쓰거나 만든다면 RSS 주소와 채팅 메시지가 공개 데이터에 남는지 먼저 확인해야 한다.",
+    "tags": [
+      "웹",
+      "보안"
+    ]
+  },
+  {
+    "id": "e72de549995147a10234d91215807e051c723b56",
+    "title": "My favourite PowerMac is a Nintendo Wii",
+    "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
+    "source": "hackernews",
+    "publishedAt": "2026-10-30T17:25:15.000Z",
+    "summary": [
+      "Nintendo Wii에서 classic Mac OS가 처음으로 데스크톱까지 부팅됐다.",
+      "작업은 GameCube·Wii·Wii U의 ArtX 계열 칩셋을 겨냥했고, Mac OS 7.6과 9.2.2가 부팅됐다.",
+      "아직 공개 릴리스 단계가 아니며, 2025-06-22부터 전 과정을 혼자 작업했고 LLM은 쓰지 않았다."
+    ],
+    "whyItMatters": "구형 PowerPC 기기에서 classic Mac OS를 돌리려는 작업이라면 Wii 계열도 포팅 대상으로 삼을 수 있다는 사례가 생겼다.",
+    "tags": [
+      "인프라"
+    ]
+  }
+]
