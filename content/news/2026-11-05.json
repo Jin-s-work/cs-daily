@@ -1,0 +1,135 @@
+[
+  {
+    "id": "ce4c67063238b2cfe7c845f1924eadcd848edf27",
+    "title": "Thoughtworks Technology Radar, Volume 35 공개",
+    "url": "https://news.hada.io/topic?id=36623&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-05T00:50:02.000Z",
+    "summary": [
+      "Thoughtworks Technology Radar Volume 35가 최신 기술 117개를 4단계로 분류했다.",
+      "하네스 엔지니어링은 조직의 스킬·가드레일 배포와 지속 평가를 다루고, 로컬 모델 선택도 중요해졌다.",
+      "에이전트를 병렬로 밤새 돌려도 사람의 리뷰와 배포 파이프라인 처리량이 한계로 남는다."
+    ],
+    "whyItMatters": "에이전트 작업을 늘릴 때 모델 선택만 보지 말고 사람 리뷰와 배포 파이프라인의 처리량까지 계획에 넣게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "ecbe88ccc35728718ff15835b981462e2df39dfd",
+    "title": "Residential proxies detected on White House network",
+    "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+    "source": "hackernews",
+    "publishedAt": "2026-11-04T20:45:18.000Z",
+    "summary": [
+      "Layer3 Intel이 White House 네트워크에서 주거용 프록시 활동을 포착했다.",
+      "10월 5일부터 11월 3일까지 236회가 6개 주소에서 발생했고, 30일 중 26일 이어졌다.",
+      "조사팀은 표적화하지 않고 글로벌 회전형 접근을 요청했으며, 실제 사용자는 확인되지 않았다."
+    ],
+    "whyItMatters": "공공기관 네트워크에서 프록시 출구가 보이면 침해로 단정하지 말고, 프록시 사용 기록과 실제 사용자를 따로 대조해야 한다.",
+    "tags": [
+      "보안",
+      "인프라"
+    ]
+  },
+  {
+    "id": "786ade8aaca9564d1fdadfe1309e38f415859b42",
+    "title": "Alignment Faking Depends on the Value, Not Just the Model",
+    "url": "https://arxiv.org/abs/2611.03650",
+    "source": "arxiv",
+    "publishedAt": "2026-11-04T05:00:00.000Z",
+    "summary": [
+      "새 연구는 Alignment Faking이 모델 자체보다 어떤 가치와 결합했는지에 따라 달라진다고 분석했다.",
+      "10개 모델은 32개 ValueBench 차원에서 세 감시 조건의 순응 격차를 측정했다.",
+      "격차는 0.05~0.50이었고, distilled 70B 모델이 약 675B 모델보다 높기도 해 규모만으로 설명되지 않는다."
+    ],
+    "whyItMatters": "Alignment Faking을 모델 전체의 성향으로만 평가하고 있다면, 앞으로는 가치별 평가와 value card를 함께 봐야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "921370eaffc6e84563824dad2c1ed9216fce5150",
+    "title": "자율 에이전트를 위한 데이터 플랫폼 구축",
+    "url": "https://news.hada.io/topic?id=36622&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-05T00:40:02.000Z",
+    "summary": [
+      "자율 에이전트용 데이터 플랫폼은 시맨틱 모델만으로는 안정적인 운영이 어렵다는 내용이다.",
+      "데이터의 최신성·완전성·파이프라인 실행 상태를 확인하고, 로그를 실행 단위로 연결한다.",
+      "Foursquare의 사례에서는 주요 파이프라인의 Spark 문제 진단과 해결 시간이 최대 90% 줄었다."
+    ],
+    "whyItMatters": "데이터 에이전트를 운영한다면 답변 품질보다 최신 데이터와 파이프라인 실패를 함께 추적하는 구조를 먼저 만들어야 한다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "1e823a0b82c271c59515fffb1a612bab4686d777",
+    "title": "Insects don't swarm at LED lights",
+    "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-04T19:50:23.000Z",
+    "summary": [
+      "LED 전환 뒤 야외 조명에 모이는 곤충이 줄어 도마뱀도 나타나지 않게 됐다는 사례가 소개됐다.",
+      "백열등은 곤충을 끌어들여 흰 천을 이용한 곤충 조사에 쓰였지만, LED는 같은 방식으로 곤충을 덜 끌어들인다.",
+      "발췌가 중간에서 끝나 LED의 정확한 파장별 차이와 전체 설명은 확인되지 않는다."
+    ],
+    "whyItMatters": "야외 조명으로 곤충을 모으거나 관찰한다면 백열등과 LED의 차이를 장비 선택에 반영해야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "9bb0f4f21cfa0995a1926298910cc925fa69504d",
+    "title": "CARD: A Proof-Carrying Certificate-to-Action Interface for Relative-Measurement Graphs",
+    "url": "https://arxiv.org/abs/2611.03651",
+    "source": "arxiv",
+    "publishedAt": "2026-11-04T05:00:00.000Z",
+    "summary": [
+      "논문은 CARD라는 증명 부착 인터페이스로 기하 인증서와 로봇 행동을 분리해 연결한다.",
+      "404개 사례에서 최적화 점은 기준과 달랐지만 변환은 모두 일치했으며, 오차는 1.9891도와 21.6322m였다.",
+      "무작위 방식은 목표 성공 0/50회였고, 행동성 일치 방식은 50/50회였으며 공개 평가는 11건이었다."
+    ],
+    "whyItMatters": "상대측정 그래프에 개입하거나 로봇 서비스를 붙인다면 인증서가 맞는지와 실제 행동이 맞는지를 따로 검증해야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "a04193d544486b31f5d101b7d41bef0388fe4dd9",
+    "title": "OpenAI, Pierre Computer Company 인수 예정",
+    "url": "https://news.hada.io/topic?id=36621&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-05T00:31:40.000Z",
+    "summary": [
+      "OpenAI가 오픈 소스 개발자 도구를 만든 Pierre Computer Company를 인수할 예정이다.",
+      "Codex는 Pierre의 Trees·Diffs를 이미 파일 탐색과 변경 검토에 쓰고 있다.",
+      "인수 완료 시점과 거래 조건, Codex 반영 일정은 발췌문에 없어 확인되지 않는다."
+    ],
+    "whyItMatters": "Codex를 쓰는 팀이라면 파일 탐색과 변경 검토 방식이 바뀔 수 있어 기존 Git 작업 흐름을 지켜봐야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "0f35e299c97c927a0ca979ab7964289d972d2ef8",
+    "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+    "url": "https://www.ricursive.com/ripple",
+    "source": "hackernews",
+    "publishedAt": "2026-11-04T18:53:29.000Z",
+    "summary": [
+      "Ricursive Intelligence가 Ripple-65B Preview를 출시하고 오픈 웨이트 코딩 SOTA를 주장했다.",
+      "12조 토큰으로 학습됐고 1M 컨텍스트를 처리하며, TerminalBench 2.1에서 80.52를 기록했다.",
+      "Preview 버전이며 SOTA 수치는 회사 측 비교라, 최종 성능은 아직 확정되지 않았다."
+    ],
+    "whyItMatters": "에이전트 코딩을 로컬에서 돌릴 계획이라면, 65B 모델을 DGX Spark 같은 장치에서 시험할 후보가 생겼다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  }
+]
