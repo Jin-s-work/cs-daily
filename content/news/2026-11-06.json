@@ -1,0 +1,135 @@
+[
+  {
+    "id": "e3a1934e0beeaa93546fa412305d6ea6aa0aa4bd",
+    "title": "AI로 부활하는 해킨토시",
+    "url": "https://news.hada.io/topic?id=36684&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-06T00:39:03.000Z",
+    "summary": [
+      "AI의 부상과 함께 Hackintosh·hackios 커뮤니티의 개발과 성공 사례가 최근 몇 주 사이 크게 늘었다.",
+      "macOS 27에서 x86 지원이 끝났는데도 Snapdragon 노트북과 ARM 보드에서 macOS 사례가 나왔다.",
+      "Nintendo Switch OLED에서 iOS 17도 돌렸지만, 구현 방식은 확인되지 않았다."
+    ],
+    "whyItMatters": "x86 해킨토시를 유지 중이라면 macOS 27에서 부팅 경로를 바꿔야 할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "3b58ffb304e7b124cccfb142a59a8052fc0d1e06",
+    "title": "Claude Code sends your email address to websites",
+    "url": "https://github.com/anthropics/claude-code/issues/107757",
+    "source": "hackernews",
+    "publishedAt": "2026-11-05T22:17:15.000Z",
+    "summary": [
+      "Claude Code가 웹사이트 요청의 User-Agent 헤더에 사용자 이메일 주소를 넣어 보내는 버그가 보고됐다.",
+      "이메일 주소가 웹사이트에 전달되는 경로가 User-Agent 헤더로 확인됐지만, 재현 조건은 본문에서 확인되지 않는다.",
+      "GitHub 이슈는 anthropics/claude-code의 #107757로 등록됐고, 수정 여부는 발췌만으로 알 수 없다."
+    ],
+    "whyItMatters": "Claude Code로 웹사이트에 요청을 보내고 있다면, 당분간 요청 헤더에서 이메일 주소가 나가는지 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "f07a268d849a5f619ffc65da255653991fa19685",
+    "title": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions",
+    "url": "https://arxiv.org/abs/2611.05390",
+    "source": "arxiv",
+    "publishedAt": "2026-11-05T05:00:00.000Z",
+    "summary": [
+      "LLM 검토자가 상위 에이전트의 결정을 바꿀 권한을 언제 갖는지 실험했다.",
+      "Qwen과 Mistral로 공간 정책과 포트폴리오 이전 각 96개를 시험하고, 위반 기록과 수정안이 있을 때만 교체하게 했다.",
+      "Qwen은 정답 교란을 없앴지만 Mistral은 정답 48개를 모두 바꿔 모델 독립적 안전장치는 아니었다."
+    ],
+    "whyItMatters": "에이전트 검토기를 넣을 때는 교체 조건뿐 아니라 모델별 행동과 보류·상향 인터페이스까지 함께 설계해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "bcb014e45d5cd864d6a203564249a61041bad4a2",
+    "title": "Servo의 9월 업데이트: <progress>, 둥근 사각형 등",
+    "url": "https://news.hada.io/topic?id=36683&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-06T00:36:03.000Z",
+    "summary": [
+      "Servo 0.7.0에 9월 한 달 동안 작성된 527개 커밋이 반영됐다.",
+      "<progress>, 둥근 사각형, :checked와 WebCrypto의 MLKEM768-X25519가 추가됐다.",
+      "Candy Crush는 실행되지만, egui.rs는 별도 설정이 필요하고 포커스 전달 방식도 바뀌었다."
+    ],
+    "whyItMatters": "Servo를 임베딩하고 있다면 포커스 변경 코드를 WebView::set_focused 호출에 맞춰야 한다.",
+    "tags": [
+      "웹",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "075932e153d9489c6f2a6ad9ea88713b8cba11ba",
+    "title": "MS Paint Remote Code Execution Vulnerability",
+    "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+    "source": "hackernews",
+    "publishedAt": "2026-11-05T20:43:42.000Z",
+    "summary": [
+      "CVE-2026-83844라는 식별자로 MS Paint 원격 코드 실행 취약점이 등록됐다.",
+      "제목에서 확인되는 내용은 MS Paint가 대상이고, 원격 코드 실행이 가능한 취약점이라는 점뿐이다.",
+      "공격 조건, 영향받는 버전, 재현 방법과 패치 상태는 본문이 없어 확인되지 않는다."
+    ],
+    "whyItMatters": "MS Paint를 쓰는 환경이라면 해당 CVE의 영향 버전과 패치 유무를 먼저 확인해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "4aed649a245d7a4afcb4c28852ae7e231cee9dc7",
+    "title": "Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents",
+    "url": "https://arxiv.org/abs/2611.05391",
+    "source": "arxiv",
+    "publishedAt": "2026-11-05T05:00:00.000Z",
+    "summary": [
+      "도구를 쓰는 에이전트에 검증된 실행 상태를 먼저 보여주는 설계가 제안됐다.",
+      "216건 실험에서 정책 후회가 4,252ms에서 131ms로 줄고, 단일 실행 완료율은 69.4%에서 95.8%가 됐다.",
+      "실시간 복제 실험에서도 9/9로 완료했지만, 런타임 상태·비용·재시도 회복은 아직 검증하지 않았다."
+    ],
+    "whyItMatters": "도구 상태를 읽지 못하는 에이전트라면 실행 전에 호스트가 검증한 최신 상태를 주입하는 구조를 붙여 실패 선택을 줄일 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "1aece71488f2db9fa7ac1806b33c4628cf8e896a",
+    "title": "voxl - 매우 빠른 브라우저 기반 원격 데스크톱 도구",
+    "url": "https://news.hada.io/topic?id=36682&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-06T00:30:02.000Z",
+    "summary": [
+      "voxl은 Rust로 만든 오픈소스 도구로, 서버·샌드박스 GUI를 브라우저에서 원격 조작한다.",
+      "화면을 H.264로 CPU 인코딩해 WebSocket으로 보내고 WebCodecs로 디코딩하며, 최대 60 FPS를 낸다.",
+      "Linux의 X11과 Xvfb를 지원해 모니터나 GPU 없는 VM에서 쓰며, macOS와 Windows 10 이상도 지원한다."
+    ],
+    "whyItMatters": "원격 VM GUI를 붙일 때 별도 뷰어 대신 브라우저와 iframe만으로 운영할 수 있다.",
+    "tags": [
+      "인프라",
+      "웹"
+    ]
+  },
+  {
+    "id": "551c2101be1077c2cefdf049ebc9ad37e1c7e1da",
+    "title": "Search for everyone",
+    "url": "https://kagi.com/changelog#11820",
+    "source": "hackernews",
+    "publishedAt": "2026-11-05T20:03:34.000Z",
+    "summary": [
+      "2026년 11월 5일, Kagi가 친구와 가족도 써볼 수 있게 됐다는 변경 사항을 올렸다.",
+      "변경 제목은 ‘Search for everyone’이며, 친구와 가족 대상 이용이 핵심으로 적혔다.",
+      "발췌에는 초대 방식, 요금, 계정 조건 같은 구체적인 이용 방법이 나오지 않는다."
+    ],
+    "whyItMatters": "Kagi를 주변 사람에게 권하려면 초대 방식과 요금 조건이 확인될 때까지 본문을 더 봐야 한다.",
+    "tags": [
+      "웹"
+    ]
+  }
+]
