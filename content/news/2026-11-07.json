@@ -1,0 +1,137 @@
+[
+  {
+    "id": "337317f371ec5411dd42e23afe73561c7362b8fa",
+    "title": "DoorDash가 정확도를 유지하면서 LLM 검색 비용을 98% 줄인 방법",
+    "url": "https://news.hada.io/topic?id=36733&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-07T00:40:02.000Z",
+    "summary": [
+      "DoorDash가 LLM의 내장 웹 검색을 별도 검색 API로 분리해 검색 비용을 98% 이상 줄였다.",
+      "검색 의도 분류 정확도를 유지했고, 여러 에이전트가 공유하는 게이트웨이에서 모델과 검색 업체를 바꿀 수 있게 했다.",
+      "모델 추론 비용은 제외한 수치이며, 캐시가 차면 평균 지연 시간은 68%, 검색 비용은 99% 이상 줄었다."
+    ],
+    "whyItMatters": "LLM 에이전트의 웹 검색을 운영한다면 검색 API와 공유 캐시를 분리해 비용과 지연 시간을 함께 줄일 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "5072f0d6af005438b40c2d5c9abe43e47e3432c5",
+    "title": "AI is dramatically accelerating AI research",
+    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+    "source": "hackernews",
+    "publishedAt": "2026-11-06T20:27:23.000Z",
+    "summary": [
+      "Anthropic의 AI가 AI 연구개발을 가속해, 극적 가속 기준을 넘었다는 분석이 나왔다.",
+      "METR 보고서에 따르면 2025년 10월부터 1년간 역량 발전 속도가 직전 12개월의 약 2배였다.",
+      "핵심 근거 상당수는 비공개 처리됐고, 가속이 계속되면 1년 안에 초지능이라는 단순 추정도 나왔다."
+    ],
+    "whyItMatters": "AI로 AI 연구를 자동화하는 팀이라면 모델 성능과 별개로 연구 속도가 실제로 얼마나 빨라지는지 측정해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "b09238dcb5e354118a58e1550acd6f82e5722279",
+    "title": "Formalizing inverse problems in the age of AI: possibilities, pitfalls, and an invitation",
+    "url": "https://arxiv.org/abs/2611.06962",
+    "source": "arxiv",
+    "publishedAt": "2026-11-06T05:00:00.000Z",
+    "summary": [
+      "AI 에이전트가 선형 정칙화 이론을 Lean 라이브러리 AutoIP로 형식화했다.",
+      "Lean이 공리까지 증명은 검사하지만, 연구자는 형식 문장이 원래 뜻과 같은지 따로 확인한다.",
+      "문장에 대한 간단한 자동 테스트로 기존 문헌의 더 엄격한 가정도 찾아냈다."
+    ],
+    "whyItMatters": "Lean으로 증명을 자동 검증해도 가정과 정리의 문장을 사람이 대조해야 하므로, 형식화 작업의 핵심 검토 지점이 달라진다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "81372d5794019ee980b88e3eef5682a1dd0f7333",
+    "title": "AI가 AI 연구를 극적으로 가속하고 있음",
+    "url": "https://news.hada.io/topic?id=36732&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-07T00:34:28.000Z",
+    "summary": [
+      "METR 조사에서 Anthropic의 AI 역량 발전 속도가 최근 1년간 두 배 빨라졌다고 봤다.",
+      "AI를 이용한 연구 자동화가 주요 요인으로 추정되며, 단순 모형은 연구 노동 생산성 10배 향상을 가리킨다.",
+      "복리적 가속을 막을 명확한 병목은 없었지만, 조사팀은 판단 변경과 큰 불확실성을 인정했다."
+    ],
+    "whyItMatters": "AI 연구 자동화가 가속의 핵심 요인이라면, 연구팀은 모델 성능뿐 아니라 실험 자동화와 생산성 병목을 먼저 봐야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "ef2a83f7f3a44d746cc2451560fee6a857699074",
+    "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+    "source": "hackernews",
+    "publishedAt": "2026-11-06T19:48:51.000Z",
+    "summary": [
+      "Hightouch가 Identity Resolution에 쓸 LLM Judge 비용 절감 사례를 소개했다.",
+      "Opus에 도움을 요청하는 ‘Jev’가 Opus 수준 정확도를 4분의 1 비용으로 냈다는 주장이다.",
+      "발췌에는 평가 데이터나 Jev의 작동 방식, 실제 비용 산정 기준이 없어 검증할 수 없다."
+    ],
+    "whyItMatters": "Identity Resolution 평가에 LLM Judge를 붙였다면 Jev와 Opus의 비용·정확도를 같은 데이터로 다시 비교해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "c4775cf3737a4095cda80b52d7bfefba169ba10c",
+    "title": "KDASO: Knowledge-Data Dual-Driven Automated Skill Optimization for Liability Adjudication Tasks",
+    "url": "https://arxiv.org/abs/2611.06972",
+    "source": "arxiv",
+    "publishedAt": "2026-11-06T05:00:00.000Z",
+    "summary": [
+      "법적 책임 판단용 스킬 라이브러리를 자동으로 갱신하는 KDASO가 제안됐다.",
+      "최근 판정 데이터로 스킬을 만들고, 실행 궤적을 분석해 고치며, 문맥 예산에 맞춰 골라 쓴다.",
+      "차량호출·법적 책임·논리 판단에서 평가됐고, 유사 개념 전이 성능은 8.96% 올랐지만 세부 조건은 초록에 없다."
+    ],
+    "whyItMatters": "법률이나 책임 판정 에이전트를 만든다면 고정 스킬 목록 대신 최신 데이터와 실행 로그를 반영하는 구조를 넣게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "39f1696eb868511d92d5419e0763fc4edf71cb2c",
+    "title": "대부분의 AI 스타트업은 살아남지 못한다 - 살아남는 회사를 만드는 방법 [영상]",
+    "url": "https://news.hada.io/topic?id=36731&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-07T00:31:01.000Z",
+    "summary": [
+      "Khosla Ventures의 키스 라보이스가 AI 스타트업의 생존 조건을 말한 영상이다.",
+      "OpenAI나 Anthropic이 같은 기능을 만들어도, 오토파일럿과 독자 데이터가 방어력을 만든다고 본다.",
+      "모델의 빈틈을 메우는 데 그치지 말고, 서비스 결과에 책임지는 구조가 필요하다는 주장이다."
+    ],
+    "whyItMatters": "AI 기능만 붙인 제품이라면 기반 모델이 따라왔을 때 사업 방어력이 약해질 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "f441801c064cce85972f578b6c32c3afb1af080c",
+    "title": "Firecracker VM Escape: PwnEscape Part 2",
+    "url": "https://pwn.ai/blog/firecracker-escape",
+    "source": "hackernews",
+    "publishedAt": "2026-11-06T19:33:38.000Z",
+    "summary": [
+      "PWN Research가 Firecracker microVM에서 게스트 탈출을 재현했다.",
+      "게스트가 호스트 메모리 접근 권한으로 KVM_RUN 복귀 레지스터를 바꿔 호스트 root 코드 실행까지 이어졌다.",
+      "연구는 CVE-2026-99999를 대상으로 했고, 실제 공격 조건과 패치 여부는 본문 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Firecracker에서 비신뢰 코드를 돌린다면 게스트 탈출을 막는 호스트 커널과 Firecracker 업데이트를 먼저 확인해야 한다.",
+    "tags": [
+      "보안",
+      "인프라"
+    ]
+  }
+]
