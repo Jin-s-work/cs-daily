@@ -1,0 +1,118 @@
+[
+  {
+    "id": "606fae6f7b1bd3a657e4bcde67b324d214ef3059",
+    "title": "웹에서 AI가 일으키는 온갖 부작용에 어떻게 대처하고 계신가요?",
+    "url": "https://news.hada.io/topic?id=36781&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-08T00:02:00.000Z",
+    "summary": [
+      "AI 생성 콘텐츠와 자동화된 접근 제한 때문에 웹 검색과 자료 탐색이 더 불편해졌다는 문제 제기가 나왔다.",
+      "검색 상단은 저품질 AI 글이 차지하고, Google·DuckDuckGo 제한과 GitHub·Anubis 차단도 겹쳤다.",
+      "기본 자료만으로 최신 하드웨어 문제를 풀기 어렵고, 작성자는 1년 된 모바일 칩셋의 펌웨어 부팅 문제를 겪고 있다."
+    ],
+    "whyItMatters": "최신 하드웨어를 디버깅할 때는 검색 서비스의 제한에 대비해 버그 보고서와 로컬 자료를 함께 확보해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "e4da1fc3654cef88cf2c3c5bee2e8cf79b7ef1c9",
+    "title": "What I run on my $10 USD OpenStick homelab",
+    "url": "https://blog.bosscher.ch/posts/openstick/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-07T18:12:12.000Z",
+    "summary": [
+      "10달러짜리 OpenStick을 무소음 홈서버로 꾸려 자가 호스팅 서비스를 돌린다.",
+      "512MB RAM, 1GHz ARM Cortex-A53 4코어와 4GB eMMC에서 Debian과 Podman을 돌린다.",
+      "설치 과정은 다소 번거롭고, 본문 발췌가 중간에 끊겨 전체 서비스 목록은 확인되지 않는다."
+    ],
+    "whyItMatters": "저전력·무소음 장치에 DNS 차단이나 Cast 후원 건너뛰기 같은 서비스를 맡길 수 있다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "efbf1ee6336fbf7a78a74590bdcb6f0e391db4d9",
+    "title": "MaxxBench - “DeepSWE 점수는 좋네요. 그런데 진짜인가요?”",
+    "url": "https://news.hada.io/topic?id=36780&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-07T23:34:44.000Z",
+    "summary": [
+      "MaxxBench가 DeepSWE 89개 과제를 살짝 바꿔 코딩 에이전트의 적응력을 다시 측정했다.",
+      "참조 패치 증가는 중앙값 17줄(3.5%)뿐인데, 구성별 점수 격차는 20.9%p에서 48.3%p로 커졌다.",
+      "일부 모델은 숨은 테스트를 추측했고, Claude Opus 5.5처럼 요구사항을 더 잘 따른 모델도 있었다."
+    ],
+    "whyItMatters": "DeepSWE 점수만 보고 코딩 에이전트의 실제 적응력을 판단했다면, 변형된 과제 평가를 함께 봐야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "1eeaf5457cb1a01aa73d0970c568d71b10f47386",
+    "title": "The end of Microsoft Research's AI Frontiers group",
+    "url": "https://hunch.net/?p=13764006",
+    "source": "hackernews",
+    "publishedAt": "2026-11-07T18:02:17.000Z",
+    "summary": [
+      "Microsoft Research의 AI Frontiers 그룹이 종료됐다는 소식이 나왔다.",
+      "그룹 해체가 언제, 어떤 인력과 연구 과제에 영향을 주는지는 기사 발췌만으로 확인되지 않는다.",
+      "원문 본문이 없어 후속 조직이나 연구 프로젝트의 처리 방식도 아직 알 수 없다."
+    ],
+    "whyItMatters": "이 그룹의 연구 결과나 인력에 의존하고 있다면 후속 조직과 프로젝트 상태를 먼저 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "fd06f4b0fed0e174d3ebd0cf97db3cc5e1785d7f",
+    "title": "Show HN: Coldframe, 슈퍼마켓 냉장 제어기로 위장하는 허니팟",
+    "url": "https://news.hada.io/topic?id=36779&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-07T22:38:27.000Z",
+    "summary": [
+      "Coldframe이 슈퍼마켓 냉장 제어기로 위장한 허니팟으로 Show HN에 소개됐다.",
+      "Danfoss AK-SM 800A와 Copeland/Dixell XWEB EVO 두 장비의 웹 지문과 인증 흐름을 재현한다.",
+      "실제 장비나 제어 기능은 없고, Python 표준 라이브러리만 쓰는 단일 파일로 구현됐다."
+    ],
+    "whyItMatters": "냉장 설비를 겨냥한 공격을 관찰하려면 실제 장비 대신 이 허니팟을 배치하면 된다.",
+    "tags": [
+      "보안",
+      "인프라"
+    ]
+  },
+  {
+    "id": "75033d6b18a041016defb8f632069a9bc19c7159",
+    "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+    "url": "https://github.com/hedgerow-dev/coldframe",
+    "source": "hackernews",
+    "publishedAt": "2026-11-07T17:27:30.000Z",
+    "summary": [
+      "Coldframe이 슈퍼마켓 냉장 설비 제어기를 흉내 내는 허니팟으로 공개됐다.",
+      "Python 파일 하나로 표준 라이브러리만 써서 Danfoss AK-SM 800A와 Dixell XWEB 화면을 재현한다.",
+      "가짜 대시보드까지 열어주지만 실제 설비는 없고, 하루 동안 두 인스턴스에는 일반 스캐너와 Shodan 크롤러만 접근했다."
+    ],
+    "whyItMatters": "산업용 냉장 제어기를 인터넷에 노출했다면, 실제 장비 대신 Coldframe으로 공격 흐름을 관찰할 수 있다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "3c29386a966ca60e8f252f0e96b4e8fe045eefa8",
+    "title": "모든 Windows 11 앱은 Electron을 버려야 한다, Discord가 그 이유를 보여줬다",
+    "url": "https://news.hada.io/topic?id=36778&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-07T22:35:27.000Z",
+    "summary": [
+      "Discord가 Electron 데스크톱 앱을 Rust와 GPUI 기반으로 다시 만들고 있다.",
+      "새 클라이언트는 계정 2개를 동시에 켜고도 RAM 290.2MB를 썼고, 친구 목록이 먼저 떴다.",
+      "기존 앱은 약 1GB를 썼지만 동일 조건 벤치마크는 아직 없어 실제 우위는 확정되지 않았다."
+    ],
+    "whyItMatters": "데스크톱 앱을 만들고 있다면 Electron 대신 Rust·GPUI를 고를 근거가 하나 생긴다.",
+    "tags": [
+      "언어/런타임",
+      "업계"
+    ]
+  }
+]
