@@ -1,0 +1,112 @@
+[
+  {
+    "id": "9d92c3c1bb5672a8a06059cd0c056df1706585a3",
+    "title": "AI에 회사 맥락을 제공하고 ‘회사 두뇌’를 구축하는 방법",
+    "url": "https://news.hada.io/topic?id=36856&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-09T00:40:02.000Z",
+    "summary": [
+      "회사 고유의 지표·정책·업무 방식을 문서화하고 AI와 연결해야 회사 맥락에 맞는 답이 나온다.",
+      "회사 두뇌는 문서뿐 아니라 업무 도구의 최신 기록과 진행 중 수정 사항까지 함께 담는다.",
+      "파인튜닝보다 검색과 최신 기록 조회를 쓰며, 1~2페이지에 기준과 내부 용어를 적는다."
+    ],
+    "whyItMatters": "사내 기준을 AI에 맡길 때 파인튜닝 대신 최신 문서와 업무 도구를 연결하는 설계를 먼저 해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "2fab79d06b7a4b4ba55c4a6019c9aa9cb4241e54",
+    "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+    "url": "https://ketchup3d.github.io/app/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-08T22:35:35.000Z",
+    "summary": [
+      "Rust와 WebGPU로 만든 오픈소스 3D 목공·가구 설계 앱 KetchUp이 나왔다.",
+      "Windows, macOS, Linux와 데스크톱 브라우저에서 치수 입력, Push/Pull, OBJ 내보내기를 쓸 수 있다.",
+      "계정 없이 쓰며 작업은 로컬에 자동 저장되고, SketchUp 형상도 가져올 수 있지만 세부 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "SketchUp 작업을 대체할 가벼운 목공 설계 도구가 필요하면 설치 없이 브라우저에서 바로 써볼 수 있다.",
+    "tags": [
+      "웹",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "5229ffe89040d9a26f4111485fccecaa316550e0",
+    "title": "Ask HN: 무엇을 만들거나 작업하고 계신가요? (2026년 11월)",
+    "url": "https://news.hada.io/topic?id=36855&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-09T00:39:34.000Z",
+    "summary": [
+      "Hacker News에서 2026년 11월 현재 만들고 있는 것과 작업 중인 일을 묻는 글이 올라왔다.",
+      "참여자들이 진행 중인 프로젝트와 최근 호기심을 느낀 주제를 공유하는 자리다.",
+      "본문 발췌만으로는 어떤 프로젝트와 주제가 나왔는지 구체적으로 확인되지 않는다."
+    ],
+    "whyItMatters": "진행 중인 개발 주제를 찾고 있다면 댓글에서 다른 개발자의 작업 목록을 한 번에 볼 수 있다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "4ac45e74548db3788dd5a63ec49276599a13085e",
+    "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+    "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
+    "source": "hackernews",
+    "publishedAt": "2026-11-08T22:20:09.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "f483098bd32d902853ecbda95b935f8d20197818",
+    "title": "KetchUp - Rust와 WebGPU로 만든 오픈소스 SketchUp 대안",
+    "url": "https://news.hada.io/topic?id=36854&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-09T00:36:34.000Z",
+    "summary": [
+      "KetchUp이 Rust와 WebGPU로 만든 오픈소스 SketchUp 대안으로 나왔다.",
+      "선과 도형에 Push/Pull을 적용하고 치수·스냅·그룹·태그로 목공 모델을 편집한다.",
+      "Windows·macOS·Linux와 데스크톱 브라우저에서 계정 없이 로컬 자동 저장을 쓴다."
+    ],
+    "whyItMatters": "SketchUp 대신 쓸 무료 모델링 도구를 찾는다면 계정과 클라우드 없이 로컬 작업을 시작할 수 있다.",
+    "tags": [
+      "웹",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "a24fdfddefa6b5e43959db83295bc5951bdac094",
+    "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+    "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+    "source": "hackernews",
+    "publishedAt": "2026-11-08T20:26:43.000Z",
+    "summary": [
+      "NVIDIA 이사회가 Jensen Huang을 겨냥한 외국 정보기관 공작 보도와 관련해 독립 조사를 시작했다.",
+      "독립 이사들로 꾸린 위원회가 외부 독립 법률자문과 함께 관련 정보를 조사하며 Jensen도 협조한다.",
+      "이사회는 국가안보나 NVIDIA 기밀이 유출됐다고 볼 근거는 없지만, 모든 가용 정보를 확인한다."
+    ],
+    "whyItMatters": "NVIDIA 관련 보안·거버넌스 뉴스를 볼 때 실제 기밀 유출과 조사 착수를 구분해야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "b80681592b06a5563859659994596711aa25a9cf",
+    "title": "Univer - 웹앱에 스프레드시트와 문서 편집기를 넣는 SDK",
+    "url": "https://news.hada.io/topic?id=36853&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-09T00:30:02.000Z",
+    "summary": [
+      "Univer가 웹앱 안에 스프레드시트와 문서 편집기를 넣는 SDK로 나왔다.",
+      "편집 화면과 애플리케이션이 같은 데이터를 쓰고, 수식 결과는 자동으로 갱신된다.",
+      "셀·범위 API와 변경 이벤트를 연결할 수 있지만, AI 모델과 도구 실행 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "기존 웹앱에 표 계산과 문서 편집을 넣을 때 화면과 애플리케이션 로직이 같은 데이터를 다루게 된다.",
+    "tags": [
+      "웹",
+      "AI/LLM"
+    ]
+  }
+]
