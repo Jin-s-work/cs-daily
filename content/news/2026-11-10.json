@@ -1,0 +1,134 @@
+[
+  {
+    "id": "df0d6363c678c5a7b107bf98f3b49400b479f7cc",
+    "title": "Fable 5.2가 조카가 꿈꾸던 게임을 한 번의 요청으로 구현함",
+    "url": "https://news.hada.io/topic?id=36929&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-10T02:35:11.000Z",
+    "summary": [
+      "Fable 5.2가 조카의 그림과 기존 게임을 바탕으로 밤사이 플레이 가능한 게임을 만들었다.",
+      "한 번의 요청 뒤 코드 대부분을 다시 쓰고 이미지 약 175개와 오디오 클립 140개를 생성해 12스테이지를 완성했다.",
+      "플레이 봇이 헤드리스 브라우저에서 전 스테이지를 점검했고, 플레이테스트 뒤 18개 캐릭터와 4인 플레이가 추가됐다."
+    ],
+    "whyItMatters": "다음 게임 프로토타입에서는 코드·아트 생성뿐 아니라 헤드리스 브라우저 플레이테스트도 처음부터 자동화하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "ffa9f549808befb5010c38f139f59fe67522a601",
+    "title": "Fable 5.2 one-shotted my nephew's dream game",
+    "url": "https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game",
+    "source": "hackernews",
+    "publishedAt": "2026-11-09T23:08:13.000Z",
+    "summary": [
+      "Fable 5.2가 조카의 그림 묶음만으로 꿈꾸던 격투 게임을 한 번에 만들었다.",
+      "가족을 바탕으로 한 영웅 5명과 보스 12명, 강아지 구출 이야기가 들어갔다.",
+      "본문 발췌가 중간에 끊겨 5.2의 구체적인 제작 방식은 확인되지 않는다."
+    ],
+    "whyItMatters": "그림과 요구사항을 바탕으로 AI 코딩 에이전트에게 게임 프로토타입 제작을 맡기는 흐름이 현실적인 선택지가 됐다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "0df939a352b42fb4c159fa4124443445012be334",
+    "title": "Enhancing Academic Advisement with Case-Based Reasoning",
+    "url": "https://arxiv.org/abs/2611.08572",
+    "source": "arxiv",
+    "publishedAt": "2026-11-09T05:00:00.000Z",
+    "summary": [
+      "Case-Based Reasoning을 학업 상담에 적용한 프로토타입 추천 시스템 연구가 나왔다.",
+      "논문은 시스템을 설계·개발하고 검증해 기존 상담을 보완하는 방식을 설명한다.",
+      "현재는 인간 상담을 대체하지 않으며, 실제 대학 현장 적용 여부는 확인되지 않는다."
+    ],
+    "whyItMatters": "학업 상담 서비스를 만든다면 과거 사례를 검색해 추천하는 모듈을 기존 상담 흐름에 붙이는 방향을 택할 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "9f1464bbaa3a32c4613a03f6f5e17b37468a73ef",
+    "title": "Show GN: Daizy - 단어 암기에 특화된 예쁜 Anki/Quizlet Alternative",
+    "url": "https://news.hada.io/topic?id=36928&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-10T02:15:00.000Z",
+    "summary": [
+      "Daizy는 단어 암기에 집중한 Anki·Quizlet 대안 앱으로, Android·iOS·웹에서 쓸 수 있다.",
+      "FSRS 기반 데일리 퀴즈와 Anki 덱 가져오기·내보내기, 연속 학습·통계·알림을 묶었다.",
+      "월 플랜은 2,200원이며, AI 예문·이미지 생성과 새 단어 추천은 향후 기능으로 남아 있다."
+    ],
+    "whyItMatters": "Anki 덱을 쓰면서 더 단순한 화면과 여러 기기 동기화를 원했다면 대안으로 바로 비교해볼 수 있다.",
+    "tags": [
+      "웹",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "ed213adeba37dce7c28882655e6450243906bd0b",
+    "title": "TPU 8tx and TPU 8i Max",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-09T21:56:57.000Z",
+    "summary": [
+      "Google이 에이전트형 AI 시대를 겨냥한 TPU 8tx와 TPU 8i Max를 발표했다.",
+      "두 제품이 Google의 최신 TPU라는 점 외에, 구성과 성능 수치는 본문에서 확인되지 않는다.",
+      "발췌에는 출시 일정과 사용 조건, 기존 TPU와의 차이도 없어 도입 시점은 알 수 없다."
+    ],
+    "whyItMatters": "TPU를 직접 쓰는 팀이라면 세부 사양과 출시 조건이 나올 때까지 기존 인프라 교체 계획을 확정하기 어렵다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "bd98e7aa892256f92e03d6161e2821e5fa5e72ab",
+    "title": "NormGym: Evaluating Normative Competence through Social Interaction",
+    "url": "https://arxiv.org/abs/2611.08613",
+    "source": "arxiv",
+    "publishedAt": "2026-11-09T05:00:00.000Z",
+    "summary": [
+      "NormGym이 낯선 공동체에서 숨은 규범을 배우는 LLM의 능력을 평가하는 벤치마크로 나왔다.",
+      "에이전트는 과제를 하면서 행동과 제재를 관찰해 허용된 규범을 추론해야 하며, 최고 성공률은 55.3%였다.",
+      "자기 행동이 제재받으면 고치지만, 타인의 행동과 제재로 규범을 추론하는 데 약했고 fine-tuning만으로는 부족했다."
+    ],
+    "whyItMatters": "멀티에이전트 환경에서 LLM이 남의 행동과 제재까지 규칙 학습에 활용하는지는 별도로 검증해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "532459dfd79d7468c96c1f3101cdce175fb32af0",
+    "title": "Show GN: Tacie – 지난 결정, 회의 중에 바로 찾아 주는 Mac용 AI 어시스턴트",
+    "url": "https://news.hada.io/topic?id=36925&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-10T01:56:02.000Z",
+    "summary": [
+      "Mac용 AI 어시스턴트 Tacie가 회의 중 GitHub·Linear·노션에서 지난 결정과 근거를 찾아 띄운다.",
+      "예를 들어 30일 무료 체험안에 14일 전환율 12.4%, 30일 9.1%인 Linear 실험 결과를 함께 보여준다.",
+      "회의가 끝나면 결정과 할 일을 정리하고, 여러 회의의 작업은 기한별로 모으지만 Mac용이라는 점 외 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "회의 중 과거 결정과 실험 결과를 찾느라 회의를 멈추는 일이 줄어든다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "255b56db4a4a44d0d4a2de8a77fb172cf2dc5a84",
+    "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+    "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+    "source": "hackernews",
+    "publishedAt": "2026-11-09T20:04:55.000Z",
+    "summary": [
+      "Artificial Analysis에서 Claude Fable 5.2가 74개 모델 중 1위를 기록했고 점수는 65다.",
+      "입력은 1M 토큰당 $8, 출력은 $40이고, 평가 작업당 평균 비용은 $26.54다.",
+      "텍스트·이미지 입력과 1M 토큰 컨텍스트를 쓰지만, 첫 토큰까지 215.95초, 작업당 46.4분이 걸린다."
+    ],
+    "whyItMatters": "정확도를 우선하는 고난도 작업에 붙일 수 있지만, 긴 지연시간과 높은 토큰 비용을 감당할 수 있는 경우로 제한해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
