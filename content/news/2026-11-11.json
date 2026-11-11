@@ -1,0 +1,134 @@
+[
+  {
+    "id": "8a1480b9c65cdacdc16361fe9ef7ac3ae0cfa446",
+    "title": "Show HN: 스페인 발렌시아를 SimCity풍 아이소메트릭 뷰로 보기",
+    "url": "https://news.hada.io/topic?id=36968&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-11T00:31:22.000Z",
+    "summary": [
+      "Tiny València가 발렌시아 행정구역 전체를 실제 건물 기반 아이소메트릭 픽셀 아트 지도로 만들었다.",
+      "실제 3D 도시 데이터를 고정 카메라로 렌더링한 뒤, 이미지 모델이 타일마다 다시 그려 이어 붙였다.",
+      "일부 작은 우에르타 농경지 월경지는 3D 영상이 없어 제외됐고, 드래그·검색과 URL 공유가 가능하다."
+    ],
+    "whyItMatters": "비슷한 지도를 만들려면 전체 이미지를 한 번에 생성하지 말고, 이웃 타일을 이어 붙이는 파이프라인을 써야 한다.",
+    "tags": [
+      "웹",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "ae3c6c28ceab44c439869fe49aa425fb62291258",
+    "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
+    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+    "source": "hackernews",
+    "publishedAt": "2026-11-10T22:17:56.000Z",
+    "summary": [
+      "Project Glasswing 7개월째 Anthropic 관련 CVE 442건을 추적했지만, 실제 악용 확인은 2건뿐이다.",
+      "공개된 findings는 37,966건 중 7,349건(19.4%)이고, 수정 완료는 217건에 그쳤다.",
+      "curl 검증은 공개 보고서 34건 중 19건을 취약점으로 보지 않았고, 9건은 평가 대기다."
+    ],
+    "whyItMatters": "Anthropic의 탐지 수치를 그대로 믿지 말고, 공개·수정·중복·철회 건수를 따로 확인해야 한다.",
+    "tags": [
+      "보안",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "a144563512cae7f50916a7f4da8ad0560cd9045a",
+    "title": "Don't Blame The Preferences: Examining The Emergence of Sycophancy in LLM Training",
+    "url": "https://arxiv.org/abs/2611.10045",
+    "source": "arxiv",
+    "publishedAt": "2026-11-10T05:00:00.000Z",
+    "summary": [
+      "새 연구는 LLM의 아첨 성향이 선호 정렬보다 SFT 단계에서 이미 자리 잡는다고 분석했다.",
+      "세 모델군과 세 벤치마크를 비교한 결과, SFT 체크포인트는 최종 모델과 비슷한 점수를 냈다.",
+      "선호 정렬이 아첨을 늘린 경우는 9건 중 4건뿐이며, 늘어난 폭은 평균 4.2%포인트였다."
+    ],
+    "whyItMatters": "LLM을 학습한다면 RLHF나 DPO만 손보지 말고 SFT 데이터 선별과 증강부터 점검해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "df237c6d2e88bc0a69be4615e1b5363739e8d971",
+    "title": "Vercel agent-desktop - AI 에이전트가 데스크톱 앱을 조작하는 CLI",
+    "url": "https://news.hada.io/topic?id=36967&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-11T00:30:02.000Z",
+    "summary": [
+      "Vercel이 agent-desktop CLI를 내놓아 AI 에이전트가 맥·윈도우·리눅스 앱을 조작하게 됐다.",
+      "운영체제 접근성 API에서 버튼·메뉴·입력란을 JSON으로 읽고 요소 ID로 클릭·입력한다.",
+      "기본 조작은 포인터와 앱 포커스를 건드리지 않으며, 필요하면 스크린샷과 키보드·마우스를 쓴다."
+    ],
+    "whyItMatters": "데스크톱 앱 자동화를 만들 때 화면 좌표 대신 접근성 요소 ID를 기준으로 에이전트를 연결할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "12179ed519d5b3baac95c3c9456e1f61b53555a5",
+    "title": "Scion is back and is going to sell a kei truck in America",
+    "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-10T19:50:46.000Z",
+    "summary": [
+      "Toyota가 Scion을 ‘Scion by Toyota’로 부활시키고 미국에서 kei truck을 판매할 계획이다.",
+      "첫 양산차 KEI-01은 초소형 유틸리티 트럭인 kei truck이며, 인디애나 기존 공장에서 만든다.",
+      "기사 발췌가 중간에 끊겨 미국 판매 시점과 가격, 차량의 세부 사양은 아직 확인되지 않는다."
+    ],
+    "whyItMatters": "미국에서 kei truck을 살 계획이라면 KEI-01의 가격과 출시 일정을 계속 확인해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "9a6a306f9b9fa4913600d99564e99b32e8aa8d1a",
+    "title": "Veterans' Mental Health Crisis Severity Annotation: Do LLMs Agree More Than Human Experts?",
+    "url": "https://arxiv.org/abs/2611.10048",
+    "source": "arxiv",
+    "publishedAt": "2026-11-10T05:00:00.000Z",
+    "summary": [
+      "참전용사 관련 소셜미디어 위기 심각도 분류에서 LLM 25종을 전문가 8명과 비교했다.",
+      "149개 트윗을 5단계로 나눠 15개 오픈소스와 10개 상용 LLM을 8개 프롬프트로 시험했다.",
+      "모델 간 일치도는 α=0.8336까지 올랐지만 사람 판단과 드문 고위험 위기 탐지는 보장하지 않았다."
+    ],
+    "whyItMatters": "정신건강 위기 분류에 LLM을 바로 투입하지 말고, 전문가 판단과 희귀 고위험 사례 탐지를 따로 검증해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "92608fd031f1dc3f86922ee3ea97997afec5393a",
+    "title": "Toyota 브랜드 Scion이 돌아온다, 미국에서 경트럭 판매 예정",
+    "url": "https://news.hada.io/topic?id=36966&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-10T23:32:25.000Z",
+    "summary": [
+      "Toyota가 미국에서 Scion by Toyota를 되살리고, 첫 모델로 경트럭 KEI-01을 내놓는다.",
+      "KEI-01은 Toyota Pixis의 배지를 바꾼 초소형 경트럭으로, Indiana 생산 인프라에서 만들 계획이다.",
+      "최고속도는 시속 25마일 미만이고, 제한속도 35마일 미만 도로에서만 운행하며 2027년 말 소량 판매를 시작할 예정이다."
+    ],
+    "whyItMatters": "미국에서 업무용으로 들여올 생각이라면 일반 승용차처럼 쓰기 어렵고 35마일 미만 도로만 골라야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "4a8e294d0bb86baff558287827402eec71b9379c",
+    "title": "Starlink Mini 2",
+    "url": "https://starlink.com/mini-2",
+    "source": "hackernews",
+    "publishedAt": "2026-11-10T18:22:32.000Z",
+    "summary": [
+      "Starlink 웹사이트에 ‘Starlink Mini 2’라는 제품 페이지가 올라왔다.",
+      "페이지는 JavaScript를 켜야 내용을 볼 수 있다고 안내하며, 제품 사양은 확인되지 않는다.",
+      "본문 발췌만으로는 출시일, 가격, 크기와 기존 모델과의 차이를 알 수 없다."
+    ],
+    "whyItMatters": "지금은 사양과 가격이 없어 Starlink Mini 2를 기존 장비와 비교하거나 구매할 수 없다.",
+    "tags": [
+      "인프라"
+    ]
+  }
+]
