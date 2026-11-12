@@ -1,0 +1,119 @@
+[
+  {
+    "id": "65afbede4bb3fe09eea3b0c66c051d836311ab15",
+    "title": "Show HN: 투자할 YC 스타트업을 결정하는 게임으로 Papers, Please를 재현함",
+    "url": "https://news.hada.io/topic?id=37027&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-12T01:40:18.000Z",
+    "summary": [
+      "Show HN에 YC 스타트업 투자 판단을 게임으로 만든 프로젝트가 올라왔다.",
+      "‘Term Sheet, Please’에서 다음 창업자를 호출하고 PASS·FUND·HOLD 중 하나를 고른다.",
+      "게임 시점은 데모데이 다음 날인 ACT 01이며, 서류 속 사실은 INSPECT로 확인한다."
+    ],
+    "whyItMatters": "스타트업 투자 판단을 게임 UI로 만들 계획이라면 이 프로젝트의 선택 흐름과 서류 조사 방식을 참고할 수 있다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "fcc732cc4f5a0d8c81b001c7c4314794150b1de1",
+    "title": "93% of paint splatters are valid Perl programs (2019)",
+    "url": "https://www.mcmillen.dev/sigbovik/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-11T22:34:23.000Z",
+    "summary": [
+      "Colin McMillen이 페인트 얼룩을 Perl 코드로 읽는 실험 논문을 2019년 SIGBOVIK에 냈다.",
+      "OCR로 판독한 얼룩의 93%가 Perl 문법을 통과했고, 논문에는 유효하지 않은 사례 7개도 실렸다.",
+      "주 데이터셋은 얼룩 이미지 100장이고, 원문에는 코드가 아직 공개되지 않았다고 적혀 있다."
+    ],
+    "whyItMatters": "Perl 파서와 OCR을 엉뚱한 입력에 시험하는 예제로 써볼 수 있지만, 재현용 소스 코드는 아직 없다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "fd7c3339799cde36d6d6c9cce77ea85147688244",
+    "title": "Auditable Human-Agent Teams for Autonomous X-ray Experimentation",
+    "url": "https://arxiv.org/abs/2611.12933",
+    "source": "arxiv",
+    "publishedAt": "2026-11-11T05:00:00.000Z",
+    "summary": [
+      "연구팀이 사람과 coding agent가 함께 판단하는 자율 X-ray 실험을 실제 synchrotron에서 수행했다.",
+      "나노입자 superlattice를 대상으로 세 차례 실험했고, 메시지 61~67%가 해석·판단에 쓰였다.",
+      "오류 수정의 59~68%는 여러 참여자가 함께 했고, 결정의 절반가량에는 다른 참여자 의견이 들어갔다."
+    ],
+    "whyItMatters": "자율 실험 에이전트를 만들고 있다면 결과만 저장하지 말고 사람·에이전트의 대화와 결정 근거까지 남겨야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "633231fcd38570d9e6c832d3ccc295ca06dc759d",
+    "title": "Show HN: Yogurt - 무료이며 프라이버시를 보호하는 오픈소스 Granola 대안",
+    "url": "https://news.hada.io/topic?id=37025&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-12T01:37:18.000Z",
+    "summary": [
+      "Yogurt가 회의 봇 없이 통화를 녹음하는 오픈소스 AI 회의 노트 앱으로 나왔다.",
+      "회의 요약 화면에서 출시 계획, 담당자별 다음 단계와 개인 알림을 확인할 수 있고 Mac·Windows·Linux에서 쓴다.",
+      "무료이며 MIT 라이선스이고 로컬 빌드 문서도 있지만, 데이터 처리 위치는 확인되지 않는다."
+    ],
+    "whyItMatters": "회의 내용을 외부 봇에 넘기고 싶지 않다면 기존 회의 기록 도구 대신 로컬 실행 가능성을 먼저 확인하게 된다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "081caafcc522c70ea94ec58c75de815289eca637",
+    "title": "Nvidia is preparing to oust Jensen Huang",
+    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+    "source": "hackernews",
+    "publishedAt": "2026-11-11T22:31:06.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "6d6fb689fbfef42cf0dea467de2e3f21b2a8e131",
+    "title": "EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery",
+    "url": "https://arxiv.org/abs/2611.12934",
+    "source": "arxiv",
+    "publishedAt": "2026-11-11T05:00:00.000Z",
+    "summary": [
+      "EarthRecord가 40년치 위성 영상으로 토지 변화 분석 에이전트를 평가하는 벤치마크로 나왔다.",
+      "56개 지역의 Landsat·MODIS·VIIRS·Sentinel-2 원자료로 238개 질문을 10개 과제로 냈다.",
+      "12개 에이전트는 대부분 분석했지만, 위성 하나를 바꾸면 정답 절반이 그 변화에 끌렸다."
+    ],
+    "whyItMatters": "위성 원자료를 직접 다룬다면 센서 입력 변화에 분석 결과가 흔들리는지 별도로 검증해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "947f0d23429f4b8026b545403de63e918cca5d3b",
+    "title": "젠슨 황, 직속 보고 임원과도 혼외 관계를 맺었다는 증언 나와",
+    "url": "https://news.hada.io/topic?id=37024&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-12T01:34:18.000Z",
+    "summary": [
+      "전직 직원 5명이 Nvidia CEO 젠슨 황과 직속 임원 Kimberly Powell의 혼외 관계를 증언했다.",
+      "Powell은 헬스케어 부문 부사장이고, 두 사람은 3월 GTC 기간 산호세 호텔에서 목격됐다.",
+      "Nvidia 행동강령은 이해충돌 우려가 있는 개인적 관계를 피하도록 하며, NDA 제안 증언도 나왔다."
+    ],
+    "whyItMatters": "Nvidia 관련 보도는 회사 행동강령 위반 여부와 증언의 사실관계를 나눠 확인해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "071d9c002fdefcb3f85ca1f345e1b61b7ea2129b",
+    "title": "Jensen Huang said to have had relationship with executive who reports to him",
+    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+    "source": "hackernews",
+    "publishedAt": "2026-11-11T22:03:58.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  }
+]
