@@ -1,0 +1,117 @@
+[
+  {
+    "id": "81f2c9cf3ed34767633774e071a5c5380c5b2114",
+    "title": "자애로운 수출 통제 기계",
+    "url": "https://news.hada.io/topic?id=37088&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-13T01:14:00.000Z",
+    "summary": [
+      "이 글은 AI 수출 통제를 맹목적으로 지지하는 안전론을 비판하고 국가 경쟁 프레임도 문제 삼는다.",
+      "AI를 전차 같은 공격 무기가 아닌 이중 용도 기술로 보고, 개방 가중치 모델 논쟁과 연결한다.",
+      "일부 엘리트 외 컴퓨트 접근을 막자는 주장은 시모네타의 재현이며, 세부 근거는 발췌만으로 알기 어렵다."
+    ],
+    "whyItMatters": "AI 모델이나 컴퓨트 접근을 일괄적으로 제한하자는 주장이라면, 이 글의 반론까지 함께 읽고 판단해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "d096a8a420fb437e10c51748b8fbc6d521e41077",
+    "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+    "url": "https://unemploymentlabs.com/checkpoint-forensics",
+    "source": "hackernews",
+    "publishedAt": "2026-11-12T21:56:11.000Z",
+    "summary": [
+      "Unemployment Labs가 중국 AI 모델 6개에서 NVIDIA Blackwell의 흔적을 찾았다고 분석했다.",
+      "공개된 6개 모델은 이전 Hopper 모델과 다른 수치 패턴을 보였고, 초기값을 복원해 대조했다.",
+      "학습 칩을 증명하진 않지만, DeepSeek-V4-Flash와 Kimi K3는 실제 Blackwell 칩에서 확인됐다."
+    ],
+    "whyItMatters": "공개 가중치로 중국 모델의 사용 GPU를 추적할 단서는 생기지만, 학습에 Blackwell을 썼다고 단정할 수는 없다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "7bf0c68f8bc64d3366ca72746dc7258c53219e37",
+    "title": "nac - 긴 작업에서 원래 목표를 잃지 않게 하는 에이전트 하네스",
+    "url": "https://news.hada.io/topic?id=37085&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-13T00:30:03.000Z",
+    "summary": [
+      "nac는 실험·학습·인프라 구축처럼 긴 작업의 원래 목표를 유지하는 오픈소스 에이전트 하네스다.",
+      "중앙 오케스트레이터가 계획을 세우고, 명령 실행과 파일 수정은 개별 Thread에 맡긴다.",
+      "작업이 끝날 때마다 Thread의 핵심 결과를 Episode로 남겨 다음 단계와 후속 Thread의 맥락으로 쓴다."
+    ],
+    "whyItMatters": "긴 작업을 에이전트에게 맡긴다면 Episode로 이어지는 맥락을 남겨 다음 단계에서 목표 이탈을 줄일 수 있다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "8025fa7431e49d234f187a5db31b3985335cf341",
+    "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
+    "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-12T19:05:33.000Z",
+    "summary": [
+      "천문학자들이 태양계 바깥쪽에서 새로운 왜행성 후보 천체 2026 ED138을 찾아냈다.",
+      "이 천체는 태양을 한 바퀴 도는 데 약 280년이 걸리고, 행성들과 약 25도 기울어진 궤도를 돈다.",
+      "크기를 아직 확인해야 왜행성으로 분류할 수 있고, 궤도 기울기는 해왕성의 중력 작용 때문일 수 있다."
+    ],
+    "whyItMatters": "태양계 외곽 천체를 추적하는 코드를 만든다면 긴 관측 기간과 궤도 기울기까지 계산해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "212f1dfebbafe96e6400f851779ce4bd4cd813c3",
+    "title": "『Let Over Lambda』 전체를 이제 온라인에서 무료로 읽을 수 있음",
+    "url": "https://news.hada.io/topic?id=37084&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-13T00:01:24.000Z",
+    "summary": [
+      "Common Lisp 서적 『Let Over Lambda』 전체가 2026년 업데이트와 함께 온라인에 무료 공개됐다.",
+      "전문은 HTML과 PDF로 읽을 수 있고, 매크로 기초부터 Common Lisp 고급 기능까지 다룬다.",
+      "2008년 출간 뒤에도 유효성을 설명하지만, 이번 업데이트의 세부 변경 내용은 확인되지 않는다."
+    ],
+    "whyItMatters": "Common Lisp의 매크로를 공부하려면 이제 책 전체를 브라우저에서 읽거나 내려받으면 된다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "d40fca9fd5e12c4b19fcc9ac9428dd45f6cd0651",
+    "title": "Gemini 4 Hydrogen and Orchestrator",
+    "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-12T18:52:01.000Z",
+    "summary": [
+      "Google Antigravity 블로그에 ‘Gemini 4 Hydrogen and Orchestrator’ 글이 올라왔다.",
+      "제목상 Gemini 4 Hydrogen과 Orchestrator를 다루지만, 본문 내용은 확인되지 않는다.",
+      "발췌에는 제품 메뉴와 사용 사례만 보여 구체적인 기능과 출시 조건은 알 수 없다."
+    ],
+    "whyItMatters": "본문이 확인될 때까지 Gemini 4의 기능이나 도입 판단을 바꿀 근거가 없다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "a06474431e13ae6274301610e9ea698248c5d7c2",
+    "title": "데이터센터에 필요한 전력, 저소득층과 농촌 주민이 대가를 치른다",
+    "url": "https://news.hada.io/topic?id=37082&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-12T23:38:47.000Z",
+    "summary": [
+      "Cornell 연구진이 미국 주요 전력망 4곳에서 데이터센터 비용 전가를 분석했다.",
+      "2025년 데이터센터는 전력 인프라 확장 비용의 38%만 부담했고, 나머지 62%는 주민에게 돌아갔다.",
+      "과거 전력 소비량 기준 배분은 신규 수요를 반영하지 못했고, 최저소득 가구의 추가 비용은 소득의 최대 28%였다."
+    ],
+    "whyItMatters": "데이터센터 증설 지역의 전기요금과 인프라 비용을 계산할 때 과거 사용량 기준만 적용하면 가계 부담을 놓치게 된다.",
+    "tags": [
+      "인프라",
+      "업계"
+    ]
+  }
+]
