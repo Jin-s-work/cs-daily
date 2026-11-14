@@ -112,8 +112,14 @@
     "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
     "source": "hackernews",
     "publishedAt": "2026-11-11T22:03:58.000Z",
-    "summary": [],
-    "whyItMatters": "",
-    "tags": []
+    "summary": [
+      "NYT가 Jensen Huang과 직속 보고 관계인 Nvidia 임원 간 관계를 보도했다.",
+      "보도는 상대를 의료 부문 부사장 Kimberly Powell로 지목했고, 취재원은 Nvidia에서 일한 5명이다.",
+      "보도는 익명 취재원에 의존하며, Nvidia의 조사 착수 여부는 발췌에서 확인되지 않는다."
+    ],
+    "whyItMatters": "Nvidia 내부 관계와 이해충돌 문제를 다루는 보도라서, 공식 조사 결과가 나오기 전까지 사실로 단정하면 안 된다.",
+    "tags": [
+      "업계"
+    ]
   }
 ]
