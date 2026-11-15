@@ -1,0 +1,117 @@
+[
+  {
+    "id": "c45fa5ec74c37545090388b4b08195bf33f7ad6c",
+    "title": "OpenAI, 범용 모델이 로봇을 제어하기 시작하면서 로보틱스 팀 해체",
+    "url": "https://news.hada.io/topic?id=37180&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-14T23:34:39.000Z",
+    "summary": [
+      "OpenAI가 독립 로보틱스 팀을 해체하고 인력을 기존 연구·응용 조직으로 옮겼다.",
+      "계기는 GPT-6 Astra 같은 범용 모델을 로봇에 직접 적용하는 방식이며, 시뮬레이션 성공률은 74.8%였다.",
+      "Nvidia 연구의 수치는 실제 로봇이 아닌 디지털 환경 결과이며, 회사는 로봇 개발 철수가 아니라고 설명했다."
+    ],
+    "whyItMatters": "로봇 전용 모델 대신 범용 모델을 쓰는 흐름이 맞다면, 로봇 소프트웨어를 만들 때 언어·코드·시각 모델을 함께 묶는 설계가 기본이 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "4e501f9826d014090ed9312e94f357780c8cd449",
+    "title": "SpaceX catches the Starship to end Flight 15",
+    "url": "https://www.spacex.com/launches/starship-flight-15",
+    "source": "hackernews",
+    "publishedAt": "2026-11-14T21:22:24.000Z",
+    "summary": [
+      "SpaceX가 Starship Flight 15를 마치며 발사탑으로 기체를 받아냈다.",
+      "관련 X 게시물과 YouTube 영상 링크가 함께 첨부됐지만, 세부 비행 기록은 없다.",
+      "본문 내용이 없어 포착 방식과 비행 성과, 다음 일정은 현재 확인되지 않는다."
+    ],
+    "whyItMatters": "Starship 관련 작업을 추적한다면 이번 비행의 종료 영상과 후속 일정 확인이 필요하다.",
+    "tags": [
+      "업계",
+      "인프라"
+    ]
+  },
+  {
+    "id": "d09cbf34fb5355342501e463567db866f4d3c3bd",
+    "title": "PyPI, 보안 신호를 더 명확히 보여주는 개편된 프로젝트 페이지 공개",
+    "url": "https://news.hada.io/topic?id=37178&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-14T22:36:47.000Z",
+    "summary": [
+      "PyPI 프로젝트 페이지 개편이 끝나 릴리스 출처 상태와 파일별 증명을 새 보안 탭에서 확인할 수 있게 됐다.",
+      "출처 상태는 릴리스 파일의 증명 보유 여부로 계산하며, 누락·불일치·변경·소실을 경고한다.",
+      "증명이 없다고 악성 파일이라는 뜻은 아니며, 암호학적으로 출처를 검증할 수 없다는 의미다."
+    ],
+    "whyItMatters": "PyPI 패키지를 설치하기 전에 보안 탭에서 파일별 출처 증명을 확인하는 습관이 필요해진다.",
+    "tags": [
+      "보안"
+    ]
+  },
+  {
+    "id": "15b6fbabb889152fcff68b35c7bea67c364d9423",
+    "title": "LinkedIn, Monster take down over 1000 fake job postings after CBC investigation",
+    "url": "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379",
+    "source": "hackernews",
+    "publishedAt": "2026-11-14T18:56:47.000Z",
+    "summary": [
+      "CBC 조사 뒤 LinkedIn과 Monster에서 MLM으로 이어진 가짜 구인 공고 1,500건 이상이 삭제됐다.",
+      "공고는 원격 근무와 무경력 가능을 내세웠지만, 실제 기회에는 월 구독료와 지인 모집 조건이 붙었다.",
+      "여행 관련 페이지들이 올린 공고였고, 두 플랫폼의 검수 경로는 본문 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "구직 플랫폼의 원격·무경력 공고를 믿기 전에 월 비용과 추천인 모집 조건부터 확인하게 된다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "19bb51cdca70a06f0f0ff1ed4c6127a496f99f83",
+    "title": "SpaceX, Starship 포획으로 15차 비행 마무리",
+    "url": "https://news.hada.io/topic?id=37177&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-14T22:33:47.000Z",
+    "summary": [
+      "SpaceX가 Starship의 15차 비행 시험을 마무리했다는 소식이다.",
+      "비행 종료 과정에서 Starship을 포획한 것이 이번 소식의 핵심이다.",
+      "발사 시각, 비행 경로, 포획 장소와 성공 조건은 본문이 없어 확인되지 않는다."
+    ],
+    "whyItMatters": "Starship 비행 로그를 정리한다면 이번 항목에는 15차 비행과 포획 사실만 확정 정보로 적으면 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "0981be9212e15dfdd23c79f90e607ff0ec22d5f4",
+    "title": "A family tree of software job titles",
+    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-14T17:45:19.000Z",
+    "summary": [
+      "소프트웨어 직무명 104개의 계보를 1940년대부터 현재까지 시각화했다.",
+      "Development부터 Data and AI까지 7개 계열로 나누고, 직무 간 계보와 이직 경로를 화살표로 연결했다.",
+      "시기는 최초 등장일이 아니라 널리 쓰이기 시작한 때의 추정치이며, Graphviz와 JSON으로 구성됐다."
+    ],
+    "whyItMatters": "팀의 역할명을 바꾸거나 새로 만들 때, 어떤 직무에서 갈라졌는지와 경력 이동 경로를 함께 확인할 수 있다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "981fb3e1c9b43b3857ba635619b312e218c8d428",
+    "title": "코끼리의 고립 심화로 사회적 연결망이 분절됨",
+    "url": "https://news.hada.io/topic?id=37176&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-14T21:36:00.000Z",
+    "summary": [
+      "UC San Diego 연구진이 스리랑카 야생 암컷 아시아코끼리 440마리 이상을 12년간 분석했다.",
+      "개체군이 줄면서 사회 집단이 작아지고 서로 고립됐으며, 남은 코끼리의 관계도 달라졌다.",
+      "개체 손실이 누적된 뒤 연결망이 급격히 바뀌어 사회적 임계점을 넘었을 가능성이 있다."
+    ],
+    "whyItMatters": "야생동물 개체 수만 세는 분석으로는 부족해, 보전 데이터를 볼 때 사회적 연결망도 함께 봐야 한다.",
+    "tags": [
+      "업계"
+    ]
+  }
+]
