@@ -1,0 +1,117 @@
+[
+  {
+    "id": "7714435532a9b8842dfef5fe8986616728d01750",
+    "title": "주요 C 프로젝트 40개의 메모리 관리 방식 조사",
+    "url": "https://news.hada.io/topic?id=37234&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-16T00:02:28.000Z",
+    "summary": [
+      "주요 C 프로젝트 40개를 조사한 결과, malloc/free만 쓰는 곳은 8개뿐이었다.",
+      "영역 기반 할당은 15개가 일부 사용했고, 7개는 주된 할당 방식으로 따로 사용했다.",
+      "가비지 컬렉션은 5개, 참조 카운팅은 3개가 주된 방식이었고, SQLite는 100% 수동 관리였다."
+    ],
+    "whyItMatters": "C 프로젝트의 메모리 설계를 볼 때 malloc/free만 전제로 삼지 말고 region·GC·참조 카운팅 사용 여부부터 확인하게 된다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "47b57b00d83531017059455dc36c54c62970da3e",
+    "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
+    "url": "https://news.ycombinator.com/item?id=50510042",
+    "source": "hackernews",
+    "publishedAt": "2026-11-15T19:49:28.000Z",
+    "summary": [
+      "소규모 업체가 첫 $1,500 청구 뒤 Stripe 계정 종료를 겪은 사례를 공유했다.",
+      "업체는 녹음 통화와 $1 결제 링크로 동의를 받았지만, 3건의 완료된 예약 비용을 저장 카드로 청구한 뒤 결제가 막혔다.",
+      "이의 제기는 위험 수준을 이유로 거절됐고, Stripe가 증거를 직접 요구했는지는 본문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "저장 카드에 나중에 큰 금액을 청구하는 흐름을 쓰고 있다면, 매번 사전 확인과 청구 근거를 남기는 방식으로 바꿔야 한다.",
+    "tags": [
+      "보안",
+      "업계"
+    ]
+  },
+  {
+    "id": "f589f65629d0a63176e692098a18aba6b2e0109a",
+    "title": "실전파 컴퓨터 과학자를 위한 도서 목록",
+    "url": "https://news.hada.io/topic?id=37232&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-15T23:37:43.000Z",
+    "summary": [
+      "2025년판 도서 목록이 실전 컴퓨터 과학 학습 경로를 입문부터 고급까지 정리했다.",
+      "입문은 C/C++와 Rust로 시작해 언어·운영체제·네트워크·알고리듬을 다룬다.",
+      "고급 목록은 계산 복잡도·타입까지 다루며, C/C++ 직접 개발은 필수는 아니라고 설명한다."
+    ],
+    "whyItMatters": "기초를 코드 문법보다 시스템 원리부터 다시 쌓고 싶다면 이 목록의 순서대로 책을 고르면 된다.",
+    "tags": [
+      "언어/런타임"
+    ]
+  },
+  {
+    "id": "966523945edb28bbdc2e3dc0dd7fb4e838a51ba5",
+    "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
+    "url": "https://bruceroettgers.eu/blog/protomaps/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-15T19:26:22.000Z",
+    "summary": [
+      "Protomaps의 PMTiles로 지도 타일을 한 파일에 담아 직접 호스팅하는 구성이 쉬워졌다.",
+      "HTTP Range 요청으로 필요한 타일을 읽고, Bunny.net 같은 CDN 버킷에 파일 하나만 올리면 된다.",
+      "세계 지도는 일일 빌드로 받고, 영역·줌을 줄일 수 있지만 CDN의 Range 캐시 여부에 따라 구성이 달라진다."
+    ],
+    "whyItMatters": "상용 지도 API 비용이 걱정되는 프로젝트라면 PMTiles와 Range 캐시 CDN 조합으로 타일 서버 운영을 줄일 수 있다.",
+    "tags": [
+      "인프라",
+      "웹"
+    ]
+  },
+  {
+    "id": "211a21e6e07a0044c4909964f67ebf9065e5f2b2",
+    "title": "‘새대가리’는 잘못된 표현이다. 까마귀는 인간보다 빠르게 결정을 내린다",
+    "url": "https://news.hada.io/topic?id=37231&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-15T23:34:43.000Z",
+    "summary": [
+      "송장까마귀 두 마리가 시각적 단서를 처리하고 반응하는 속도를 측정한 연구가 Science에 실렸다.",
+      "연구에서는 까마귀의 신경 처리 속도가 인간과 원숭이보다 약 두 배 빠른 것으로 나타났다.",
+      "새의 의사결정 속도를 정량화한 첫 연구지만, 실험 대상은 송장까마귀 두 마리뿐이다."
+    ],
+    "whyItMatters": "뇌 크기로 동물의 인지 능력을 가정하는 설명을 그대로 믿지 않게 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "357c9f3ea7eef160985518b45c24cf001f1963bd",
+    "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+    "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+    "source": "hackernews",
+    "publishedAt": "2026-11-15T18:36:10.000Z",
+    "summary": [
+      "Microsoft 장애로 Phantasialand가 수영장 염소 과다 경보를 받지 못해 투숙객 15명이 다쳤다.",
+      "사우나 시설의 자동 투입 장치가 염소를 과다 주입했고, 경보 메일은 Outlook 장애로 도착하지 않았다.",
+      "수영장은 한때 폐쇄됐다가 다시 열렸고, 장애 복구 시점과 재발 방지책은 확인되지 않았다."
+    ],
+    "whyItMatters": "메일 경보 하나에 의존하는 설비라면 다음 장애 때도 안전 알림을 놓치지 않도록 별도 경로를 붙여야 한다.",
+    "tags": [
+      "인프라",
+      "보안"
+    ]
+  },
+  {
+    "id": "5a3b7a6b001095b0b83d681410b4cba385cb6d1f",
+    "title": "엘니뇨의 작동 원리를 짧게 설명하는 영상",
+    "url": "https://news.hada.io/topic?id=37229&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-15T22:43:42.000Z",
+    "summary": [
+      "영상은 태평양 무역풍이 약해질 때 엘니뇨가 시작되는 과정을 짧게 설명한다.",
+      "따뜻한 표층수가 태평양 동쪽으로 이동해 대류와 폭풍의 위치를 바꾸고, 제트기류도 동쪽과 남쪽으로 이동한다.",
+      "캘리포니아와 남서부는 해안 침수와 폭풍, 남부 평원·플로리다는 낮은 운고와 시정 저하에 주의해야 한다."
+    ],
+    "whyItMatters": "날씨 데이터를 다루거나 야외 시스템을 운영한다면 지역별 강수와 시정 변화를 염두에 둬야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  }
+]
