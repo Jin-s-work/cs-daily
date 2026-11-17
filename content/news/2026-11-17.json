@@ -1,0 +1,134 @@
+[
+  {
+    "id": "36a4aef431b2ac0f974bf031b7de8c80b82e08e6",
+    "title": "OpenCode Browse - 코딩 에이전트가 사용자의 실제 브라우저를 쓰게 하는 도구",
+    "url": "https://news.hada.io/topic?id=37333&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-17T03:33:45.000Z",
+    "summary": [
+      "OpenCode Browse가 코딩 에이전트가 사용자의 실제 브라우저를 쓰게 하는 도구로 나왔다.",
+      "MCP 서버와 Chromium 확장 프로그램으로 기존 탭·로그인·확장 상태에서 읽기·클릭·입력을 수행한다.",
+      "로그인·2FA·결제는 사용자에게 넘기며, 탭 그룹과 허용 사이트로 에이전트 행동을 제한할 수 있다."
+    ],
+    "whyItMatters": "로그인과 결제가 필요한 브라우저 작업을 에이전트에 맡기되, 인증 단계와 허용 사이트는 직접 통제하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "5c4fbe651718d4da5c59ec884e3a3072acbb109d",
+    "title": "Optimizely Compromised, Served Malware on Zoom, GitLab",
+    "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-16T23:00:34.000Z",
+    "summary": [
+      "Optimizely Web의 JavaScript 변조로 Zoom·GitLab 등 178개 조직 방문자에게 악성 코드가 전달됐다.",
+      "악성 코드는 지갑 주소를 바꾸고 카드·쿠키·스크린샷을 훔쳤으며, iOS에는 Coruna·DarkSword를 배포했다.",
+      "현재 악성 코드 대부분은 제거됐지만, 188개 감염 스니펫 중 1개에는 21:52 UTC에도 남아 있었다."
+    ],
+    "whyItMatters": "Optimizely Web을 쓰는 사이트라면 서드파티 JavaScript 변경과 CSP 차단 여부를 즉시 점검해야 한다.",
+    "tags": [
+      "보안",
+      "웹"
+    ]
+  },
+  {
+    "id": "1b6087c38c0a5424fee75472add31026b4fa78e3",
+    "title": "When Should LLM Agents Forget? Memory Filtering Under Query-Critical Resolver Errors",
+    "url": "https://arxiv.org/abs/2611.17338",
+    "source": "arxiv",
+    "publishedAt": "2026-11-16T05:00:00.000Z",
+    "summary": [
+      "LLM 메모리의 오래된 사실 삭제가 질의에 필요한 정보까지 지우면 정확도를 낮출 수 있다는 연구가 나왔다.",
+      "세 모델에서 hard-drop 효과가 +0.186~+0.230에서 -0.176~-0.181로 뒤집혔다.",
+      "gate는 102/102 분할에서 0.655였고, hard-drop은 0.641, oracle은 0.662였다."
+    ],
+    "whyItMatters": "메모리 삭제를 넣은 에이전트라면 질의 핵심 정보의 오삭제를 별도로 검증하고, 검증 데이터가 없으면 삭제하지 않게 바꿔야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "1764f6b5405efa970d1221e1cebbd41e8f78e8c4",
+    "title": "Squircles - 정사각형과 원 사이의 곡선, 구현 방식과 연속성 비교",
+    "url": "https://news.hada.io/topic?id=37332&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-17T02:33:51.000Z",
+    "summary": [
+      "스쿼클은 정사각형과 원 사이의 모양이며, 하나의 수학적 정의로 고정되지 않는다.",
+      "슈퍼타원은 지수로 형태를 바꾸고, 게이지로 원과 정사각형 사이의 변화를 비교한다.",
+      "시각적으로 매끄럽게 만들려면 G2 연속성이 필요하고, Figma 근사에는 곡률 불연속이 남는다."
+    ],
+    "whyItMatters": "UI 모서리를 직접 그린다면 단순한 슈퍼타원 대신 곡률 연속성과 Figma 근사의 차이를 확인해야 한다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "81bd7f76e2a9d5f39cbb790e84ff5f92dff05d8a",
+    "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-16T22:58:20.000Z",
+    "summary": [
+      "MissionControlAggregator.dll이 코딩 에이전트와 개발 도구 사용 여부를 진단 데이터에 기록한다.",
+      "CLI·데스크톱 에이전트와 Python·dotnet·gcc·code 같은 도구를 구분해 감지하고, 결과를 로컬에 저장한다.",
+      "선택적 진단 데이터는 기본값이 켜져 있어, 끄지 않으면 이 정보가 Microsoft로 업로드된다."
+    ],
+    "whyItMatters": "개발 도구 사용 정보가 진단 데이터로 올라가는 게 싫다면 Windows의 선택적 진단 데이터를 꺼야 한다.",
+    "tags": [
+      "보안",
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "4d56c5fc6100898b3806ce32291bfb9d800f9fa2",
+    "title": "Does the Ranking Hold? A Practitioner-Facing Audit of Hallucination Detectors on Small, Quantized, On-Device LLMs",
+    "url": "https://arxiv.org/abs/2611.17339",
+    "source": "arxiv",
+    "publishedAt": "2026-11-16T05:00:00.000Z",
+    "summary": [
+      "Llama-3.2-3B와 Qwen2.5-3B에서 환각 탐지기 순위가 뒤집힌 감사 결과가 나왔다.",
+      "두 모델은 4비트 NF4로 단일 T4에서 돌렸고, 순위 상관은 Spearman ρ=-0.80이었다.",
+      "TruthfulQA의 토큰 겹침 라벨러는 AUROC 0.46-0.59로, 탐지기보다 라벨 자체가 문제였다."
+    ],
+    "whyItMatters": "온디바이스 환각 탐지기를 고를 때 대형 모델 벤치마크의 순위를 그대로 믿지 말고, 실제 모델과 라벨러로 다시 측정해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "2ea1d9938eab7023880d96fa62820c55a5548ffe",
+    "title": "Show GN: Subscale - 여러 Tailscale 계정 중 주소별로 나눠 연결해주는 CLI 도구",
+    "url": "https://news.hada.io/topic?id=37328&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-17T01:47:28.000Z",
+    "summary": [
+      "Subscale은 여러 Tailscale 계정을 주소별로 골라 연결하는 CLI 도구다.",
+      "도메인이나 IP 주소에 계정 이름을 지정해 기존 연결을 유지한 채 접속한다.",
+      "Tailscale 자체의 계정을 동시에 활성화하는 방식이 아니라 주소별 계정 지정만 처리한다."
+    ],
+    "whyItMatters": "회사와 개인 Tailscale을 함께 써야 한다면 수동 전환 대신 주소별 규칙으로 연결하면 된다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "f9355d356a771bd0fdf3b55df52a6ba277bba22d",
+    "title": "United Airlines experiencing a widespread system outage, airline says",
+    "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+    "source": "hackernews",
+    "publishedAt": "2026-11-16T22:14:38.000Z",
+    "summary": [
+      "United Airlines가 광범위한 시스템 장애를 겪고 있다고 알렸다.",
+      "항공사 전체 시스템 중 어디가 멈췄는지와 장애 원인은 본문에서 확인되지 않는다.",
+      "운항, 예약, 체크인 등 승객 서비스에 미친 영향과 복구 시점은 알려지지 않았다."
+    ],
+    "whyItMatters": "United Airlines를 이용하거나 연동 시스템을 운영한다면 복구 공지가 나올 때까지 예약과 운항 정보를 재확인해야 한다.",
+    "tags": [
+      "인프라",
+      "업계"
+    ]
+  }
+]
