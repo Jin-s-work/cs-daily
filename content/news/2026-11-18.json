@@ -1,0 +1,126 @@
+[
+  {
+    "id": "4c527ba12f60085f7303af3684377cdeae8ce7ac",
+    "title": "이스라엘 대 Wikipedia",
+    "url": "https://news.hada.io/topic?id=37388&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-18T02:32:23.000Z",
+    "summary": [
+      "Tech for Palestine가 2001년 이후 Wikipedia를 친이스라엘 방향으로 바꾸려 한 활동 17건을 정리했다.",
+      "보고서는 공개 자료로 확인한 최소 9건이 아직 진행 중이며, Google 검색과 AI 챗봇에 미칠 영향을 지적했다.",
+      "ADL 주장 두 편을 편집 기록과 원출처로 추적했지만, 허위 사실이나 반유대주의 콘텐츠 추가 증거는 찾지 못했다."
+    ],
+    "whyItMatters": "Wikipedia 편집을 조사한다면 ADL의 주장만 보지 말고 편집 기록과 원출처까지 대조해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "1f0a78839277701cb667ea15be0907398e122d9a",
+    "title": "Microsoft's ONNX Runtime has disappeared from GitHub",
+    "url": "https://github.com/microsoft/onnxruntime",
+    "source": "hackernews",
+    "publishedAt": "2026-11-17T23:18:49.000Z",
+    "summary": [],
+    "whyItMatters": "",
+    "tags": []
+  },
+  {
+    "id": "18304d25cb72b8516392964289ee8abffe33ac16",
+    "title": "Agents Cannot Hand Over What They Have Not Yet Understood",
+    "url": "https://arxiv.org/abs/2611.18642",
+    "source": "arxiv",
+    "publishedAt": "2026-11-17T05:00:00.000Z",
+    "summary": [
+      "연구진이 에이전트 간 요약 전달에서 학습 내용이 얼마나 사라지는지 56개 세계에서 측정했다.",
+      "한 에이전트가 8번의 생을 이어간 경우와 8개 에이전트가 300자 메모를 넘긴 경우를 비교했다.",
+      "8세대 뒤 연쇄는 단일 에이전트 4생 시점 수준이었고, 전체 기록에서 300자로 다시 쓰면 손실의 70~82%를 회복했다."
+    ],
+    "whyItMatters": "에이전트 팀의 메모를 설계한다면 직전 요약만 재요약하지 말고 전체 기록에서 새 메모를 써야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "cfeeae662d9ad8c7ef1aefbbc17e5737bb2f4b12",
+    "title": "Show HN: Alloy CSS, JavaScript를 꺼도 작동하는 대화상자, 메뉴, 탭",
+    "url": "https://news.hada.io/topic?id=37385&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-18T01:32:22.000Z",
+    "summary": [
+      "Alloy CSS로 만든 가상 청구서 앱 Ledger 예제가 단일 HTML로 공개됐다.",
+      "JavaScript 없이 대화상자, 메뉴, 탭이 작동하며 청구서 상태별 화면을 보여준다.",
+      "실제 서비스가 아닌 예제이며, 저장소와 예제 HTML 소스가 함께 공개됐다."
+    ],
+    "whyItMatters": "JavaScript를 끈 환경에서도 대화상자와 탭을 작동시켜야 한다면 Alloy CSS 예제의 구조를 따라갈 수 있다.",
+    "tags": [
+      "웹"
+    ]
+  },
+  {
+    "id": "340c2ff0827fd3fe7b0b05f19a9d3a248385dc97",
+    "title": "Quad9's withdrawal from France: A canary in the coal mine",
+    "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-17T22:13:34.000Z",
+    "summary": [
+      "Quad9가 프랑스에서 철수했다는 내용이 Cloudflare 블로그에 올라왔다.",
+      "제목만으로는 Quad9가 프랑스에서 어떤 서비스를 중단했는지 알 수 없다.",
+      "본문이 없어 철수 배경과 현지 사용자·운영자에게 미친 영향은 확인되지 않는다."
+    ],
+    "whyItMatters": "프랑스에서 Quad9를 DNS로 쓰는 시스템이라면 철수 범위가 확인될 때까지 대체 DNS를 준비해야 한다.",
+    "tags": [
+      "보안",
+      "인프라"
+    ]
+  },
+  {
+    "id": "b4f35c6f492a94afb31751e6136ba26211257cbd",
+    "title": "How to make a moral agent: sentimentalism and rationalism as lenses on AI",
+    "url": "https://arxiv.org/abs/2611.18714",
+    "source": "arxiv",
+    "publishedAt": "2026-11-17T05:00:00.000Z",
+    "summary": [
+      "새 논문이 AI를 도덕적 행위자로 볼 수 있는지 연구 프로그램을 제안했다.",
+      "철학과 도덕심리학에서 인간의 후보 능력을 뽑아 LLM에서 시험할 수 있는 항목으로 다듬는다.",
+      "도덕성의 규범 기준은 아직 정해지지 않았고, 실제 모델의 행동을 어떻게 평가할지는 후속 실험에 남았다."
+    ],
+    "whyItMatters": "LLM 평가에 도덕적 행위 능력을 별도 기준으로 넣으려면 어떤 능력을 측정할지 설계가 달라진다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "e1e4c3a7fccb6324ac4e228eb3cbef187f3d3b17",
+    "title": "Show GN: Lightcap - 가볍고 빠른 맥용 화면 녹화/스크린샷 앱",
+    "url": "https://news.hada.io/topic?id=37384&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-18T01:31:57.000Z",
+    "summary": [
+      "맥용 화면 녹화·스크린샷 앱 Lightcap이 공개됐다. 단축키에 바로 반응하도록 만들었다.",
+      "앱을 켜둔 상태에서 RAM 사용량은 22MB이고 CPU는 쓰지 않으며, 녹화와 캡처가 즉시 시작된다.",
+      "맥용 앱이라는 점 외에 지원하는 macOS 버전과 배포 방식은 본문에서 확인되지 않는다."
+    ],
+    "whyItMatters": "맥에서 캡처 단축키 지연이 거슬렸다면, 이 앱으로 즉시 시작되는 흐름을 시험하게 된다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "86aeaafbc09d88846590d14f9b44eedf44af460f",
+    "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+    "url": "https://calif.io/java4shell/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-17T21:11:28.000Z",
+    "summary": [
+      "OpenJDK Base64 디코더의 메모리 손상 취약점 Java4Shell(CVE-2026-114938)이 공개됐다.",
+      "최적화된 x86-64 Base64 경로가 64개의 A 뒤에 = 하나가 붙은 입력에서 인접 메모리를 덮어쓸 수 있다.",
+      "본문 발췌에는 영향받는 OpenJDK 버전과 패치 정보가 없어, 서버 적용 여부는 아직 확인되지 않는다."
+    ],
+    "whyItMatters": "OpenJDK를 쓰는 서버라면 공식 보안 공지와 버전을 대조하고 Base64 입력 경로를 먼저 점검해야 한다.",
+    "tags": [
+      "보안"
+    ]
+  }
+]
