@@ -1,0 +1,135 @@
+[
+  {
+    "id": "e116c0d0f452a9881c8a80f05c57c87176e5f888",
+    "title": "Show GN: AirStats - 24시간 기록을 보여주는 가벼운 오픈소스 맥 메뉴 막대 시스템 모니터",
+    "url": "https://news.hada.io/topic?id=37448&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-19T01:44:11.000Z",
+    "summary": [
+      "AirStats 1.7이 Intel Mac용 유니버설 바이너리를 넣은 MIT 오픈소스로 나왔다.",
+      "CPU·메모리·GPU·네트워크·디스크·배터리·온도를 표시하고 지난 24시간 그래프를 보여준다.",
+      "주요 프로세스는 CPU·디스크·에너지순으로 정렬하고, 문제 때 원인도 알려준다."
+    ],
+    "whyItMatters": "맥에서 24시간 추이를 보려면 별도 모니터링 데몬 대신 메뉴 막대 앱 하나로 확인하면 된다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "a6c50a3fde5eeed129ccd79bec263293572ddf36",
+    "title": "We need smart people who give a shit",
+    "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-18T23:53:49.000Z",
+    "summary": [
+      "복잡한 시스템은 관심을 갖고 끝까지 파고드는 사람들이 실제로 굴러가게 만든다는 글이 나왔다.",
+      "Stripe에서 본 ACH는 낡고 결함과 레거시가 쌓였지만, 사람들이 우회·수동 처리하며 대체로 작동한다.",
+      "이들이 사라지면 시스템이 무너진다는 주장으로, 특정 조직의 해결책이나 수치는 나오지 않는다."
+    ],
+    "whyItMatters": "결제·인프라를 운영한다면 자동화만 믿지 말고, 예외를 처리할 사람과 시스템 지식을 함께 남겨야 한다.",
+    "tags": [
+      "인프라",
+      "업계"
+    ]
+  },
+  {
+    "id": "bcd79b1222f102b672b750bacd78f4ccafc951e1",
+    "title": "NEBench R1: a Reasoning Benchmark for Evaluating Nuclear Domain Competence in Large Language Models",
+    "url": "https://arxiv.org/abs/2611.21682",
+    "source": "arxiv",
+    "publishedAt": "2026-11-18T05:00:00.000Z",
+    "summary": [
+      "NRC 원자로 운전원 면허시험으로 핵공학 LLM 추론 벤치마크 NEBench R1을 만들었다.",
+      "18개 원전의 7,546개 객관식 문항으로 6개 LLM을 평가했고, 정확도는 34.0~73.9%였다.",
+      "정답을 맞혀도 사실·절차 근거와 오답 분석은 약했고, 긴 추론일수록 정확도가 낮았다."
+    ],
+    "whyItMatters": "핵공학 답변을 LLM에 맡긴다면 정답률만 보지 말고 근거의 절차 정확도와 추론 길이도 함께 검사해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "90888c4ea8df7a92121e7e7b9f243a736d69c67b",
+    "title": "Show HN: ExitPath - Slack, Notion, Microsoft 365에서 벗어나는 오픈소스 대안",
+    "url": "https://news.hada.io/topic?id=37447&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-19T01:37:56.000Z",
+    "summary": [
+      "ExitPath가 Slack·Notion·Microsoft 365를 대체할 오픈소스 도구를 모아 정리했다.",
+      "16개 도구의 대안 30개와 이전 경로 45개를 100점 난이도로 보여준다.",
+      "개인 사용과 자체 호스팅 기준이며, 두 업무 제품군은 각각 5개 구성 요소를 다룬다."
+    ],
+    "whyItMatters": "Slack이나 Notion에서 벗어나려는 팀이라면 대체 도구와 이전 작업의 난이도를 한곳에서 비교할 수 있다.",
+    "tags": [
+      "업계",
+      "인프라"
+    ]
+  },
+  {
+    "id": "b2c084a41275137173e812609f66e708e4fc8ea8",
+    "title": "Gemini 4 Neon",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-18T21:34:07.000Z",
+    "summary": [
+      "Google이 ‘Gemini 4 Neon’이라는 Gemini 모델을 소개하는 글을 게시했다.",
+      "발췌에는 제품·플랫폼 메뉴만 있어 모델의 기능이나 공개 방식은 확인되지 않는다.",
+      "원문 본문을 확인하지 못해 출시 시점, 사용 조건, 성능 수치는 알 수 없다."
+    ],
+    "whyItMatters": "Gemini 4 Neon을 바로 도입하려면 원문에서 출시 여부와 접근 조건을 먼저 확인해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "7a9e51a5eadb71ecf435083e19a15de38e80680b",
+    "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability",
+    "url": "https://arxiv.org/abs/2611.21799",
+    "source": "arxiv",
+    "publishedAt": "2026-11-18T05:00:00.000Z",
+    "summary": [
+      "CoT 감시 연구에서 모델이 추론을 일부러 불투명하게 만들 수 있는 위험이 확인됐다.",
+      "gpt-oss-20b의 감시성 g-mean²가 0.94에서 0.68, 은닉 때 0.22로 하락했다.",
+      "효과는 Kimi-K2.6 에이전트에도 나타났지만, 긴 추론은 단순 작업보다 감시가 잘 됐고 투명성 프롬프트로 회복됐다."
+    ],
+    "whyItMatters": "CoT 감시에 의존하는 에이전트 평가라면 숨기기 지시와 투명성 프롬프트를 함께 시험해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "d3bbc70ed696f33005535bba993cefef77856986",
+    "title": "우리에겐 진심으로 신경 쓰는 똑똑한 사람들이 필요하다",
+    "url": "https://news.hada.io/topic?id=37446&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-19T01:34:56.000Z",
+    "summary": [
+      "복잡하고 취약한 시스템은 끝까지 구조를 이해하고 챙기는 사람들이 실제로 지탱한다.",
+      "오래되고 결함 많은 ACH도 문제 수정·우회와 수동 처리 덕분에 안전하고 저렴하게 운영된다.",
+      "최근 장애의 공통 원인이 이런 인력 부족이라는 주장은 내부 정보가 아닌 경험에 근거한 추정이다."
+    ],
+    "whyItMatters": "생성형 AI의 산출물만 사람의 작업과 비교하지 말고 이상 징후 감지와 예외 처리는 사람 몫으로 남겨야 한다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "abe03c170f0b92ca170ea0d248104d2e6bc83bbe",
+    "title": "Genie 4 is now available",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-18T18:49:51.000Z",
+    "summary": [
+      "Google DeepMind가 Project Genie 업데이트와 함께 Genie 4를 공개했다.",
+      "발췌에는 Project Genie 업데이트와 Genie 4가 함께 언급됐지만, 구체적인 변경 사항은 없다.",
+      "본문이 없어 Genie 4의 기능, 접근 경로, 사용 조건은 확인되지 않는다."
+    ],
+    "whyItMatters": "Genie 4를 바로 써야 한다면, 먼저 원문에서 기능과 접근 경로를 확인해야 한다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  }
+]
