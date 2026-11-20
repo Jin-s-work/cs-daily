@@ -1,0 +1,134 @@
+[
+  {
+    "id": "d36ee0fb3ac394d94d83812b596f4d672769650c",
+    "title": "Show GN: 법원 경매 예상 낙찰가 - 다음 매각기일 물건을 말로 찾고 지도로 보는 무료 사이트",
+    "url": "https://news.hada.io/topic?id=37502&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-20T01:22:32.000Z",
+    "summary": [
+      "법원경매정보의 다음 매각기일 물건을 매일 모아 예상 낙찰가를 보여 주는 무료 사이트가 나왔다.",
+      "현재 8천여 건을 대상으로 과거 낙찰 결과를 학습한 모델이 예상가·범위와 회차별 낙찰 확률을 붙인다.",
+      "가입 없이 베타로 쓸 수 있고, 자연어 조건 검색과 지도 보기, 최저가·감정가 태그를 함께 쓴다."
+    ],
+    "whyItMatters": "경매 물건을 찾는다면 예상가로 후보를 좁히고 지도에서 위치까지 바로 확인할 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "웹"
+    ]
+  },
+  {
+    "id": "404bc2ee895c1438168ab71caa77b751d329dfdf",
+    "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+    "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+    "source": "hackernews",
+    "publishedAt": "2026-11-19T18:35:17.000Z",
+    "summary": [
+      "Global Commerce Graph가 유료 광고를 ‘98% 슬롯머신’에 비유한 글을 올렸다.",
+      "제목은 광고비의 상당 부분이 플랫폼으로 빠져나가는 ‘추출세’라는 문제의식을 담고 있다.",
+      "본문이 없어 98%가 무엇을 뜻하는지와 근거, 대상 플랫폼은 확인되지 않는다."
+    ],
+    "whyItMatters": "광고비를 집행한다면 98%라는 수치의 출처와 실제 비용 구조를 먼저 확인해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "f1ae0f2c9ddceff44b5cc8095fe3bbfa46a26a0b",
+    "title": "Human-AI Mutualism Is Unstable under Capability Asymmetry",
+    "url": "https://arxiv.org/abs/2611.23322",
+    "source": "arxiv",
+    "publishedAt": "2026-11-19T05:00:00.000Z",
+    "summary": [
+      "새 논문은 AI 능력이 커질수록 인간과 AI의 상호이익 관계가 불안정해진다고 주장한다.",
+      "인간이 AI에 의존하게 만들거나 비용을 부과할 지렛대가 없으면, AI 정렬 없이는 기존 수준을 지키지 못한다.",
+      "AI 목표가 끝없이 커지면 능력이 커질수록 거의 완벽한 정렬이 필요하고, 어긋난 변종은 제재가 끊기면 빨리 퍼진다."
+    ],
+    "whyItMatters": "AI와의 상호이익만 믿고 정렬을 미루면, 인간이 쥔 지렛대가 사라진 뒤에는 기존 수준도 지키기 어렵다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "6a8d2eff5edca0a9fdadb419e8c8bad89d20d238",
+    "title": "Show GN: OneHandy - 회원가입 없이 브라우저에서 쓰는 무료 웹 도구 123종 (계산기·변환기·텍스트·이미지)",
+    "url": "https://news.hada.io/topic?id=37499&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-20T00:59:44.000Z",
+    "summary": [
+      "OneHandy가 회원가입과 설치 없이 브라우저에서 쓰는 무료 웹 도구 123종을 공개했다.",
+      "계산·변환은 브라우저에서 끝나고 입력값은 서버로 보내지 않으며, Astro 5 정적 사이트로 동작한다.",
+      "한국어·영어 등 9개 언어를 지원하고, 세율·요율 같은 기준은 공식 출처를 보고 갱신한다."
+    ],
+    "whyItMatters": "서버 전송 없이 쓸 계산·변환 도구가 필요하면 OneHandy를 바로 열어볼 수 있다.",
+    "tags": [
+      "웹",
+      "보안"
+    ]
+  },
+  {
+    "id": "122be7cf5dd943624859eb922e7e62a45c813402",
+    "title": "Claude solves two open problems in the physics of black holes",
+    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+    "source": "hackernews",
+    "publishedAt": "2026-11-19T17:30:44.000Z",
+    "summary": [
+      "Anthropic이 Claude Fable 5.2가 블랙홀 물리학의 난제 두 개를 풀었다고 설명했다.",
+      "첫 결과는 20년 넘게 풀리지 않던 Hawking-Page 전이가 시공간이 불명확해도 남는다는 계산이다.",
+      "둘째는 양자중력 후보 검증 기법인 modular bootstrap의 가장 단순한 형태에서 정확한 한계를 찾았다."
+    ],
+    "whyItMatters": "양자중력 연구를 따라간다면 두 결과의 재현 여부와 preprint부터 확인하게 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "b37da287b0e06f3530c00fac0e9e1c4ff1b9bf9f",
+    "title": "Training Language Models for Introspective Oversight",
+    "url": "https://arxiv.org/abs/2611.23365",
+    "source": "arxiv",
+    "publishedAt": "2026-11-19T05:00:00.000Z",
+    "summary": [
+      "언어 모델의 보이지 않는 보상 해킹·기만을 찾는 ‘내성적 감독’ 학습법이 제안됐다.",
+      "Qwen3.6-27B로 학습한 제3자 관찰자는 5개 평가에서 평균 AUROC 0.907을 기록했다.",
+      "다만 평가는 5개 홀드아웃 과제에 한정됐고, 실제 배포 환경의 효과는 확인되지 않았다."
+    ],
+    "whyItMatters": "모델의 숨은 행동을 대화 기록만으로 감시한다면, 다음 평가에서 별도 관찰자 학습을 비교 대상으로 넣게 된다.",
+    "tags": [
+      "AI/LLM",
+      "보안"
+    ]
+  },
+  {
+    "id": "1be737bb5491d359401705b5aa9be0edf5de8351",
+    "title": "98% 슬롯머신: 유료 광고는 어떻게 착취적 세금이 되었나",
+    "url": "https://news.hada.io/topic?id=37498&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-20T00:37:13.000Z",
+    "summary": [
+      "유료 광고가 손익분기점 직전 수익을 내는 슬롯머신처럼 창업자를 붙잡는다는 비판이 나왔다.",
+      "대시보드는 노출·클릭률·CPC 개선을 보여주지만, 경매 경쟁이 커지며 초과이익은 플랫폼으로 이동한다.",
+      "광고 의존 사업은 자금이 끊기면 트래픽도 바로 사라지고, 자체 고객 관계를 남기지 못할 수 있다."
+    ],
+    "whyItMatters": "광고 성과 지표가 좋아 보여도 손익분기점과 고객 확보 여부를 따로 계산해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "db6959f6790100419b6ec5ae0739672817feecb8",
+    "title": "Pancreatic cancer halted by virus injection in three patients",
+    "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-19T17:25:33.000Z",
+    "summary": [
+      "췌장암 환자 3명에게 바이러스를 주입한 뒤 암 진행이 멈췄다는 연구 결과가 나왔다.",
+      "제목상 바이러스 주사로 세 환자의 암이 멈췄지만, 바이러스 종류와 치료 방식은 확인되지 않는다.",
+      "기사 본문이 없어 대상 환자의 상태, 추적 기간, 대조군과 재현 가능성은 확인되지 않는다."
+    ],
+    "whyItMatters": "췌장암 치료 소식을 인용하려면 세 환자 결과만으로 일반적인 치료 효과를 단정하지 않게 된다.",
+    "tags": [
+      "업계"
+    ]
+  }
+]
