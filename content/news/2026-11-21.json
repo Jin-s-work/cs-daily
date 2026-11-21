@@ -1,0 +1,135 @@
+[
+  {
+    "id": "a21a41f248a8a02c50a805cc8ae7bc3a13166431",
+    "title": "Anthropic, IPO 직후 주가 급락…Nasdaq은 2026년 상승분 반납",
+    "url": "https://news.hada.io/topic?id=37557&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-21T01:32:44.000Z",
+    "summary": [
+      "Anthropic이 상장 다음 날 9% 급락하며 AI 투자 열풍의 지속 가능성에 의문이 커졌다.",
+      "Nasdaq은 하루 5.3% 떨어져 2026년 상승분을 모두 반납했고, Nvidia도 약 14% 하락했다.",
+      "고금리와 인플레이션, AI 데이터센터 건설 둔화 우려가 겹쳤고, Nvidia 회계 부정 의혹 조사 보도도 영향을 줬다."
+    ],
+    "whyItMatters": "AI 관련 종목 비중이 크다면 개별 기업 실적뿐 아니라 금리와 데이터센터 투자 둔화도 함께 봐야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "c72cb9838d98f486d22f89c3fd905c1a3308fff1",
+    "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+    "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
+    "source": "hackernews",
+    "publishedAt": "2026-11-20T20:22:41.000Z",
+    "summary": [
+      "미국 SEC가 Nvidia를 조사 중이며, 회계 처리와 관련한 문제가 있는지 들여다본다는 소식이 나왔다.",
+      "조사 사실은 소식통을 통해 전해졌지만, 어떤 회계 항목이나 거래가 문제인지 구체적으로 알려지지 않았다.",
+      "기사 본문을 확인할 수 없어 조사 시작 시점과 SEC·Nvidia의 공식 입장은 확인되지 않는다."
+    ],
+    "whyItMatters": "Nvidia의 재무 수치나 공시를 참고하고 있다면 SEC 조사 관련 후속 보도와 회사 설명을 함께 확인해야 한다.",
+    "tags": [
+      "업계"
+    ]
+  },
+  {
+    "id": "bdeef4472d3983391d805f3c05ac0078ff0916fb",
+    "title": "Closing the Analyze-to-Design Gap: An Authorization-Bounded Agent for Self-Driving Laboratories",
+    "url": "https://arxiv.org/abs/2611.25043",
+    "source": "arxiv",
+    "publishedAt": "2026-11-20T05:00:00.000Z",
+    "summary": [
+      "자율 실험실에서 분석 결과를 다음 측정 설계로 잇는 에이전트 구조를 제시한 연구가 나왔다.",
+      "LC-MS로 산화제 선별을 수행하며 측정 작업 제출, MS·DAD 해석, 실패 판정과 순위 작성을 맡겼다.",
+      "시뮬레이션에서 평균 14.5회 대신 약 7회에 최고 수율 조건을 찾았고, 8회 이상 제한에서는 매번 찾아냈다."
+    ],
+    "whyItMatters": "SDL에 에이전트를 붙일 때 측정 선택은 맡기면서도 장비 조작을 사람의 승인과 검증 범위 안에 둘 수 있다.",
+    "tags": [
+      "AI/LLM",
+      "인프라"
+    ]
+  },
+  {
+    "id": "74afe94b5c66118fadb87395e83fb3db8c9fe731",
+    "title": "Codex로 일하는 새로운 방식 [영상]",
+    "url": "https://news.hada.io/topic?id=37556&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-21T00:50:02.000Z",
+    "summary": [
+      "Codex 하네스가 CLI와 데스크톱 앱을 넘어 ChatGPT·Slack·Agents API로 확장됐다.",
+      "로컬 코딩뿐 아니라 클라우드 장기 작업과 문서·대화 검색, 배포 확인까지 맡긴다.",
+      "플러그인과 컨텍스트 수집을 쓰지만, 실제 연결 방식과 동작 조건은 발췌문만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "Codex에 장기 작업을 맡기려면 저장소 밖 자료와 동료 확인까지 연결하는 구성을 준비해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "a0ebc9ee452b9f3e92b0eb66c701bb0a417ea009",
+    "title": "Inkling 2 Mini",
+    "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+    "source": "hackernews",
+    "publishedAt": "2026-11-20T20:12:19.000Z",
+    "summary": [
+      "Thinking Machines Lab이 노트북에서 돌릴 수 있는 소형 모델 Inkling 2 Mini를 공개했다.",
+      "중간층을 토큰마다 세 번 반복하는 looped transformer로, DeepSWE v1.1에서 48.2%를 기록했다.",
+      "비교 수치는 공개 가중치 100B 미만 모델 기준이고, 실제 노트북별 속도와 배포 조건은 제시되지 않았다."
+    ],
+    "whyItMatters": "노트북에서 코딩 에이전트를 돌릴 계획이라면 Inkling 2 Mini를 기존 모델과 직접 비교해 볼 후보가 생겼다.",
+    "tags": [
+      "AI/LLM"
+    ]
+  },
+  {
+    "id": "71ab56c535866f5bbc4e8c1e33f0bfe8906b860d",
+    "title": "An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance",
+    "url": "https://arxiv.org/abs/2611.25070",
+    "source": "arxiv",
+    "publishedAt": "2026-11-20T05:00:00.000Z",
+    "summary": [
+      "산업 설비 정비를 자연어로 처리하는 CodeReAct 에이전트 프레임워크가 제안됐다.",
+      "데이터를 비즈니스 객체로 표준화하고 API 호출과 실행 코드로 자산 상태, 이상, 작업지시를 분석한다.",
+      "Chiller 사례에서 수년치 작업지시를 분석했지만, 실제 운영 환경의 성능과 일반화 여부는 확인되지 않았다."
+    ],
+    "whyItMatters": "정비 데이터를 자연어로 조회·분석하는 시스템을 만들고 있다면, 데이터 표준화와 코드 실행을 에이전트에 맡기는 설계가 새 선택지가 된다.",
+    "tags": [
+      "AI/LLM",
+      "업계"
+    ]
+  },
+  {
+    "id": "e2d47285aa84fb1a7eaa337aa0c8aa9c112d330c",
+    "title": "Cloudflare가 Raft 대신 QuePaxa를 선택한 이유",
+    "url": "https://news.hada.io/topic?id=37555&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+    "source": "geeknews",
+    "publishedAt": "2026-11-21T00:40:02.000Z",
+    "summary": [
+      "Cloudflare가 전 세계에 분산된 실험적 제어 평면 서비스 Meerkat에 QuePaxa를 채택했다.",
+      "리더가 멈추거나 네트워크 지연이 커져도 다른 서버가 제안을 이어가며 합의를 진행한다.",
+      "Raft·Multi-Paxos처럼 리더 교체 중 멈추지 않지만, 세부 수렴 방식은 발췌만으로 확인되지 않는다."
+    ],
+    "whyItMatters": "리더 장애 때 합의를 멈추는 시스템이라면 QuePaxa 도입 여부를 판단해야 한다.",
+    "tags": [
+      "인프라"
+    ]
+  },
+  {
+    "id": "ac6264fec7d5e9712d4a53674e3e918db8430715",
+    "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+    "url": "https://scottaaronson.blog/?p=10344",
+    "source": "hackernews",
+    "publishedAt": "2026-11-20T20:03:07.000Z",
+    "summary": [
+      "Levent Alpöge가 Anthropic 모델로 일반화 리만 가설을 증명했다고 주장한 글이 나왔다.",
+      "생성된 Lean 코드가 1,740만 줄에 이르며, 앞서 비자명 영점의 위치를 좁힌 결과도 언급됐다.",
+      "다만 글은 ‘stochastic parrots’를 비꼰 내용이며, 엄밀한 검증 여부는 확인되지 않는다."
+    ],
+    "whyItMatters": "Lean 코드의 양만으로 증명을 믿지 말고, 검증 가능한 저장소와 커널 검사를 확인해야 한다.",
+    "tags": [
+      "AI/LLM",
+      "언어/런타임"
+    ]
+  }
+]
